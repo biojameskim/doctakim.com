@@ -1,9 +1,12 @@
 import { VStack, Text } from "@chakra-ui/react"
+import { Helmet } from 'react-helmet';
 
 const Employment = () => {
   return (
     <div>
-      
+      <Helmet>
+            <title>doctakim | Employment</title>
+        </Helmet>
       <VStack
         spacing='3vh'
       >

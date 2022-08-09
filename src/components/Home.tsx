@@ -1,10 +1,14 @@
 import { Box } from '@chakra-ui/react'
 import Typewriter from "typewriter-effect"
+import { Helmet } from 'react-helmet';
 
 
 const Home = () => {
     return(
     <div className="home-page">
+        <Helmet>
+            <title>doctakim | Home</title>
+        </Helmet>
         <Box as="h1" fontSize="4rem" textAlign="center">
         Currently ...
         <br></br>
