@@ -1,4 +1,4 @@
-import { VStack, Stack, Center, Box, Image, Text, Link, useColorModeValue } from "@chakra-ui/react"
+import { VStack, Stack, Box, Image, Text, useColorModeValue } from "@chakra-ui/react"
 
 const BlogCard = ({ website, title, description, update, image, alt }: {website: string, title: string, description: string, update: string, image: string, alt: string}) => {
   return (

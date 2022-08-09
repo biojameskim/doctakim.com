@@ -1,7 +1,7 @@
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 import { AiOutlinePhone } from 'react-icons/ai';
-import { useColorModeValue, Box, Image, VStack, HStack, Button, Center, Stack, Text } from '@chakra-ui/react';
+import { Box, Image, VStack, HStack, Button, Text } from '@chakra-ui/react';
 import ProfilePic from "../images/pictures/avatar.jpeg"
 
 export default function Connect() {

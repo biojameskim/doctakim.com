@@ -1,39 +1,24 @@
 import {
     Box,
     Flex,
-    Text,
     IconButton,
     Button,
     Stack,
-    Collapse,
-    Icon,
-    Link,
-    Popover,
-    PopoverTrigger,
-    PopoverContent,
     useColorModeValue,
-    useBreakpointValue,
-    useDisclosure,
     useColorMode,
     Menu,
     MenuButton,
     MenuList,
     MenuItem,
-    HStack,
-    VStack,
-    StackDivider,
     Show,
   } from '@chakra-ui/react';
   import {
     HamburgerIcon,
-    CloseIcon,
     ChevronDownIcon,
-    ChevronRightIcon,
     MoonIcon,
     SunIcon,
   } from '@chakra-ui/icons';
   import { Link as LinkRouter } from 'react-router-dom';
-import { useState, useEffect } from 'react';
   
   export default function NavBar() {
     
@@ -136,40 +121,40 @@ import { useState, useEffect } from 'react';
     );
   };
 
-  interface NavItem {
-    label: string;
-    children?: Array<NavItem>;
-    href?: string;
-  }
+  // interface NavItem {
+  //   label: string;
+  //   children?: Array<NavItem>;
+  //   href?: string;
+  // }
   
-  const NAV_ITEMS: Array<NavItem> = [
-    {
-      label: 'About',
-      href: '/about'
-    },
-    {
-      label: 'Work',
-      children: [
-        {
-          label: 'Employment',
-          href: '#',
-        },
-        {
-          label: 'Projects',
-          href: '#',
-        },
-        {
-            label: 'Resume',
-            href: '#',
-          }
-      ],
-    },
-    {
-      label: 'Blog',
-      href: '#',
-    },
-    {
-      label: 'Connect',
-      href: '#',
-    },
-  ];
+  // const NAV_ITEMS: Array<NavItem> = [
+  //   {
+  //     label: 'About',
+  //     href: '/about'
+  //   },
+  //   {
+  //     label: 'Work',
+  //     children: [
+  //       {
+  //         label: 'Employment',
+  //         href: '#',
+  //       },
+  //       {
+  //         label: 'Projects',
+  //         href: '#',
+  //       },
+  //       {
+  //           label: 'Resume',
+  //           href: '#',
+  //         }
+  //     ],
+  //   },
+  //   {
+  //     label: 'Blog',
+  //     href: '#',
+  //   },
+  //   {
+  //     label: 'Connect',
+  //     href: '#',
+  //   },
+  // ];

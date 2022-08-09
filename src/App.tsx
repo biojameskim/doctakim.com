@@ -1,5 +1,4 @@
-import * as React from "react"
-import { ChakraProvider, theme, Box } from "@chakra-ui/react"
+import { ChakraProvider, theme} from "@chakra-ui/react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import StartPage from "./components/StartPage"
 import NavBar from "./components/Navbar"
@@ -12,9 +11,6 @@ import Resume from "./components/Resume"
 import Blog from "./components/Blog"
 import Connect from "./components/Connect"
 import "./fonts/james1-regular-webfont.woff"
-
-
-import Card from "./components/Card"
 
 export const App = () => (
   <ChakraProvider theme={theme}>

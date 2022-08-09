@@ -1,4 +1,4 @@
-import { Stack, VStack, Text, Link, Box, Wrap, WrapItem, Center, Button, ButtonGroup } from "@chakra-ui/react"
+import { VStack, Text, Box, Wrap, WrapItem } from "@chakra-ui/react"
 import BlogCard from "./BlogCard"
 import FreshmanStory from "../images/blog/freshman-story.jpeg"
 import GrowingUp from "../images/blog/growing-up.jpeg"
