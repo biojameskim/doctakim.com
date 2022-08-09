@@ -1,38 +1,38 @@
 import * as React from "react"
-import {
-  ChakraProvider,
-  Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
-  theme,
-} from "@chakra-ui/react"
-import { ColorModeSwitcher } from "./ColorModeSwitcher"
-import { Logo } from "./Logo"
+import { ChakraProvider, theme, Box } from "@chakra-ui/react"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import StartPage from "./components/StartPage"
+import NavBar from "./components/Navbar"
+import Footer from "./components/Footer"
+import Home from "./components/Home"
+import About from "./components/About"
+import Employment from "./components/Employment"
+import Projects from "./components/Projects"
+import Resume from "./components/Resume"
+import Blog from "./components/Blog"
+import Connect from "./components/Connect"
+import "./fonts/james1-regular-webfont.woff"
+
+
+import Card from "./components/Card"
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Box textAlign="center" fontSize="xl">
-      <Grid minH="100vh" p={3}>
-        <ColorModeSwitcher justifySelf="flex-end" />
-        <VStack spacing={8}>
-          <Logo h="40vmin" pointerEvents="none" />
-          <Text>
-            Edit <Code fontSize="xl">src/App.tsx</Code> and save to reload.
-          </Text>
-          <Link
-            color="teal.500"
-            href="https://chakra-ui.com"
-            fontSize="2xl"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn Chakra
-          </Link>
-        </VStack>
-      </Grid>
-    </Box>
+    <Router>      
+      <div className="main-wrapper">
+        <div className="navbar"><NavBar /></div>
+        <Routes>
+          <Route path="/" element={<StartPage />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/employment" element={<Employment />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/connect" element={<Connect />} />
+        </Routes>
+      </div> 
+      <div className="footer-pin"><Footer /></div>
+    </Router>
   </ChakraProvider>
 )

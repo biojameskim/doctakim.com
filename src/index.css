@@ -1,0 +1,133 @@
+* {
+    margin: auto;
+    padding: 0;
+}
+
+html {
+    margin-right: calc(100% - 100vw);
+}
+body {
+    margin-right: calc(100vw - 100%);
+}
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: "James";
+    src: local("james1-regular-webfont"), url("./fonts/james1-regular-webfont.woff") format("woff");
+}
+
+.main-wrapper {
+    min-height: calc(100vh - 72px);
+    font-family: "James"
+}
+
+.starter-page {
+    font-weight: 600;
+}
+
+/* NAVBAR */
+.navbar {
+    color: black;
+}
+
+.mobile-navigation {
+    background-color: gray.200;
+}
+
+.footer-pin {
+    position: "relative";
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/* HOME PAGE */
+.home-page {
+    margin-top: 10vh;
+    font-weight: 600;
+}
+
+.home-page-typewriter {
+    font-family:'James';
+    max-width: 90%;
+    margin: auto;
+    padding-top: 10vh;
+    font-size: 6vh;
+}
+
+.contact-page {
+    margin: auto;
+    text-align: center;
+}
+
+.connect-image {
+    border-radius: 25px;
+}
+
+/* Start Page */
+.from-california {
+    font-size: 70px;
+    background-color: #FAF2C3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.in-ithaca {
+    font-size: 70px;
+    background-color: #E0FFFF;
+    display: flex;
+    height: 100%
+}
+
+/* About Page */
+.about-section {
+    text-align: left;
+    font-size: large;
+}
+
+/* Work: EMPLOYMENT */
+.employment-card {
+    transition: all 200ms ease-in-out;
+}
+
+.employment-card:hover {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    box-shadow: 0px 12px 10px lightgray;
+}
+
+/* Start Page */
+@keyframes fadeIn { 
+    from { opacity: 0; } 
+  }
+  
+  .scroll-down-icon {
+      animation: fadeIn 1s infinite alternate;
+  }
+
+/* Blog */
+.blog-card {
+    transition: all 200ms ease-in-out;
+}
+
+.blog-card:hover {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    box-shadow: 0px 15px 10px lightgray;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.blog-images {
+    height: auto;
+    width: auto;
+    max-width: 500px;
+    max-height: 500px;
+}
