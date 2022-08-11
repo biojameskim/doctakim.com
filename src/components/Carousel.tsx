@@ -19,16 +19,16 @@ const Carousel = () => {
       
     >
         <div>
-            <img src={About1} />
+            <img src={About1} alt='Me In Winter'/>
         </div>
         <div>
-            <img src={About2} />
+            <img src={About2} alt='Me and Bro in AZ'/>
         </div>
         <div>
-            <img src={About3} />
+            <img src={About3} alt='Me Playing Tennis'/>
         </div>
         <div>
-            <img src={About4} />
+            <img src={About4} alt='AAIV boys'/>
         </div>
     </CarouselTemp>
   )
