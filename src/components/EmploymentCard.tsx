@@ -8,6 +8,7 @@ const EmploymentCard = ({ website, title, role, image, alt, date, description }:
           target={"_blank"}
           href={website}
           p={'0.5rem'}
+          pt={{ base:'6' }}
           margin="auto"
           mt={10}
           maxW={'80%'} 
@@ -44,7 +45,7 @@ const EmploymentCard = ({ website, title, role, image, alt, date, description }:
                     </GridItem>
                     <GridItem colSpan={colSpan}>
                       <Show below='md'>
-                        <Text fontSize='1.5rem' mt='-2'>{role}</Text>
+                        <Text fontSize='1.5rem' ml='-0.5' mt='-2'>{role}</Text>
                       </Show>
                     </GridItem>
                   </SimpleGrid>
