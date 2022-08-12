@@ -4,6 +4,7 @@ import About1 from "../images/pictures/about1.jpeg"
 import About2 from "../images/pictures/about2.jpeg"
 import About3 from "../images/pictures/about3.jpeg"
 import About4 from "../images/pictures/about4.jpeg"
+import { Image } from "@chakra-ui/react";
 
 const Carousel = () => {
   return (
@@ -15,20 +16,34 @@ const Carousel = () => {
       stopOnHover 
       showStatus={false} 
       showThumbs={false}
-      
-      
     >
         <div>
-            <img src={About1} alt='Me In Winter'/>
+          <Image
+            borderRadius='2xl'
+            src={About1} 
+            alt='Me In Winter'
+          />
         </div>
         <div>
-            <img src={About2} alt='Me and Bro in AZ'/>
+          <Image
+            borderRadius='2xl'
+            src={About2}
+            alt='Me and Bro in AZ'
+          />
         </div>
         <div>
-            <img src={About3} alt='Me Playing Tennis'/>
+          <Image
+            borderRadius='2xl'
+            src={About3}
+            alt='Me Playing Tennis'
+          />
         </div>
         <div>
-            <img src={About4} alt='AAIV boys'/>
+          <Image
+            borderRadius='2xl'
+            src={About4}
+            alt='AAIV boys'
+          />
         </div>
     </CarouselTemp>
   )
