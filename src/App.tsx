@@ -11,6 +11,10 @@ import Resume from "./components/Resume"
 import Blog from "./components/Blog"
 import Connect from "./components/Connect"
 import "./fonts/james1-regular-webfont.woff"
+import ReactGA from 'react-ga4'
+
+const TRACKING_ID = "G-1SF4Z7N7NS"
+ReactGA.initialize(TRACKING_ID)
 
 export const App = () => (
   <ChakraProvider theme={theme}>
