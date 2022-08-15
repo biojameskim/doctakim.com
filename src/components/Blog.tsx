@@ -23,7 +23,7 @@ const Blog = () => {
         <Wrap spacingX='12' spacingY='16' justify='center' w='95%'>
           <WrapItem>
               <BlogCard
-                website='https://www.behance.net/gallery/149561547/My-Sister'
+                website='https://bit.ly/3buvKw4'
                 update='NEW' 
                 title='My Sister' 
                 description="I don't tell very many people about my sister."
@@ -33,7 +33,7 @@ const Blog = () => {
           </WrapItem>
           <WrapItem>
               <BlogCard 
-                website='https://www.behance.net/gallery/146743985/Growing-Up'
+                website='https://bit.ly/39TohFR'
                 update='June 2022' 
                 title='Growing Up' 
                 description="Youth is fleeting."
@@ -43,7 +43,7 @@ const Blog = () => {
           </WrapItem>
           <WrapItem>
               <BlogCard 
-                website='https://www.behance.net/gallery/144114581/My-Freshman-College-Story'
+                website='https://bit.ly/3LRmzBX'
                 update='May 2022' 
                 title='My Freshman College Story' 
                 description="It's been a hell of a year."
