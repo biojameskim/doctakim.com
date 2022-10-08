@@ -5,8 +5,8 @@ const Resume = () => {
   return (
     <div>
       <Helmet>
-            <title>doctakim | Resume</title>
-        </Helmet>
+        <title>doctakim | Resume</title>
+      </Helmet>
       <VStack
         spacing='3vh'
       >
@@ -14,10 +14,10 @@ const Resume = () => {
           Resume
         </Text>
         <Text fontSize='2rem' pb={'2vh'}>
-          Coming soon... 
+          Coming soon...
         </Text>
       </VStack>
-      
+
     </div>
   )
 }

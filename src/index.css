@@ -7,6 +7,7 @@ html {
     max-width: 100%;
     overflow-x: hidden;
 }
+
 body {
     margin-right: calc(100vw - 100%);
 }
@@ -51,7 +52,7 @@ body {
 }
 
 .home-page-typewriter {
-    font-family:'James';
+    font-family: 'James';
     max-width: 90%;
     margin: auto;
     padding-top: 10vh;
@@ -91,25 +92,27 @@ body {
     font-size: large;
 }
 
-/* Work: EMPLOYMENT */
-.employment-card {
+/* Work: EXPERIENCES */
+.experiences-card {
     transition: all 200ms ease-in-out;
 }
 
-.employment-card:hover {
+.experiences-card:hover {
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
     box-shadow: 0px 12px 10px lightgray;
 }
 
 /* Start Page */
-@keyframes fadeIn { 
-    from { opacity: 0; } 
-  }
-  
-  .scroll-down-icon {
-      animation: fadeIn 1s infinite alternate;
-  }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+}
+
+.scroll-down-icon {
+    animation: fadeIn 1s infinite alternate;
+}
 
 /* Blog */
 .blog-card {
