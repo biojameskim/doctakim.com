@@ -92,12 +92,12 @@ body {
     font-size: large;
 }
 
-/* Work: EXPERIENCES */
-.experiences-card {
+/* Work: EXPERIENCE */
+.experience-card {
     transition: all 200ms ease-in-out;
 }
 
-.experiences-card:hover {
+.experience-card:hover {
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
     box-shadow: 0px 12px 10px lightgray;

@@ -2,7 +2,7 @@ import { Text, Link, Box, useColorModeValue } from "@chakra-ui/react"
 
 const ProjectCard = ({ website, title }: { website: string, title: string }) => {
   return (
-    <Box className="experiences-card"
+    <Box className="experience-card"
       as={Link}
       href={website} isExternal
       p={'3em'}

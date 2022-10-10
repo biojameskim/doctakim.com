@@ -1,9 +1,9 @@
 import { Text, Box, useColorModeValue, Flex, VStack, Image, SimpleGrid, GridItem, useBreakpointValue, Hide, Show } from "@chakra-ui/react"
 
-const ExperiencesCard = ({ website, title, role, image, alt, date, description }: { website: string, title: string, role: string, image: string, alt: string, date: string, description: string }) => {
+const ExperienceCard = ({ website, title, role, image, alt, date, description }: { website: string, title: string, role: string, image: string, alt: string, date: string, description: string }) => {
   const colSpan = useBreakpointValue({ base: 2, md: 1 })
   return (
-    <Box className="experiences-card"
+    <Box className="experience-card"
       as="a"
       target={"_blank"}
       href={website}
@@ -35,7 +35,7 @@ const ExperiencesCard = ({ website, title, role, image, alt, date, description }
 
           <Box ml='0' mb='-1.5' mt={{ base: '2', md: '0' }}>
             <SimpleGrid columns={2}>
-              <GridItem className='grid-experiences-title' colSpan={colSpan} ml='0'>
+              <GridItem className='grid-experience-title' colSpan={colSpan} ml='0'>
                 <Flex align={'center'}>
                   <Text fontSize='2.5rem' fontWeight='bold'>{title}</Text>
                   <Hide below='md'>
@@ -66,4 +66,4 @@ const ExperiencesCard = ({ website, title, role, image, alt, date, description }
   )
 }
 
-export default ExperiencesCard
+export default ExperienceCard

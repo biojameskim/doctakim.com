@@ -30,7 +30,7 @@ const DesktopNav = () => {
             Work
           </MenuButton>
           <MenuList backgroundColor={useColorModeValue('gray.100', 'gray.900')}>
-            <LinkRouter to="/experiences"><MenuItem fontSize='1.7rem'>Experiences</MenuItem></LinkRouter>
+            <LinkRouter to="/experience"><MenuItem fontSize='1.7rem'>Experience</MenuItem></LinkRouter>
             <LinkRouter to="/projects"><MenuItem fontSize='1.7rem'>Projects</MenuItem></LinkRouter>
             <LinkRouter to="/resume"><MenuItem fontSize='1.7rem'>Resume</MenuItem></LinkRouter>
           </MenuList>

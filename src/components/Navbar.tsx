@@ -61,7 +61,7 @@ export default function NavBar() {
   //     label: 'Work',
   //     children: [
   //       {
-  //         label: 'Experiences',
+  //         label: 'Experience',
   //         href: '#',
   //       },
   //       {

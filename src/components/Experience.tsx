@@ -1,23 +1,23 @@
 import { VStack, Text, Box } from "@chakra-ui/react"
 import { Helmet } from 'react-helmet';
-import ExperiencesCard from './ExperiencesCard'
+import ExperienceCard from './ExperienceCard'
 import WazzleLogo from "../images/logos/wazzle.jpeg"
 import HackLogo from "../images/logos/hack4impact.jpeg"
 
-const Experiences = () => {
+const Experience = () => {
   return (
     <div>
       <Helmet>
-        <title>doctakim | Experiences</title>
+        <title>doctakim | Experience</title>
       </Helmet>
       <VStack
         spacing='3vh'
       >
         <Text fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={'6vh'} >
-          Experiences
+          Experience
         </Text>
 
-        <ExperiencesCard
+        <ExperienceCard
           website='https://cornellh4i.org/'
           title='hack4impact'
           role='Full Stack Developer'
@@ -29,7 +29,7 @@ const Experiences = () => {
           MongoDB, Express.js, React, and Node.js'
         />
 
-        <ExperiencesCard
+        <ExperienceCard
           website='https://wazzle.app'
           title='Wazzle'
           role='Mobile Development Intern'
@@ -47,4 +47,4 @@ const Experiences = () => {
   )
 }
 
-export default Experiences
+export default Experience
