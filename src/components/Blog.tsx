@@ -3,7 +3,7 @@ import BlogCard from "./BlogCard"
 import FreshmanStory from "../images/blog/freshman-story.jpeg"
 import GrowingUp from "../images/blog/growing-up.jpeg"
 import MySister from "../images/blog/my-sister.jpeg"
-import TreasureHunt from "../images/blog/treasure-hunt.jpeg"
+// import TreasureHunt from "../images/blog/treasure-hunt.jpeg"
 import { Helmet } from 'react-helmet';
 
 const Blog = () => {
