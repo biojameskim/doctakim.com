@@ -1,10 +1,13 @@
 import { VStack, Text, Box, Wrap, WrapItem } from "@chakra-ui/react"
 import BlogCard from "./BlogCard"
+import { Helmet } from 'react-helmet';
+
+// Cover Photos
+// Keep each photo at 1280x960 --> (2048x1536, 1024x768, etc) using fotor.com
 import FreshmanStory from "../images/blog/freshman-story.jpeg"
 import GrowingUp from "../images/blog/growing-up.jpeg"
 import MySister from "../images/blog/my-sister.jpeg"
 // import TreasureHunt from "../images/blog/treasure-hunt.jpeg"
-import { Helmet } from 'react-helmet';
 
 const Blog = () => {
   return (
@@ -24,7 +27,7 @@ const Blog = () => {
         <Wrap
           paddingTop='5'
           paddingBottom='14'
-          paddingLeft='5'
+          paddingLeft={{ base: 0, md: 5 }}
           spacingX='12'
           spacingY='16'
           justify='left'
