@@ -12,6 +12,8 @@ import Blog from "./components/Blog"
 import Connect from "./components/Connect"
 import "./fonts/james1-regular-webfont.woff"
 import ReactGA from 'react-ga4'
+import FreshmanStory from "./blog_entries/FreshmanStory"
+import NotFound from "./components/NotFound"
 
 const TRACKING_ID = "G-1SF4Z7N7NS"
 ReactGA.initialize(TRACKING_ID)
@@ -30,6 +32,8 @@ export const App = () => (
           <Route path="/resume" element={<Resume />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/connect" element={<Connect />} />
+          <Route path="/blog/treasure-hunt" element={<FreshmanStory />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </div>
       <div className="footer-pin"><Footer /></div>
