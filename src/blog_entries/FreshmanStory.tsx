@@ -20,7 +20,7 @@ const FreshmanStory = () => {
         <Text fontFamily='century' fontSize='2xl' align={'center'} fontWeight={'medium'} pt={'4vh'} pb={'10vh'} >
           May 2022
         </Text>
-        <Stack spacing={7} width={{ base: '85%', md: '60%' }} fontSize={'lg'} fontFamily='century'>
+        <Stack spacing={7} width={{ base: '85%', md: '60%' }} fontSize={{ base: 'md', md: 'lg' }} fontFamily='century'>
           <Text>My freshman college story begins in Syracuse, NY.</Text>
           <Text>Syracuse International Airport that is.</Text>
           <Text>After leaving our home in California early in the morning, my family and I arrived at Syracuse a little after 2 am.</Text>

@@ -21,7 +21,7 @@ const GrowingUp = () => {
         <Text fontFamily='century' fontSize='2xl' align={'center'} fontWeight={'medium'} pt={'4vh'} pb={'10vh'} >
           June 2022
         </Text>
-        <Stack spacing={7} width={{ base: '85%', md: '60%' }} fontSize={'lg'} fontFamily='century'>
+        <Stack spacing={7} width={{ base: '85%', md: '60%' }} fontSize={{ base: 'md', md: 'lg' }} fontFamily='century'>
 
           <BlogImage
             src="../images/blog_pictures/Growing-Up/Pictures/aunt-before.jpg"
