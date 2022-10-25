@@ -1,5 +1,5 @@
 import { Avatar, Box, Flex, keyframes } from '@chakra-ui/react';
-import ProfilePic from "../images/pictures/avatar.jpeg";
+import ProfilePic from "images/pictures/avatar.jpeg";
 
 
 export default function MyAvatar() {

@@ -1,7 +1,12 @@
 import { VStack, Text } from "@chakra-ui/react"
 import { Helmet } from 'react-helmet';
+import { useEffect } from "react";
 
 const Projects = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div>
       <Helmet>

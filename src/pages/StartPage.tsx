@@ -2,8 +2,12 @@ import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, Move, MoveO
 import { Text, useColorModeValue, } from '@chakra-ui/react';
 import { Link } from "react-router-dom"
 import { ChevronDownIcon } from '@chakra-ui/icons';
+import { useEffect } from 'react';
 
 const StartPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <div className="starter-page">

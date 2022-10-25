@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom"
 import { Stack, Box, Button, Text, VStack, useColorModeValue, Flex } from "@chakra-ui/react"
-import Carousel from "./Carousel"
+import Carousel from "../components/Carousel"
 import { Helmet } from 'react-helmet';
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div>
       <Helmet>

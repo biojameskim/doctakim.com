@@ -1,10 +1,13 @@
 import { VStack, Text, Box } from "@chakra-ui/react"
 import { Helmet } from 'react-helmet';
-import ExperienceCard from './ExperienceCard'
-import WazzleLogo from "../images/logos/wazzle.jpeg"
-import HackLogo from "../images/logos/hack4impact.jpeg"
+import ExperienceCard from '../components/ExperienceCard'
+import { useEffect } from "react";
 
 const Experience = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div>
       <Helmet>
@@ -21,7 +24,7 @@ const Experience = () => {
           website='https://cornellh4i.org/'
           title='hack4impact'
           role='Full Stack Developer'
-          image={HackLogo}
+          image={"images/logos/hack4impact.jpeg"}
           alt='hack4impact Logo'
           date='09/2022 - Present'
           description='Building a platform for the homeless population of 
@@ -33,7 +36,7 @@ const Experience = () => {
           website='https://wazzle.app'
           title='Wazzle'
           role='Mobile Development Intern'
-          image={WazzleLogo}
+          image={"images/logos/wazzle.jpeg"}
           alt='Wazzle Logo'
           date='04/2022 - 08/2022'
           description='Implemented new features and design changes for an iOS 

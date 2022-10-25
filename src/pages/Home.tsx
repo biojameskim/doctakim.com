@@ -1,9 +1,13 @@
 import { Box } from '@chakra-ui/react'
 import Typewriter from "typewriter-effect"
 import { Helmet } from 'react-helmet';
-
+import { useEffect } from 'react';
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <div className="home-page">
             <Helmet>

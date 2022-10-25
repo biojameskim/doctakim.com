@@ -2,10 +2,14 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 import { AiOutlinePhone } from 'react-icons/ai';
 import { Box, Image, VStack, HStack, Button, Text } from '@chakra-ui/react';
-import ProfilePic from '../images/pictures/connect_pfp.jpeg'
 import { Helmet } from 'react-helmet';
+import { useEffect } from 'react';
 
-export default function Connect() {
+const Connect = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <div>
             <Helmet>
@@ -22,7 +26,7 @@ export default function Connect() {
                         borderRadius='2xl'
                         objectFit="contain"
                         width='240px'
-                        src={ProfilePic}
+                        src={'images/pictures/connect_pfp.jpeg'}
                         alt='James Kim'
 
                     />
@@ -65,3 +69,5 @@ export default function Connect() {
         </div>
     );
 }
+
+export default Connect
