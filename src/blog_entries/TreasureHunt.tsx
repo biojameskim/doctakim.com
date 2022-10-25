@@ -20,7 +20,7 @@ const TreasureHunt = () => {
         <Text fontFamily='century' fontSize='2xl' align={'center'} fontWeight={'medium'} pt={'4vh'} pb={'10vh'} >
           October 2022
         </Text>
-        <Stack spacing={7} width={{ base: '85%', md: '60%' }} fontSize={{ base: 'md', md: 'lg' }} fontFamily='century'>
+        <Stack spacing={7} width={{ base: '85%', md: '60%' }} fontSize={{ base: '17', md: 'lg' }} fontFamily='century'>
 
           <Text>I’m a Californian by heart.</Text>
           <Text>I’ve lived there since I was in third grade so most of my childhood
@@ -28,7 +28,7 @@ const TreasureHunt = () => {
             hot weather.</Text>
           <Text> But before my family moved to California, we used to live in
             Massachusetts while my Dad worked for a short time at MIT.</Text>
-          <Text pb='5vh'> So a lot of my childhood memories take place in Boston
+          <Text pb='3vh'> So a lot of my childhood memories take place in Boston
             too—</Text>
 
           <Text>next to evergreen trees and snowstorms in wetter, colder weather.</Text>
@@ -39,7 +39,7 @@ const TreasureHunt = () => {
             caption="Touching John Harvard's foot is good luck."
           />
 
-          <Text pb='5vh'>While we were in Boston, my mom, brother, and I would go
+          <Text pb='3vh'>While we were in Boston, my mom, brother, and I would go
             visit my dad pretty often while he was working.</Text>
 
           <Text>And if you didn’t know, MIT has this big patch of grass.</Text>
@@ -52,8 +52,8 @@ const TreasureHunt = () => {
             caption='"The Lawn" at MIT'
           />
 
-          <Text>A lot of my memories in Boston take place on this lawn.</Text>
-          <Text>In the summer, my brother and I would race and wrestle on the lawn,
+          <Text pb='3vh'>A lot of my memories in Boston take place on this lawn.</Text>
+          <Text >In the summer, my brother and I would race and wrestle on the lawn,
             and my family would picnic together under one of the big trees.</Text>
           <Text pb='5vh'>And in the winter, my brother and I would have snowball
             fights on the lawn, and my family would make snowmen together under the
@@ -78,7 +78,7 @@ const TreasureHunt = () => {
 
           <Text>Time to time, whenever we remembered, we would ask our dad what
             the contents of the treasure were.</Text>
-          <Text pb='5vh'>But every time we asked, he would simply say the same,
+          <Text pb='3vh'>But every time we asked, he would simply say the same,
             repetitive thing—</Text>
 
           <Text pb='5vh'>He reassured us that if we were ever to go back to Boston,
@@ -107,7 +107,7 @@ const TreasureHunt = () => {
 
           <Text pb='5vh'>My dad emailed me today.</Text>
 
-          <Text pb='5vh'>Ever since I left home for college, my dad’s been emailing
+          <Text pb='3vh'>Ever since I left home for college, my dad’s been emailing
             me a lot more.</Text>
 
           <Text>He doesn’t have a phone, so email’s our primary form of communication.</Text >
