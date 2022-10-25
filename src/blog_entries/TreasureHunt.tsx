@@ -66,7 +66,7 @@ const TreasureHunt = () => {
           />
 
           <Text>Eventually, my dad found a new job in California and we were
-            orced to leave the lawn behind us.</Text>
+            forced to leave the lawn behind us.</Text>
           <Text>But the night before we moved across the country,</Text>
           <Text pb='7vh'>My dad told me and my brother that he left something
             behind at MIT.</Text>
@@ -200,7 +200,8 @@ const TreasureHunt = () => {
 
           <Text pb='3vh'>But this time, it was different.</Text >
 
-          <Text pb='10vh'>Through his breath, he finally revealed the treasure that he had kept hidden for the past 12 years—</Text >
+          <Text pb='10vh'>Through his breath, he finally revealed the treasure
+            that he had kept hidden for the past 12 years—</Text >
 
           <Text as='i' pb='10vh'>"It’s the memories.”</Text >
 
@@ -208,9 +209,11 @@ const TreasureHunt = () => {
 
           <Text pb='3vh'>My dad’s treasure was his memories.</Text >
 
-          <Text pb='10vh'>His memories of me and my brother running around on the MIT lawn, the meals we ate together on our picnics, and the time we all lived together in Boston.</Text >
-
-          <Text pb='5vh'>My dad was holding onto his memories of Boston and had stored them away on the MIT lawn.</Text >
+          <Text>His memories of me and my brother running around on the MIT lawn,
+            the meals we ate together on our picnics, and the time we all lived
+            together in Boston.</Text >
+          <Text>My dad was holding onto his memories of Boston and had stored
+            them away on the MIT lawn.</Text >
 
           <BlogImage
             src="../images/blog_pictures/Treasure-Hunt/Pictures/8 dad,mom,me.jpg"
@@ -223,7 +226,7 @@ const TreasureHunt = () => {
           <Text pb='5vh'>I’m someone who doesn’t think too much about the past.</Text >
 
           <Text>There’s definitely many things I regret doing, but even if I could go back in time, I wouldn’t change anything.</Text >
-          <Text pb='5vh'>I’d like to say that I’m someone who lives very much in the present.</Text >
+          <Text>I’d like to say that I’m someone who lives very much in the present.</Text >
 
           <Text pb='7vh'>But my dad has taught me that once in a while, it’s good to sit down and reminisce about the memories that bring me back to the experiences and emotions of my past—</Text >
 
