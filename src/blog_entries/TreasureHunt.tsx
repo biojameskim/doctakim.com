@@ -13,14 +13,27 @@ const TreasureHunt = () => {
       <Helmet>
         <title>doctakim | Treasure Hunt</title>
       </Helmet>
+
       <Text fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} >
         Treasure Hunt
       </Text>
+
       <div className='blog-text'>
-        <Text fontFamily='century' fontSize='2xl' align={'center'} fontWeight={'medium'} pt={'4vh'} pb={'10vh'} >
+        <Text
+          fontFamily='century'
+          fontSize='2xl'
+          align={'center'}
+          fontWeight={'medium'}
+          pt={'4vh'}
+          pb={'10vh'} >
           October 2022
         </Text>
-        <Stack spacing={7} width={{ base: '85%', md: '60%' }} fontSize={{ base: '17', md: 'lg' }} fontFamily='century'>
+
+        <Stack
+          spacing={7}
+          width={{ base: '85%', md: '60%' }}
+          fontSize={{ base: '17', md: 'lg' }}
+          fontFamily='century'>
 
           <Text>I’m a Californian by heart.</Text>
           <Text>I’ve lived there since I was in third grade so most of my childhood

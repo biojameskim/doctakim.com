@@ -3,6 +3,10 @@ import { Helmet } from 'react-helmet'
 import BlogImage from "../components/BlogImage"
 import { useEffect } from "react"
 
+// TODO: adjust spacing for the case when there is a photo then there is a -- immediately after.
+// You need to change all the "pY" in the -- to be a pb only. We only want padding on the bottom in
+// these situations.
+// TODO: read through blog and adjust the spacing of the text itself. Make things consistent.
 const FreshmanStory = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -13,20 +17,36 @@ const FreshmanStory = () => {
       <Helmet>
         <title>doctakim | Freshman Story</title>
       </Helmet>
+
       <Text fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} >
         My Freshman College Story
       </Text>
+
       <div className='blog-text'>
-        <Text fontFamily='century' fontSize='2xl' align={'center'} fontWeight={'medium'} pt={'4vh'} pb={'10vh'} >
+        <Text
+          fontFamily='century'
+          fontSize='2xl'
+          align={'center'}
+          fontWeight={'medium'}
+          pt={'4vh'}
+          pb={'10vh'} >
           May 2022
         </Text>
-        <Stack spacing={7} width={{ base: '85%', md: '60%' }} fontSize={{ base: '17', md: 'lg' }} fontFamily='century'>
+
+        <Stack
+          spacing={7}
+          width={{ base: '85%', md: '60%' }}
+          fontSize={{ base: '17', md: 'lg' }}
+          fontFamily='century'>
+
           <Text>My freshman college story begins in Syracuse, NY.</Text>
           <Text>Syracuse International Airport that is.</Text>
-          <Text>After leaving our home in California early in the morning, my family and I arrived at Syracuse a little after 2 am.</Text>
+          <Text>After leaving our home in California early in the morning, my
+            family and I arrived at Syracuse a little after 2 am.</Text>
           <Text>Much to our dismay, there were 0 Ubers available at that time.</Text>
           <Text>At a freakin’ international airport.</Text>
-          <Text> Mumbling and grumbling under our breaths, we soon became the only family at the airport.</Text>
+          <Text> Mumbling and grumbling under our breaths, we soon became the
+            only family at the airport.</Text>
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/1airport.jpeg"
@@ -46,12 +66,15 @@ const FreshmanStory = () => {
             caption="I pay the same housing as the people who live in Ganedago"
           />
 
-          <Text>Apparently, HILC was made to help international students find community at Cornell.</Text>
-          <Text>So I was confused why I was assigned to HILC for mainly one reason:</Text>
+          <Text>Apparently, HILC was made to help international students find
+            community at Cornell.</Text>
+          <Text>So I was confused why I was assigned to HILC for mainly one
+            reason:</Text>
           <Text>I was born in the US.</Text>
           <Text pb='7vh'>I was also raised in the US.</Text>
 
-          <Text>Nevertheless, with a grateful heart, my family helped me unpack all my belongings,</Text>
+          <Text>Nevertheless, with a grateful heart, my family helped me unpack
+            all my belongings,</Text>
           <Text>and before I knew it, I was waving goodbye to my crying parents.</Text>
 
           <BlogImage
@@ -60,18 +83,23 @@ const FreshmanStory = () => {
             caption="Mom said the food was just TOO good"
           />
 
-          <Text>As I was sitting in my uncomfortable dorm chair, I realized that I was by myself.</Text>
+          <Text>As I was sitting in my uncomfortable dorm chair, I realized that
+            I was by myself.</Text>
           <Text>By myself in a community where I knew no one and no one knew me.</Text >
-          <Text pb='7vh'>By myself in a place where everything familiar to me was across the country.</Text >
+          <Text pb='7vh'>By myself in a place where everything familiar to me
+            was across the country.</Text >
 
           <Text>A part of me wanted to stay in California.</Text >
-          <Text pb='7vh'>But another part of me wanted to prove to myself that I could find my own identity and belonging in a foreign place— even if I was all alone.</Text >
+          <Text pb='7vh'>But another part of me wanted to prove to myself that
+            I could find my own identity and belonging in a foreign place— even if
+            I was all alone.</Text >
 
           <Text>But ever so quickly, I learned that I wasn’t alone.</Text >
           <Text>Quite literally, there was someone always close by.</Text >
-          <Text pb='7vh'>In the small confines of my forced - triple dorm room was my random roommate, Eric.</Text >
+          <Text pb='7vh'>In the small confines of my forced - triple dorm room
+            was my random roommate, Eric.</Text >
 
-          <Text>Eric and I discovered that we share < em > a lot</em > of similarities:</Text >
+          <Text>Eric and I discovered that we share <em>a lot</em> of similarities:</Text >
           <Text>We both liked playing ping pong.</Text >
           <Text>And we both... liked watching ping pong.</Text >
 
@@ -81,8 +109,10 @@ const FreshmanStory = () => {
             caption="Ecstatic Eric"
           />
 
-          <Text>Interestingly, one of the first things Eric told me was, “I’m Christian, too” after noticing the Bible on my desk.</Text >
-          <Text>Coming into college, I knew I wanted to be involved in a Christian campus fellowship, and now,</Text >
+          <Text>Interestingly, one of the first things Eric told me was,
+            “I’m Christian, too” after noticing the Bible on my desk.</Text >
+          <Text>Coming into college, I knew I wanted to be involved in a Christian
+            campus fellowship, and now,</Text >
           <Text>I had a friend I could explore these fellowships with.</Text >
 
           <BlogImage
@@ -91,7 +121,8 @@ const FreshmanStory = () => {
             caption="Eric and I learn there's more to explore than just Christian fellowships"
           />
 
-          <Text>Together, we stumbled upon a fellowship we enjoyed and soon, I found myself surrounded by more and more people.</Text >
+          <Text>Together, we stumbled upon a fellowship we enjoyed and soon,
+            I found myself surrounded by more and more people.</Text >
           <Text>The two of us became three…</Text >
 
           <BlogImage
@@ -109,7 +140,8 @@ const FreshmanStory = () => {
             caption="Insert: Abnormal Angie, Goofy Grace, Exotic Elisabeth"
           />
 
-          <Text>Throughout our busy weeks, we made time to have fun, and some of these memories, I don’t think I’ll ever forget.</Text >
+          <Text>Throughout our busy weeks, we made time to have fun, and some
+            of these memories, I don’t think I’ll ever forget.</Text >
           <Text>We munched together…</Text >
 
           <BlogImage
@@ -149,7 +181,8 @@ const FreshmanStory = () => {
             caption="Angie shows us what a concrete angel is"
           />
 
-          <Text>And when you live in Ithaca and the only place to go off campus is DP Dough, you have to start getting real creative with how you have fun.</Text >
+          <Text>And when you live in Ithaca and the only place to go off campus
+            is DP Dough, you have to start getting real creative with how you have fun.</Text >
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/13leg wrestling.jpeg"
@@ -162,7 +195,8 @@ const FreshmanStory = () => {
             caption="A little too touchy"
           />
 
-          <Text>But we also did the things the average Cornell student does with their friends for fun too.</Text >
+          <Text>But we also did the things the average Cornell student does with
+            their friends for fun too.</Text >
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/15studying for fun.jpeg"
@@ -170,8 +204,10 @@ const FreshmanStory = () => {
             caption="Studying together"
           />
 
-          <Text>As the weather started to get colder, these were the people that made me feel warm and toasty inside.</Text >
-          <Text>We could be sharing deeply one moment and the very next, completely make a fool of ourselves.</Text >
+          <Text>As the weather started to get colder, these were the people that
+            made me feel warm and toasty inside.</Text >
+          <Text>We could be sharing deeply one moment and the very next,
+            completely make a fool of ourselves.</Text >
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/16sheesh faces.png"
@@ -180,8 +216,11 @@ const FreshmanStory = () => {
           />
 
           <Text>But don’t get me wrong.We didn’t just come to college to have fun.</Text >
-          <Text>All of us had psets due each week and many of us had biweekly life crises figuring out what we wanted to do with our majors, vocations, and lives.</Text >
-          <Text>Many times, we had to “isolate” from each other(as Grace likes to say) to focus and get our work done on time.</Text >
+          <Text>All of us had psets due each week and many of us had biweekly
+            life crises figuring out what we wanted to do with our majors, vocations,
+            and lives.</Text >
+          <Text>Many times, we had to “isolate” from each other(as Grace likes
+            to say) to focus and get our work done on time.</Text >
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/17eric sleeping.jpeg"
@@ -199,8 +238,10 @@ const FreshmanStory = () => {
             caption='Derek: "Just one more round"'
           />
 
-          <Text>Despite my busy schedule, I’m proud to say I got all my work done on time because I’d usually pace it out throughout the week.</Text >
-          <Text>This way, I’d never have to cram an assignment 2 hours before the deadline.</Text >
+          <Text>Despite my busy schedule, I’m proud to say I got all my work done
+            on time because I’d usually pace it out throughout the week.</Text >
+          <Text>This way, I’d never have to cram an assignment 2 hours before the
+            deadline.</Text >
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/20cherrie_starin.jpeg"
@@ -210,7 +251,10 @@ const FreshmanStory = () => {
 
           <Text fontWeight='bold' paddingY={'7vh'}>—</Text>
 
-          <Text>Coming into college, I definitely wanted to figure out what I wanted to study but I also wanted to be intentional with the people around me, forming friendships that went beyond just the surface level small talk.</Text >
+          <Text>Coming into college, I definitely wanted to figure out what I
+            wanted to study but I also wanted to be intentional with the people
+            around me, forming friendships that went beyond just the surface
+            level small talk.</Text >
           <Text>Some people reminded me of family.</Text >
 
           <BlogImage
@@ -235,7 +279,8 @@ const FreshmanStory = () => {
             caption="This is the same person"
           />
 
-          <Text>A couple friends and I became regulars at 7 - Eleven and the name “7 / 11” began to symbolize that we would hang out from 11pm to 7am.</Text >
+          <Text>A couple friends and I became regulars at 7 - Eleven and the
+            name “7 / 11” began to symbolize that we would hang out from 11pm to 7am.</Text >
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/24_711.jpeg"
@@ -252,7 +297,9 @@ const FreshmanStory = () => {
             caption2="Tired of us saying no to trips to 7-Eleven"
           />
 
-          <Text>While I was meeting all these new people, I realized that everyone has their own unique quirk and charisma that you would have never guessed by just looking at them.</Text >
+          <Text>While I was meeting all these new people, I realized that everyone
+            has their own unique quirk and charisma that you would have never
+            guessed by just looking at them.</Text >
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/26aleena design.jpeg"
@@ -271,9 +318,14 @@ const FreshmanStory = () => {
             caption2="Even the 3 minute break during dance practice"
           />
 
-          <Text>Even whilst surrounded by so many people every day, it would be a lie to say that there weren’t moments when I felt lonely.</Text >
-          <Text>There were times I wanted to call it quits, feeling overwhelmed with trying to balance between studying for prelims(midterms), grinding through cs assignments, and spending time with friends.</Text >
-          <Text>But because of those moments, I realized how grateful I was for the people that remained consistent and never failed to reach their hand out to me first.</Text >
+          <Text>Even whilst surrounded by so many people every day, it would be
+            a lie to say that there weren’t moments when I felt lonely.</Text >
+          <Text>There were times I wanted to call it quits, feeling overwhelmed
+            with trying to balance between studying for prelims(midterms), grinding
+            through cs assignments, and spending time with friends.</Text >
+          <Text>But because of those moments, I realized how grateful I was for
+            the people that remained consistent and never failed to reach their
+            hand out to me first.</Text >
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/29betterwedsg.jpeg"
@@ -289,8 +341,10 @@ const FreshmanStory = () => {
 
           <Text fontWeight='bold' paddingY={'7vh'}>—</Text>
 
-          <Text>As someone from California, I’ve only ever known of two seasons: a hot summer and an even hotter summer.</Text >
-          <Text>So coming to Ithaca, I realized how beautiful it was to see leaves changing colors and snow falling from the sky.</Text >
+          <Text>As someone from California, I’ve only ever known of two seasons:
+            a hot summer and an even hotter summer.</Text >
+          <Text>So coming to Ithaca, I realized how beautiful it was to see leaves
+            changing colors and snow falling from the sky.</Text >
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/31nature.jpeg"
@@ -298,7 +352,8 @@ const FreshmanStory = () => {
             caption="My view on the walk to class"
           />
 
-          <Text>I learned what “flurries” are, what it means for snow to “stick,” and that “brick” is slang for “it’s freakin’ cold.”</Text >
+          <Text>I learned what “flurries” are, what it means for snow to “stick,”
+            and that “brick” is slang for “it’s freakin’ cold.”</Text >
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/32brrrr.jpeg"
@@ -306,7 +361,8 @@ const FreshmanStory = () => {
             caption="Three Southern Californians brace for the fierce winter"
           />
 
-          <Text>And as the weather started to get warmer and the cherry blossoms started to bloom, so did love.</Text >
+          <Text>And as the weather started to get warmer and the cherry blossoms
+            started to bloom, so did love.</Text >
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/33sleeping beauties.jpeg"
@@ -322,8 +378,11 @@ const FreshmanStory = () => {
           <Text fontWeight='bold' paddingY={'7vh'}>—</Text>
 
           <Text>At first, I didn’t want to be seen as a freshman.</Text >
-          <Text>I made sure to never wear a lanyard around my neck while walking around campus.</Text >
-          <Text>But as the semester went on, I realized that being a freshman meant being spoiled by the upperclassmen, and I’m not gonna lie, it felt good to be babied.</Text >
+          <Text>I made sure to never wear a lanyard around my neck while walking
+            around campus.</Text >
+          <Text>But as the semester went on, I realized that being a freshman
+            meant being spoiled by the upperclassmen, and I’m not gonna lie, it
+            felt good to be babied.</Text >
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/35cherrie cookies.jpeg"
@@ -331,7 +390,8 @@ const FreshmanStory = () => {
             caption="Caring Cherrie baked cookies and delivered it to all the freshmen"
           />
 
-          <Text>Whenever I needed advice, whether it be about academics, relationships, or my faith, upperclassmen were always willing to reach out a hand—</Text >
+          <Text>Whenever I needed advice, whether it be about academics, relationships,
+            or my faith, upperclassmen were always willing to reach out a hand—</Text >
           <Text>Usually in the form of grabbing a meal with me.</Text >
 
           <BlogImage
@@ -359,8 +419,10 @@ const FreshmanStory = () => {
           />
 
           <Text>These people made me look forward to being a sophomore.</Text >
-          <Text>Not because I didn’t want to be seen as a freshman or wanted to stop being pampered,</Text >
-          <Text>but because they made me want to pass down this same love and kindness to the freshmen below me.</Text >
+          <Text>Not because I didn’t want to be seen as a freshman or wanted to
+            stop being pampered,</Text >
+          <Text>but because they made me want to pass down this same love and
+            kindness to the freshmen below me.</Text >
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/40daniel and barry.png"
@@ -370,8 +432,10 @@ const FreshmanStory = () => {
 
           <Text fontWeight='bold' paddingY={'7vh'}>—</Text>
 
-          <Text>College life became so busy that I barely had time to think of the people back home.</Text >
-          <Text>Yet the people back home reminded me that there were still people across the country thinking about me.</Text >
+          <Text>College life became so busy that I barely had time to think of
+            the people back home.</Text >
+          <Text>Yet the people back home reminded me that there were still people
+            across the country thinking about me.</Text >
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/41care_package.jpeg"
@@ -382,10 +446,12 @@ const FreshmanStory = () => {
 
           <Text fontWeight='bold' paddingY={'7vh'}>—</Text>
 
-          <Text pb='7vh'>As cliché as it is, college really is a time of learning and I learned a lot this year.</Text >
+          <Text pb='7vh'>As cliché as it is, college really is a time of learning
+            and I learned a lot this year.</Text >
 
           <Text>I learned how freakin’ hard it is to get a good haircut in Ithaca.</Text >
-          <Text>I’ve traveled close and far in search of a satisfactory barber but no one comes even close to the skillful and caring hands of Mama Kim.</Text >
+          <Text>I’ve traveled close and far in search of a satisfactory barber
+            but no one comes even close to the skillful and caring hands of Mama Kim.</Text >
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/42failed haircut.jpeg"
@@ -416,10 +482,14 @@ const FreshmanStory = () => {
           <Text>And above all,</Text >
           <Text pb='7vh'>I learned that change isn’t so bad.</Text >
 
-          <Text>The period of adjustment to something new and unfamiliar has always been hard on me.</Text >
-          <Text>But before I knew it, the overwhelmingly big Cornell campus became my playground, and at some point during the year, my perception of HILC began to change.</Text >
+          <Text>The period of adjustment to something new and unfamiliar has
+            always been hard on me.</Text >
+          <Text>But before I knew it, the overwhelmingly big Cornell campus
+            became my playground, and at some point during the year, my perception
+            of HILC began to change.</Text >
           <Text>HILC was where I went after a long day on campus to recharge and rest.</Text >
-          <Text>But HILC was also where we played, where we celebrated birthdays, where we would stay up talking until unholy hours of the night.</Text >
+          <Text>But HILC was also where we played, where we celebrated birthdays,
+            where we would stay up talking until unholy hours of the night.</Text >
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/46-hilcmems-1.png"
@@ -447,10 +517,13 @@ const FreshmanStory = () => {
             caption="Sleepless nights"
           />
 
-          <Text>Elisabeth said freshman year was so great because she came in with no expectations.</Text >
+          <Text>Elisabeth said freshman year was so great because she came in
+            with no expectations.</Text >
           <Text pb='7vh'>She’s right.</Text >
 
-          <Text>In the beginning, we were just a bunch of clueless freshmen trying to absorb everything around us and find where we belonged in this foreign place.</Text >
+          <Text>In the beginning, we were just a bunch of clueless freshmen
+            trying to absorb everything around us and find where we belonged in
+            this foreign place.</Text >
           <Text>Maybe that’s why every experience was so fresh and exciting.</Text >
 
           <BlogImage
@@ -466,7 +539,8 @@ const FreshmanStory = () => {
           <Text pb='7vh'>And this time around, a lot more things will be familiar.</Text >
 
           <Text>But whatever sophomore year may bring, I’m thankful.</Text >
-          <Text>I’m thankful for the people I’ve met, how I’ve changed, and who I’ve become.</Text >
+          <Text>I’m thankful for the people I’ve met, how I’ve changed, and who
+            I’ve become.</Text >
           <Text pb='10vh'>I’m thankful for the memories—</Text >
 
           <Text>and I can’t wait to go back.</Text >
