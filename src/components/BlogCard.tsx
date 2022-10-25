@@ -5,16 +5,13 @@ const BlogCard = ({ route, title, description, update, image, alt }: { route: st
     return (
         <LinkRouter to={route}>
             <VStack as="a"
-                target={"_blank"}
                 className='blog-card'
                 p={4}
-                display={{ md: 'flex' }}
                 boxShadow={'2xl'}
                 rounded='lg'
                 overflow='hidden'
                 bg={useColorModeValue('gray.200', 'gray.900')}
                 href={route}
-
                 alignItems={'left'}
             >
                 <Box flexShrink={0} pos='relative'>
