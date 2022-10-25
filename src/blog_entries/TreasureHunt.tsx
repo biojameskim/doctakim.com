@@ -139,12 +139,11 @@ const TreasureHunt = () => {
           <Text pb='5vh'>My dad reminisces about the past quite often.</Text >
 
           <Text>Throughout the day he’ll say things like “On this day 1 year ago
-            we did this,” or “2 years ago we were here.”</Text >
+            we did <em>this</em>,” or “2 years ago we were <em>here</em>.”</Text >
           <Text>He keeps stacks of journals that record his life since elementary
             school and heaps of photo albums that narrate distinct parts of his story.</Text >
-          <Text pb='5vh'>He writes all of his friends' birthdays on his calendar
+          <Text>He writes all of his friends' birthdays on his calendar
             and my dad never fails to email each one of them on their birthday.</Text>
-
           <Text pb='5vh'>It may seem old-fashioned, but I respect my dad a lot for
             staying true to himself.</Text >
 
@@ -189,7 +188,7 @@ const TreasureHunt = () => {
             caption="Daddy's boy"
           />
 
-          <Text fontWeight='bold' paddingY={'7vh'}>—</Text>
+          <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
 
           <Text>Recently, the night before I left home to go back to Cornell for my second year of college,</Text >
           <Text pb='10vh'>I asked my dad again, expecting the same, repetitive response.</Text >
@@ -207,7 +206,7 @@ const TreasureHunt = () => {
 
           <Text pb='8vh'>It was just as simple as that.</Text >
 
-          <Text pb='3vh'>My dad’s treasure was his memories.</Text >
+          <Text>My dad’s treasure was his memories.</Text >
 
           <Text>His memories of me and my brother running around on the MIT lawn,
             the meals we ate together on our picnics, and the time we all lived
@@ -221,9 +220,9 @@ const TreasureHunt = () => {
             caption='Fall in Boston'
           />
 
-          <Text fontWeight='bold' paddingY={'7vh'}>—</Text>
+          <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
 
-          <Text pb='5vh'>I’m someone who doesn’t think too much about the past.</Text >
+          <Text>I’m someone who doesn’t think too much about the past.</Text >
 
           <Text>There’s definitely many things I regret doing, but even if I could go back in time, I wouldn’t change anything.</Text >
           <Text>I’d like to say that I’m someone who lives very much in the present.</Text >
@@ -240,10 +239,12 @@ const TreasureHunt = () => {
 
           <Text pb='5vh'>Sometimes I wish certain chapters of my life never ended.</Text >
 
-          <Text pb='5vh'>I miss hearing my mom’s voice calling me to come eat dinner every night, and I wish I was still as close to the friends that shaped my life before college.</Text >
-
+          <Text>I miss hearing my mom’s voice calling me to come eat dinner every
+            night, and I wish I was still as close to the friends that shaped my
+            life before college.</Text >
           <Text>But I’m happy that these chapters had a time and a place in my life.</Text >
-          <Text pb='5vh'>If they were to go on forever, what would’ve been a climax in the story of my life would’ve just been my new normal.</Text >
+          <Text pb='5vh'>If they were to go on forever, what would’ve been a
+            climax in the story of my life would’ve just been my new normal.</Text >
 
           <Text>I want the good and the bad to come and go.</Text >
           <Text pb='5vh'>I want the climaxes of my life to stay as climaxes.</Text >
@@ -256,11 +257,10 @@ const TreasureHunt = () => {
             caption='Vibrant color'
           />
 
-          <Text fontWeight='bold' paddingY={'7vh'}>—</Text>
+          <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
 
           <Text>Now that I know what my dad’s treasure is, maybe I’ll go back someday to find it.</Text >
-          <Text pb='5vh'>And reminisce on my short but memorable time in Boston.</Text >
-
+          <Text>And reminisce on my short but memorable time in Boston.</Text >
           <Text>But to be completely honest,</Text>
           <Text pb='5vh'>I don’t really want to go find it.</Text>
 
