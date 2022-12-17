@@ -1,6 +1,7 @@
 import { VStack, Text } from "@chakra-ui/react"
 import { Helmet } from 'react-helmet';
 import { useEffect } from "react";
+import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
   useEffect(() => {
@@ -15,12 +16,13 @@ const Projects = () => {
       <VStack
         spacing='3vh'
       >
-        <Text fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={'6vh'} >
+        <Text className="page-title" fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '4vh' }}>
           Projects
         </Text>
-        <Text fontSize='2rem' pb={'2vh'}>
-          Coming soon...
-        </Text>
+        <ProjectCard
+          title="Frontier Defense Game"
+          website="https://github.com/doctakim/Frontier-Defense-Game"
+        />
       </VStack>
 
     </div>

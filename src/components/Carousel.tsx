@@ -1,9 +1,5 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel as CarouselTemp } from 'react-responsive-carousel';
-// import About1 from "images/pictures/about1.jpeg"
-// import About2 from "images/pictures/about2.jpeg"
-// import About3 from "images/pictures/about3.jpeg"
-// import About4 from "images/pictures/about4.jpeg"
 import { Image } from "@chakra-ui/react";
 
 const Carousel = () => {

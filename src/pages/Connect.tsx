@@ -18,7 +18,9 @@ const Connect = () => {
 
             <VStack align={'center'} maxW={'md'} w={'full'}>
                 <Box pb="2em">
-                    <Text fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={'1vh'} >Connect</Text>
+                    <Text className="page-title" fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '4vh' }}>
+                        Connect
+                    </Text>
                 </Box>
 
                 <Box className="connect-image" pb={7}>

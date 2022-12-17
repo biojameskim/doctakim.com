@@ -20,7 +20,7 @@ const Blog = () => {
       <VStack>
 
         <Box>
-          <Text align='center' fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb='3vh'>
+          <Text className="page-title" align='center' fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '4vh' }}>
             Blog
           </Text>
         </Box>

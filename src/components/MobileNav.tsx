@@ -23,7 +23,7 @@ const MobileNav = () => {
       </MenuButton>
       <MenuList>
         <LinkRouter to="/about"><MenuItem bg='white'>About</MenuItem></LinkRouter>
-        <LinkRouter to="/experience"><MenuItem>Experience</MenuItem></LinkRouter>
+        <LinkRouter to="/employment"><MenuItem>Employment</MenuItem></LinkRouter>
         <LinkRouter to="/projects"><MenuItem>Projects</MenuItem></LinkRouter>
         <LinkRouter to="/blog"><MenuItem>Blog</MenuItem></LinkRouter>
         <LinkRouter to="/connect"><MenuItem>Connect</MenuItem></LinkRouter>

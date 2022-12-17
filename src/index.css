@@ -23,16 +23,25 @@ body {
 
 .main-wrapper {
     min-height: calc(100vh - 72px);
+}
+
+.page-title {
+    font-family: "James"
+}
+
+.custom-font-button {
     font-family: "James"
 }
 
 .starter-page {
     font-weight: 600;
+    font-family: "James"
 }
 
 /* NAVBAR */
 .navbar {
     color: black;
+    font-family: "James"
 }
 
 .mobile-navigation {
@@ -53,7 +62,6 @@ body {
 }
 
 .home-page-typewriter {
-    font-family: 'James';
     max-width: 90%;
     margin: auto;
     padding-top: 10vh;
@@ -93,12 +101,12 @@ body {
     font-size: large;
 }
 
-/* Work: EXPERIENCE */
-.experience-card {
+/* Employment */
+.employment-card {
     transition: all 200ms ease-in-out;
 }
 
-.experience-card:hover {
+.employment-card:hover {
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
     box-shadow: 0px 12px 10px lightgray;

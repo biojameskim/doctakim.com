@@ -5,9 +5,8 @@ import NavBar from "./components/Navbar"
 import Footer from "./components/Footer"
 import Home from "./pages/Home"
 import About from "./pages/About"
-import Experience from "./pages/Experience"
+import Employment from "./pages/Employment"
 import Projects from "./pages/Projects"
-import Resume from "./pages/Resume"
 import Blog from "./pages/Blog"
 import Connect from "./pages/Connect"
 import "./fonts/james1-regular-webfont.woff"
@@ -32,9 +31,8 @@ export const App = () => (
           <Route path="/" element={<StartPage />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/experience" element={<Experience />} />
+          <Route path="/employment" element={<Employment />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/resume" element={<Resume />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/connect" element={<Connect />} />
           <Route path='*' element={<NotFound />} />
