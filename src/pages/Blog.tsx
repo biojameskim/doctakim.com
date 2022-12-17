@@ -1,4 +1,4 @@
-import { VStack, Text, Box, Wrap, WrapItem, Flex, Stack } from "@chakra-ui/react"
+import { Text, Flex, Stack } from "@chakra-ui/react"
 import BlogCard from "../components/BlogCard"
 import { Helmet } from 'react-helmet';
 import { useEffect } from "react";

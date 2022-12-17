@@ -4,14 +4,9 @@ import {
   Button,
   Stack,
   useColorModeValue,
-  useColorMode,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
+  useColorMode
 } from '@chakra-ui/react';
 import {
-  ChevronDownIcon,
   MoonIcon,
   SunIcon,
 } from '@chakra-ui/icons';

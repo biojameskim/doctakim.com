@@ -1,4 +1,4 @@
-import { VStack, Text, Box } from "@chakra-ui/react"
+import { VStack, Box } from "@chakra-ui/react"
 import { Helmet } from 'react-helmet';
 import EmploymentCard from '../components/EmploymentCard'
 import { useEffect } from "react";
