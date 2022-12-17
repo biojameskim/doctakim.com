@@ -14,6 +14,7 @@ const BlogCard = ({ route, title, description, update, image, alt }: { route: st
                 bg={useColorModeValue('gray.200', 'gray.900')}
                 href={route}
                 alignItems={'left'}
+                maxW='90%'
             >
                 <Box flexShrink={0} pos='relative'>
                     <Image

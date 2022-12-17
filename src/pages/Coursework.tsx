@@ -48,7 +48,7 @@ const Coursework = () => {
         </Stack>
       </Stack>
 
-      <Box w={{ base: '100%', md: '50%' }} mt={{ base: '2rem', md: '0' }}>
+      <Box w={{ base: '100%', md: '50%' }} mt={{ base: '4rem', md: '0' }}>
         <Text fontSize='1.5rem' fontWeight='bold' mb='2.5rem'>Coursework</Text>
         <CourseworkCard
           courseTitle="Data Structures and Functional Programming"

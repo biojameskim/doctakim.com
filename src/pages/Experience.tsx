@@ -14,11 +14,11 @@ const Experience = () => {
       <Text className="page-title" align='center' fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '4vh' }} >
         Experience
       </Text>
-      <Tabs variant='soft-rounded' colorScheme='green' align='center'>
+      <Tabs orientation='horizontal' variant='soft-rounded' colorScheme='green' align='center'>
         <TabList>
           <Tab color={useColorModeValue('gray.600', 'white')} >Employment</Tab>
           <Tab color={useColorModeValue('gray.600', 'white')}>Projects</Tab>
-          <Tab color={useColorModeValue('gray.600', 'white')}>Skills / Coursework</Tab>
+          <Tab color={useColorModeValue('gray.600', 'white')}>Skills & Courses</Tab>
         </TabList>
         <TabPanels>
           <TabPanel>
