@@ -16,9 +16,6 @@ const Projects = () => {
       <VStack
         spacing='3vh'
       >
-        <Text className="page-title" fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '4vh' }}>
-          Projects
-        </Text>
         <ProjectCard
           title="Frontier Defense Game"
           website="https://github.com/doctakim/Frontier-Defense-Game"

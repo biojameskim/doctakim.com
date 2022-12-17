@@ -15,7 +15,6 @@ const EmploymentCard = ({ website, title, role, image, alt, date, description }:
       w={'full'}
       shadow='lg'
       borderWidth='1px'
-      position="relative"
       rounded='lg'
       bg={useColorModeValue('gray.100', 'gray.900')}>
       <Flex justify='left' direction={{ base: 'column', md: 'row' }}>
@@ -37,12 +36,12 @@ const EmploymentCard = ({ website, title, role, image, alt, date, description }:
             <Hide below='md'>
               <Text fontSize='2rem' px='6'>|</Text>
             </Hide>
-            <Text fontSize='1.5rem'>{role}</Text>
+            <Text fontSize='1.4rem'>{role}</Text>
           </Flex>
           <Text fontSize='1.2rem' color='gray.500' pb='0.5' textAlign={{ base: 'center', md: 'left' }}>
             {date}
           </Text>
-          <Text fontSize='1.2rem' w='95%'>
+          <Text fontSize='1.2rem' w='95%' textAlign={'left'} pb={{ base: '1rem', md: '0' }}>
             {description}
           </Text>
         </Stack>
