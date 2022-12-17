@@ -4,9 +4,10 @@ import { Link as LinkRouter } from 'react-router-dom'
 const BlogCard = ({ route, title, description, update, image, alt }: { route: string, title: string, description: string, update: string, image: string, alt: string }) => {
     return (
         <LinkRouter to={route}>
-            <VStack as="a"
+            <Stack as="a"
                 className='blog-card'
                 p={4}
+                mb={'3rem'}
                 boxShadow={'2xl'}
                 rounded='lg'
                 overflow='hidden'
@@ -27,7 +28,7 @@ const BlogCard = ({ route, title, description, update, image, alt }: { route: st
                     <Text
                         fontWeight='bold'
                         textTransform='uppercase'
-                        fontSize='xl'
+                        fontSize='1rem'
                         letterSpacing='wide'
                         color='teal.600'
                         pt='3'
@@ -37,7 +38,7 @@ const BlogCard = ({ route, title, description, update, image, alt }: { route: st
                     <Text
                         mt={1}
                         display='block'
-                        fontSize='4xl'
+                        fontSize='1.8rem'
                         lineHeight='normal'
                         fontWeight='semibold'
                         maxW='100%'
@@ -49,13 +50,13 @@ const BlogCard = ({ route, title, description, update, image, alt }: { route: st
                         maxW='100%'
                         mt={2}
                         color='gray.500'
-                        fontSize='lg'
+                        fontSize='1.15rem'
                     >
                         {description}
                     </Text>
                 </Stack>
 
-            </VStack>
+            </Stack>
         </LinkRouter>
     )
 }
