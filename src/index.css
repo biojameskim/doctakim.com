@@ -145,6 +145,10 @@ body {
     box-shadow: 0px 15px 10px lightgray;
 }
 
+.blog-title {
+    font-family: "James"
+}
+
 a:hover {
     text-decoration: none;
 }

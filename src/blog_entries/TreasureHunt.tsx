@@ -14,7 +14,7 @@ const TreasureHunt = () => {
         <title>doctakim | Treasure Hunt</title>
       </Helmet>
 
-      <Text fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} >
+      <Text className='blog-title' fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} >
         Treasure Hunt
       </Text>
 

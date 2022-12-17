@@ -38,7 +38,7 @@ const BlogCard = ({ route, title, description, update, image, alt }: { route: st
                     <Text
                         mt={1}
                         display='block'
-                        fontSize='1.8rem'
+                        fontSize='1.7rem'
                         lineHeight='normal'
                         fontWeight='semibold'
                         maxW='100%'
@@ -50,7 +50,7 @@ const BlogCard = ({ route, title, description, update, image, alt }: { route: st
                         maxW='100%'
                         mt={2}
                         color='gray.500'
-                        fontSize='1.15rem'
+                        fontSize='1rem'
                     >
                         {description}
                     </Text>

@@ -32,20 +32,20 @@ const EmploymentCard = ({ website, title, role, image, alt, date, description }:
 
         <Stack pl='5' spacing='1'>
           <Flex w='100%' justify='flex-start' align='center' direction={{ base: 'column', md: 'row' }}>
-            <Text fontSize='2rem' fontWeight='bold' pt={{ base: '1rem', md: '0' }} >
+            <Text fontSize='1.7rem' fontWeight='bold' pt={{ base: '1rem', md: '0' }} >
               {title}
             </Text>
             <Hide below='md'>
-              <Text fontSize='2rem' px='6'>|</Text>
+              <Text fontSize='1.6rem' px='6'>|</Text>
             </Hide>
-            <Text fontSize='1.4rem'>
+            <Text fontSize='1.2rem'>
               {role}
             </Text>
           </Flex>
-          <Text fontSize='1.2rem' color='gray.500' pb='0.5' textAlign={{ base: 'center', md: 'left' }}>
+          <Text fontSize='1.1rem' color='gray.500' pb='0.5' textAlign={{ base: 'center', md: 'left' }}>
             {date}
           </Text>
-          <Text fontSize='1.2rem' w='95%' textAlign={'left'} pb={{ base: '1rem', md: '0' }}>
+          <Text fontSize='1rem' w='95%' textAlign={'left'} pb={{ base: '1rem', md: '0' }}>
             {description}
           </Text>
         </Stack>

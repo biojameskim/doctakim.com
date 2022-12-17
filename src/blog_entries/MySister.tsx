@@ -18,7 +18,7 @@ const MySister = () => {
         <title>doctakim | My Sister</title>
       </Helmet>
 
-      <Text fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} >
+      <Text className='blog-title' fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} >
         My Sister
       </Text>
 

@@ -18,7 +18,7 @@ const GrowingUp = () => {
         <title>doctakim | Growing Up</title>
       </Helmet>
 
-      <Text fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} >
+      <Text className='blog-title' fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} >
         Growing Up
       </Text>
 
@@ -29,7 +29,7 @@ const GrowingUp = () => {
           align={'center'}
           fontWeight={'medium'}
           pt={'4vh'}
-          pb={'10vh'} >
+          pb={'5vh'} >
           June 2022
         </Text>
 

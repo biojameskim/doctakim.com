@@ -18,7 +18,7 @@ const FreshmanStory = () => {
         <title>doctakim | Freshman Story</title>
       </Helmet>
 
-      <Text fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} >
+      <Text className='blog-title' fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} >
         My Freshman College Story
       </Text>
 

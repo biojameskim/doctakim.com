@@ -36,30 +36,30 @@ const Connect = () => {
                 <HStack spacing={6} align={'center'} maxW={'md'} pb={'6vh'}>
                     <VStack spacing={'1rem'} align={'center'} maxW={'md'} pl='5'>
                         <Button w='full' colorScheme='gray' leftIcon={<FaGithub />} as="a" href={"https://github.com/doctakim"} target={"_blank"} pr='5'>
-                            <Text fontSize={'1.4rem'}>Github</Text>
+                            <Text fontSize={'1rem'}>Github</Text>
                         </Button>
                         <Button w='full' colorScheme='linkedin' leftIcon={<FaLinkedin />} as="a" href={'https://www.linkedin.com/in/doctakim/'} target={"_blank"}>
-                            <Text fontSize={'1.4rem'}>Linkedin</Text>
+                            <Text fontSize={'1rem'}>Linkedin</Text>
                         </Button>
                         <Button w='full' colorScheme='telegram' leftIcon={<FiMail />} as="a" href={'mailto:jjk297@cornell.edu'} pr='7'>
-                            <Text fontSize={'1.4rem'}>Email</Text>
+                            <Text fontSize={'1rem'}>Email</Text>
                         </Button>
                         <Button w='full' colorScheme='green' leftIcon={<AiOutlinePhone />} as="a" href={'tel:9514620458'} pr='7'>
-                            <Text fontSize={'1.4rem'}>Phone</Text>
+                            <Text fontSize={'1rem'}>Phone</Text>
                         </Button>
                     </VStack>
 
-                    <VStack spacing={'1.4rem'} align={'left'} maxW={'md'} w={'full'}>
-                        <Text fontSize="1.5rem">
+                    <VStack spacing={'1.8rem'} align={'left'} maxW={'md'} w={'full'}>
+                        <Text fontSize="1.2rem">
                             doctakim
                         </Text>
-                        <Text fontSize="1.5rem">
+                        <Text fontSize="1.2rem">
                             James Kim
                         </Text>
-                        <Text fontSize="1.5rem">
+                        <Text fontSize="1.2rem">
                             jjk297(at)cornell.edu
                         </Text>
-                        <Text fontWeight="normal" fontSize="1.5rem">
+                        <Text fontWeight="normal" fontSize="1.2rem">
                             (+1) 951-462-0458
                         </Text>
                     </VStack>
