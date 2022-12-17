@@ -1,4 +1,4 @@
-import { Text, Box, useColorModeValue, Flex, Stack, Image, useBreakpointValue, Hide } from "@chakra-ui/react"
+import { Text, Box, useColorModeValue, Flex, Stack, Image, Hide } from "@chakra-ui/react"
 
 const EmploymentCard = ({ website, title, role, image, alt, date, description }: { website: string, title: string, role: string, image: string, alt: string, date: string, description: string }) => {
   return (
