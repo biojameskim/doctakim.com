@@ -6,7 +6,7 @@ const Coursework = () => {
   return (
     <Flex w={{ base: '100%', md: '80%' }} mt='1.5rem' direction={{ base: 'column', md: 'row' }}>
       <Stack w={{ base: '90%', md: '50%' }} spacing='10' mt='0' align='center'>
-        <Text fontSize='1.5rem' fontWeight='bold' mb='0.5rem'>Technical Skills</Text>
+        <Text fontSize='1.5rem' fontWeight='bold' mb='0rem' mt={{ base: '2rem', md: '0' }}>Technical Skills</Text>
         <Stack spacing='2rem'>
           <Stack spacing='4' align='left'>
             <Text align='left' fontSize='1.2rem' fontWeight='bold'>Languages</Text>
@@ -49,7 +49,7 @@ const Coursework = () => {
       </Stack>
 
       <Box w={{ base: '100%', md: '50%' }} mt={{ base: '4rem', md: '0' }}>
-        <Text fontSize='1.5rem' fontWeight='bold' mb='2.5rem'>Coursework</Text>
+        <Text fontSize='1.5rem' fontWeight='bold' mb='0rem'>Coursework</Text>
         <CourseworkCard
           courseTitle="Data Structures and Functional Programming"
           courseNumber="CS 3110"
