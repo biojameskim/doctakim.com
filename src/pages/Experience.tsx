@@ -18,7 +18,7 @@ const Experience = () => {
         <TabList>
           <Tab color={useColorModeValue('gray.600', 'white')} >Employment</Tab>
           <Tab color={useColorModeValue('gray.600', 'white')}>Projects</Tab>
-          <Tab color={useColorModeValue('gray.600', 'white')}>Coursework</Tab>
+          <Tab color={useColorModeValue('gray.600', 'white')}>Skills / Coursework</Tab>
         </TabList>
         <TabPanels>
           <TabPanel>

@@ -11,12 +11,12 @@ const EmploymentCard = ({ website, title, role, image, alt, date, description }:
       pt={{ base: '6', md: '0.5rem' }}
       margin="auto"
       mt={10}
-      maxW={'80%'}
+      maxW={{ base: '90%', md: '80%' }}
       w={'full'}
       shadow='lg'
       borderWidth='1px'
       rounded='lg'
-      bg={useColorModeValue('gray.100', 'gray.900')}>
+      bg={useColorModeValue('gray.50', 'gray.700')}>
       <Flex justify='left' direction={{ base: 'column', md: 'row' }}>
 
         <Box>
@@ -32,11 +32,15 @@ const EmploymentCard = ({ website, title, role, image, alt, date, description }:
 
         <Stack pl='5' spacing='1'>
           <Flex w='100%' justify='flex-start' align='center' direction={{ base: 'column', md: 'row' }}>
-            <Text fontSize='2rem' fontWeight='bold' pt={{ base: '1rem', md: '0' }} >{title}</Text>
+            <Text fontSize='2rem' fontWeight='bold' pt={{ base: '1rem', md: '0' }} >
+              {title}
+            </Text>
             <Hide below='md'>
               <Text fontSize='2rem' px='6'>|</Text>
             </Hide>
-            <Text fontSize='1.4rem'>{role}</Text>
+            <Text fontSize='1.4rem'>
+              {role}
+            </Text>
           </Flex>
           <Text fontSize='1.2rem' color='gray.500' pb='0.5' textAlign={{ base: 'center', md: 'left' }}>
             {date}
