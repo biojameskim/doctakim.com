@@ -16,14 +16,14 @@ const Experience = () => {
       <VStack
         spacing='3vh'
       >
-        <Text fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={'6vh'} >
+        <Text className="page-title" fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '4vh' }} >
           Experience
         </Text>
 
         <ExperienceCard
           website='https://cornellh4i.org/'
           title='hack4impact'
-          role='Full Stack Developer'
+          role='Full Stack Software Engineer'
           image={"images/logos/hack4impact.jpeg"}
           alt='hack4impact Logo'
           date='09/2022 - Present'
@@ -40,7 +40,8 @@ const Experience = () => {
           alt='Wazzle Logo'
           date='04/2022 - 08/2022'
           description='Implemented new features and design changes for an iOS 
-          application that allows for more meaningful contact management for over 5000 users'
+          application that allows for more meaningful contact management for over 5000 users
+          using Swift and SwiftUI'
         />
 
       </VStack>
