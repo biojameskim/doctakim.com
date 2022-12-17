@@ -14,13 +14,13 @@ const BlogCard = ({ route, title, description, update, image, alt }: { route: st
                 bg={useColorModeValue('gray.200', 'gray.900')}
                 href={route}
                 alignItems={'left'}
-                maxW='90%'
+                maxW={{ base: '90%', md: '100%' }}
             >
                 <Box flexShrink={0} pos='relative'>
                     <Image
                         boxSize='300px'
                         borderRadius='2xl'
-                        width={{ md: 400 }}
+                        width={{ base: 500, md: 400 }}
                         src={image}
                         alt={alt}
                     />
