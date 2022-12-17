@@ -25,7 +25,6 @@ const MobileNav = () => {
         <LinkRouter to="/about"><MenuItem bg='white'>About</MenuItem></LinkRouter>
         <LinkRouter to="/experience"><MenuItem>Experience</MenuItem></LinkRouter>
         <LinkRouter to="/projects"><MenuItem>Projects</MenuItem></LinkRouter>
-        <LinkRouter to="/resume"><MenuItem>Resume</MenuItem></LinkRouter>
         <LinkRouter to="/blog"><MenuItem>Blog</MenuItem></LinkRouter>
         <LinkRouter to="/connect"><MenuItem>Connect</MenuItem></LinkRouter>
       </MenuList>

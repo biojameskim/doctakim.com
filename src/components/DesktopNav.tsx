@@ -25,16 +25,8 @@ const DesktopNav = () => {
     <Flex alignItems={'center'}>
       <Stack direction={'row'} spacing={4}>
         <LinkRouter to="/about"><Button backgroundColor={useColorModeValue('gray.100', 'gray.900')} fontSize='1.8rem' fontWeight="bold">About</Button></LinkRouter>
-        <Menu>
-          <MenuButton as={Button} backgroundColor={useColorModeValue('gray.100', 'gray.900')} fontSize='1.8rem' fontWeight="bold" rightIcon={<ChevronDownIcon />}>
-            Work
-          </MenuButton>
-          <MenuList backgroundColor={useColorModeValue('gray.100', 'gray.900')}>
-            <LinkRouter to="/experience"><MenuItem fontSize='1.7rem'>Experience</MenuItem></LinkRouter>
-            <LinkRouter to="/projects"><MenuItem fontSize='1.7rem'>Projects</MenuItem></LinkRouter>
-            <LinkRouter to="/resume"><MenuItem fontSize='1.7rem'>Resume</MenuItem></LinkRouter>
-          </MenuList>
-        </Menu>
+        <LinkRouter to="/experience"><Button backgroundColor={useColorModeValue('gray.100', 'gray.900')} fontSize='1.8rem' fontWeight="bold">Experience</Button></LinkRouter>
+        <LinkRouter to="/projects"><Button backgroundColor={useColorModeValue('gray.100', 'gray.900')} fontSize='1.8rem' fontWeight="bold">Projects</Button></LinkRouter>
         <LinkRouter to="/blog"><Button backgroundColor={useColorModeValue('gray.100', 'gray.900')} fontSize='1.8rem' fontWeight="bold">Blog</Button></LinkRouter>
         <LinkRouter to="/connect"><Button backgroundColor={useColorModeValue('gray.100', 'gray.900')} fontSize='1.8rem' fontWeight="bold">Connect</Button></LinkRouter>
         <Box as={Button} onClick={toggleColorMode} backgroundColor={useColorModeValue('gray.100', 'gray.900')}>
