@@ -5,7 +5,7 @@ import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 
 export default function NavBar() {
-  
+
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
@@ -26,16 +26,16 @@ export default function NavBar() {
 
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           <LinkRouter to="/home">
-              <Box as={Button} backgroundColor={useColorModeValue('gray.100', 'gray.900')} justify={'flex-start'} fontSize='2rem' fontWeight="bold">
-                  James Kim
-              </Box>
-            </LinkRouter>
-            <Show below='md'>
-              <Button onClick={toggleColorMode} backgroundColor={useColorModeValue('gray.100', 'gray.900')}>
-                  {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-              </Button>
-            </Show>
-            
+            <Box as={Button} backgroundColor={useColorModeValue('gray.100', 'gray.900')} justify={'flex-start'} fontSize='2rem' fontWeight="bold">
+              James Kim
+            </Box>
+          </LinkRouter>
+          <Show below='md'>
+            <Button onClick={toggleColorMode} backgroundColor={useColorModeValue('gray.100', 'gray.900')}>
+              {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+            </Button>
+          </Show>
+
           <Flex justify={'flex-end'} display={{ base: 'none', md: 'flex' }}>
             <DesktopNav />
           </Flex>
@@ -45,41 +45,3 @@ export default function NavBar() {
     </Box>
   );
 }
-
-  // interface NavItem {
-  //   label: string;
-  //   children?: Array<NavItem>;
-  //   href?: string;
-  // }
-  
-  // const NAV_ITEMS: Array<NavItem> = [
-  //   {
-  //     label: 'About',
-  //     href: '/about'
-  //   },
-  //   {
-  //     label: 'Work',
-  //     children: [
-  //       {
-  //         label: 'Experience',
-  //         href: '#',
-  //       },
-  //       {
-  //         label: 'Projects',
-  //         href: '#',
-  //       },
-  //       {
-  //           label: 'Resume',
-  //           href: '#',
-  //         }
-  //     ],
-  //   },
-  //   {
-  //     label: 'Blog',
-  //     href: '#',
-  //   },
-  //   {
-  //     label: 'Connect',
-  //     href: '#',
-  //   },
-  // ];
