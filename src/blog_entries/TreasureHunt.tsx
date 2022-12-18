@@ -41,7 +41,7 @@ const TreasureHunt = () => {
             hot weather.</Text>
           <Text> But before my family moved to California, we used to live in
             Massachusetts while my Dad worked for a short time at MIT.</Text>
-          <Text pb='3vh'> So a lot of my childhood memories take place in Boston
+          <Text pb='5vh'> So a lot of my childhood memories take place in Boston
             too—</Text>
 
           <Text>next to evergreen trees and snowstorms in wetter, colder weather.</Text>
@@ -52,7 +52,7 @@ const TreasureHunt = () => {
             caption="Touching John Harvard's foot is good luck."
           />
 
-          <Text pb='3vh'>While we were in Boston, my mom, brother, and I would go
+          <Text pb='5vh'>While we were in Boston, my mom, brother, and I would go
             visit my dad pretty often while he was working.</Text>
 
           <Text>And if you didn’t know, MIT has this big patch of grass.</Text>
@@ -65,7 +65,7 @@ const TreasureHunt = () => {
             caption='"The Lawn" at MIT'
           />
 
-          <Text pb='3vh'>A lot of my memories in Boston take place on this lawn.</Text>
+          <Text pb='5vh'>A lot of my memories in Boston take place on this lawn.</Text>
           <Text >In the summer, my brother and I would race and wrestle on the lawn,
             and my family would picnic together under one of the big trees.</Text>
           <Text pb='5vh'>And in the winter, my brother and I would have snowball
@@ -81,7 +81,7 @@ const TreasureHunt = () => {
           <Text>Eventually, my dad found a new job in California and we were
             forced to leave the lawn behind us.</Text>
           <Text>But the night before we moved across the country,</Text>
-          <Text pb='7vh'>My dad told me and my brother that he left something
+          <Text pb='5vh'>My dad told me and my brother that he left something
             behind at MIT.</Text>
 
           <Text>He said that somewhere on MIT’s campus,</Text>
@@ -91,7 +91,7 @@ const TreasureHunt = () => {
 
           <Text>Time to time, whenever we remembered, we would ask our dad what
             the contents of the treasure were.</Text>
-          <Text pb='3vh'>But every time we asked, he would simply say the same,
+          <Text pb='5vh'>But every time we asked, he would simply say the same,
             repetitive thing—</Text>
 
           <Text pb='5vh'>He reassured us that if we were ever to go back to Boston,
@@ -120,25 +120,25 @@ const TreasureHunt = () => {
 
           <Text pb='5vh'>My dad emailed me today.</Text>
 
-          <Text pb='3vh'>Ever since I left home for college, my dad’s been emailing
+          <Text pb='5vh'>Ever since I left home for college, my dad’s been emailing
             me a lot more.</Text>
 
           <Text>He doesn’t have a phone, so email’s our primary form of communication.</Text >
           <Text>I’ve always nagged him to get a phone but he’s never once budged.</Text >
           <Text>Seeing this, I always thought my dad was just stubborn.</Text >
-          <Text pb='7vh'>But recently, I’ve realized that my dad not wanting to
+          <Text pb='5vh'>But recently, I’ve realized that my dad not wanting to
             buy a phone isn’t because he’s stubborn.</Text >
 
           <Text>My dad quit smoking decades ago yet he still holds onto a box of
             cigarettes he bought 15 years ago.</Text >
           <Text>My dad made it an annual family tradition to go hiking on the same
             trail every Thanksgiving since we moved to California over 10 years ago.</Text >
-          <Text pb='10vh'>My dad knows all his friends no longer use email yet he
+          <Text pb='5vh'>My dad knows all his friends no longer use email yet he
             still emails them to ask how they’re doing.</Text >
 
           <Text pb='5vh'>My dad just doesn’t want things to change.</Text >
 
-          <Text pb='7vh'>There’s a part of him that grasps onto things the way he
+          <Text pb='5vh'>There’s a part of him that grasps onto things the way he
             remembers them—</Text >
 
           <Text>And he doesn’t let go.</Text>
@@ -161,7 +161,7 @@ const TreasureHunt = () => {
             staying true to himself.</Text >
 
           <Text>I just hope it doesn’t hurt him too much every time he tells me</Text >
-          <Text pb='7vh'>one by one,</Text >
+          <Text pb='5vh'>one by one,</Text >
 
           <Text>that his friends no longer reply to his emails.</Text >
 
@@ -172,7 +172,7 @@ const TreasureHunt = () => {
 
           <Text>And ever since elementary school, whenever my dad came back home after work, he would always ask us the same question.</Text >
           <Text>A question that could be taken at face value, but a question with deeper, nuanced undertones.</Text >
-          <Text pb='7vh'>A question that revealed his desire to spend time with his two sons and his eagerness to be a father that’s always present for his children—</Text >
+          <Text pb='5vh'>A question that revealed his desire to spend time with his two sons and his eagerness to be a father that’s always present for his children—</Text >
 
           <Text>“Are we playing tennis today?”</Text >
 
@@ -237,10 +237,13 @@ const TreasureHunt = () => {
 
           <Text>I’m someone who doesn’t think too much about the past.</Text >
 
-          <Text>There’s definitely many things I regret doing, but even if I could go back in time, I wouldn’t change anything.</Text >
+          <Text>There’s definitely many things I regret doing, but even if I could
+            go back in time, I wouldn’t change anything.</Text >
           <Text>I’d like to say that I’m someone who lives very much in the present.</Text >
 
-          <Text pb='7vh'>But my dad has taught me that once in a while, it’s good to sit down and reminisce about the memories that bring me back to the experiences and emotions of my past—</Text >
+          <Text pb='5vh'>But my dad has taught me that once in a while, it’s good
+            to sit down and reminisce about the memories that bring me back to the
+            experiences and emotions of my past—</Text >
 
           <Text>The memories that make time stop for just a moment.</Text >
 
@@ -283,11 +286,11 @@ const TreasureHunt = () => {
           <Text>I want to collect the warmth of the sharp autumn breeze rustling through the discolored foliage,</Text >
           <Text>the memories of me and my friends losing sleep to hang out,</Text >
           <Text>the sorrow and grief of my mistakes and regrets,</Text >
-          <Text pb='7vh'>and the rewarding struggle of finding myself in the midst of all of this.</Text >
+          <Text pb='5vh'>and the rewarding struggle of finding myself in the midst of all of this.</Text >
 
           <Text>And a couple years from now,</Text >
           <Text>right before I leave Cornell,</Text >
-          <Text pb='10vh'>I want to hide these memories somewhere safe.</Text >
+          <Text pb='5vh'>I want to hide these memories somewhere safe.</Text >
 
           <Text>Somewhere that only I know of.</Text >
 
@@ -298,11 +301,11 @@ const TreasureHunt = () => {
           />
 
           <Text>And if I ever come back to this campus in the future,</Text >
-          <Text pb='10vh'>I’ll go on a hunt.</Text >
+          <Text pb='5vh'>I’ll go on a hunt.</Text >
 
           <Text pb='3vh'>A hunt to restore the memories of the people and the experiences that shaped my life here at Cornell.</Text >
 
-          <Text pb='15vh'>A hunt to revisit this captured moment of time in a world that never seems to stop moving.</Text >
+          <Text pb='10vh'>A hunt to revisit this captured moment of time in a world that never seems to stop moving.</Text >
 
           <Text>A treasure hunt.</Text >
 

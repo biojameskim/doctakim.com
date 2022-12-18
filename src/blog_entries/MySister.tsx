@@ -3,10 +3,6 @@ import { Helmet } from 'react-helmet'
 import BlogImage from "../components/BlogImage"
 import { useEffect } from "react"
 
-// TODO: adjust spacing for the case when there is a photo then there is a -- immediately after.
-// You need to change all the "pY" in the -- to be a pb only. We only want padding on the bottom in
-// these situations.
-// TODO: read through blog and adjust the spacing of the text itself. Make things consistent.
 const MySister = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -42,10 +38,10 @@ const MySister = () => {
           <Text>I’m really not that mysterious of a guy.</Text>
           <Text> I don’t mind sharing about the highs and lows of my week, and
             depending on how you ask,</Text>
-          <Text pb='7vh'>I'm an open book.</Text>
+          <Text pb='5vh'>I'm an open book.</Text>
 
           <Text> But there’s one thing I usually don’t tell people.</Text>
-          <Text pb='7vh'> It’s something a little more personal—</Text>
+          <Text pb='5vh'> It’s something a little more personal—</Text>
 
           <Text>I have a younger sister.</Text>
 
@@ -55,9 +51,9 @@ const MySister = () => {
             caption="Left to right: me, bro, and sis"
           />
 
-          <Text pb='7vh'>Just kidding.</Text>
+          <Text pb='5vh'>Just kidding.</Text>
 
-          <Text pb='7vh'>That’s just my cousin.</Text>
+          <Text pb='5vh'>That’s just my cousin.</Text>
 
           <Text>But lately, I’ve been thinking more about what it'd be like to
             have a younger sister.</Text>
@@ -67,10 +63,10 @@ const MySister = () => {
           <Text>Growing up, my brother and I wanted to be world-class youtubers.</Text>
           <Text>A lot of our time after school was consumed by brainstorming new
             video ideas and recording new scenes.</Text>
-          <Text pb='7vh'>Since both of us were the screenwriters, directors, and
+          <Text pb='5vh'>Since both of us were the screenwriters, directors, and
             actors for our videos,</Text>
 
-          <Text pb='7vh'>We <em>really</em> could’ve used a cameraman.</Text>
+          <Text pb='5vh'>We <em>really</em> could’ve used a cameraman.</Text>
 
           <Text>Though I guess if our sister really wanted, we could’ve let her
             have a cameo in one of our films too.</Text>
@@ -83,9 +79,9 @@ const MySister = () => {
 
           <Text>Eventually, we realized we had no talent for screenwriting,
             directing, or acting.</Text>
-          <Text pb='7vh'>So we turned to other outlets to express ourselves—</Text>
+          <Text pb='5vh'>So we turned to other outlets to express ourselves—</Text>
 
-          <Text pb='7vh'>We went into a phase where we wanted to be cool.</Text>
+          <Text pb='5vh'>We went into a phase where we wanted to be cool.</Text>
 
           <Text>There was this new app called Instagram and we posted pictures
             of the coolest poses we could think of.</Text>
@@ -98,7 +94,7 @@ const MySister = () => {
             caption="These posts are long deleted"
           />
 
-          <Text pb='7vh'>Or so we thought.</Text>
+          <Text pb='5vh'>Or so we thought.</Text>
 
           <Text>Not that our poses weren’t cool, but our sister would’ve
             definitely helped us pose so much better.</Text>
@@ -113,7 +109,7 @@ const MySister = () => {
           />
 
           <Text>But all this aside,</Text>
-          <Text pb='7vh'> I think what I really want is another person I can do life with.</Text>
+          <Text pb='5vh'> I think what I really want is another person I can do life with.</Text>
 
           <Text> One more person to jam to khiphop with.</Text>
           <Text>One more person to nag me about putting the toilet seat back down.</Text>
@@ -137,7 +133,7 @@ const MySister = () => {
             caption="Dad promises me he loves me for who I am"
           />
 
-          <Text fontWeight='bold' paddingY={'7vh'}>—</Text>
+          <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
 
           <Text>I’ve always looked up to my brother.</Text>
           <Text> I started playing tennis because he played tennis,</Text>
@@ -153,7 +149,7 @@ const MySister = () => {
             caption="Story time or potty time?"
           />
 
-          <Text pb='7vh'>I wish I could be that same loving role model for my
+          <Text pb='5vh'>I wish I could be that same loving role model for my
             younger sister.</Text>
 
           <Text>Someone that listens without interruption.</Text>
@@ -171,12 +167,12 @@ const MySister = () => {
             <em><Text as='b'>great</Text></em> advice.</Text>
           <Text>From questions about academics, faith, friendships, and even
             questions about dating,</Text>
-          <Text pb='7vh'>I definitely could’ve pointed her in the right direction.</Text>
+          <Text pb='5vh'>I definitely could’ve pointed her in the right direction.</Text>
 
           <Text>Yeah I know,</Text>
           <Text>I know.</Text>
           <Text>I’ve never dated anyone before.</Text>
-          <Text pb='7vh'>But the coach doesn't play the game, does he?</Text>
+          <Text pb='5vh'>But the coach doesn't play the game, does he?</Text>
 
           <Text as='i' fontSize='xl' paddingLeft={'2rem'}>“So there’s this guy…”</Text>
           <Text pb='4vh'>What’s his full name, what’s his age, where does he go
@@ -198,13 +194,13 @@ const MySister = () => {
             caption2="What's that?"
           />
 
-          <Text fontWeight='bold' paddingY={'7vh'}>—</Text>
+          <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
 
           <Text>I read in a book somewhere that said kids are a breath of fresh
             air because they live in the present.</Text>
           <Text pb='5vh'>They don’t care about yesterday’s mistakes or worry about
             what tomorrow will bring—</Text>
-          <Text pb='7vh'>They’re already onto finding the next fun thing that’ll
+          <Text pb='5vh'>They’re already onto finding the next fun thing that’ll
             bring them joy in the present.</Text>
 
           <BlogImage
@@ -215,13 +211,13 @@ const MySister = () => {
 
           <Text>Every Sunday, I hang out with the little kids at my church and
             I’ve seen them grow up over a couple years now.</Text>
-          <Text pb='7vh'>And most of them lose the bright, contagious energy they
+          <Text pb='5vh'>And most of them lose the bright, contagious energy they
             once had.</Text>
 
           <Text>They start to be self-conscious about yesterday’s mistakes and
             worry about how their peers will view them tomorrow.</Text>
           <Text>They begin to package themselves in a way they think is presentable.</Text>
-          <Text pb='7vh'>And in this packaging, they lose the boldness they once had.</Text>
+          <Text pb='5vh'>And in this packaging, they lose the boldness they once had.</Text>
 
           <Text>They’re no longer confident in themselves.</Text>
 
@@ -236,7 +232,7 @@ const MySister = () => {
 
           <Text>And there’s so many things I wish I could tell my younger self:</Text>
           <Text>To have more confidence,</Text>
-          <Text pb='7vh'>And that a lot of things aren’t as big of a deal as I
+          <Text pb='5vh'>And that a lot of things aren’t as big of a deal as I
             made them to be.</Text>
 
           <Text>I wish I could affirm my sister in these things so she wouldn’t
@@ -246,7 +242,7 @@ const MySister = () => {
 
           <Text>I also can’t help but think what it would be like if one of these
             little girls was my younger sister.</Text>
-          <Text pb='7vh'>Judging by how they interact with me, I think they would’ve
+          <Text pb='5vh'>Judging by how they interact with me, I think they would’ve
             liked me as an older brother too.</Text>
 
           <BlogImage
@@ -255,7 +251,7 @@ const MySister = () => {
             caption={`Leah: "I'm gonna cut your finger off and stab you"`}
           />
 
-          <Text fontWeight='bold' paddingY={'7vh'}>—</Text>
+          <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
 
           <Text>The three guys in my family really like to play tennis together.</Text>
           <Text>Since my mom doesn’t play, she usually sits on the benches to
@@ -268,7 +264,7 @@ const MySister = () => {
             alt="Mom sitting and watching us play tennis"
           />
 
-          <Text pb='7vh'>There’s only a limit to the way us three guys can comfort
+          <Text pb='5vh'>There’s only a limit to the way us three guys can comfort
             Mom.</Text>
 
           <Text>I wish someone could try on outfits with her and pick out jewelry
@@ -276,7 +272,7 @@ const MySister = () => {
           <Text>I wish someone could put on makeup with her and paint her nails
             for her.</Text>
           <Text>And even if it’s just for a moment,</Text>
-          <Text pb='7vh'>I wish someone could make my mom feel like she’s back
+          <Text pb='5vh'>I wish someone could make my mom feel like she’s back
             in college, hanging out with her girl friends.</Text>
 
           <Text>Back in her youth again.</Text>
@@ -286,14 +282,14 @@ const MySister = () => {
             alt="Mom and dad walking together"
           />
 
-          <Text fontWeight='bold' paddingY={'7vh'}>—</Text>
+          <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
 
           <Text>Up until now and probably for the rest of my life, it’ll just be
             me and my bro.</Text>
           <Text> But I’m happy with that and I’m thankful for the family dynamic
             that we have.</Text>
           <Text>And even though I couldn’t be that daughter for my parents,</Text>
-          <Text pb='7vh'>Not having a sister has taught me to be more in tune
+          <Text pb='5vh'>Not having a sister has taught me to be more in tune
             with my mom’s emotions.</Text >
 
           <Text>It’s taught me that my mom’s worries aren’t pleas for help or advice,</Text >

@@ -3,10 +3,6 @@ import { Helmet } from 'react-helmet'
 import BlogImage from "../components/BlogImage"
 import { useEffect } from "react"
 
-// TODO: adjust spacing for the case when there is a photo then there is a -- immediately after.
-// You need to change all the "pY" in the -- to be a pb only. We only want padding on the bottom in
-// these situations.
-// TODO: read through blog and adjust the spacing of the text itself. Make things consistent.
 const FreshmanStory = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -40,11 +36,13 @@ const FreshmanStory = () => {
           fontFamily='century'>
 
           <Text>My freshman college story begins in Syracuse, NY.</Text>
-          <Text>Syracuse International Airport that is.</Text>
+          <Text pb='5vh'>Syracuse International Airport that is.</Text>
+
           <Text>After leaving our home in California early in the morning, my
             family and I arrived at Syracuse a little after 2 am.</Text>
           <Text>Much to our dismay, there were 0 Ubers available at that time.</Text>
-          <Text>At a freakin’ international airport.</Text>
+          <Text pb='5vh'>At a freakin’ international airport.</Text>
+
           <Text> Mumbling and grumbling under our breaths, we soon became the
             only family at the airport.</Text>
 
@@ -71,7 +69,7 @@ const FreshmanStory = () => {
           <Text>So I was confused why I was assigned to HILC for mainly one
             reason:</Text>
           <Text>I was born in the US.</Text>
-          <Text pb='7vh'>I was also raised in the US.</Text>
+          <Text pb='5vh'>I was also raised in the US.</Text>
 
           <Text>Nevertheless, with a grateful heart, my family helped me unpack
             all my belongings,</Text>
@@ -86,17 +84,17 @@ const FreshmanStory = () => {
           <Text>As I was sitting in my uncomfortable dorm chair, I realized that
             I was by myself.</Text>
           <Text>By myself in a community where I knew no one and no one knew me.</Text >
-          <Text pb='7vh'>By myself in a place where everything familiar to me
+          <Text pb='5vh'>By myself in a place where everything familiar to me
             was across the country.</Text >
 
           <Text>A part of me wanted to stay in California.</Text >
-          <Text pb='7vh'>But another part of me wanted to prove to myself that
+          <Text pb='5vh'>But another part of me wanted to prove to myself that
             I could find my own identity and belonging in a foreign place— even if
             I was all alone.</Text >
 
           <Text>But ever so quickly, I learned that I wasn’t alone.</Text >
           <Text>Quite literally, there was someone always close by.</Text >
-          <Text pb='7vh'>In the small confines of my forced - triple dorm room
+          <Text pb='5vh'>In the small confines of my forced - triple dorm room
             was my random roommate, Eric.</Text >
 
           <Text>Eric and I discovered that we share <em>a lot</em> of similarities:</Text >
@@ -215,11 +213,12 @@ const FreshmanStory = () => {
             caption="The girls made us do this"
           />
 
-          <Text>But don’t get me wrong.We didn’t just come to college to have fun.</Text >
+          <Text>But don’t get me wrong.</Text >
+          <Text>We didn’t just come to college to have fun.</Text>
           <Text>All of us had psets due each week and many of us had biweekly
             life crises figuring out what we wanted to do with our majors, vocations,
             and lives.</Text >
-          <Text>Many times, we had to “isolate” from each other(as Grace likes
+          <Text>Many times, we had to “isolate” from each other (as Grace likes
             to say) to focus and get our work done on time.</Text >
 
           <BlogImage
@@ -249,7 +248,7 @@ const FreshmanStory = () => {
             caption="Don't mess with Cherrie when her essay is due in 2 hours"
           />
 
-          <Text fontWeight='bold' paddingY={'7vh'}>—</Text>
+          <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
 
           <Text>Coming into college, I definitely wanted to figure out what I
             wanted to study but I also wanted to be intentional with the people
@@ -279,8 +278,8 @@ const FreshmanStory = () => {
             caption="This is the same person"
           />
 
-          <Text>A couple friends and I became regulars at 7 - Eleven and the
-            name “7 / 11” began to symbolize that we would hang out from 11pm to 7am.</Text >
+          <Text>A couple friends and I became regulars at 7-Eleven and the
+            name “7/11” began to symbolize that we would hang out from 11 pm to 7 am.</Text >
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/24_711.jpeg"
@@ -288,7 +287,7 @@ const FreshmanStory = () => {
             caption={`"Look guys, it's only 3am!"`}
           />
 
-          <Text>And of course, I can’t not mention the leader of our 7 - Eleven crew: Amy.</Text >
+          <Text>And of course, I can’t not mention the leader of our 7-Eleven crew: Amy.</Text >
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/25tired amy.jpeg"
@@ -321,7 +320,7 @@ const FreshmanStory = () => {
           <Text>Even whilst surrounded by so many people every day, it would be
             a lie to say that there weren’t moments when I felt lonely.</Text >
           <Text>There were times I wanted to call it quits, feeling overwhelmed
-            with trying to balance between studying for prelims(midterms), grinding
+            with trying to balance between studying for prelims (midterms), grinding
             through cs assignments, and spending time with friends.</Text >
           <Text>But because of those moments, I realized how grateful I was for
             the people that remained consistent and never failed to reach their
@@ -339,7 +338,7 @@ const FreshmanStory = () => {
             caption2="W is for the best Wednesday small group"
           />
 
-          <Text fontWeight='bold' paddingY={'7vh'}>—</Text>
+          <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
 
           <Text>As someone from California, I’ve only ever known of two seasons:
             a hot summer and an even hotter summer.</Text >
@@ -375,7 +374,7 @@ const FreshmanStory = () => {
             caption="Cherrie and Melody make me feel lonely (and block my view of the front)"
           />
 
-          <Text fontWeight='bold' paddingY={'7vh'}>—</Text>
+          <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
 
           <Text>At first, I didn’t want to be seen as a freshman.</Text >
           <Text>I made sure to never wear a lanyard around my neck while walking
@@ -430,7 +429,7 @@ const FreshmanStory = () => {
             caption="Dashing Daniel and Beefy Barry can't escape our skinship"
           />
 
-          <Text fontWeight='bold' paddingY={'7vh'}>—</Text>
+          <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
 
           <Text>College life became so busy that I barely had time to think of
             the people back home.</Text >
@@ -444,9 +443,9 @@ const FreshmanStory = () => {
             caption2="Note says: We love you so much. Eat healthy and study hard."
           />
 
-          <Text fontWeight='bold' paddingY={'7vh'}>—</Text>
+          <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
 
-          <Text pb='7vh'>As cliché as it is, college really is a time of learning
+          <Text pb='5vh'>As cliché as it is, college really is a time of learning
             and I learned a lot this year.</Text >
 
           <Text>I learned how freakin’ hard it is to get a good haircut in Ithaca.</Text >
@@ -470,7 +469,7 @@ const FreshmanStory = () => {
           />
 
           <Text>I learned that dancing is actually kinda fun</Text >
-          <Text>(only if Grace and Ro - Ann are the teachers),</Text >
+          <Text>(only if Grace and Ro-Ann are the teachers),</Text >
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/44boys_gen.jpeg"
@@ -480,7 +479,7 @@ const FreshmanStory = () => {
           />
 
           <Text>And above all,</Text >
-          <Text pb='7vh'>I learned that change isn’t so bad.</Text >
+          <Text pb='5vh'>I learned that change isn’t so bad.</Text >
 
           <Text>The period of adjustment to something new and unfamiliar has
             always been hard on me.</Text >
@@ -504,7 +503,7 @@ const FreshmanStory = () => {
             caption="Breakfast anyone?"
           />
 
-          <Text fontWeight='bold' paddingY={'7vh'}>—</Text>
+          <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
 
           <Text>Ironically enough, I’ll be living in Ganędagǫ next year.</Text >
           <Text>It’s the place I’ve wanted to be since the beginning.</Text >
@@ -519,7 +518,7 @@ const FreshmanStory = () => {
 
           <Text>Elisabeth said freshman year was so great because she came in
             with no expectations.</Text >
-          <Text pb='7vh'>She’s right.</Text >
+          <Text pb='5vh'>She’s right.</Text >
 
           <Text>In the beginning, we were just a bunch of clueless freshmen
             trying to absorb everything around us and find where we belonged in
@@ -532,16 +531,16 @@ const FreshmanStory = () => {
             caption='Our first "Perfect Match" experience'
           />
 
-          <Text fontWeight='bold' paddingY={'7vh'}>—</Text>
+          <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
 
           <Text>Next year, I’ll be back.</Text >
           <Text>Back to the busy college grind, and back with my friends.</Text >
-          <Text pb='7vh'>And this time around, a lot more things will be familiar.</Text >
+          <Text pb='5vh'>And this time around, a lot more things will be familiar.</Text >
 
           <Text>But whatever sophomore year may bring, I’m thankful.</Text >
           <Text>I’m thankful for the people I’ve met, how I’ve changed, and who
             I’ve become.</Text >
-          <Text pb='10vh'>I’m thankful for the memories—</Text >
+          <Text pb='5vh'>I’m thankful for the memories—</Text >
 
           <Text>and I can’t wait to go back.</Text >
 
