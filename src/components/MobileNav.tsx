@@ -15,17 +15,17 @@ const MobileNav = () => {
       <MenuButton as={Button}>
         <IconButton
           icon={
-            <HamburgerIcon w={5} h={5} />
+            <HamburgerIcon w={8} h={8} />
           }
           variant={'ghost'}
           aria-label={'Toggle Navigation'}
         />
       </MenuButton>
       <MenuList>
-        <LinkRouter to="/about"><MenuItem>About</MenuItem></LinkRouter>
-        <LinkRouter to="/experience"><MenuItem>Experience</MenuItem></LinkRouter>
-        <LinkRouter to="/blog"><MenuItem>Blog</MenuItem></LinkRouter>
-        <LinkRouter to="/connect"><MenuItem>Connect</MenuItem></LinkRouter>
+        <LinkRouter to="/about"><MenuItem fontSize={'1.75rem'}>About</MenuItem></LinkRouter>
+        <LinkRouter to="/experience"><MenuItem fontSize={'1.75rem'}>Experience</MenuItem></LinkRouter>
+        <LinkRouter to="/blog"><MenuItem fontSize={'1.75rem'}>Blog</MenuItem></LinkRouter>
+        <LinkRouter to="/connect"><MenuItem fontSize={'1.75rem'}>Connect</MenuItem></LinkRouter>
       </MenuList>
     </Menu>
 
