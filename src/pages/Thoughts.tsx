@@ -1,6 +1,5 @@
 import { Flex, Stack } from "@chakra-ui/react"
 import BlogCard from "../components/BlogCard"
-import { Helmet } from 'react-helmet';
 import { useEffect } from "react";
 
 const Thoughts = () => {
@@ -10,10 +9,6 @@ const Thoughts = () => {
 
   return (
     <div>
-      <Helmet>
-        <title>doctakim | Thoughts</title>
-      </Helmet>
-
       <Stack textAlign={'left'}>
         <Flex wrap="wrap">
           <BlogCard

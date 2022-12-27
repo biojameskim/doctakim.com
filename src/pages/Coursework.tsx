@@ -1,7 +1,6 @@
 import { Box, Flex, Text, Stack, List, ListItem, ListIcon } from "@chakra-ui/react"
 import { BsCircle } from 'react-icons/bs'
 import CourseworkCard from "../components/CourseworkCard"
-import { Helmet } from 'react-helmet';
 import { useEffect } from "react";
 
 const Coursework = () => {
@@ -11,10 +10,6 @@ const Coursework = () => {
 
   return (
     <div>
-      <Helmet>
-        <title>doctakim | Coursework</title>
-      </Helmet>
-
       <Flex w={{ base: '100%', md: '80%' }} mt='1.5rem' direction={{ base: 'column', md: 'row' }}>
         <Stack w={{ base: '90%', md: '50%' }} spacing='10' mt='0' align='center'>
           <Text fontSize='1.5rem' fontWeight='bold' mb='0rem' mt={{ base: '2rem', md: '0' }}>Technical Skills</Text>
