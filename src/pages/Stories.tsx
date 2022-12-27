@@ -10,7 +10,7 @@ const Stories = () => {
   return (
     <div>
       <Stack textAlign={'left'}>
-        <Flex wrap="wrap">
+        <Flex wrap="wrap" gap={{ '2xl': '3rem' }}>
 
           <BlogCard
             route='/blog/treasure-hunt'
@@ -46,7 +46,7 @@ const Stories = () => {
           />
         </Flex>
       </Stack>
-    </div>
+    </div >
   )
 }
 
