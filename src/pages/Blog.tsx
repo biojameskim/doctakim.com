@@ -23,8 +23,16 @@ const Blog = () => {
         </Text>
         <Flex wrap="wrap">
           <BlogCard
+            route='/blog/dear-mrs-lupsaiu'
+            update='December 2022'
+            title='Dear Mrs. Lupsaiu'
+            description="I wish there was more time."
+            image="../images/blog_pictures/Dear-Mrs-Lupsaiu/lupsaiu cover.jpg"
+            alt='A picture of Mrs.Lupsaiu and me'
+          />
+          <BlogCard
             route='/blog/treasure-hunt'
-            update='NEW'
+            update='October 2022'
             title='Treasure Hunt'
             description="I'm on a hunt."
             image="../images/blog_pictures/Treasure-Hunt/treasure-hunt.jpeg"
