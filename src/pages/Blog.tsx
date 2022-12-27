@@ -1,7 +1,8 @@
-import { Text, Flex, Stack } from "@chakra-ui/react"
-import BlogCard from "../components/BlogCard"
+import { Text, Box, Tabs, TabList, Tab, TabPanels, TabPanel, useColorModeValue } from "@chakra-ui/react"
 import { Helmet } from 'react-helmet';
 import { useEffect } from "react";
+import Stories from "./Stories";
+import Thoughts from "./Thoughts";
 
 // Cover Photos
 // Keep each photo at 1280x960 --> (2048x1536, 1024x768, etc) using fotor.com
@@ -17,53 +18,25 @@ const Blog = () => {
         <title>doctakim | Blog</title>
       </Helmet>
 
-      <Stack>
-        <Text className="page-title" align='center' fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '4vh' }}>
+      <Box>
+        <Text className="page-title" align='center' fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '4vh' }} >
           Blog
         </Text>
-        <Flex wrap="wrap">
-          <BlogCard
-            route='/blog/dear-mrs-lupsaiu'
-            update='December 2022'
-            title='Dear Mrs. Lupsaiu'
-            description="I wish there was more time."
-            image="../images/blog_pictures/Dear-Mrs-Lupsaiu/lupsaiu cover.jpg"
-            alt='A picture of Mrs.Lupsaiu and me'
-          />
-          <BlogCard
-            route='/blog/treasure-hunt'
-            update='October 2022'
-            title='Treasure Hunt'
-            description="I'm on a hunt."
-            image="../images/blog_pictures/Treasure-Hunt/treasure-hunt.jpeg"
-            alt='A picture of Dad and me'
-          />
-          <BlogCard
-            route='/blog/my-sister'
-            update='August 2022'
-            title='My Sister'
-            description="I don't tell very many people about my sister."
-            image={"images/blog_pictures/My-Sister/my-sister.jpeg"}
-            alt='A picture of me, my brother, and my sister'
-          />
-          <BlogCard
-            route='/blog/growing-up'
-            update='June 2022'
-            title='Growing Up'
-            description="Youth is fleeting."
-            image={"images/blog_pictures/Growing-Up/growing-up.jpeg"}
-            alt='A baby picture of James'
-          />
-          <BlogCard
-            route='/blog/my-freshman-college-story'
-            update='May 2022'
-            title='My Freshman College Story'
-            description="It's been a hell of a year."
-            image={"images/blog_pictures/My-Freshman-College-Story/freshman-story.jpeg"}
-            alt='A picture of dum moment'
-          />
-        </Flex>
-      </Stack>
+        <Tabs orientation='horizontal' variant='soft-rounded' colorScheme='green' align='center'>
+          <TabList paddingBottom='5vh'>
+            <Tab color={useColorModeValue('gray.600', 'white')} >Stories</Tab>
+            <Tab color={useColorModeValue('gray.600', 'white')}>Thoughts</Tab>
+          </TabList>
+          <TabPanels>
+            <TabPanel>
+              <Stories />
+            </TabPanel>
+            <TabPanel>
+              <Thoughts />
+            </TabPanel>
+          </TabPanels>
+        </Tabs>
+      </Box>
 
     </div>
   )

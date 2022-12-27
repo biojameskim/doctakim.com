@@ -3,6 +3,7 @@ import Employment from "./Employment"
 import Projects from "./Projects"
 import Coursework from "./Coursework"
 import { useEffect } from "react"
+import { Helmet } from 'react-helmet';
 
 const Experience = () => {
   useEffect(() => {
@@ -10,29 +11,35 @@ const Experience = () => {
   }, [])
 
   return (
-    <Box>
-      <Text className="page-title" align='center' fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '4vh' }} >
-        Experience
-      </Text>
-      <Tabs orientation='horizontal' variant='soft-rounded' colorScheme='green' align='center'>
-        <TabList>
-          <Tab color={useColorModeValue('gray.600', 'white')} >Employment</Tab>
-          <Tab color={useColorModeValue('gray.600', 'white')}>Projects</Tab>
-          <Tab color={useColorModeValue('gray.600', 'white')}>Skills & Courses</Tab>
-        </TabList>
-        <TabPanels>
-          <TabPanel>
-            <Employment />
-          </TabPanel>
-          <TabPanel>
-            <Projects />
-          </TabPanel>
-          <TabPanel>
-            <Coursework />
-          </TabPanel>
-        </TabPanels>
-      </Tabs>
-    </Box>
+    <div>
+      <Helmet>
+        <title>doctakim | Experience</title>
+      </Helmet>
+
+      <Box>
+        <Text className="page-title" align='center' fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '4vh' }} >
+          Experience
+        </Text>
+        <Tabs orientation='horizontal' variant='soft-rounded' colorScheme='green' align='center'>
+          <TabList>
+            <Tab color={useColorModeValue('gray.600', 'white')} >Employment</Tab>
+            <Tab color={useColorModeValue('gray.600', 'white')}>Projects</Tab>
+            <Tab color={useColorModeValue('gray.600', 'white')}>Skills & Courses</Tab>
+          </TabList>
+          <TabPanels>
+            <TabPanel>
+              <Employment />
+            </TabPanel>
+            <TabPanel>
+              <Projects />
+            </TabPanel>
+            <TabPanel>
+              <Coursework />
+            </TabPanel>
+          </TabPanels>
+        </Tabs>
+      </Box>
+    </div>
   )
 }
 
