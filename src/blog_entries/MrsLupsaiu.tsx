@@ -76,10 +76,10 @@ const MrsLupsaiu = () => {
             preconceptions of you,</Text>
           <Text>there was something more.</Text>
           <Text>Something deeper.</Text>
-          <Text pb='5vh'>Something that no one had told me about before—</Text>
+          <Text pb='5vh'>Something that no one had told me about before.</Text>
 
-          <Text pb='5vh'>Covered by your strict demeanor was a really great
-            person and mentor.</Text>
+          <Text pb='5vh'>Buried under the rumors and my imagination, there was a
+            really great person and mentor.</Text>
 
           <Text>In the classroom, your constant encouragements and compliments
             motivated me to study in ways that I never studied before.</Text>
