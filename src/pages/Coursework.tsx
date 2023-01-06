@@ -86,6 +86,11 @@ const Coursework = () => {
             courseNumber="CS 1110"
             affiliation="Associated with Cornell University"
           />
+          <CourseworkCard
+            courseTitle="Introductory Design and Programming for the Web"
+            courseNumber="INFO 1300"
+            affiliation="Associated with Cornell University"
+          />
         </Box>
       </Flex>
     </div>
