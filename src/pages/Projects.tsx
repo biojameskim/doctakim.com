@@ -1,6 +1,5 @@
-import { Flex, Text } from "@chakra-ui/react"
+import { Text } from "@chakra-ui/react"
 import { useEffect } from "react";
-import { BsArrowUpRight } from "react-icons/bs";
 // import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
@@ -12,7 +11,7 @@ const Projects = () => {
     <div>
       <Text fontSize='1.7rem' mt='3rem'>Coming Soon... </Text>
       <Text fontSize='1.3rem' mt='3.5rem'>
-        In the meantime, check out my <a href="https://github.com/doctakim" target="_blank"><u>Github</u> !</a>
+        In the meantime, check out my <a href="https://github.com/doctakim" target="_blank" rel="noreferrer"><u>Github</u> !</a>
       </Text>
 
     </div>
