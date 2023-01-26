@@ -19,7 +19,7 @@ const Home = () => {
                     <Typewriter options={{ loop: true }}
                         onInit={(typewriter) => {
                             typewriter
-                                .typeString("Making a portfolio using React and TypeScript ⚛️")
+                                .typeString("Building a portfolio using React and TypeScript ⚛️")
                                 .pauseFor(2000)
                                 .deleteAll()
                                 .typeString("Working on full stack development at Cornell hack4impact 💻 ")

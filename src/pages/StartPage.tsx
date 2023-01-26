@@ -31,7 +31,7 @@ const StartPage = () => {
                     <Animator animation={batch(Fade(), Move(0, 200), Sticky(), MoveOut(0, -300))}>
                         <span style={{ fontSize: "300%" }}>and minoring in</span>
                         <br />
-                        <span style={{ fontSize: "400%" }}>Digital Culture and Production 🎨</span>
+                        <span style={{ fontSize: "400%" }}>Operations Research and Data Science ⚙️</span>
                     </Animator>
                 </ScrollPage>
 
