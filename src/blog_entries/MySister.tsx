@@ -116,6 +116,7 @@ const MySister = () => {
           <Text>One more person to cry over kdramas with.</Text>
 
           <BlogImage
+            maxW="450px"
             src="../images/blog_pictures/My-Sister/Pictures/5sad crash landing.png"
             alt='Me crying after watching "Crash Landing on You"'
             caption='"Crash Landing on You" was sad'
@@ -164,7 +165,7 @@ const MySister = () => {
           />
 
           <Text>And most importantly, I think I could’ve given my sister some
-            <em><Text as='b'>great</Text></em> advice.</Text>
+            <em><Text as='b'> great</Text></em> advice.</Text>
           <Text>From questions about academics, faith, friendships, and even
             questions about dating,</Text>
           <Text pb='5vh'>I definitely could’ve pointed her in the right direction.</Text>
@@ -188,6 +189,7 @@ const MySister = () => {
           <Text pb='4vh'>Give me a list of the top 10 reasons why you like him.</Text>
 
           <BlogImage
+            maxW="450px"
             src="../images/blog_pictures/My-Sister/Pictures/9 i know love.jpeg"
             alt="A picture of me with sunglasses. Swag."
             caption="Love... Dating... Heartbreak..."
@@ -246,6 +248,7 @@ const MySister = () => {
             liked me as an older brother too.</Text>
 
           <BlogImage
+            maxW="450px"
             src="../images/blog_pictures/My-Sister/Pictures/leah screw off.jpg"
             alt=""
             caption={`Leah: "I'm gonna cut your finger off and stab you"`}
@@ -307,6 +310,7 @@ const MySister = () => {
           <Text>Come give the Kim brothers a chance.</Text >
 
           <BlogImage
+            maxW="450px"
             src="../images/blog_pictures/My-Sister/Pictures/cool and cooler.jpeg"
             alt="Me and bro being very cool"
             caption="Cool and cooler"

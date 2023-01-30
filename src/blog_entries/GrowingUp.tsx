@@ -36,6 +36,7 @@ const GrowingUp = () => {
           fontFamily='century'>
 
           <BlogImage
+            maxW="450px"
             src="../images/blog_pictures/Growing-Up/Pictures/aunt-before.jpg"
             alt="Aunt taking a nap"
             caption="A 5 minute power nap/prayer goes a long way"
@@ -106,6 +107,7 @@ const GrowingUp = () => {
           <Text> My grandpa is getting older.</Text>
 
           <BlogImage
+            maxW="450px"
             src="../images/blog_pictures/Growing-Up/Pictures/gpa-after.jpeg"
             alt="Grandpa laying down on sofa"
             caption="It's okay, grandpa."
