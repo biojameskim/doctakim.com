@@ -295,7 +295,7 @@ const MySister = () => {
           <Text pb='5vh'>Not having a sister has taught me to be more in tune
             with my mom’s emotions.</Text >
 
-          <Text>It’s taught me that my mom’s worries aren’t pleas for help or advice,</Text >
+          <Text>It’s taught me that sometimes, my mom’s worries aren’t pleas for help or advice,</Text >
           <Text>But instead pleas for a hug and someone that can listen.</Text >
 
           <BlogImage
