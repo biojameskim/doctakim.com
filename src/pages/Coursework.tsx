@@ -37,7 +37,7 @@ const Coursework = () => {
                 </ListItem>
                 <ListItem textAlign='left'>
                   <ListIcon as={BsCircle} color='yellow.500' />
-                  Flask, SQLAlchemy, NumPy, Kivy
+                  Flask, Pandas, NumPy, SQLite, SQLAlchemy
                 </ListItem>
               </List>
             </Stack>
