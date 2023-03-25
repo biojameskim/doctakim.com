@@ -1,7 +1,9 @@
-## James Kim Portfolio
+## Hello! 👋
 
-In this project, I experimented with a lot of different libraries and frameworks.
+Welcome to my personal portfolio!
 
-Main resources I've used are React (with TS) and Chakra UI.
+I created this site mostly to have a platform where I can share my blogs, but you can also find more info about me!
+
+The main resources I used are React (with TS) and Chakra UI.
 
 Check out my site <a href='https://doctakim.com' target='_blank'>here</a>
