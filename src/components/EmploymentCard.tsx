@@ -1,6 +1,6 @@
 import { Text, Box, useColorModeValue, Flex, Stack, Image, Hide } from "@chakra-ui/react"
 
-const EmploymentCard = ({ website, title, role, image, alt, date, description }: { website: string, title: string, role: string, image: string, alt: string, date: string, description: string }) => {
+const EmploymentCard = ({ company, website, role, image, alt, date, description }: { company: string, website: string, role: string, image: string, alt: string, date: string, description: string }) => {
   return (
     <Box className="employment-card"
       as="a"
@@ -32,7 +32,7 @@ const EmploymentCard = ({ website, title, role, image, alt, date, description }:
         <Stack pl='5' spacing='1'>
           <Flex w='100%' justify='flex-start' align='center' direction={{ base: 'column', md: 'row' }}>
             <Text fontSize='1.7rem' fontWeight='bold' pt={{ base: '1rem', md: '0' }} textAlign={{ base: 'center' }}>
-              {title}
+              {company}
             </Text>
             <Hide below='md'>
               <Text fontSize='1.6rem' px='6'>|</Text>

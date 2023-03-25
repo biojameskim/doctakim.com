@@ -2,7 +2,12 @@ import { VStack, Box } from "@chakra-ui/react"
 import EmploymentCard from '../components/EmploymentCard'
 import { useEffect } from "react";
 
+import employment_data from "../data/employment_data"
+
 const Employment = () => {
+  // Makes an array from [0, ..., N-1] where N is how many employment data we have
+  const numbers = Array.from(Array(employment_data.length).keys());
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -12,30 +17,17 @@ const Employment = () => {
       <VStack
         spacing='3vh'
       >
-
-        <EmploymentCard
-          website='https://cornellh4i.org/'
-          title='hack4impact'
-          role='Full Stack Software Engineer'
-          image={"images/logos/hack4impact.jpeg"}
-          alt='hack4impact Logo'
-          date='09/2022 - Present'
-          description='Building a platform for the homeless population of 
-          Tompkins County to browse for available and affordable housing using 
-          MongoDB, Express.js, React, and Node.js'
-        />
-
-        <EmploymentCard
-          website='https://wazzle.app'
-          title='Wazzle'
-          role='Mobile Development Intern'
-          image={"images/logos/wazzle.jpeg"}
-          alt='Wazzle Logo'
-          date='04/2022 - 08/2022'
-          description='Implemented new features and design changes for an iOS 
-          application that allows for more meaningful contact management for over 5000 users
-          using Swift and SwiftUI'
-        />
+        {numbers.map(n =>
+          <EmploymentCard
+            company={employment_data[n].company}
+            website={employment_data[n].website}
+            role={employment_data[n].role}
+            image={employment_data[n].image}
+            alt={employment_data[n].alt}
+            date={employment_data[n].date}
+            description={employment_data[n].description}
+          />
+        )}
 
       </VStack>
       <Box pb='6vh'></Box>
