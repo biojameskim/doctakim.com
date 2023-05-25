@@ -1,4 +1,4 @@
-import { Text, Stack, Container } from "@chakra-ui/react"
+import { Text, Stack } from "@chakra-ui/react"
 import { Helmet } from 'react-helmet'
 import BlogImage from "../components/BlogImage"
 import { useEffect } from "react"

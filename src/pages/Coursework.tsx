@@ -1,4 +1,4 @@
-import { Box, Flex, Text, Stack, List, ListItem, ListIcon, Grid } from "@chakra-ui/react"
+import { Box, Flex, Text, List, ListItem, ListIcon, Grid } from "@chakra-ui/react"
 import { BsCircle } from 'react-icons/bs'
 import CourseworkCard from "../components/CourseworkCard"
 import { useEffect } from "react";
