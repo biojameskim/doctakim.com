@@ -25,18 +25,12 @@ const Coursework = () => {
             justifyContent='center'
             alignContent='center'
             alignItems='center'
-
-          // pt='1.2rem'
-          // p={{ base: '0.5rem' }}
-          // shadow='lg'
-          // borderWidth='1px'
-          // rounded='lg'
-          // bg={useColorModeValue('gray.50', 'gray.700')}
           >
             <Flex
               className="skills-card"
               direction='column'
               mb='2rem'
+              w='full'
               p='1.2rem'
               shadow='lg'
               borderWidth='1px'
@@ -64,6 +58,7 @@ const Coursework = () => {
               className="skills-card"
               direction='column'
               mb='2rem'
+              w='full'
               p='1.2rem'
               shadow='lg'
               borderWidth='1px'
@@ -91,6 +86,7 @@ const Coursework = () => {
               className="skills-card"
               direction='column'
               mb='2rem'
+              w='full'
               p='1.2rem'
               shadow='lg'
               borderWidth='1px'
