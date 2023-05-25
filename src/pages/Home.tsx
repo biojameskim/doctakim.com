@@ -14,12 +14,12 @@ const Home = () => {
                 <title>doctakim | Home</title>
             </Helmet>
             <Box textAlign="center">
-                <Text className="page-title" fontSize="4rem" pb={{ base: '2vh', md: '0' }}>Currently ...</Text>
-                <Box className="home-page-typewriter" fontSize="2.5rem">
+                <Text className="page-title" fontSize={{ base: "3.2rem", md: "4rem" }} pb={{ base: '2vh', md: '0' }}>Currently ...</Text>
+                <Box className="home-page-typewriter" fontSize="2rem" fontWeight='light'>
                     <Typewriter options={{ loop: true }}
                         onInit={(typewriter) => {
                             typewriter
-                                .typeString("Building a portfolio using React and TypeScript ⚛️")
+                                .typeString("Interning at Southern California Edison ☀️")
                                 .pauseFor(2000)
                                 .deleteAll()
                                 .typeString("Working on full stack development at Cornell hack4impact 💻 ")
