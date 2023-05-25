@@ -22,15 +22,16 @@ const Coursework = () => {
           <Flex
             direction={{ base: 'column', md: 'row' }}
             w={{ base: 'full', md: '80%' }}
-            justifyContent='center'
-            alignContent='center'
-            alignItems='center'
+            // justifyContent='center'
+            // alignContent='center'
+            // alignItems='center'
+            gap={'6'}
           >
             <Flex
               className="skills-card"
               direction='column'
               mb='2rem'
-              w='full'
+              w={{ base: 'full' }}
               p='1.2rem'
               shadow='lg'
               borderWidth='1px'
@@ -41,15 +42,15 @@ const Coursework = () => {
               <List spacing='0.5rem'>
                 <ListItem textAlign='left'>
                   <ListIcon as={BsCircle} color='green.500' />
-                  Java, Python, OCaml, TypeScript, JavaScript
+                  Java, Python, OCaml
                 </ListItem>
                 <ListItem textAlign='left'>
                   <ListIcon as={BsCircle} color='green.500' />
-                  Bash, HTML, CSS, SQL
+                  TypeScript, JavaScript, HTML, CSS
                 </ListItem>
                 <ListItem textAlign='left'>
-                  <ListIcon as={BsCircle} color={useColorModeValue('gray.50', 'gray.700')} />
-                  {/* Dummy ListItem because it doesn't align correctly otherwise */}
+                  <ListIcon as={BsCircle} color='green.500' />
+                  Bash, SQL
                 </ListItem>
               </List>
             </Flex>
@@ -58,7 +59,7 @@ const Coursework = () => {
               className="skills-card"
               direction='column'
               mb='2rem'
-              w='full'
+              w={{ base: 'full' }}
               p='1.2rem'
               shadow='lg'
               borderWidth='1px'
@@ -86,7 +87,7 @@ const Coursework = () => {
               className="skills-card"
               direction='column'
               mb='2rem'
-              w='full'
+              w={{ base: 'full' }}
               p='1.2rem'
               shadow='lg'
               borderWidth='1px'
