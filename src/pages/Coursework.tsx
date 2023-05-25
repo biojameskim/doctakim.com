@@ -30,7 +30,6 @@ const Coursework = () => {
             <Flex
               className="skills-card"
               direction='column'
-              mb='2rem'
               w={{ base: 'full' }}
               p='1.2rem'
               shadow='lg'
@@ -58,7 +57,6 @@ const Coursework = () => {
             <Flex
               className="skills-card"
               direction='column'
-              mb='2rem'
               w={{ base: 'full' }}
               p='1.2rem'
               shadow='lg'
@@ -86,7 +84,6 @@ const Coursework = () => {
             <Flex
               className="skills-card"
               direction='column'
-              mb='2rem'
               w={{ base: 'full' }}
               p='1.2rem'
               shadow='lg'
