@@ -1,4 +1,4 @@
-import { Text, Stack } from "@chakra-ui/react"
+import { Text, Stack, Container } from "@chakra-ui/react"
 import { Helmet } from 'react-helmet'
 import BlogImage from "../components/BlogImage"
 import { useEffect } from "react"
@@ -184,12 +184,23 @@ const MrsLupsaiu = () => {
             alt="A picture of me and Mrs. Lupsaiu"
             caption="Mrs. Lupsaiu"
             caption2="May 2021"
+            orientation='v'
           />
 
           < Text pb='10vh' > - James Kim</Text >
+
+
+          <Text textAlign='center' fontWeight='bold' pb='4vh'></Text>
+          <Text textAlign='center'>Shortly after I wrote this, Mrs. Lupsaiu passed away on January 11, 2023.</Text>
+          <Text textAlign='center'>My heart hurts over the fact that you can never know when the last time will be.</Text>
+          <Text textAlign='center' pb='5vh'>When the last goodbye will be.</Text>
+          <Text textAlign='center'>Thank you, Mrs. Lupsaiu.</Text>
+          <Text textAlign='center' pb='20vh'>You will be missed.</Text>
+
+
         </Stack >
       </div >
-    </div>
+    </div >
   )
 }
 
