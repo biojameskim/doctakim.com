@@ -21,7 +21,7 @@ const BlogCard = ({ route, title, description, release, image, alt }: { route: s
                     <Image
                         boxSize='300px'
                         borderRadius='2xl'
-                        width={{ md: 400 }}
+                        w='100%'
                         src={image}
                         alt={alt}
                     />
