@@ -25,11 +25,11 @@ const Coursework = () => {
               <List spacing='0.5rem'>
                 <ListItem textAlign='left'>
                   <ListIcon as={BsCircle} color='green.500' />
-                  Java, Python, OCaml, HTML, CSS
+                  Java, Python, OCaml, TypeScript, JavaScript
                 </ListItem>
                 <ListItem textAlign='left'>
-                  <ListIcon as={BsCircle} color='yellow.500' />
-                  TypeScript, JavaScript, Swift, SQL, Bash
+                  <ListIcon as={BsCircle} color='green.500' />
+                  Bash, HTML, CSS, SQL
                 </ListItem>
               </List>
             </Flex>
@@ -39,11 +39,15 @@ const Coursework = () => {
               <List spacing='0.5rem'>
                 <ListItem textAlign='left'>
                   <ListIcon as={BsCircle} color='green.500' />
-                  React, MongoDB, Node.js, Express.js
+                  React, Next.js, Node.js, Express.js, Flask
                 </ListItem>
                 <ListItem textAlign='left'>
-                  <ListIcon as={BsCircle} color='yellow.500' />
-                  Flask, Pandas, NumPy, SQLite, SQLAlchemy
+                  <ListIcon as={BsCircle} color='green.500' />
+                  MongoDB, Firebase, Firestore
+                </ListItem>
+                <ListItem textAlign='left'>
+                  <ListIcon as={BsCircle} color='green.500' />
+                  Pandas, NumPy, SQLite, SQLAlchemy
                 </ListItem>
               </List>
             </Flex>
