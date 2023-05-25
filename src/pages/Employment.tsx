@@ -19,6 +19,7 @@ const Employment = () => {
       >
         {numbers.map(n =>
           <EmploymentCard
+            key={n}
             company={employment_data[n].company}
             website={employment_data[n].website}
             role={employment_data[n].role}

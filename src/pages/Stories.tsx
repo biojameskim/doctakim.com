@@ -2,7 +2,12 @@ import { Flex, Stack } from "@chakra-ui/react"
 import BlogCard from "../components/BlogCard"
 import { useEffect } from "react";
 
+import story_data from "../data/story_data";
+
 const Stories = () => {
+  // Makes an array from [0, ..., N-1] where N is how many story data we have
+  const numbers = Array.from(Array(story_data.length).keys());
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -11,39 +16,17 @@ const Stories = () => {
     <div>
       <Stack textAlign={'left'}>
         <Flex wrap="wrap" gap={{ '2xl': '3rem' }}>
-
-          <BlogCard
-            route='/blog/treasure-hunt'
-            update='NEW'
-            title='Treasure Hunt'
-            description="I'm on a hunt."
-            image="../images/blog_pictures/Treasure-Hunt/treasure-hunt.jpeg"
-            alt='A picture of Dad and me'
-          />
-          <BlogCard
-            route='/blog/my-sister'
-            update='August 2022'
-            title='My Sister'
-            description="I don't tell very many people about my sister."
-            image={"images/blog_pictures/My-Sister/my-sister.jpeg"}
-            alt='A picture of me, my brother, and my sister'
-          />
-          <BlogCard
-            route='/blog/growing-up'
-            update='June 2022'
-            title='Growing Up'
-            description="Youth is fleeting."
-            image={"images/blog_pictures/Growing-Up/growing-up.jpeg"}
-            alt='A baby picture of James'
-          />
-          <BlogCard
-            route='/blog/my-freshman-college-story'
-            update='May 2022'
-            title='My Freshman College Story'
-            description="It's been a hell of a year."
-            image={"images/blog_pictures/My-Freshman-College-Story/freshman-story.jpeg"}
-            alt='A picture of dum moment'
-          />
+          {numbers.map(n =>
+            <BlogCard
+              key={n}
+              route={story_data[n].route}
+              release={story_data[n].release}
+              title={story_data[n].title}
+              description={story_data[n].description}
+              image={story_data[n].image}
+              alt={story_data[n].alt}
+            />
+          )}
         </Flex>
       </Stack>
     </div >
