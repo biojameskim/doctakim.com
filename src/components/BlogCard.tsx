@@ -1,7 +1,8 @@
 import { Stack, Box, Image, Text, useColorModeValue } from "@chakra-ui/react"
 import { Link as LinkRouter } from 'react-router-dom'
+import { BlogCardType } from "../types/BlogTypes"
 
-const BlogCard = ({ route, title, description, release, image, alt }: { route: string, title: string, description: string, release: string, image: string, alt: string }) => {
+const BlogCard = ({ route, title, description, release, image, alt }: BlogCardType) => {
     return (
         <LinkRouter to={route}>
             <Stack as="a"

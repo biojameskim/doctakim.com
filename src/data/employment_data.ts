@@ -1,14 +1,6 @@
-export type Employment = {
-  company: string,
-  website: string,
-  role: string,
-  image: string,
-  alt: string,
-  date: string,
-  description: string
-};
+import { EmploymentCardType } from "../types/ExperienceTypes"
 
-const employment_data: Employment[] = [
+const employment_data: EmploymentCardType[] = [
   {
     company: 'hack4impact',
     website: 'https://cornellh4i.org/',

@@ -1,7 +1,7 @@
-import { BlogType } from "../types/BlogType"
+import { BlogCardType } from "../types/BlogTypes"
 
 // Data for Stories in Blog
-export const story_data: BlogType[] = [
+export const story_data: BlogCardType[] = [
   {
     route: '/blog/sophomore-slump',
     release: 'NEW',
@@ -45,7 +45,7 @@ export const story_data: BlogType[] = [
 ]
 
 // Data for Thoughts in Blog
-export const thoughts_data: BlogType[] = [
+export const thoughts_data: BlogCardType[] = [
   {
     route: '/blog/dear-mrs-lupsaiu',
     release: 'December 2022',
