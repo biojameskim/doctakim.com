@@ -34,6 +34,7 @@ const Coursework = () => {
               p='1.2rem'
               shadow='lg'
               borderWidth='1px'
+              borderColor={useColorModeValue('gray.200', 'gray.700')}
               rounded='lg'
               bg={useColorModeValue('gray.50', 'gray.700')}
             >
@@ -61,6 +62,7 @@ const Coursework = () => {
               p='1.2rem'
               shadow='lg'
               borderWidth='1px'
+              borderColor={useColorModeValue('gray.200', 'gray.700')}
               rounded='lg'
               bg={useColorModeValue('gray.50', 'gray.700')}
             >
@@ -88,6 +90,7 @@ const Coursework = () => {
               p='1.2rem'
               shadow='lg'
               borderWidth='1px'
+              borderColor={useColorModeValue('gray.200', 'gray.700')}
               rounded='lg'
               bg={useColorModeValue('gray.50', 'gray.700')}
             >

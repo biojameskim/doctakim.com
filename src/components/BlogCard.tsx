@@ -8,10 +8,11 @@ const BlogCard = ({ route, title, description, release, image, alt }: { route: s
                 className='blog-card'
                 p={4}
                 mb={'3rem'}
-                boxShadow={'2xl'}
+                shadow='lg'
+                borderWidth='1px'
+                borderColor={useColorModeValue('gray.200', 'gray.700')}
                 rounded='lg'
-                overflow='hidden'
-                bg={useColorModeValue('gray.200', 'gray.900')}
+                bg={useColorModeValue('gray.100', 'gray.700')}
                 href={route}
                 alignItems={'left'}
                 maxW={{ base: '98%', md: '100%' }}
@@ -27,7 +28,7 @@ const BlogCard = ({ route, title, description, release, image, alt }: { route: s
                 </Box>
                 <Stack mt={{ base: 4, md: 0 }} ml={{ md: 6 }} maxW={'400'} >
                     <Text
-                        fontWeight='bold'
+                        fontWeight='semibold'
                         textTransform='uppercase'
                         fontSize='1rem'
                         letterSpacing='wide'
@@ -48,9 +49,9 @@ const BlogCard = ({ route, title, description, release, image, alt }: { route: s
                     </Text>
 
                     <Text
-                        maxW='100%'
+                        maxW='full'
                         mt={2}
-                        color='gray.500'
+                        color={useColorModeValue('gray.600', 'gray.400')}
                         fontSize='1rem'
                     >
                         {description}

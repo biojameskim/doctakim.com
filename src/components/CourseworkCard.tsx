@@ -9,6 +9,7 @@ const CourseworkCard = ({ courseTitle, courseNumber, affiliation }: { courseTitl
       w={'full'}
       shadow='lg'
       borderWidth='1px'
+      borderColor={useColorModeValue('gray.200', 'gray.700')}
       rounded='lg'
       bg={useColorModeValue('gray.50', 'gray.700')}>
       <Text

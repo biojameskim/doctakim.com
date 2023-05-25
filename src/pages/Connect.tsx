@@ -1,7 +1,7 @@
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 // import { AiOutlinePhone } from 'react-icons/ai';
-import { Box, Image, VStack, HStack, Button, Text } from '@chakra-ui/react';
+import { Box, Image, VStack, HStack, Button, Text, useColorModeValue } from '@chakra-ui/react';
 import { Helmet } from 'react-helmet';
 import { useEffect } from 'react';
 
@@ -17,13 +17,20 @@ const Connect = () => {
             </Helmet>
 
             <VStack align={'center'} maxW={'md'} w={'full'}>
-                <Box pb="2em">
-                    <Text className="page-title" fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '0' }}>
+                <Box>
+                    <Text className="page-title" fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '2vh' }}>
                         Connect
                     </Text>
                 </Box>
 
-                <Box className="connect-image" pb={7}>
+                <Box
+                    className="connect-image"
+                    p='1rem'
+                    shadow='md'
+                    borderWidth='1px'
+                    borderColor={useColorModeValue('gray.200', 'gray.700')}
+                    bg={useColorModeValue('gray.100', 'gray.700')}
+                >
                     <Image
                         borderRadius='2xl'
                         objectFit="contain"
@@ -33,7 +40,8 @@ const Connect = () => {
 
                     />
                 </Box>
-                <HStack spacing={6} align={'center'} maxW={'md'} pb={'6vh'}>
+
+                <HStack spacing={6} align={'center'} maxW={'md'} pt='3vh' pb='7vh'>
                     <VStack spacing={'1rem'} align={'center'} maxW={'md'} pl='5'>
                         <Button w='full' colorScheme='gray' leftIcon={<FaGithub />} as="a" href={"https://github.com/doctakim"} target={"_blank"} pr='5'>
                             <Text fontSize={'1rem'}>Github</Text>
@@ -44,7 +52,7 @@ const Connect = () => {
                         <Button w='full' colorScheme='telegram' leftIcon={<FiMail />} as="a" href={'mailto:jjk297@cornell.edu'} pr='7'>
                             <Text fontSize={'1rem'}>Email</Text>
                         </Button>
-                        {/* <Button w='full' colorScheme='green' leftIcon={<AiOutlinePhone />} as="a" href={'tel:9514620458'} pr='7'>
+                        {/* <Button w='full' colorScheme='green' leftIcon={<AiOutlinePhone />} as="a" href={'tel:0000000000'} pr='7'>
                             <Text fontSize={'1rem'}>Phone</Text>
                         </Button> */}
                     </VStack>

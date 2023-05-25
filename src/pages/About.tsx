@@ -19,7 +19,14 @@ const About = () => {
           About
         </Text>
         <Flex alignItems={'center'} w={{ base: '100%', md: '90%' }} direction={{ base: 'column', md: 'row' }}>
-          <Box w={{ base: '90%', md: '45%' }} p='5' bg={useColorModeValue('gray.100', 'gray.900')} borderRadius={'3xl'}>
+          <Box
+            w={{ base: '90%', md: '45%' }}
+            p='5'
+            bg={useColorModeValue('gray.100', 'gray.700')}
+            borderWidth='1px'
+            borderColor={useColorModeValue('gray.200', 'gray.700')}
+            borderRadius={'3xl'}
+          >
             <Carousel />
           </Box>
 
