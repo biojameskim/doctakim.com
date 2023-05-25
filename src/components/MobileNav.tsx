@@ -11,8 +11,8 @@ import { Link as LinkRouter } from 'react-router-dom';
 
 const MobileNav = () => {
   return (
-    <Menu matchWidth >
-      <MenuButton as={Button}>
+    <Menu matchWidth>
+      <MenuButton as={Button} style={{ zIndex: '1' }}>
         <IconButton
           icon={
             <HamburgerIcon w={8} h={8} />
