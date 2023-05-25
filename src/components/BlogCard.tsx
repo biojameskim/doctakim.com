@@ -17,11 +17,11 @@ const BlogCard = ({ route, title, description, release, image, alt }: { route: s
                 alignItems={'left'}
                 maxW={{ base: '98%', md: '100%' }}
             >
-                <Box flexShrink={0} pos='relative'>
+                <Box>
                     <Image
-                        boxSize='300px'
+                        boxSize='full'
                         borderRadius='2xl'
-                        w='100%'
+                        w='full'
                         src={image}
                         alt={alt}
                     />

@@ -1,4 +1,4 @@
-import { Flex, Stack } from "@chakra-ui/react"
+import { Grid } from "@chakra-ui/react"
 import BlogCard from "../components/BlogCard"
 import { useEffect } from "react";
 
@@ -14,21 +14,24 @@ const Thoughts = () => {
 
   return (
     <div>
-      <Stack textAlign={'left'}>
-        <Flex wrap="wrap">
-          {numbers.map(n =>
-            <BlogCard
-              key={n}
-              route={thoughts_data[n].route}
-              release={thoughts_data[n].release}
-              title={thoughts_data[n].title}
-              description={thoughts_data[n].description}
-              image={thoughts_data[n].image}
-              alt={thoughts_data[n].alt}
-            />
-          )}
-        </Flex>
-      </Stack>
+      <Grid
+        templateColumns={{ md: 'repeat(3, 1fr)' }}
+        w={{ base: 'full', md: '90%' }}
+        gap={{ base: '4', md: '12' }}
+        textAlign={'left'}
+      >
+        {numbers.map(n =>
+          <BlogCard
+            key={n}
+            route={thoughts_data[n].route}
+            release={thoughts_data[n].release}
+            title={thoughts_data[n].title}
+            description={thoughts_data[n].description}
+            image={thoughts_data[n].image}
+            alt={thoughts_data[n].alt}
+          />
+        )}
+      </Grid>
     </div>
   )
 }
