@@ -123,6 +123,17 @@ body {
     box-shadow: 0px 12px 10px lightgray;
 }
 
+/* Skills */
+.skills-card {
+    transition: all 200ms ease-in-out;
+}
+
+.skills-card:hover {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    box-shadow: 0px 12px 10px lightgray;
+}
+
 /* Start Page */
 @keyframes fadeIn {
     from {
