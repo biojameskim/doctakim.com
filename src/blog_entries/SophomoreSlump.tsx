@@ -290,7 +290,7 @@ const SophomoreSlump = () => {
           <Text>Whenever I was busy and needed to study, there was always some hangout or event that popped up out of nowhere.</Text>
           <Text>Of course I still studied when I really had to, but it didn’t help when Elisabeth kept telling me,</Text>
 
-          <Text as='i' paddingY={'5vh'} paddingX={'3.5rem'}>“10 years down the road, are you gonna remember the times you studied or the spontaneous memories you chose to make instead?”</Text>
+          <Text as='i' paddingY={'5vh'} paddingX={{ base: '1.75rem', md: '3.5rem' }}>“10 years down the road, are you gonna remember the times you studied or the spontaneous memories you chose to make instead?”</Text>
 
           <Text>This mentality didn’t always justify the best decisions, but
             it’s only been a couple months down the road, and the happy memories are all I remember.</Text>
