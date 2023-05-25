@@ -16,24 +16,33 @@ const Coursework = () => {
   return (
     <div>
       <Flex w={{ base: '100%', md: '100%' }} mt='2rem' direction={{ base: 'column', md: 'column' }}>
-        <Flex direction='column' w={{ base: '90%', md: '100%' }} mt='0' align='center' mb='5vh'>
+        <Flex direction='column' w={{ base: 'full', md: 'full' }} mt='0' align='center' mb='5vh'>
           <Text fontSize='1.5rem' fontWeight='bold' mb='2.5rem' mt={{ base: '2rem', md: '0' }}>Technical Skills</Text>
 
           <Flex
-            className="skills-card"
             direction={{ base: 'column', md: 'row' }}
             w={{ base: 'full', md: '80%' }}
             justifyContent='center'
             alignContent='center'
             alignItems='center'
 
-            pt='1.2rem'
-            shadow='lg'
-            borderWidth='1px'
-            rounded='lg'
-            bg={useColorModeValue('gray.50', 'gray.700')}
+          // pt='1.2rem'
+          // p={{ base: '0.5rem' }}
+          // shadow='lg'
+          // borderWidth='1px'
+          // rounded='lg'
+          // bg={useColorModeValue('gray.50', 'gray.700')}
           >
-            <Flex direction='column' mb='2rem'>
+            <Flex
+              className="skills-card"
+              direction='column'
+              mb='2rem'
+              p='1.2rem'
+              shadow='lg'
+              borderWidth='1px'
+              rounded='lg'
+              bg={useColorModeValue('gray.50', 'gray.700')}
+            >
               <Text align='left' fontSize='1.2rem' fontWeight='bold' mb='2vh'>Languages</Text>
               <List spacing='0.5rem'>
                 <ListItem textAlign='left'>
@@ -51,7 +60,16 @@ const Coursework = () => {
               </List>
             </Flex>
 
-            <Flex direction='column' mb='2rem'>
+            <Flex
+              className="skills-card"
+              direction='column'
+              mb='2rem'
+              p='1.2rem'
+              shadow='lg'
+              borderWidth='1px'
+              rounded='lg'
+              bg={useColorModeValue('gray.50', 'gray.700')}
+            >
               <Text align='left' fontSize='1.2rem' fontWeight='bold' mb='2vh'>Frameworks & Libraries</Text>
               <List spacing='0.5rem'>
                 <ListItem textAlign='left'>
@@ -69,7 +87,16 @@ const Coursework = () => {
               </List>
             </Flex>
 
-            <Flex direction='column' mb='2rem'>
+            <Flex
+              className="skills-card"
+              direction='column'
+              mb='2rem'
+              p='1.2rem'
+              shadow='lg'
+              borderWidth='1px'
+              rounded='lg'
+              bg={useColorModeValue('gray.50', 'gray.700')}
+            >
               <Text align='left' fontSize='1.2rem' fontWeight='bold' mb='2vh'>Tools</Text>
               <List spacing='0.5rem'>
                 <ListItem textAlign='left'>
@@ -92,7 +119,7 @@ const Coursework = () => {
 
         <Box w='full' mt={{ base: '4rem', md: '2rem' }}>
           <Text fontSize='1.5rem' fontWeight='bold' mb='3rem'>Coursework</Text>
-          <Grid w={{ base: '95%', md: '70%' }} templateColumns={{ md: 'repeat(2, 1fr)' }} gap='6' mb='10vh'>
+          <Grid w={{ base: 'full', md: '70%' }} templateColumns={{ md: 'repeat(2, 1fr)' }} gap='6' mb='10vh'>
             {numbers.map(n =>
               <CourseworkCard
                 key={n}
