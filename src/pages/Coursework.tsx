@@ -31,6 +31,10 @@ const Coursework = () => {
                   <ListIcon as={BsCircle} color='green.500' />
                   Bash, HTML, CSS, SQL
                 </ListItem>
+                <ListItem textAlign='left'>
+                  <ListIcon as={BsCircle} color='white' />
+                  {/* Dummy ListItem because it doesn't align correctly otherwise */}
+                </ListItem>
               </List>
             </Flex>
 
@@ -58,6 +62,10 @@ const Coursework = () => {
                 <ListItem textAlign='left'>
                   <ListIcon as={BsCircle} color='green.500' />
                   Git, Docker, Postman, Linux, XCode
+                </ListItem>
+                <ListItem textAlign='left'>
+                  <ListIcon as={BsCircle} color='white' />
+                  {/* Dummy ListItem because it doesn't align correctly otherwise */}
                 </ListItem>
                 <ListItem textAlign='left'>
                   <ListIcon as={BsCircle} color='white' />
