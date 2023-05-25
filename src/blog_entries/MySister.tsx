@@ -49,6 +49,7 @@ const MySister = () => {
             src="../images/blog_pictures/My-Sister/Pictures/1sis.jpeg"
             alt="A picture of me, bro, and sis"
             caption="Left to right: me, bro, and sis"
+            orientation="h"
           />
 
           <Text pb='5vh'>Just kidding.</Text>
@@ -75,6 +76,7 @@ const MySister = () => {
             src="../images/blog_pictures/My-Sister/Pictures/2the notebook.png"
             alt="A picture of me and bro in a movie"
             caption='"The Notebook" (2012)'
+            orientation="h"
           />
 
           <Text>Eventually, we realized we had no talent for screenwriting,
@@ -92,6 +94,7 @@ const MySister = () => {
             src="../images/blog_pictures/My-Sister/Pictures/3cool brothers.png"
             alt="A picture of me and bro trying to be cool"
             caption="These posts are long deleted"
+            orientation="h"
           />
 
           <Text pb='5vh'>Or so we thought.</Text>
@@ -106,6 +109,7 @@ const MySister = () => {
             src="../images/blog_pictures/My-Sister/Pictures/4jamestown.png"
             alt="Me in a very cringy outfit"
             caption="Even the 17th century pilgrims of Jamestown would cringe at this outfit"
+            orientation="h"
           />
 
           <Text>But all this aside,</Text>
@@ -120,6 +124,7 @@ const MySister = () => {
             src="../images/blog_pictures/My-Sister/Pictures/5sad crash landing.png"
             alt='Me crying after watching "Crash Landing on You"'
             caption='"Crash Landing on You" was sad'
+            orientation="v"
           />
 
           <Text>And trust me, it’s not just me who wants a younger sister.</Text>
@@ -132,6 +137,7 @@ const MySister = () => {
             src="../images/blog_pictures/My-Sister/Pictures/6dadlovesme.jpg"
             alt="A picture of me and Dad"
             caption="Dad promises me he loves me for who I am"
+            orientation="h"
           />
 
           <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
@@ -148,6 +154,7 @@ const MySister = () => {
             src="../images/blog_pictures/My-Sister/Pictures/7story time.png"
             alt="Me and Bro in early years"
             caption="Story time or potty time?"
+            orientation="h"
           />
 
           <Text pb='5vh'>I wish I could be that same loving role model for my
@@ -162,6 +169,7 @@ const MySister = () => {
             src="../images/blog_pictures/My-Sister/Pictures/8my safe space.PNG"
             alt="Bro protecting me"
             caption="My safe space"
+            orientation="h"
           />
 
           <Text>And most importantly, I think I could’ve given my sister some
@@ -194,6 +202,7 @@ const MySister = () => {
             alt="A picture of me with sunglasses. Swag."
             caption="Love... Dating... Heartbreak..."
             caption2="What's that?"
+            orientation="h"
           />
 
           <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
@@ -209,6 +218,7 @@ const MySister = () => {
             src="../images/blog_pictures/My-Sister/Pictures/9charlles.JPG"
             alt="Charles on a swing."
             caption="This brings Charles joy in the present"
+            orientation="h"
           />
 
           <Text>Every Sunday, I hang out with the little kids at my church and
@@ -227,6 +237,7 @@ const MySister = () => {
             src="../images/blog_pictures/My-Sister/Pictures/10 no boys allowed.jpeg"
             alt="church girls playing together."
             caption="They said boys aren't allowed to join"
+            orientation="h"
           />
 
           <Text>As I witness the kids go through this process, I can’t help but
@@ -252,6 +263,7 @@ const MySister = () => {
             src="../images/blog_pictures/My-Sister/Pictures/leah screw off.jpg"
             alt=""
             caption={`Leah: "I'm gonna cut your finger off and stab you"`}
+            orientation="v"
           />
 
           <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
@@ -265,6 +277,7 @@ const MySister = () => {
           <BlogImage
             src="../images/blog_pictures/My-Sister/Pictures/mom bench.png"
             alt="Mom sitting and watching us play tennis"
+            orientation="h"
           />
 
           <Text pb='5vh'>There’s only a limit to the way us three guys can comfort
@@ -283,6 +296,7 @@ const MySister = () => {
           <BlogImage
             src="../images/blog_pictures/My-Sister/Pictures/mom pic.png"
             alt="Mom and dad walking together"
+            orientation="h"
           />
 
           <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
@@ -302,6 +316,7 @@ const MySister = () => {
             src="../images/blog_pictures/My-Sister/Pictures/familial love.png"
             alt="Me and bro have a kiss"
             caption="The Kim brothers know the responsibilities/consequences of familial love"
+            orientation="h"
           />
 
           <Text>But still—</Text >
@@ -314,6 +329,7 @@ const MySister = () => {
             src="../images/blog_pictures/My-Sister/Pictures/cool and cooler.jpeg"
             alt="Me and bro being very cool"
             caption="Cool and cooler"
+            orientation="v"
           />
 
           <Text pb='10vh'>- James Kim</Text >

@@ -40,6 +40,7 @@ const GrowingUp = () => {
             src="../images/blog_pictures/Growing-Up/Pictures/aunt-before.jpg"
             alt="Aunt taking a nap"
             caption="A 5 minute power nap/prayer goes a long way"
+            orientation='v'
           />
 
           <Text pb='5vh'>“Look at my new haircut.”</Text>
@@ -73,6 +74,7 @@ const GrowingUp = () => {
             src="../images/blog_pictures/Growing-Up/Pictures/aunt-after.jpeg"
             alt="Aunt holding hands and singing with Uncle"
             caption="Aunt is still young at heart"
+            orientation='h'
           />
 
           <Text fontWeight='bold' paddingBottom={'2vh'}>—</Text>
@@ -81,6 +83,7 @@ const GrowingUp = () => {
             src="../images/blog_pictures/Growing-Up/Pictures/gpa-before.jpg"
             alt="Grandpa with two of his grandchildren"
             caption="Grandpa loves his grandchildren"
+            orientation='v'
           />
 
           <Text>Almost every summer, my family tries to visit our grandparents
@@ -111,6 +114,7 @@ const GrowingUp = () => {
             src="../images/blog_pictures/Growing-Up/Pictures/gpa-after.jpeg"
             alt="Grandpa laying down on sofa"
             caption="It's okay, grandpa."
+            orientation='v'
           />
 
           <Text fontWeight='bold' paddingBottom={'2vh'}>—</Text>
@@ -119,6 +123,7 @@ const GrowingUp = () => {
             src="../images/blog_pictures/Growing-Up/Pictures/cousins-before.jpg"
             alt="My cousins in the past"
             caption="A swaggy and cool Instagram-worthy picture"
+            orientation='h'
           />
 
           <Text>Until I was in about third grade, I hated my cousins.</Text>
@@ -151,6 +156,7 @@ const GrowingUp = () => {
             src="../images/blog_pictures/Growing-Up/Pictures/cousins-after.jpeg"
             alt="My cousins in the present."
             caption="A less swaggy and cool Instagram-worthy picture"
+            orientation='h'
           />
 
           <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
@@ -187,6 +193,7 @@ const GrowingUp = () => {
             src="../images/blog_pictures/Growing-Up/Pictures/me-before-and-after.png"
             alt="Me before and after"
             caption="Puberty."
+            orientation='h'
           />
 
           <Text pb='10vh'>- James Kim</Text>

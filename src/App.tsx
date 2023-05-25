@@ -17,6 +17,7 @@ import GrowingUp from "./blog_entries/GrowingUp"
 import MySister from "./blog_entries/MySister"
 import TreasureHunt from "./blog_entries/TreasureHunt"
 import MrsLupsaiu from "./blog_entries/MrsLupsaiu"
+import SophomoreSlump from "./blog_entries/SophomoreSlump"
 
 const TRACKING_ID = "G-1SF4Z7N7NS"
 ReactGA.initialize(TRACKING_ID)
@@ -39,6 +40,7 @@ export const App = () => (
           <Route path="/blog/growing-up" element={<GrowingUp />} />
           <Route path="/blog/my-sister" element={<MySister />} />
           <Route path="/blog/treasure-hunt" element={<TreasureHunt />} />
+          <Route path="/blog/sophomore-slump" element={<SophomoreSlump />} />
           <Route path="/blog/dear-mrs-lupsaiu" element={<MrsLupsaiu />} />
         </Routes>
       </div>

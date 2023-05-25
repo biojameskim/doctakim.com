@@ -51,6 +51,7 @@ const FreshmanStory = () => {
             alt="Sleeping at the airport"
             caption={`Mom: "James, you should've just gone to Berkeley`}
             caption2='Dad: "zzzz"'
+            orientation='h'
           />
 
           <Text pb='5vh'>When we finally arrived at my assigned dorm the next morning,
@@ -62,6 +63,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/2hilcvsganedago.png"
             alt="HILC next to Ganedago"
             caption="I pay the same housing as the people who live in Ganedago"
+            orientation='h'
           />
 
           <Text>Apparently, HILC was made to help international students find
@@ -80,6 +82,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/3mom cry.jpeg"
             alt="Mom crying"
             caption="Mom said the food was just TOO good"
+            orientation='v'
           />
 
           <Text>As I was sitting in my uncomfortable dorm chair, I realized that
@@ -106,6 +109,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/4me and eric.jpeg"
             alt="Me and Eric"
             caption="Ecstatic Eric"
+            orientation='h'
           />
 
           <Text>Interestingly, one of the first things Eric told me was,
@@ -119,6 +123,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/5eric and i worm.jpeg"
             alt="Me and Eric almost kiss"
             caption="Eric and I learn there's more to explore than just Christian fellowships"
+            orientation='v'
           />
 
           <Text>Together, we stumbled upon a fellowship we enjoyed and soon,
@@ -130,6 +135,7 @@ const FreshmanStory = () => {
             alt="My friend, Derek"
             caption="Insert: Derpy Derek"
             caption2="Derek has the broadest shoulders I've ever seen"
+            orientation='h'
           />
 
           <Text>And the three of us became six…</Text >
@@ -138,6 +144,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/7abnormal.jpeg"
             alt="The six members of dum moment"
             caption="Insert: Abnormal Angie, Goofy Grace, Exotic Elisabeth"
+            orientation='h'
           />
 
           <Text>Throughout our busy weeks, we made time to have fun, and some
@@ -148,11 +155,13 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/8cooking.jpeg"
             alt="Cooking together"
             caption="Cooking means stealing and reheating the already cooked dining hall chicken"
+            orientation='h'
           />
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/8dp dough updated.png"
             alt="Angie and Elisabeth at DP Dough"
             caption="I don't think Elisabeth likes when I take pictures of her eating"
+            orientation='h'
           />
 
           <Text>We played games together…</Text >
@@ -161,11 +170,13 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/9show and tell2.jpeg"
             alt="Eric and Elisabeth dance for us"
             caption="Unamusing dance battles"
+            orientation='h'
           />
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/10skribble.jpeg"
             alt="dum moment plays skribbl.io together"
             caption="Angie doesn't know how to draw a spoon"
+            orientation='h'
           />
 
           <Text>And we explored the outdoors together…</Text >
@@ -174,11 +185,13 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/11snow angels.jpeg"
             alt="Making snow angels together"
             caption="REAL snow angels"
+            orientation='h'
           />
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/12concrete angel.jpeg"
             alt="Angie makes a concrete angel"
             caption="Angie shows us what a concrete angel is"
+            orientation='h'
           />
 
           <Text>And when you live in Ithaca and the only place to go off campus
@@ -188,11 +201,13 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/13leg wrestling.jpeg"
             alt="Grace and Elisabeth wrestle with their legs"
             caption="Grace and Elisabeth like being touchy"
+            orientation='h'
           />
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/14balance.jpeg"
             alt="Grace and Elisabeth try to balance on each other"
             caption="A little too touchy"
+            orientation='h'
           />
 
           <Text>But we also did the things the average Cornell student does with
@@ -202,6 +217,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/15studying for fun.jpeg"
             alt="dum moment studies together"
             caption="Studying together"
+            orientation='h'
           />
 
           <Text>As the weather started to get colder, these were the people that
@@ -213,6 +229,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/16sheesh faces.png"
             alt="dum moment shows off their sheesh faces"
             caption="The girls made us do this"
+            orientation='h'
           />
 
           <Text>But don’t get me wrong.</Text >
@@ -227,18 +244,21 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/17eric sleeping.jpeg"
             alt="Eric sleeping"
             caption="Eric said he concentrates better with his eyes closed"
+            orientation='h'
           />
           <BlogImage
             maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/18angie sleeping.jpeg"
             alt="Angie sleeping in Cocktail"
             caption="I think Angie said the same thing"
+            orientation='v'
           />
           <BlogImage
             maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/19derek_coc.jpeg"
             alt="Derek plays games in Cocktail"
             caption='Derek: "Just one more round"'
+            orientation='v'
           />
 
           <Text>Despite my busy schedule, I’m proud to say I got all my work done
@@ -250,6 +270,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/20cherrie_starin.jpeg"
             alt="Cherrie, Karen, and Elisabeth do work at felly dessert"
             caption="Don't mess with Cherrie when her essay is due in 2 hours"
+            orientation='h'
           />
 
           <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
@@ -264,6 +285,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/21sabrina.jpeg"
             alt="Me and Sabrina"
             caption="Me and my brother, Sabrina"
+            orientation='h'
           />
 
           <Text>Some people I met were super wise…</Text >
@@ -273,6 +295,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/22wise_gras.jpeg"
             alt="Me and Grace at felly dessert"
             caption="Wise Grace is always ready to impart her knowledge to me"
+            orientation='v'
           />
 
           <Text>While others, not so much.</Text >
@@ -282,6 +305,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/23unwise_gras.jpeg"
             alt="Grace and I grab lunch together"
             caption="This is the same person"
+            orientation='h'
           />
 
           <Text>A couple friends and I became regulars at 7-Eleven and the
@@ -292,6 +316,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/24_711.jpeg"
             alt="The 7/11 gang enjoys snacks at unholy hours"
             caption={`"Look guys, it's only 3am!"`}
+            orientation='v'
           />
 
           <Text>And of course, I can’t not mention the leader of our 7-Eleven crew: Amy.</Text >
@@ -302,6 +327,7 @@ const FreshmanStory = () => {
             alt="Tired Amy"
             caption="Amy is tired."
             caption2="Tired of us saying no to trips to 7-Eleven"
+            orientation='v'
           />
 
           <Text>While I was meeting all these new people, I realized that everyone
@@ -313,12 +339,14 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/26aleena design.jpeg"
             alt="Aleena makes a gingerbread house"
             caption="Aleena has a bright future as a design major"
+            orientation='v'
           />
           <BlogImage
             maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/27simon teeth.jpeg"
             alt="Simon brushes his teeth very well"
             caption="Simon (pre-dent) shows us the proper way to brush our teeth"
+            orientation='v'
           />
           <BlogImage
             maxW="450px"
@@ -326,6 +354,7 @@ const FreshmanStory = () => {
             alt="Micah studies during dance practice"
             caption="Micah seizes every opportunity to study."
             caption2="Even the 3 minute break during dance practice"
+            orientation='v'
           />
 
           <Text>Even whilst surrounded by so many people every day, it would be
@@ -341,6 +370,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/29betterwedsg.jpeg"
             alt="Wednesday small group group photo"
             caption="The best Wednesday small group"
+            orientation='h'
           />
           <BlogImage
             maxW="450px"
@@ -348,6 +378,7 @@ const FreshmanStory = () => {
             alt="Me and Sophia"
             caption="My small group leader, Sophia"
             caption2="W is for the best Wednesday small group"
+            orientation='v'
           />
 
           <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
@@ -362,6 +393,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/31nature.jpeg"
             alt="A waterfall on Cornell's campus"
             caption="My view on the walk to class"
+            orientation='v'
           />
 
           <Text>I learned what “flurries” are, what it means for snow to “stick,”
@@ -372,6 +404,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/32brrrr.jpeg"
             alt="Cassy, me, and Jackie in our winter jackets"
             caption="Three Southern Californians brace for the fierce winter"
+            orientation='h'
           />
 
           <Text>And as the weather started to get warmer and the cherry blossoms
@@ -381,11 +414,13 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/33sleeping beauties.jpeg"
             alt="Sarah and Simon sleep on the couches in HILC"
             caption="So close... yet so far... Simon wishes he was Sarah's green jacket"
+            orientation='h'
           />
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/34cherrie:melody.jpeg"
             alt="Cherrie and Melody rest on each other"
             caption="Cherrie and Melody make me feel lonely (and block my view of the front)"
+            orientation='h'
           />
 
           <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
@@ -401,6 +436,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/35cherrie cookies.jpeg"
             alt="Cherrie and her cookies"
             caption="Caring Cherrie baked cookies and delivered it to all the freshmen"
+            orientation='h'
           />
 
           <Text>Whenever I needed advice, whether it be about academics, relationships,
@@ -411,6 +447,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/36simon:david:dwoo food.png"
             alt="Upperclassmen boys grab meals with me"
             caption="Great food, greater company"
+            orientation='h'
           />
 
           <Text>Others showed their love in different ways.</Text >
@@ -420,17 +457,20 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/37andrew hand.jpeg"
             alt="Andrew goes on a run with me"
             caption="Affectionate Andrew holds his hand out for me to grab so I don't lag too far behind"
+            orientation='v'
           />
           <BlogImage
             maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/38laz haircut.jpeg"
             alt="Laz gives me a haircut"
             caption="Luscious Laz gives me a complimentary haircut"
+            orientation='v'
           />
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/39Alan ride.jpeg"
             alt="Alan gives freshmen a ride back to North"
             caption="Adorable Alan risks a ticket so the freshies can go home safely"
+            orientation='h'
           />
 
           <Text>These people made me look forward to being a sophomore.</Text >
@@ -443,6 +483,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/40daniel and barry.png"
             alt="The three boys with Daniel and Barry"
             caption="Dashing Daniel and Beefy Barry can't escape our skinship"
+            orientation='h'
           />
 
           <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
@@ -457,6 +498,7 @@ const FreshmanStory = () => {
             alt="Care package from my parents"
             caption="Care package from Mama and Papa Kim"
             caption2="Note says: We love you so much. Eat healthy and study hard."
+            orientation='h'
           />
 
           <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
@@ -474,6 +516,7 @@ const FreshmanStory = () => {
             alt="Eating a sandwich after a bad haircut"
             caption="One of many failed haircuts"
             caption2="I was so sad I bought myself a consolation sandwich"
+            orientation='v'
           />
 
           <Text>On a more positive note,</Text >
@@ -484,6 +527,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/43armpits.jpeg"
             alt="Derek and Simon get their armpits waxed during Large Group"
             caption="Fresh 'pits x2"
+            orientation='v'
           />
 
           <Text>I learned that dancing is actually kinda fun</Text >
@@ -494,6 +538,7 @@ const FreshmanStory = () => {
             alt="Boyz Re-Generation's performance"
             caption="Emerging kpop group"
             caption2='"Boyz Re-Generation"'
+            orientation='h'
           />
 
           <Text>And above all,</Text >
@@ -511,6 +556,7 @@ const FreshmanStory = () => {
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/46-hilcmems-1.png"
             alt="Memories at HILC"
+            orientation='h'
           />
 
           <Text>HILC was <Text as='i'> home.</Text></Text >
@@ -519,6 +565,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/45hilc zzz.jpeg"
             alt="Dum Moment sleeping at HILC"
             caption="Breakfast anyone?"
+            orientation='h'
           />
 
           <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
@@ -532,6 +579,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/46hilc memoreis.png"
             alt="Memories at HILC"
             caption="Sleepless nights"
+            orientation='h'
           />
 
           <Text>Elisabeth said freshman year was so great because she came in
@@ -547,6 +595,7 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/47perfect match.jpeg"
             alt="Grace's perfect match"
             caption='Our first "Perfect Match" experience'
+            orientation='h'
           />
 
           <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
