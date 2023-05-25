@@ -189,14 +189,12 @@ const MrsLupsaiu = () => {
 
           < Text pb='10vh' > - James Kim</Text >
 
-
           <Text textAlign='center' fontWeight='bold' pb='4vh'></Text>
           <Text textAlign='center'>Shortly after I wrote this, Mrs. Lupsaiu passed away on January 11, 2023.</Text>
           <Text textAlign='center'>My heart hurts over the fact that you can never know when the last time will be.</Text>
           <Text textAlign='center' pb='5vh'>When the last goodbye will be.</Text>
           <Text textAlign='center'>Thank you, Mrs. Lupsaiu.</Text>
           <Text textAlign='center' pb='20vh'>You will be missed.</Text>
-
 
         </Stack >
       </div >

@@ -50,6 +50,7 @@ const TreasureHunt = () => {
             src="../images/blog_pictures/Treasure-Hunt/Pictures/1-harvard.jpeg"
             alt="John Harvard's foot"
             caption="Touching John Harvard's foot is good luck."
+            orientation='h'
           />
 
           <Text pb='5vh'>While we were in Boston, my mom, brother, and I would go
@@ -63,6 +64,7 @@ const TreasureHunt = () => {
             src="../images/blog_pictures/Treasure-Hunt/Pictures/2-mitlawn.jpeg"
             alt='"The Lawn" at MIT'
             caption='"The Lawn" at MIT'
+            orientation='h'
           />
 
           <Text pb='5vh'>A lot of my memories in Boston take place on this lawn.</Text>
@@ -76,6 +78,7 @@ const TreasureHunt = () => {
             src="../images/blog_pictures/Treasure-Hunt/Pictures/3-mitlawn-mom.jpeg"
             alt='Fun on the lawn'
             caption='Fun on the lawn'
+            orientation='h'
           />
 
           <Text>Eventually, my dad found a new job in California and we were
@@ -107,6 +110,7 @@ const TreasureHunt = () => {
             src="../images/blog_pictures/Treasure-Hunt/Pictures/4 plymouth.JPG"
             alt='Dad and sons in front of Plymouth'
             caption='Sorry Dad, none of us made it to MIT'
+            orientation='h'
           />
 
           <Text pb='5vh'>But still.</Text>
@@ -147,6 +151,7 @@ const TreasureHunt = () => {
             src="../images/blog_pictures/Treasure-Hunt/Pictures/5 holding_on.jpg"
             alt='Dad holding on tight to his sons'
             caption='Holding on tight'
+            orientation='h'
           />
 
           <Text pb='5vh'>My dad reminisces about the past quite often.</Text >
@@ -180,6 +185,7 @@ const TreasureHunt = () => {
             src="../images/blog_pictures/Treasure-Hunt/Pictures/6 bro_time.jpg"
             alt='Bro time'
             caption='Bro time.'
+            orientation='h'
           />
 
           <Text>My dad emailed me again today.</Text >
@@ -200,6 +206,7 @@ const TreasureHunt = () => {
             src="../images/blog_pictures/Treasure-Hunt/Pictures/7 daddys_boy.jpg"
             alt='Dad lifting me up in his arms'
             caption="Daddy's boy"
+            orientation='v'
           />
 
           <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
@@ -232,6 +239,7 @@ const TreasureHunt = () => {
             src="../images/blog_pictures/Treasure-Hunt/Pictures/8 dad,mom,me.jpg"
             alt='Fall in Boston'
             caption='Fall in Boston'
+            orientation='v'
           />
 
           <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
@@ -252,6 +260,7 @@ const TreasureHunt = () => {
             src="../images/blog_pictures/Treasure-Hunt/Pictures/9 chubby_past.jpg"
             alt='Dad and his two chubby sons'
             caption='My chubby past'
+            orientation='h'
           />
 
           <Text pb='5vh'>Sometimes I wish certain chapters of my life never ended.</Text >
@@ -272,6 +281,7 @@ const TreasureHunt = () => {
             src="../images/blog_pictures/Treasure-Hunt/Pictures/10 vibrant_color.JPG"
             alt='Me and bro'
             caption='Vibrant color'
+            orientation='h'
           />
 
           <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
@@ -299,6 +309,7 @@ const TreasureHunt = () => {
             src="../images/blog_pictures/Treasure-Hunt/Pictures/11 fall_in_ith.jpeg"
             alt='Fall in Ithaca'
             caption='Fall in Ithaca'
+            orientation='h'
           />
 
           <Text>And if I ever come back to this campus in the future,</Text >
@@ -314,6 +325,7 @@ const TreasureHunt = () => {
             src="../images/blog_pictures/Treasure-Hunt/Pictures/12 me+dad on lawn.JPG"
             alt='Me and Dad on the lawn'
             caption='Me and Dad. On the lawn.'
+            orientation='h'
           />
 
           <Text pb='10vh'>- James Kim</Text >

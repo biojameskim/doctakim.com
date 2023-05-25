@@ -7,7 +7,7 @@ export const story_data: BlogType[] = [
     release: 'NEW',
     title: 'The Sophomore Slump',
     description: "Halfway done.",
-    image: "../images/blog_pictures/The-Sophomore-Slump/ss43.jpeg",
+    image: "../images/blog_pictures/The-Sophomore-Slump/ss_cover.jpeg",
     alt: 'Dum moment'
   },
   {
