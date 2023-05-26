@@ -51,7 +51,7 @@ export const thoughts_data: BlogCardType[] = [
     release: 'December 2022',
     title: 'Dear Mrs. Lupsaiu',
     description: "I wish there was more time..",
-    image: "../images/blog_pictures/Dear-Mrs-Lupsaiu/lupsaiu cover.jpg",
+    image: "../images/blog_pictures/Dear-Mrs-Lupsaiu/me and lupsaiu.jpg",
     alt: 'Mrs.Lupsaiu and me'
   },
 ]
