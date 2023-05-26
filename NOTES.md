@@ -6,7 +6,7 @@
 
 To test on localhost using your phone, use this command.
 ```
-npx localview --port 300
+npx localview --port 3000
 ```
 
 </br>

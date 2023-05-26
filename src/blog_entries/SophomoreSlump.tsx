@@ -47,7 +47,7 @@ const SophomoreSlump = () => {
           />
 
           <Text>One year ago, I was nervous whether I’d be able to find people I could call my friends.</Text>
-          <Text>Fast forward one year and there were people that made me excited to go back to Ithaca again.</Text>
+          <Text>Fast forward one year, and there were people that made me excited to go back to Ithaca again.</Text>
 
           <BlogImage
             src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss2.jpeg"
@@ -75,10 +75,11 @@ const SophomoreSlump = () => {
           />
 
           <Text>Now that I was a sophomore, things needed to change.</Text>
-          <Text>I wasn’t a small, little freshman anymore.</Text>
-          <Text pb='5vh'>I decided it was time for some discipline in my life.</Text>
+          <Text pb='5vh'>I wasn’t a small, little freshman anymore.</Text>
 
-          <Text>I started waking up earlier every day to get breakfast before going to class.</Text>
+          <Text >I decided it was time for some discipline in my life,</Text>
+          <Text pb='5vh'>so I started waking up earlier every day to get breakfast before going to class.</Text>
+
           <Text>Elisabeth always said she’d join me but she usually didn’t wake up in time,</Text>
           <Text>which meant she had to take her breakfast to go.</Text>
 
@@ -109,7 +110,9 @@ const SophomoreSlump = () => {
             orientation='v'
           />
 
-          <Text>We also gave out boba, had a barbecue event, and did our best to welcome all the new freshmen.</Text>
+          <Text>As I met a lot of different freshmen, I couldn’t help but wonder who’d be the ones that’d stay.</Text>
+          <Text>Would they be cool? </Text>
+          <Text>And hopefully friendly?</Text>
 
           <BlogImage
             src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss8.jpeg"
@@ -118,9 +121,7 @@ const SophomoreSlump = () => {
             orientation='v'
           />
 
-          <Text>As I met a lot of different freshmen, I couldn’t help but wonder who’d be the ones that’d stay.</Text>
-          <Text>Would they be cool? Friendly? Frightening?</Text>
-          <Text>Soon enough, a lot of freshmen started to roll in and some of them were super caring.</Text>
+          <Text>Soon enough, a lot of freshmen started to roll in and some of them were <i>super</i> caring.</Text>
 
           <BlogImage
             src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss9.jpeg"
@@ -145,7 +146,7 @@ const SophomoreSlump = () => {
             orientation='v'
           />
 
-          <Text pb='5vh'>And a lot of them were really affectionate.</Text>
+          <Text pb='5vh'>A lot of them were really affectionate.</Text>
 
           <Text>Both emotionally…</Text>
 
@@ -181,7 +182,7 @@ const SophomoreSlump = () => {
             orientation='v'
           />
 
-          <Text>Sometime early on, I got really close to this freshman named Jonah. </Text>
+          <Text>And sometime early on, I got really close to this freshman named Jonah. </Text>
 
           <BlogImage
             src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss16.jpeg"
@@ -226,7 +227,7 @@ const SophomoreSlump = () => {
           <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
 
           <Text pb='5vh'>As I was forming all these new friendships, I realized that I
-            really wanted to deepen the old relationships I made last year too.</Text>
+            really wanted to deepen the friendships I made last year too.</Text>
           <Text>So I tried my best to find that balance.</Text>
 
           <BlogImage
@@ -266,7 +267,7 @@ const SophomoreSlump = () => {
 
           <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
 
-          <Text pb='5vh'>I learned a lot freshman year and sophomore year was no different.</Text>
+          <Text pb='5vh'>I learned <i>a lot</i> freshman year and sophomore year was no different.</Text>
 
           <Text>I learned some useful life skills…</Text>
 
@@ -290,7 +291,9 @@ const SophomoreSlump = () => {
           <Text>Whenever I was busy and needed to study, there was always some hangout or event that popped up out of nowhere.</Text>
           <Text>Of course I still studied when I really had to, but it didn’t help when Elisabeth kept telling me,</Text>
 
-          <Text as='i' paddingY={'5vh'} paddingX={{ base: '1.75rem', md: '3.5rem' }}>“10 years down the road, are you gonna remember the times you studied or the spontaneous memories you chose to make instead?”</Text>
+          <Text as='i' paddingY={'5vh'} paddingX={{ base: '1.75rem', md: '3.5rem' }}>
+            “10 years down the road, are you gonna remember the times you studied or the spontaneous memories you chose to make instead?”
+          </Text>
 
           <Text>This mentality didn’t always justify the best decisions, but
             it’s only been a couple months down the road, and the happy memories are all I remember.</Text>
@@ -331,7 +334,7 @@ const SophomoreSlump = () => {
 
           <Text fontWeight='bold' paddingBottom={'7vh'}>—</Text>
 
-          <Text pb='5vh'>Sophomore year was also a time of a lot of change.</Text>
+          <Text pb='5vh'>Sophomore year was also a time of <i>a lot</i> of change.</Text>
 
           <Text>It was a time where enemies became lovers,</Text>
 
@@ -397,7 +400,8 @@ const SophomoreSlump = () => {
           <BlogImage
             src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss36.jpeg"
             alt="Highlands girls"
-            caption="The Highlands girls are great at cooking (in no particular order)"
+            caption="The Highlands girls are great at cooking"
+            caption2="(in no particular order)"
             orientation='override'
             maxW='700px'
           />
@@ -434,9 +438,9 @@ const SophomoreSlump = () => {
           />
 
           <Text>Time flew by a little quicker than I wanted, and it was already time to say goodbye.</Text>
-          <Text pb='5vh'>There were some tears, and a lot of hugs.</Text>
+          <Text pb='5vh'>There were some tears, and <i>a lot</i> of hugs.</Text>
 
-          <Text>A lot of these seniors were the first to welcome me when I first got to Cornell, and now for the first time,</Text>
+          <Text>A lot of these seniors were the first to welcome me into Cornell, and now for the first time,</Text>
           <Text>I had to imagine a Cornell without them.</Text>
 
           <BlogImage
@@ -489,7 +493,7 @@ const SophomoreSlump = () => {
             orientation='h'
           />
 
-          <Text>My Dad always told me that there’s nothing you really have to do in life.</Text>
+          <Text>My Dad always told me that there’s nothing you <i>really</i> have to do in life.</Text>
           <Text>He said as long as I work hard while enjoying every moment, I’ll find myself closer to the things I want to do and the direction I want to go.</Text>
           <Text pb='5vh'>And I think I’m slowly understanding what he means.</Text>
 
