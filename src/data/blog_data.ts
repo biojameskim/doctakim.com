@@ -47,6 +47,14 @@ export const story_data: BlogCardType[] = [
 // Data for Thoughts in Blog
 export const thoughts_data: BlogCardType[] = [
   {
+    route: '/blog/facetime',
+    release: 'May 2023',
+    title: 'FaceTime',
+    description: "I hate facetime.",
+    image: "../images/blog_pictures/FaceTime/ft_cover.jpg",
+    alt: 'Mrs.Lupsaiu and me'
+  },
+  {
     route: '/blog/dear-mrs-lupsaiu',
     release: 'December 2022',
     title: 'Dear Mrs. Lupsaiu',
