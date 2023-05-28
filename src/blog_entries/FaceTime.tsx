@@ -39,7 +39,7 @@ const FaceTime = () => {
 
           <Text>At best, the small screen in front of me gives an unsatisfying
             tease of what it feels like to talk in person.</Text>
-          <Text>It’s another layer of inconvenience that I just can’t seem to get past.</Text>
+          <Text>It’s a layer of inconvenience that I just can’t seem to get past.</Text>
 
           <BlogImage
             maxW="280px"
