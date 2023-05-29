@@ -59,7 +59,7 @@ const FaceTime = () => {
           <Text>I want to see the ways they’re reacting to the things I say and
             show them the ways I’m reacting to the things they say.</Text>
           <Text>Whether it be a flirtatious tap on the shoulder, a harder tap of
-            laughter, and an even harder tap of disapproval, I think we were
+            laughter, or an even harder tap of disapproval, I think we were
             made to express ourselves with more than just a face and a voice.</Text>
 
           <BlogImage
