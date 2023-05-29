@@ -1,6 +1,6 @@
 import { Text, Stack } from "@chakra-ui/react"
 import { Helmet } from 'react-helmet'
-import BlogImage from "../../components/BlogImage"
+import BlogImage from "../../components/blog/BlogImage"
 import { useEffect } from "react"
 
 const MySister = () => {

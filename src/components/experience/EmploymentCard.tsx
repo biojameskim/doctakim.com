@@ -1,5 +1,5 @@
 import { Text, Box, useColorModeValue, Flex, Stack, Image, Hide } from "@chakra-ui/react"
-import { EmploymentCardType } from "../types/ExperienceTypes"
+import { EmploymentCardType } from "../../types/ExperienceTypes"
 
 const EmploymentCard = ({ company, website, role, image, alt, date, description }: EmploymentCardType) => {
   return (

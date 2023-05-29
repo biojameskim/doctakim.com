@@ -1,5 +1,5 @@
 import { Box, Text, useColorModeValue } from "@chakra-ui/react"
-import { CourseworkCardType } from "../types/ExperienceTypes"
+import { CourseworkCardType } from "../../types/ExperienceTypes"
 
 const CourseworkCard = ({ courseTitle, courseNumber, affiliation }: CourseworkCardType) => {
   return (

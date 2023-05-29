@@ -3,16 +3,16 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 // Pages Imports
 import StartPage from "./pages/StartPage"
-import NavBar from "./components/Navbar"
-import Footer from "./components/Footer"
+import NavBar from "./components/navbar/Navbar"
+import Footer from "./components/navbar/Footer"
 import Home from "./pages/Home"
 import About from "./pages/About"
-import Experience from "./pages/Experience"
-import Blog from "./pages/Blog"
+import Experience from "./pages/experience/Experience"
+import Blog from "./pages/blog/Blog"
 import Connect from "./pages/Connect"
+import NotFound from "./pages/NotFound"
 import "./fonts/james1-regular-webfont.woff"
 import ReactGA from 'react-ga4'
-import NotFound from "./components/NotFound"
 
 // Blog Entry Imports (Stories)
 import FreshmanStory from "./blog_entries/stories/FreshmanStory"

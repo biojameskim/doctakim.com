@@ -1,5 +1,5 @@
 import { Box, Image, Text } from "@chakra-ui/react"
-import { BlogImageType } from "../types/BlogTypes"
+import { BlogImageType } from "../../types/BlogTypes"
 
 // maxW is set to 400px as default. This is the width of a vertical image.
 // When using BlogImage, if the image is horizontal, specify that with orientation='h'

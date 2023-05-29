@@ -8,7 +8,7 @@ import {
 import { Link } from 'react-router-dom';
 import { VscDebugRestart } from 'react-icons/vsc';
 import { AiOutlineHome } from 'react-icons/ai';
-import SocialButton from './SocialButton';
+import SocialButton from '../SocialButton';
 
 
 const Footer = () => {

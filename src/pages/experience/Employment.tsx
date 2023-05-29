@@ -1,8 +1,8 @@
 import { VStack, Box } from "@chakra-ui/react"
-import EmploymentCard from '../components/EmploymentCard'
+import EmploymentCard from '../../components/experience/EmploymentCard'
 import { useEffect } from "react";
 
-import employment_data from "../data/employment_data"
+import employment_data from "../../data/employment_data"
 
 const Employment = () => {
   // Makes an array from [0, ..., N-1] where N is how many employment data we have

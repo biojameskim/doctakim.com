@@ -1,8 +1,8 @@
 import { Grid } from "@chakra-ui/react"
-import BlogCard from "../components/BlogCard"
+import BlogCard from "../../components/blog/BlogCard"
 import { useEffect } from "react";
 
-import { thoughts_data } from "../data/blog_data";
+import { thoughts_data } from "../../data/blog_data";
 
 const Thoughts = () => {
   // Makes an array from [0, ..., N-1] where N is how many thoughts data we have

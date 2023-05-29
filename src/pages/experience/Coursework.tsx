@@ -1,9 +1,9 @@
 import { Box, Flex, Text, List, ListItem, ListIcon, Grid, useColorModeValue } from "@chakra-ui/react"
 import { BsCircle } from 'react-icons/bs'
-import CourseworkCard from "../components/CourseworkCard"
+import CourseworkCard from "../../components/experience/CourseworkCard"
 import { useEffect } from "react";
 
-import { coursework } from "../data/coursework";
+import { coursework } from "../../data/coursework";
 
 const Coursework = () => {
   // Makes an array from [0, ..., N-1] where N is how many coursework data we have
