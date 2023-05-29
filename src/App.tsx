@@ -15,15 +15,15 @@ import ReactGA from 'react-ga4'
 import NotFound from "./components/NotFound"
 
 // Blog Entry Imports (Stories)
-import FreshmanStory from "./blog_entries/FreshmanStory"
-import GrowingUp from "./blog_entries/GrowingUp"
-import MySister from "./blog_entries/MySister"
-import TreasureHunt from "./blog_entries/TreasureHunt"
-import SophomoreSlump from "./blog_entries/SophomoreSlump"
+import FreshmanStory from "./blog_entries/stories/FreshmanStory"
+import GrowingUp from "./blog_entries/stories/GrowingUp"
+import MySister from "./blog_entries/stories/MySister"
+import TreasureHunt from "./blog_entries/stories/TreasureHunt"
+import SophomoreSlump from "./blog_entries/stories/SophomoreSlump"
 
 // Blog Entry Imports (Thoughts)
-import MrsLupsaiu from "./blog_entries/MrsLupsaiu"
-import FaceTime from "./blog_entries/FaceTime"
+import MrsLupsaiu from "./blog_entries/thoughts/MrsLupsaiu"
+import FaceTime from "./blog_entries/thoughts/FaceTime"
 
 const TRACKING_ID = "G-1SF4Z7N7NS"
 ReactGA.initialize(TRACKING_ID)
