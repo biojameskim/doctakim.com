@@ -11,7 +11,7 @@ const Projects = () => {
     <div>
       <Text fontSize='1.7rem' mt='3rem'>Coming Soon... </Text>
       <Text fontSize='1.3rem' mt='3.5rem'>
-        In the meantime, check out my <a href="https://github.com/doctakim" target="_blank" rel="noreferrer"><u>Github</u> !</a>
+        Check out my <a href="https://github.com/doctakim" target="_blank" rel="noreferrer"><u>Github</u> !</a>
       </Text>
 
     </div>
