@@ -4,9 +4,6 @@ import { useEffect } from "react";
 import Stories from "./Stories";
 import Thoughts from "./Thoughts";
 
-// Cover Photos
-// Keep each photo at 1280x960 --> (2048x1536, 1024x768, etc) using fotor.com
-
 const Blog = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
