@@ -417,7 +417,7 @@ const FreshmanStory = () => {
             orientation='h'
           />
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/34cherrie:melody.jpeg"
+            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/34cherrie_melody2.jpeg"
             alt="Cherrie and Melody rest on each other"
             caption="Cherrie and Melody make me feel lonely (and block my view of the front)"
             orientation='h'
@@ -444,7 +444,7 @@ const FreshmanStory = () => {
           <Text>Usually in the form of grabbing a meal with me.</Text >
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/36simon:david:dwoo food.png"
+            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/36simon_david_dwoo_food2.png"
             alt="Upperclassmen boys grab meals with me"
             caption="Great food, greater company"
             orientation='h'

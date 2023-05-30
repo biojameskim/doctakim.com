@@ -23,7 +23,7 @@ export const story_data: BlogCardType[] = [
     release: 'August 2022',
     title: 'My Sister',
     description: "I don't tell very many people about my sister.",
-    image: "../images/blog_pictures/My-Sister/my-sister.jpeg",
+    image: "../images/blog_pictures/My-Sister/my_sister_cover.jpg",
     alt: 'Me, my brother, and my sister'
   },
   {
