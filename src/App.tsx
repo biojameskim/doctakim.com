@@ -11,6 +11,7 @@ import Experience from "./pages/experience/Experience"
 import Blog from "./pages/blog/Blog"
 import Connect from "./pages/Connect"
 import NotFound from "./pages/NotFound"
+import Hidden from "./pages/Hidden"
 import "./fonts/james1-regular-webfont.woff"
 import ReactGA from 'react-ga4'
 
@@ -41,6 +42,7 @@ export const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/connect" element={<Connect />} />
           <Route path='*' element={<NotFound />} />
+          <Route path="/hidden" element={<Hidden />} />
           {/* Blog entry routes (Stories) */}
           <Route path="/blog/my-freshman-college-story" element={<FreshmanStory />} />
           <Route path="/blog/growing-up" element={<GrowingUp />} />
