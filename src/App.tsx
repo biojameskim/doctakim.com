@@ -1,31 +1,18 @@
 import { ChakraProvider, theme } from "@chakra-ui/react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-
-// Pages Imports
-import StartPage from "./pages/StartPage"
-import NavBar from "./components/navbar/Navbar"
-import Footer from "./components/navbar/Footer"
-import Home from "./pages/Home"
-import About from "./pages/About"
-import Experience from "./pages/experience/Experience"
-import Blog from "./pages/blog/Blog"
-import Connect from "./pages/Connect"
-import NotFound from "./pages/NotFound"
-import Hidden from "./pages/Hidden"
 import "./fonts/james1-regular-webfont.woff"
+
+// Pages
+import { StartPage, Home, About, Experience, Blog, Connect, NotFound, Hidden } from "./pages/pages"
+// Components
+import { NavBar, Footer } from "./components/components"
+// Blog Entries(Stories)
+import { FreshmanStory, GrowingUp, MySister, TreasureHunt, SophomoreSlump } from "./blog_entries/blog_entries"
+// Blog Entries (Thoughts)
+import { MrsLupsaiu, FaceTime } from "./blog_entries/blog_entries"
+
+// Google Analytics
 import ReactGA from 'react-ga4'
-
-// Blog Entry Imports (Stories)
-import FreshmanStory from "./blog_entries/stories/FreshmanStory"
-import GrowingUp from "./blog_entries/stories/GrowingUp"
-import MySister from "./blog_entries/stories/MySister"
-import TreasureHunt from "./blog_entries/stories/TreasureHunt"
-import SophomoreSlump from "./blog_entries/stories/SophomoreSlump"
-
-// Blog Entry Imports (Thoughts)
-import MrsLupsaiu from "./blog_entries/thoughts/MrsLupsaiu"
-import FaceTime from "./blog_entries/thoughts/FaceTime"
-
 const TRACKING_ID = "G-1SF4Z7N7NS"
 ReactGA.initialize(TRACKING_ID)
 
