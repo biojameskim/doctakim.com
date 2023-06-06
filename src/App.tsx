@@ -3,13 +3,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import "./fonts/james1-regular-webfont.woff"
 
 // Pages
-import { StartPage, Home, About, Experience, Blog, Connect, NotFound, Hidden } from "./pages/pages"
+import { StartPage, Home, About, Experience, Blog, Connect, NotFound, Hidden, Birthdays } from "./pages/pages"
 // Components
 import { NavBar, Footer } from "./components/components"
-// Blog Entries(Stories)
+// Blog Entries (Stories)
 import { FreshmanStory, GrowingUp, MySister, TreasureHunt, SophomoreSlump } from "./blog_entries/blog_entries"
 // Blog Entries (Thoughts)
 import { MrsLupsaiu, FaceTime } from "./blog_entries/blog_entries"
+// Blog Entries (Birthdays)
+import { GraceLo20, GraceLi21, Derek20, Angy20 } from "./blog_entries/blog_entries"
 
 // Google Analytics
 import ReactGA from 'react-ga4'
@@ -29,7 +31,9 @@ export const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/connect" element={<Connect />} />
           <Route path='*' element={<NotFound />} />
+          {/* Hidden pages */}
           <Route path="/hidden" element={<Hidden />} />
+          <Route path="/birthdays" element={<Birthdays />} />
           {/* Blog entry routes (Stories) */}
           <Route path="/blog/my-freshman-college-story" element={<FreshmanStory />} />
           <Route path="/blog/growing-up" element={<GrowingUp />} />
@@ -39,6 +43,11 @@ export const App = () => (
           {/* Blog entry routes (Thoughts) */}
           <Route path="/blog/dear-mrs-lupsaiu" element={<MrsLupsaiu />} />
           <Route path="/blog/facetime" element={<FaceTime />} />
+          {/* Birthday routes */}
+          <Route path="/birthdays/grace-lo-20th" element={<GraceLo20 />} />
+          <Route path="/birthdays/grace-li-21st" element={<GraceLi21 />} />
+          <Route path="/birthdays/derek-20th" element={<Derek20 />} />
+          <Route path="/birthdays/angy-20th" element={<Angy20 />} />
         </Routes>
       </div>
       <div className="footer-pin"><Footer /></div>
