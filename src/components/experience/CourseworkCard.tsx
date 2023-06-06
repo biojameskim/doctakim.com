@@ -3,7 +3,7 @@ import { CourseworkCardType } from "../../types/ExperienceTypes"
 
 const CourseworkCard = ({ courseTitle, courseNumber, affiliation }: CourseworkCardType) => {
   return (
-    <Box className="coursework-card"
+    <Box className="hover-card"
       p={'0.5rem'}
       pt={{ base: '0.5rem', md: '0.5rem' }}
       maxW={{ base: '90%', md: '100%' }}

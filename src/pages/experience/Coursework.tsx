@@ -3,11 +3,9 @@ import { BsCircle } from 'react-icons/bs'
 import CourseworkCard from "../../components/experience/CourseworkCard"
 import { useEffect } from "react";
 
-import { coursework } from "../../data/coursework";
+import { coursework_data } from "../../data/coursework";
 
 const Coursework = () => {
-  // Makes an array from [0, ..., N-1] where N is how many coursework data we have
-  const numbers = Array.from(Array(coursework.length).keys());
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -117,12 +115,12 @@ const Coursework = () => {
         <Box w='full' mt={{ base: '4rem', md: '2rem' }}>
           <Text fontSize='1.5rem' fontWeight='bold' mb='3rem'>Coursework</Text>
           <Grid w={{ base: 'full', md: '70%' }} templateColumns={{ md: 'repeat(2, 1fr)' }} gap='6' mb='10vh'>
-            {numbers.map(n =>
+            {coursework_data.map((item, index) =>
               <CourseworkCard
-                key={n}
-                courseTitle={coursework[n].courseTitle}
-                courseNumber={coursework[n].courseNumber}
-                affiliation={coursework[n].affiliation}
+                key={index}
+                courseTitle={item.courseTitle}
+                courseNumber={item.courseNumber}
+                affiliation={item.affiliation}
               />
             )}
           </Grid>

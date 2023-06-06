@@ -5,8 +5,6 @@ import { useEffect } from "react";
 import { thoughts_data } from "../../data/blog_data";
 
 const Thoughts = () => {
-  // Makes an array from [0, ..., N-1] where N is how many thoughts data we have
-  const numbers = Array.from(Array(thoughts_data.length).keys());
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -20,15 +18,15 @@ const Thoughts = () => {
         gap={{ base: '4', md: '12' }}
         textAlign={'left'}
       >
-        {numbers.map(n =>
+        {thoughts_data.map((item, index) =>
           <BlogCard
-            key={n}
-            route={thoughts_data[n].route}
-            release={thoughts_data[n].release}
-            title={thoughts_data[n].title}
-            description={thoughts_data[n].description}
-            image={thoughts_data[n].image}
-            alt={thoughts_data[n].alt}
+            key={index}
+            route={item.route}
+            release={item.release}
+            title={item.title}
+            description={item.description}
+            image={item.image}
+            alt={item.alt}
           />
         )}
       </Grid>

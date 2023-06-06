@@ -15,3 +15,9 @@ export type BlogImageType = {
   orientation?: string,
   maxW?: string
 }
+
+export type BirthdayCardType = {
+  title: string,
+  date: string,
+  route: string,
+}

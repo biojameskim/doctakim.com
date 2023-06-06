@@ -1,9 +1,14 @@
 import { Text, Link, Flex } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Helmet } from 'react-helmet';
 
 const Hidden = () => {
   return (
     <div>
+      <Helmet>
+        <title>doctakim | Hidden</title>
+      </Helmet>
+
       <Text as='h1' className='blog-title' fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} px='3' >
         Some things about me.
       </Text>

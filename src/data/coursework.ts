@@ -4,7 +4,7 @@ export type Coursework = {
   affiliation: string
 }
 
-export const coursework: Coursework[] = [
+export const coursework_data: Coursework[] = [
   {
     courseTitle: "Analysis of Algorithms",
     courseNumber: "CS 4820",

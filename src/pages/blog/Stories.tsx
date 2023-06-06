@@ -1,12 +1,10 @@
+import { useEffect } from "react";
 import { Grid } from "@chakra-ui/react"
 import BlogCard from "../../components/blog/BlogCard"
-import { useEffect } from "react";
 
 import { story_data } from "../../data/blog_data";
 
 const Stories = () => {
-  // Makes an array from [0, ..., N-1] where N is how many story data we have
-  const numbers = Array.from(Array(story_data.length).keys());
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -20,15 +18,15 @@ const Stories = () => {
         gap={{ base: '4', md: '12' }}
         textAlign={'left'}
       >
-        {numbers.map(n =>
+        {story_data.map((item, index) =>
           <BlogCard
-            key={n}
-            route={story_data[n].route}
-            release={story_data[n].release}
-            title={story_data[n].title}
-            description={story_data[n].description}
-            image={story_data[n].image}
-            alt={story_data[n].alt}
+            key={index}
+            route={item.route}
+            release={item.release}
+            title={item.title}
+            description={item.description}
+            image={item.image}
+            alt={item.alt}
           />
         )}
       </Grid>
