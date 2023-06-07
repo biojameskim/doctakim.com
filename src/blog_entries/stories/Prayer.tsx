@@ -146,7 +146,7 @@ const Prayer = () => {
           <Text>Lately, I've been home alone.</Text>
           <Text pb='5vh'>My entire family went to Korea for a month so I’ve been living by myself.</Text>
 
-          <Text>At first, I was really excited at the thought of being independent where I could finally have no curfew and start learning how to cook for myself.</Text>
+          <Text>At first, I was really excited at the thought of being independent. I could finally have no curfew and start learning how to cook for myself.</Text>
           <Text pb='5vh'>But that excitement didn’t last very long.</Text>
 
           <Text>I've realized that home without family isn’t really <i>home</i>.</Text>

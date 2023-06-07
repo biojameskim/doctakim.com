@@ -6,7 +6,7 @@ export const story_data: BlogCardType[] = [
     route: '/blog/prayer',
     release: 'NEW',
     title: 'Prayer',
-    description: "Sometimes, I don't wanna pray.",
+    description: "Sometimes, I just don't wanna pray.",
     image: "../images/blog_pictures/Prayer/pray_cover.jpeg",
     alt: 'Brother and Me.'
   },
