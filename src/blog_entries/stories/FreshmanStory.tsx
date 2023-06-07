@@ -611,7 +611,7 @@ const FreshmanStory = () => {
 
           <Text>and I can’t wait to go back.</Text >
 
-          <Box paddingY='5vh' maxWidth={'400px'} alignSelf='center'>
+          <Box paddingY='5vh' maxWidth={'400px'} alignSelf='center' borderRadius='xl' overflow='hidden'>
             <video controls>
               <source src="../images/blog_pictures/My-Freshman-College-Story/Pictures/48bye hilc.mov" />
             </video>

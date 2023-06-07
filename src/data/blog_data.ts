@@ -3,8 +3,16 @@ import { BlogCardType } from "../types/BlogTypes"
 // Data for Stories in Blog
 export const story_data: BlogCardType[] = [
   {
-    route: '/blog/sophomore-slump',
+    route: '/blog/prayer',
     release: 'NEW',
+    title: 'Prayer',
+    description: "Sometimes, I don't wanna pray.",
+    image: "../images/blog_pictures/Prayer/pray_cover.jpeg",
+    alt: 'Brother and Me.'
+  },
+  {
+    route: '/blog/sophomore-slump',
+    release: 'May 2023',
     title: 'The Sophomore Slump',
     description: "Halfway done.",
     image: "../images/blog_pictures/The-Sophomore-Slump/ss_cover.jpeg",

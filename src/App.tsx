@@ -7,7 +7,7 @@ import { StartPage, Home, About, Experience, Blog, Connect, NotFound, Hidden, Bi
 // Components
 import { NavBar, Footer } from "./components/components"
 // Blog Entries (Stories)
-import { FreshmanStory, GrowingUp, MySister, TreasureHunt, SophomoreSlump } from "./blog_entries/blog_entries"
+import { FreshmanStory, GrowingUp, MySister, TreasureHunt, SophomoreSlump, Prayer } from "./blog_entries/blog_entries"
 // Blog Entries (Thoughts)
 import { MrsLupsaiu, FaceTime } from "./blog_entries/blog_entries"
 // Blog Entries (Birthdays)
@@ -40,6 +40,7 @@ export const App = () => (
           <Route path="/blog/my-sister" element={<MySister />} />
           <Route path="/blog/treasure-hunt" element={<TreasureHunt />} />
           <Route path="/blog/sophomore-slump" element={<SophomoreSlump />} />
+          <Route path="/blog/prayer" element={<Prayer />} />
           {/* Blog entry routes (Thoughts) */}
           <Route path="/blog/dear-mrs-lupsaiu" element={<MrsLupsaiu />} />
           <Route path="/blog/facetime" element={<FaceTime />} />
