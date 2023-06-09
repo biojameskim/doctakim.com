@@ -36,12 +36,12 @@ const Prayer = () => {
           fontFamily='century'>
 
           <Text>I’m a Christian.</Text>
-          <Text>And one of the things that Christians believe is that prayer's
+          <Text>And one thing Christians believe is that prayer's
             really important.</Text>
           <Text pb='5vh'>It’s a way we can talk with God, whether it be telling
             Him about our day or listening to what He might be saying to us.</Text>
 
-          <Text>Though a lot of times, it can feel like I’m talking to a wall.</Text>
+          <Text>Though a lot of times, prayer can feel like I’m talking to a wall.</Text>
           <Text pb='5vh'>Is God <i>really</i> listening on the other side?
             Or am I just talking to myself?</Text>
 
@@ -59,7 +59,8 @@ const Prayer = () => {
 
           <Text pb='5vh'>I’ve been praying pretty much my whole life.</Text>
 
-          <Text>I grew up in a Christian family, so prayer's been around for as long as I can remember.</Text>
+          <Text>I grew up in a Christian family, so prayer's been a part of my life
+            for as long as I can remember.</Text>
           <Text pb='5vh'>My pastor encouraged me to pray every Sunday morning, my parents
             made me pray before we ate dinner together every evening, and I'd
             try my best to pray before I fell asleep every night.</Text>
