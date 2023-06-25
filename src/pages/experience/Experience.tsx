@@ -23,16 +23,16 @@ const Experience = () => {
         <Tabs orientation='horizontal' variant='soft-rounded' colorScheme='green' align='center'>
           <TabList>
             <Tab color={useColorModeValue('gray.600', 'white')} >Employment</Tab>
-            <Tab color={useColorModeValue('gray.600', 'white')}>Projects</Tab>
+            {/* <Tab color={useColorModeValue('gray.600', 'white')}>Projects</Tab> */}
             <Tab color={useColorModeValue('gray.600', 'white')}>Skills & Courses</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>
               <Employment />
             </TabPanel>
-            <TabPanel>
+            {/* <TabPanel>
               <Projects />
-            </TabPanel>
+            </TabPanel> */}
             <TabPanel>
               <Coursework />
             </TabPanel>
