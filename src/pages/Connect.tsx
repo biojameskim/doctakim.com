@@ -25,23 +25,22 @@ const Connect = () => {
 
                 <Box
                     className="connect-image"
-                    p='1rem'
+                    p='0.75rem'
                     shadow='md'
-                    borderWidth='1px'
-                    borderColor={useColorModeValue('gray.200', 'gray.700')}
+                    borderRadius='50%'
                     bg={useColorModeValue('gray.100', 'gray.700')}
                 >
                     <Image
-                        borderRadius='2xl'
+                        borderRadius='50%'
                         objectFit="contain"
-                        width='240px'
-                        src={'images/pictures/connect_pfp.jpeg'}
+                        width='220px'
+                        src={'images/pictures/connect_pfp_square.jpeg'}
                         alt='James Kim'
 
                     />
                 </Box>
 
-                <HStack spacing={6} align={'center'} maxW={'md'} pt='3vh' pb='7vh'>
+                <HStack spacing={6} align={'center'} maxW={'md'} pt='5vh' pb='7vh'>
                     <VStack spacing={'1rem'} align={'center'} maxW={'md'} pl='5'>
                         <Button w='full' colorScheme='gray' leftIcon={<FaGithub />} as="a" href={"https://github.com/doctakim"} target={"_blank"} pr='5'>
                             <Text fontSize={'1rem'}>Github</Text>
@@ -58,13 +57,13 @@ const Connect = () => {
                     </VStack>
 
                     <VStack spacing={'1.8rem'} align={'left'} maxW={'md'} w={'full'}>
-                        <Text fontSize="1.2rem">
+                        <Text fontSize="1.1rem">
                             doctakim
                         </Text>
-                        <Text fontSize="1.2rem">
+                        <Text fontSize="1.1rem">
                             James Kim
                         </Text>
-                        <Text fontSize="1.2rem">
+                        <Text fontSize="1.1rem">
                             jjk297(at)cornell.edu
                         </Text>
                         {/* <Text fontWeight="normal" fontSize="1.2rem">

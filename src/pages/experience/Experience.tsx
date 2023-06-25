@@ -1,6 +1,6 @@
 import { Text, Box, Tabs, TabList, Tab, TabPanels, TabPanel, useColorModeValue } from "@chakra-ui/react"
 import Employment from "./Employment"
-import Projects from "./Projects"
+// import Projects from "./Projects"
 import Coursework from "./Coursework"
 import { useEffect } from "react"
 import { Helmet } from 'react-helmet';
