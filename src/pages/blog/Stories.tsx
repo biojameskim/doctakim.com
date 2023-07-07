@@ -27,6 +27,7 @@ const Stories = () => {
             description={item.description}
             image={item.image}
             alt={item.alt}
+            pin={item.pin}
           />
         )}
       </Grid>

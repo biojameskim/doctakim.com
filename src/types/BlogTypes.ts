@@ -4,7 +4,8 @@ export type BlogCardType = {
   description: string,
   release: string,
   image: string,
-  alt: string
+  alt: string,
+  pin: boolean
 }
 
 export type BlogImageType = {

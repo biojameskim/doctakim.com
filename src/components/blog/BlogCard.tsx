@@ -2,7 +2,7 @@ import { Stack, Box, Image, Text, useColorModeValue } from "@chakra-ui/react"
 import { Link as LinkRouter } from 'react-router-dom'
 import { BlogCardType } from "../../types/BlogTypes"
 
-const BlogCard = ({ route, title, description, release, image, alt }: BlogCardType) => {
+const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogCardType) => {
     return (
         <LinkRouter to={route}>
             <Stack as="a"
@@ -10,14 +10,27 @@ const BlogCard = ({ route, title, description, release, image, alt }: BlogCardTy
                 p={4}
                 mb={'3rem'}
                 shadow='lg'
-                borderWidth='1px'
-                borderColor={useColorModeValue('gray.200', 'gray.700')}
+                borderWidth={pin ? '1px' : '1px'}
+                borderColor={useColorModeValue('gray.200', 'gray.600')}
                 rounded='lg'
                 bg={useColorModeValue('gray.100', 'gray.700')}
                 href={route}
                 alignItems={'left'}
                 maxW={{ base: '98%', md: '100%' }}
+                position={'relative'}
             >
+                {pin && (
+                    <Image
+                        position='absolute'
+                        objectFit="contain"
+                        width='35px'
+                        right='-4'
+                        top='-4'
+                        src={'images/icons/redpin2.png'}
+                        alt='Red pin'
+                    />
+                )}
+
                 <Box>
                     <Image
                         boxSize='full'
@@ -27,6 +40,7 @@ const BlogCard = ({ route, title, description, release, image, alt }: BlogCardTy
                         alt={alt}
                     />
                 </Box>
+
                 <Stack mt={{ base: 4, md: 0 }} ml={{ md: 6 }} maxW={'400'} >
                     <Text
                         fontWeight='semibold'
@@ -57,6 +71,7 @@ const BlogCard = ({ route, title, description, release, image, alt }: BlogCardTy
                     >
                         {description}
                     </Text>
+    
                 </Stack>
 
             </Stack>
