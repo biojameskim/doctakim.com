@@ -10,7 +10,7 @@ const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogC
                 p={4}
                 mb={'3rem'}
                 shadow='lg'
-                borderWidth={pin ? '1px' : '1px'}
+                borderWidth={pin ? '10px' : '1px'}
                 borderColor={useColorModeValue('gray.200', 'gray.600')}
                 rounded='lg'
                 bg={useColorModeValue('gray.100', 'gray.700')}
@@ -26,7 +26,7 @@ const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogC
                         width='35px'
                         right='-4'
                         top='-4'
-                        src={'images/icons/redpin2.png'}
+                        src={'images/icons/redpin.png'}
                         alt='Red pin'
                     />
                 )}
