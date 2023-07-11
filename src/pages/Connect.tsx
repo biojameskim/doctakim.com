@@ -45,7 +45,7 @@ const Connect = () => {
                         <Button w='full' colorScheme='gray' leftIcon={<FaGithub />} as="a" href={"https://github.com/doctakim"} target={"_blank"} pr='5'>
                             <Text fontSize={'1rem'}>Github</Text>
                         </Button>
-                        <Button w='full' colorScheme='linkedin' leftIcon={<FaLinkedin />} as="a" href={'https://www.linkedin.com/in/doctakim/'} target={"_blank"}>
+                        <Button w='full' colorScheme='linkedin' leftIcon={<FaLinkedin />} as="a" href={'https://www.linkedin.com/in/biojameskim/'} target={"_blank"}>
                             <Text fontSize={'1rem'}>Linkedin</Text>
                         </Button>
                         <Button w='full' colorScheme='telegram' leftIcon={<FiMail />} as="a" href={'mailto:jjk297@cornell.edu'} pr='7'>
