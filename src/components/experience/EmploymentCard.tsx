@@ -8,30 +8,30 @@ const EmploymentCard = ({ company, website, role, image, alt, date, description 
       target={"_blank"}
       href={website}
       p={'0.5rem'}
-      pt={{ base: '6', md: '0.5rem' }}
-      margin="auto"
+      py={{ base: '6', md: '0.8rem' }}
       mt={10}
-      maxW={{ base: '90%', md: '80%' }}
+      maxW={{ base: '90%', md: '75%' }}
       w={'full'}
       shadow='lg'
       borderWidth='1px'
       borderColor={useColorModeValue('gray.200', 'gray.700')}
       rounded='lg'
       bg={useColorModeValue('gray.50', 'gray.700')}>
-      <Flex justify='left' direction={{ base: 'column', md: 'row' }}>
+
+      <Flex justify='left' direction={{ base: 'column', md: 'row' }} ml='4'>
 
         <Box>
           <Image
-            borderRadius='2xl'
-            maxWidth={'150px'}
-            bg={useColorModeValue('gray.300', 'gray.700')}
-            p='2'
+            borderRadius='lg'
+            maxWidth={'130px'}
+            bg={useColorModeValue('gray.200', 'gray.600')}
+            p='4'
             src={image}
             alt={alt}
           />
         </Box>
 
-        <Stack pl='5' spacing='1'>
+        <Stack pl='5' spacing='1' w='85%'>
           <Flex w='100%' justify='flex-start' align='center' direction={{ base: 'column', md: 'row' }}>
             <Text fontSize='1.7rem' fontWeight='bold' pt={{ base: '1rem', md: '0' }} textAlign={{ base: 'center' }}>
               {company}
