@@ -3,7 +3,7 @@ import { EmploymentCardType } from "../types/ExperienceTypes"
 const employment_data: EmploymentCardType[] = [
   {
     company: 'Southern California Edison',
-    website: 'https://sce.com/',
+    website: 'https://edison.com/',
     role: 'Software Engineer Intern',
     image: "images/logos/sce_logo.png",
     alt: 'Southern California Edison Logo',
