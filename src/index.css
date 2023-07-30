@@ -141,7 +141,7 @@ body {
     }
 }
 
-.scroll-down-icon {
+.scroll-icon {
     animation: fadeIn 1s infinite alternate;
 }
 

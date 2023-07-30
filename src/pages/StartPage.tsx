@@ -1,7 +1,7 @@
 import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, Move, MoveOut, Sticky, ZoomIn } from 'react-scroll-motion'
 import { Text, useColorModeValue, } from '@chakra-ui/react';
 import { Link } from "react-router-dom"
-import { ChevronDownIcon } from '@chakra-ui/icons';
+import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons';
 import { useEffect } from 'react';
 
 const StartPage = () => {
@@ -15,7 +15,7 @@ const StartPage = () => {
                 <ScrollPage>
                     <Animator animation={batch(Fade(), Move(), Sticky(), MoveOut(0, -200))}>
                         <span style={{ fontSize: "5rem" }}>Hi, I'm James.</span>
-                        <Text className='scroll-down-icon' pt='2rem' fontSize='2rem' align={'center'}><ChevronDownIcon /></Text>
+                        <Text className='scroll-icon' pt='2rem' fontSize='2rem' align={'center'}><ChevronDownIcon /></Text>
                     </Animator>
                 </ScrollPage>
 
@@ -84,6 +84,7 @@ const StartPage = () => {
                 <ScrollPage>
                     <Animator animation={batch(Sticky(), FadeIn(), ZoomIn(2, 1))}>
                         <Link to="/home"><span style={{ fontSize: "120px" }}>🏠</span></Link>
+                        <Text className='scroll-icon' mt='-4' fontSize='2rem' align={'center'}><ChevronUpIcon /></Text>
                     </Animator>
                 </ScrollPage>
 
