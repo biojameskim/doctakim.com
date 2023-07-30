@@ -56,7 +56,8 @@ const StartPage = () => {
 
                 <ScrollPage>
                     <Animator animation={batch(Fade(), Sticky(), MoveOut())}>
-                        <span style={{ fontSize: "50px" }}>But back to the topic</span>
+                        <Text style={{ fontSize: "50px" }}>I love learning new things</Text>
+                        <Text style={{ fontSize: "50px" }}>and telling stories.</Text>
                     </Animator>
                 </ScrollPage>
 
@@ -67,31 +68,7 @@ const StartPage = () => {
                 </ScrollPage>
 
                 <ScrollPage>
-                    <Animator animation={batch(Fade(), Sticky(), MoveOut())}>
-                        <span style={{ fontSize: "50px" }}>Hi, I'm James Kim</span>
-                    </Animator>
-                </ScrollPage>
-
-                <ScrollPage>
-                    <Animator animation={Fade()}>
-                        <span style={{ fontSize: "60px" }}> </span>
-                    </Animator>
-                </ScrollPage>
-
-                <ScrollPage>
-                    <Animator animation={batch(Fade(), Sticky(), MoveOut())}>
-                        <span style={{ fontSize: "50px" }}>I want to leave a meaningful impact on the world around me</span>
-                    </Animator>
-                </ScrollPage>
-
-                <ScrollPage>
-                    <Animator animation={Fade()}>
-                        <span style={{ fontSize: "60px" }}> </span>
-                    </Animator>
-                </ScrollPage>
-
-                <ScrollPage>
-                    <Animator animation={batch(FadeIn(), Sticky(), Fade(), MoveOut(0, -300))}>
+                    <Animator animation={batch(Sticky(), Fade(), ZoomIn(2, 1))}>
                         <span style={{ fontSize: "60px" }}>
                             Come check out what I'm doing!
                         </span>
@@ -105,7 +82,7 @@ const StartPage = () => {
                 </ScrollPage>
 
                 <ScrollPage>
-                    <Animator animation={batch(Sticky(), FadeIn(), ZoomIn(3, 1))}>
+                    <Animator animation={batch(Sticky(), FadeIn(), ZoomIn(2, 1))}>
                         <Link to="/home"><span style={{ fontSize: "120px" }}>🏠</span></Link>
                     </Animator>
                 </ScrollPage>
