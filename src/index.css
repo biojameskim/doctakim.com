@@ -10,10 +10,12 @@ html {
 
 body {
     margin-right: calc(100vw - 100%);
+    font-family: DM Sans, sans-serif;
 }
 
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
 @import url('http://fonts.cdnfonts.com/css/century-schoolbook');
 
 @font-face {
@@ -41,6 +43,9 @@ body {
 /* NAVBAR */
 .navbar {
     color: black;
+}
+
+.navbar-james {
     font-family: "James"
 }
 

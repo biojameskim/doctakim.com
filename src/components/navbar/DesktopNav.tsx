@@ -19,11 +19,11 @@ const DesktopNav = () => {
 
     <Flex alignItems={'center'}>
       <Stack direction={'row'} spacing={4}>
-        <LinkRouter to="/about"><Button backgroundColor={useColorModeValue('gray.100', 'gray.900')} fontSize='1.8rem' fontWeight="bold">About</Button></LinkRouter>
-        <LinkRouter to="/experience"><Button backgroundColor={useColorModeValue('gray.100', 'gray.900')} fontSize='1.8rem' fontWeight="bold">Experience</Button></LinkRouter>
-        <LinkRouter to="/blog"><Button backgroundColor={useColorModeValue('gray.100', 'gray.900')} fontSize='1.8rem' fontWeight="bold">Blog</Button></LinkRouter>
-        <LinkRouter to="/connect"><Button backgroundColor={useColorModeValue('gray.100', 'gray.900')} fontSize='1.8rem' fontWeight="bold">Connect</Button></LinkRouter>
-        <Box as={Button} onClick={toggleColorMode} backgroundColor={useColorModeValue('gray.100', 'gray.900')}>
+        <LinkRouter to="/about"><Box as={Button} _hover={{bg: 'none'}} backgroundColor={useColorModeValue('gray.100', 'gray.900')} fontSize='1.2rem' fontWeight="medium">About</Box></LinkRouter>
+        <LinkRouter to="/experience"><Box as={Button} _hover={{bg: 'none'}} backgroundColor={useColorModeValue('gray.100', 'gray.900')} fontSize='1.2rem' fontWeight="medium">Experience</Box></LinkRouter>
+        <LinkRouter to="/blog"><Box as={Button} _hover={{bg: 'none'}} backgroundColor={useColorModeValue('gray.100', 'gray.900')} fontSize='1.2rem' fontWeight="medium">Blog</Box></LinkRouter>
+        <LinkRouter to="/connect"><Box as={Button} _hover={{bg: 'none'}} backgroundColor={useColorModeValue('gray.100', 'gray.900')} fontSize='1.2rem' fontWeight="medium">Connect</Box></LinkRouter>
+        <Box as={Button} _hover={{bg: 'none'}} onClick={toggleColorMode} backgroundColor={useColorModeValue('gray.100', 'gray.900')}>
           {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
         </Box>
       </Stack>

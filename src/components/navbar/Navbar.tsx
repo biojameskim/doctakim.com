@@ -24,9 +24,9 @@ export default function NavBar() {
           <MobileNav />
         </Flex>
 
-        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+        <Flex flex={{ base: 1 }} alignItems='center' justify={{ base: 'center', md: 'start' }}>
           <LinkRouter to="/home">
-            <Box as={Button} backgroundColor={useColorModeValue('gray.100', 'gray.900')} justify={'flex-start'} fontSize='2rem' fontWeight="bold">
+            <Box as={Button} className="navbar-james" _hover={{bg: 'none'}} backgroundColor={useColorModeValue('gray.100', 'gray.900')} justify={'flex-start'} fontSize='2rem' fontWeight="bold">
               James Kim
             </Box>
           </LinkRouter>
