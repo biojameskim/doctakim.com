@@ -11,7 +11,7 @@ const Angy20 = () => {
   return (
     <div>
       <Helmet>
-        <title>doctakim | Angy's 20th</title>
+        <title>biojameskim | Angy's 20th</title>
       </Helmet>
 
       <Text className='blog-title' fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} px='3' >

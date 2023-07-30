@@ -8,7 +8,7 @@ const Birthdays = () => {
   return (
     <div>
       <Helmet>
-        <title>doctakim | Birthdays</title>
+        <title>biojameskim | Birthdays</title>
       </Helmet>
 
       <Box w='full'>

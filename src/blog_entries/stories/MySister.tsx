@@ -11,7 +11,7 @@ const MySister = () => {
   return (
     <div>
       <Helmet>
-        <title>doctakim | My Sister</title>
+        <title>biojameskim | My Sister</title>
       </Helmet>
 
       <Text className='blog-title' fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} >

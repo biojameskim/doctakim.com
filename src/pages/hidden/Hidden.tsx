@@ -6,7 +6,7 @@ const Hidden = () => {
   return (
     <div>
       <Helmet>
-        <title>doctakim | Hidden</title>
+        <title>biojameskim | Hidden</title>
       </Helmet>
 
       <Text as='h1' className='blog-title' fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} px='3' >

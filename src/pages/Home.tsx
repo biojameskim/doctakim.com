@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div className="home-page">
             <Helmet>
-                <title>doctakim | Home</title>
+                <title>biojameskim | Home</title>
             </Helmet>
             <Box textAlign="center">
                 <Text className="page-title" fontSize={{ base: "3.2rem", md: "4rem" }} pb={{ base: '2vh', md: '0' }}>Currently ...</Text>

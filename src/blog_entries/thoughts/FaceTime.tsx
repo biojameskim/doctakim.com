@@ -11,7 +11,7 @@ const FaceTime = () => {
   return (
     <div>
       <Helmet>
-        <title>doctakim | FaceTime</title>
+        <title>biojameskim | FaceTime</title>
       </Helmet>
 
       <Text className='blog-title' fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} >

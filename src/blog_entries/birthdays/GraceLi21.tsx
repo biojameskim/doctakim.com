@@ -11,7 +11,7 @@ const GraceLi21 = () => {
   return (
     <div>
       <Helmet>
-        <title>doctakim | Grace Li's 21st</title>
+        <title>biojameskim | Grace Li's 21st</title>
       </Helmet>
 
       <Text className='blog-title' fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} px='3' >

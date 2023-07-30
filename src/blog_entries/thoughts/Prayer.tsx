@@ -11,7 +11,7 @@ const Prayer = () => {
   return (
     <div>
       <Helmet>
-        <title>doctakim | Prayer</title>
+        <title>biojameskim | Prayer</title>
       </Helmet>
 
       <Text className='blog-title' fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} px='3' >

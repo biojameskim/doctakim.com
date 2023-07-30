@@ -12,7 +12,7 @@ const Blog = () => {
   return (
     <div>
       <Helmet>
-        <title>doctakim | Blog</title>
+        <title>biojameskim | Blog</title>
       </Helmet>
 
       <Box>

@@ -11,7 +11,7 @@ const MrsLupsaiu = () => {
   return (
     <div>
       <Helmet>
-        <title>doctakim | Dear Mrs. Lupsaiu</title>
+        <title>biojameskim | Dear Mrs. Lupsaiu</title>
       </Helmet>
 
       <Text className='blog-title' fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} >

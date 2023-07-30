@@ -13,7 +13,7 @@ const Experience = () => {
   return (
     <div>
       <Helmet>
-        <title>doctakim | Experience</title>
+        <title>biojameskim | Experience</title>
       </Helmet>
 
       <Box>

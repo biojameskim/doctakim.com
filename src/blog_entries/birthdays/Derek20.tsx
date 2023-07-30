@@ -11,7 +11,7 @@ const Derek20 = () => {
   return (
     <div>
       <Helmet>
-        <title>doctakim | Derek's 20th</title>
+        <title>biojameskim | Derek's 20th</title>
       </Helmet>
 
       <Text className='blog-title' fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} px='3' >

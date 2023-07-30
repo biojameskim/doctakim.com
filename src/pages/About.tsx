@@ -12,7 +12,7 @@ const About = () => {
   return (
     <div>
       <Helmet>
-        <title>doctakim | About</title>
+        <title>biojameskim | About</title>
       </Helmet>
       <VStack>
         <Text className="page-title" fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '4vh' }} >

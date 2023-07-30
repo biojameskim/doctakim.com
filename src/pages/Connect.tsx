@@ -13,7 +13,7 @@ const Connect = () => {
     return (
         <div>
             <Helmet>
-                <title>doctakim | Connect</title>
+                <title>biojameskim | Connect</title>
             </Helmet>
 
             <VStack align={'center'} maxW={'md'} w={'full'}>
