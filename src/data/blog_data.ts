@@ -11,15 +11,15 @@ export const story_data: BlogCardType[] = [
     alt: "Dad and Me",
     pin: true
   },
-  {
-    route: '/blog/sophomore-slump',
-    release: 'May 2023',
-    title: 'The Sophomore Slump',
-    description: "Halfway done.",
-    image: "../images/blog_pictures/The-Sophomore-Slump/ss_cover.jpeg",
-    alt: 'Dum moment',
-    pin: false
-  },
+  // {
+  //   route: '/blog/sophomore-slump',
+  //   release: 'May 2023',
+  //   title: 'The Sophomore Slump',
+  //   description: "Halfway done.",
+  //   image: "../images/blog_pictures/The-Sophomore-Slump/ss_cover.jpeg",
+  //   alt: 'Dum moment',
+  //   pin: false
+  // },
   {
     route: '/blog/my-sister',
     release: 'August 2022',
