@@ -1,5 +1,5 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel as CarouselTemp } from 'react-responsive-carousel';
+import { Carousel as CarouselTemp } from "react-responsive-carousel";
 import { Image } from "@chakra-ui/react";
 
 const Carousel = () => {
@@ -15,34 +15,41 @@ const Carousel = () => {
     >
       <div>
         <Image
-          borderRadius='2xl'
+          borderRadius="2xl"
+          src={"images/pictures/about0.jpeg"}
+          alt="Me In Winter"
+        />
+      </div>
+      <div>
+        <Image
+          borderRadius="2xl"
           src={"images/pictures/about1.jpeg"}
-          alt='Me In Winter'
+          alt="Me and Jonah"
         />
       </div>
       <div>
         <Image
-          borderRadius='2xl'
+          borderRadius="2xl"
           src={"images/pictures/about2.jpeg"}
-          alt='Me and Bro in AZ'
+          alt="Me and Bro in AZ"
         />
       </div>
       <div>
         <Image
-          borderRadius='2xl'
+          borderRadius="2xl"
           src={"images/pictures/about3.jpeg"}
-          alt='Me Playing Tennis'
+          alt="Me Playing Tennis"
         />
       </div>
       <div>
         <Image
-          borderRadius='2xl'
+          borderRadius="2xl"
           src={"images/pictures/about4.jpeg"}
-          alt='AAIV boys'
+          alt="AAIV boys"
         />
       </div>
     </CarouselTemp>
-  )
-}
+  );
+};
 
-export default Carousel
+export default Carousel;

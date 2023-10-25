@@ -11,5 +11,5 @@ export type EmploymentCardType = {
 export type CourseworkCardType = {
   courseTitle: string,
   courseNumber: string,
-  affiliation: string
+  affiliation?: string
 }

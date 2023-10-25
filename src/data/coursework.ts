@@ -6,8 +6,33 @@ export type Coursework = {
 
 export const coursework_data: Coursework[] = [
   {
+    courseTitle: "Machine Learning",
+    courseNumber: "CS 4780",
+    affiliation: "Associated with Cornell University"
+  },
+  {
     courseTitle: "Analysis of Algorithms",
     courseNumber: "CS 4820",
+    affiliation: "Associated with Cornell University"
+  },
+  {
+    courseTitle: "Foundations of Robotics",
+    courseNumber: "CS 4750",
+    affiliation: "Associated with Cornell University"
+  },
+  {
+    courseTitle: "Database Systems",
+    courseNumber: "CS 4320",
+    affiliation: "Associated with Cornell University"
+  },
+  {
+    courseTitle: "Computer System Organization and Programming",
+    courseNumber: "CS 3410",
+    affiliation: "Associated with Cornell University"
+  },
+  {
+    courseTitle: "Engineering Probability and Statistics",
+    courseNumber: "ORIE 3500",
     affiliation: "Associated with Cornell University"
   },
   {
