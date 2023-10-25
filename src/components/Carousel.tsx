@@ -16,35 +16,35 @@ const Carousel = () => {
       <div>
         <Image
           borderRadius="2xl"
-          src={"images/pictures/about0.jpeg"}
+          src={"images/pictures/about_0.jpeg"}
           alt="Me In Winter"
         />
       </div>
       <div>
         <Image
           borderRadius="2xl"
-          src={"images/pictures/about1.jpeg"}
+          src={"images/pictures/about_1.jpeg"}
           alt="Me and Jonah"
         />
       </div>
       <div>
         <Image
           borderRadius="2xl"
-          src={"images/pictures/about2.jpeg"}
+          src={"images/pictures/about_2.jpeg"}
           alt="Me and Bro in AZ"
         />
       </div>
       <div>
         <Image
           borderRadius="2xl"
-          src={"images/pictures/about3.jpeg"}
+          src={"images/pictures/about_3.jpeg"}
           alt="Me Playing Tennis"
         />
       </div>
       <div>
         <Image
           borderRadius="2xl"
-          src={"images/pictures/about4.jpeg"}
+          src={"images/pictures/about_4.jpeg"}
           alt="AAIV boys"
         />
       </div>
