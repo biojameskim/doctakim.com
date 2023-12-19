@@ -67,7 +67,7 @@ const Coursework = () => {
               <List spacing="0.5rem">
                 <ListItem textAlign="left">
                   <ListIcon as={BsCircle} color="green.500" />
-                  Java, Python, OCaml
+                  Java, Python, OCaml, C
                 </ListItem>
                 <ListItem textAlign="left">
                   <ListIcon as={BsCircle} color="green.500" />
@@ -105,7 +105,7 @@ const Coursework = () => {
                 </ListItem>
                 <ListItem textAlign="left">
                   <ListIcon as={BsCircle} color="green.500" />
-                  Pandas, NumPy, SQLite, SQLAlchemy
+                  ROS, Pandas, NumPy, SQLite, SQLAlchemy
                 </ListItem>
               </List>
             </Flex>

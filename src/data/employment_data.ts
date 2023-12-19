@@ -2,6 +2,15 @@ import { EmploymentCardType } from "../types/ExperienceTypes"
 
 const employment_data: EmploymentCardType[] = [
   {
+    company: 'SciFi Lab @ Cornell',
+    website: 'https://www.scifilab.org/',
+    role: 'Undergraduate Research Assistant',
+    image: "images/logos/cornell_cis_logo.png",
+    alt: 'Cornell CIS Logo',
+    date: '08/2023 - Present',
+    description: 'Research Topics: Machine Learning, AI, Ubiquitous Computing, Human-Computer Interaction.'
+  },
+  {
     company: 'Southern California Edison',
     website: 'https://edison.com/',
     role: 'Software Engineer Intern',
@@ -16,7 +25,7 @@ const employment_data: EmploymentCardType[] = [
     role: 'Full Stack Software Engineer',
     image: "images/logos/hack4impact.jpeg",
     alt: 'hack4impact Logo',
-    date: '09/2022 - Present',
+    date: '08/2022 - 08/2023',
     description: "Building a platform for the homeless population of Tompkins County to browse for available and affordable housing using MongoDB, Express.js, React, and Node.js."
   },
   {
