@@ -58,7 +58,7 @@ const About = () => {
             <Text fontSize="1.65rem">Hello!</Text>
             <Text fontSize="1.1rem">
               I'm currently a student at Cornell University studying Computer
-              Science and Operations Research.
+              Science and Math.
             </Text>
             <Text fontSize="1.1rem">
               In my free time, I'm an avid listener of Korean rap/hiphop music
