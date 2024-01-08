@@ -42,7 +42,7 @@ export const story_data: BlogCardType[] = [
     route: '/blog/my-freshman-college-story',
     release: 'May 2022',
     title: 'My Freshman College Story',
-    description: "It's been a hell of an year.",
+    description: "It's been a hell of a year.",
     image: "../images/blog_pictures/My-Freshman-College-Story/freshman-story.jpeg",
     alt: 'Dum moment',
     pin: false
