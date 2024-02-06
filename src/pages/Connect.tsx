@@ -92,7 +92,7 @@ const Connect = () => {
           </VStack>
 
           <VStack spacing={"1.8rem"} align={"left"} maxW={"md"} w={"full"}>
-            <Text fontSize="1.1rem">doctakim</Text>
+            <Text fontSize="1.1rem">biojameskim</Text>
             <Text fontSize="1.1rem">James Kim</Text>
             <Text fontSize="1.1rem">jjk297(at)cornell.edu</Text>
             {/* <Text fontWeight="normal" fontSize="1.2rem">
