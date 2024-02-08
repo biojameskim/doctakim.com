@@ -1,28 +1,53 @@
-import { ChakraProvider, theme } from "@chakra-ui/react"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import "./fonts/james1-regular-webfont.woff"
+import { ChakraProvider, theme } from "@chakra-ui/react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./fonts/james1-regular-webfont.woff";
 
 // Pages
-import { StartPage, Home, About, Experience, Blog, Connect, NotFound, Hidden, Birthdays } from "./pages/pages"
+import {
+  StartPage,
+  Home,
+  About,
+  Experience,
+  Blog,
+  Connect,
+  NotFound,
+  Hidden,
+  Birthdays,
+  Jocelyn,
+} from "./pages/pages";
 // Components
-import { NavBar, Footer } from "./components/components"
+import { NavBar, Footer } from "./components/components";
 // Blog Entries (Stories)
-import { FreshmanStory, GrowingUp, MySister, TreasureHunt, SophomoreSlump, Prayer } from "./blog_entries/blog_entries"
+import {
+  FreshmanStory,
+  GrowingUp,
+  MySister,
+  TreasureHunt,
+  SophomoreSlump,
+  Prayer,
+} from "./blog_entries/blog_entries";
 // Blog Entries (Thoughts)
-import { MrsLupsaiu, FaceTime } from "./blog_entries/blog_entries"
+import { MrsLupsaiu, FaceTime } from "./blog_entries/blog_entries";
 // Blog Entries (Birthdays)
-import { GraceLo20, GraceLi21, Derek20, Angy20 } from "./blog_entries/blog_entries"
+import {
+  GraceLo20,
+  GraceLi21,
+  Derek20,
+  Angy20,
+} from "./blog_entries/blog_entries";
 
 // Google Analytics
-import ReactGA from 'react-ga4'
-const TRACKING_ID = "G-1SF4Z7N7NS"
-ReactGA.initialize(TRACKING_ID)
+import ReactGA from "react-ga4";
+const TRACKING_ID = "G-1SF4Z7N7NS";
+ReactGA.initialize(TRACKING_ID);
 
 export const App = () => (
   <ChakraProvider theme={theme}>
     <Router>
       <div className="main-wrapper">
-        <div className="navbar"><NavBar /></div>
+        <div className="navbar">
+          <NavBar />
+        </div>
         <Routes>
           <Route path="/" element={<StartPage />} />
           <Route path="/home" element={<Home />} />
@@ -30,12 +55,16 @@ export const App = () => (
           <Route path="/experience" element={<Experience />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/connect" element={<Connect />} />
-          <Route path='*' element={<NotFound />} />
+          <Route path="*" element={<NotFound />} />
           {/* Hidden pages */}
           <Route path="/hidden" element={<Hidden />} />
           <Route path="/birthdays" element={<Birthdays />} />
+          <Route path="/to-jocelyn" element={<Jocelyn />} />
           {/* Blog entry routes (Stories) */}
-          <Route path="/blog/my-freshman-college-story" element={<FreshmanStory />} />
+          <Route
+            path="/blog/my-freshman-college-story"
+            element={<FreshmanStory />}
+          />
           <Route path="/blog/growing-up" element={<GrowingUp />} />
           <Route path="/blog/my-sister" element={<MySister />} />
           <Route path="/blog/treasure-hunt" element={<TreasureHunt />} />
@@ -51,7 +80,9 @@ export const App = () => (
           <Route path="/birthdays/angy-20th" element={<Angy20 />} />
         </Routes>
       </div>
-      <div className="footer-pin"><Footer /></div>
+      <div className="footer-pin">
+        <Footer />
+      </div>
     </Router>
   </ChakraProvider>
-)
+);
