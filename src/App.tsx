@@ -13,7 +13,6 @@ import {
   NotFound,
   Hidden,
   Birthdays,
-  Jocelyn,
 } from "./pages/pages";
 // Components
 import { NavBar, Footer } from "./components/components";
@@ -59,7 +58,6 @@ export const App = () => (
           {/* Hidden pages */}
           <Route path="/hidden" element={<Hidden />} />
           <Route path="/birthdays" element={<Birthdays />} />
-          <Route path="/to-jocelyn" element={<Jocelyn />} />
           {/* Blog entry routes (Stories) */}
           <Route
             path="/blog/my-freshman-college-story"
