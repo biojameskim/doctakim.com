@@ -42,7 +42,8 @@ const WistfulMemories = () => {
           fontSize={{ base: "17", md: "md" }}
           fontFamily="century"
         >
-          <Text>Today I got pasta at the dining hall.</Text>
+          <Text pb="3vh">Today I got pasta at the dining hall.</Text>
+
           <Text>
             As I poured the alfredo sauce over my pasta, a memory from my past
             suddenly resurfaced into my mind—{" "}
@@ -75,17 +76,16 @@ const WistfulMemories = () => {
           </Text>
 
           <Text>I’ve never had a birthday party before.</Text>
-          <Text pb="5vh">
+          <Text>
             Ever since my brother and I were born, it’s been our family
-            tradition to celebrate birthdays with a family dinner. Just the four
-            of us.
+            tradition to celebrate birthdays with a family dinner.{" "}
           </Text>
+          <Text pb="5vh">Just the four of us.</Text>
 
           <Text>
             We never ate out because my mom always wanted to cook for us.{" "}
           </Text>
-
-          <Text>
+          <Text pb="5vh">
             And we never bought a cake because my mom always wanted to bake one
             for us.
           </Text>
@@ -171,7 +171,7 @@ const WistfulMemories = () => {
             with so much shame and regret.
           </Text>
 
-          <Text fontWeight="bold" paddingBottom={"7vh"}>
+          <Text fontWeight="bold" paddingY={"7vh"}>
             —
           </Text>
 
@@ -267,10 +267,10 @@ const WistfulMemories = () => {
 
           <Text pb="5vh">
             He was always the first to ask us to play tennis, the first to take
-            us to the park, the first to buy us a delicious meal.
+            us to the park, and the first to buy us a delicious meal.
           </Text>
 
-          <Text>
+          <Text pb="3vh">
             Growing up, there was never a void in my heart that I needed to fill
             with more Bakugans and toys.
           </Text>
@@ -325,14 +325,14 @@ const WistfulMemories = () => {
             that was more valuable to him.
           </Text>
 
-          <Text>
+          <Text pb="3vh">
             Out of all the memories that come and go, perhaps this was a memory
             he didn't want to forget.
           </Text>
 
           <Text>A memory he refused to let go.</Text>
 
-          <Text fontWeight="bold" paddingBottom={"7vh"}>
+          <Text fontWeight="bold" paddingY={"7vh"}>
             —
           </Text>
 
@@ -349,7 +349,7 @@ const WistfulMemories = () => {
             And most of these memories are tied with the people I love the most.
           </Text>
 
-          <Text pb="5vh">
+          <Text pb="2vh">
             And I think that’s why the memories that remind me of my regrets and
             mistakes hurt the most.
           </Text>
@@ -379,7 +379,7 @@ const WistfulMemories = () => {
             I know it won’t take long before I forget these memories again.
           </Text>
 
-          <Text>
+          <Text pb="2vh">
             And I know there’s so many more that I can’t think of right now, but
             are stored somewhere deep inside my past.
           </Text>
@@ -413,7 +413,6 @@ const WistfulMemories = () => {
           <BlogImage
             src="../images/blog_pictures/Wistful-Memories/Pictures/9_mosaic.jpeg"
             alt="Mosaic of a flower"
-            caption="My life"
             orientation="v"
           />
 
@@ -424,21 +423,21 @@ const WistfulMemories = () => {
 
           <Text>I’ll keep painting and painting until one day, </Text>
 
-          <Text>
-            The experiences that surround me now become yet another wistful
+          <Text pb="5vh">
+            the experiences that surround me now become yet another wistful
             memory I can look back on.
           </Text>
 
-          <Text pb="5vh">
+          <Text pb="3vh">
             And even though some of these pieces aren’t beautiful, I hope the
             final mosaic is something beautiful.
           </Text>
 
-          <Text>Something I can be proud of, </Text>
+          <Text pb="3vh">Something I can be proud of, </Text>
 
           <Text>and something I can come to love.</Text>
 
-          <Text pb="10vh">- James Kim</Text>
+          <Text py="10vh">- James Kim</Text>
         </Stack>
       </div>
     </div>
