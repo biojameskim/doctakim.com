@@ -38,8 +38,8 @@ const GrowingUp = () => {
 
         <Stack
           spacing={7}
-          width={{ base: "85%", md: "60%" }}
-          fontSize={{ base: "17", md: "lg" }}
+          width={{ base: "85%", md: "50%" }}
+          fontSize={{ base: "17", md: "md" }}
           fontFamily="century"
         >
           <BlogImage
