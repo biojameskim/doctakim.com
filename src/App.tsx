@@ -24,6 +24,7 @@ import {
   TreasureHunt,
   SophomoreSlump,
   Prayer,
+  WistfulMemories,
 } from "./blog_entries/blog_entries";
 // Blog Entries (Thoughts)
 import { MrsLupsaiu, FaceTime } from "./blog_entries/blog_entries";
@@ -67,8 +68,9 @@ export const App = () => (
           <Route path="/blog/my-sister" element={<MySister />} />
           <Route path="/blog/treasure-hunt" element={<TreasureHunt />} />
           <Route path="/blog/sophomore-slump" element={<SophomoreSlump />} />
-          <Route path="/blog/prayer" element={<Prayer />} />
+          <Route path="/blog/wistful-memories" element={<WistfulMemories />} />
           {/* Blog entry routes (Thoughts) */}
+          <Route path="/blog/prayer" element={<Prayer />} />
           <Route path="/blog/dear-mrs-lupsaiu" element={<MrsLupsaiu />} />
           <Route path="/blog/facetime" element={<FaceTime />} />
           {/* Birthday routes */}

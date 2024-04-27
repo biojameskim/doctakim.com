@@ -11,6 +11,15 @@ export const story_data: BlogCardType[] = [
     alt: "Dad and Me",
     pin: true
   },
+  {
+    route: '/blog/wistful-memories',
+    release: 'April 2024',
+    title: 'Wistful Memories',
+    description: "The memories that come and go.",
+    image: "../images/blog_pictures/Wistful-Memories/wistful-memories.jpeg",
+    alt: 'Family Photo',
+    pin: false
+  },
   // {
   //   route: '/blog/sophomore-slump',
   //   release: 'May 2023',
