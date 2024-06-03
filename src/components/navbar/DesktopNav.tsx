@@ -26,7 +26,7 @@ const DesktopNav = () => {
             About
           </Box>
         </LinkRouter>
-        <LinkRouter to="/experience">
+        {/* <LinkRouter to="/experience">
           <Box
             as={Button}
             _hover={{ bg: "none" }}
@@ -36,7 +36,7 @@ const DesktopNav = () => {
           >
             Experience
           </Box>
-        </LinkRouter>
+        </LinkRouter> */}
         <LinkRouter to="/blog">
           <Box
             as={Button}

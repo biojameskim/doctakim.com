@@ -2,7 +2,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel as CarouselTemp } from "react-responsive-carousel";
 import { Image } from "@chakra-ui/react";
 
-const Carousel = () => {
+const AboutCarousel = ({}) => {
   return (
     <CarouselTemp
       infiniteLoop
@@ -52,4 +52,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default AboutCarousel;
