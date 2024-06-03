@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import { CgWebsite } from "react-icons/cg";
 import {
@@ -68,21 +68,11 @@ const About = () => {
             <VStack spacing={"0.7rem"} align={"center"} maxW={"md"} pl="6">
               <Button
                 size="sm"
-                colorScheme="gray"
+                colorScheme="teal"
                 as="a"
-                href={"https://github.com/doctakim"}
-                target={"_blank"}
+                href={"https://biojameskim.github.io/"}
               >
-                <FaGithub />
-              </Button>
-              <Button
-                size="sm"
-                colorScheme="linkedin"
-                as="a"
-                href={"https://www.linkedin.com/in/biojameskim/"}
-                target={"_blank"}
-              >
-                <FaLinkedin />
+                <CgWebsite />
               </Button>
               <Button
                 size="sm"
@@ -94,19 +84,19 @@ const About = () => {
               </Button>
               <Button
                 size="sm"
-                colorScheme="teal"
+                colorScheme="linkedin"
                 as="a"
-                href={"https://biojameskim.github.io/"}
+                href={"https://www.linkedin.com/in/biojameskim/"}
+                target={"_blank"}
               >
-                <CgWebsite />
+                <FaLinkedin />
               </Button>
             </VStack>
 
             <VStack spacing={"1.4rem"} align={"left"} maxW={"md"} w={"full"}>
-              <Text fontSize="0.9rem">biojameskim</Text>
-              <Text fontSize="0.9rem">James Kim</Text>
-              <Text fontSize="0.9rem">jjk297(at)cornell.edu</Text>
               <Text fontSize="0.9rem">Portfolio</Text>
+              <Text fontSize="0.9rem">jjk297(at)cornell.edu</Text>
+              <Text fontSize="0.9rem">James Kim</Text>
             </VStack>
           </HStack>
         </VStack>
