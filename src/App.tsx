@@ -9,7 +9,6 @@ import {
   About,
   Experience,
   Blog,
-  Connect,
   NotFound,
   Hidden,
   Birthdays,
@@ -54,7 +53,6 @@ export const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/connect" element={<Connect />} />
           <Route path="*" element={<NotFound />} />
           {/* Hidden pages */}
           <Route path="/hidden" element={<Hidden />} />
