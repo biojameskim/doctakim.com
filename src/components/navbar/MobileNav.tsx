@@ -20,9 +20,6 @@ const MobileNav = () => {
         />
       </MenuButton>
       <MenuList>
-        <LinkRouter to="/about">
-          <MenuItem fontSize={"1.75rem"}>About</MenuItem>
-        </LinkRouter>
         {/* <LinkRouter to="/experience">
           <MenuItem fontSize={"1.75rem"}>Experience</MenuItem>
         </LinkRouter> */}

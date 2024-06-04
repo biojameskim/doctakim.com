@@ -36,7 +36,7 @@ const About = () => {
           pt={"6vh"}
           pb="2vh"
         >
-          About
+          About Me
         </Text>
       </Center>
 

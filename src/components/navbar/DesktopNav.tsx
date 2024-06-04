@@ -15,17 +15,6 @@ const DesktopNav = () => {
   return (
     <Flex alignItems={"center"}>
       <Stack direction={"row"} spacing={4}>
-        <LinkRouter to="/about">
-          <Box
-            as={Button}
-            _hover={{ bg: "none" }}
-            backgroundColor={useColorModeValue("gray.100", "gray.900")}
-            fontSize="1.2rem"
-            fontWeight="medium"
-          >
-            About
-          </Box>
-        </LinkRouter>
         {/* <LinkRouter to="/experience">
           <Box
             as={Button}
