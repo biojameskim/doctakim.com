@@ -46,6 +46,7 @@ const About = () => {
         align="start"
         justify="center"
         px="4"
+        pb="4"
       >
         <VStack align={"center"} maxW={"md"} w={"full"}>
           <Box
@@ -71,6 +72,7 @@ const About = () => {
                 colorScheme="teal"
                 as="a"
                 href={"https://biojameskim.github.io/"}
+                target={"_blank"}
               >
                 <CgWebsite />
               </Button>
