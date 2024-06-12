@@ -41,7 +41,10 @@ export default function NavBar() {
             <Box
               as={Button}
               className="navbar-james"
-              _hover={{ bg: "none" }}
+              _hover={{
+                bg: "none",
+                textShadow: "#FC0 0px 0px 10px",
+              }}
               backgroundColor={useColorModeValue("gray.100", "gray.900")}
               justify={"flex-start"}
               fontSize="2rem"

@@ -97,7 +97,7 @@ const About = () => {
 
             <VStack spacing={"1.4rem"} align={"left"} maxW={"md"} w={"full"}>
               <Text fontSize="0.9rem">Portfolio</Text>
-              <Text fontSize="0.9rem">jjk297(at)cornell.edu</Text>
+              <Text fontSize="0.9rem">jjk297[at]cornell[dot]edu</Text>
               <Text fontSize="0.9rem">James Kim</Text>
             </VStack>
           </HStack>
@@ -117,8 +117,8 @@ const About = () => {
             I'm a student at Cornell studying Computer Science and Math.
           </Text>
           <Text fontSize="1.1rem">
-            In my free time, I'm an avid listener of Korean rap/hiphop music and
-            love to play tennis.
+            In my free time, I'm an avid listener of Korean rap & hiphop music
+            and love to play tennis.
           </Text>
           <Text fontSize="1.1rem">Feel free to reach out! ☕️</Text>
         </Box>
