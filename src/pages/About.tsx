@@ -80,7 +80,7 @@ const About = () => {
                 size="sm"
                 colorScheme="telegram"
                 as="a"
-                href={"mailto:jjk297@cornell.edu"}
+                href={"mailto:biojameskim2002@gmail.com"}
               >
                 <FiMail />
               </Button>
@@ -97,7 +97,7 @@ const About = () => {
 
             <VStack spacing={"1.4rem"} align={"left"} maxW={"md"} w={"full"}>
               <Text fontSize="0.9rem">Portfolio</Text>
-              <Text fontSize="0.9rem">jjk297[at]cornell[dot]edu</Text>
+              <Text fontSize="0.9rem">Email</Text>
               <Text fontSize="0.9rem">James Kim</Text>
             </VStack>
           </HStack>
