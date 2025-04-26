@@ -6,8 +6,9 @@
 
 To test on localhost using your phone, use this command.
 ```
-npx localview --port 3000
+npm start
 ```
+You'll see a link to follow on "On Your Network:"
 
 </br>
 

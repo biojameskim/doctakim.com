@@ -14,7 +14,7 @@ const GraceLi21 = () => {
         <title>biojameskim | Grace Li's 21st</title>
       </Helmet>
 
-      <Heading fontSize='3.3rem' textAlign={'center'} fontWeight={'medium'} pt={'12vh'} px='3' >
+      <Heading fontSize={{ base: '3rem', md: "3.3rem"}}  textAlign={'center'} fontWeight={'medium'} pt={'12vh'} px='3' >
         Dear Grace Li
       </Heading>
 
@@ -30,7 +30,7 @@ const GraceLi21 = () => {
         <Stack
           spacing={7}
           width={{ base: '85%', md: '60%' }}
-          fontSize={{ base: '17', md: 'lg' }}
+          fontSize={{ base: "16", md: "md" }}
         >
 
           <Text><s>Grasli,</s></Text>

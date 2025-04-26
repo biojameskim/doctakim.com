@@ -15,7 +15,7 @@ const BestLatte = () => {
       </Helmet>
 
       <Heading
-        fontSize="3.3rem"
+        fontSize={{ base: '3rem', md: "3.3rem"}} 
         textAlign={"center"}
         fontWeight={"medium"}
         pt={"12vh"}
@@ -37,7 +37,7 @@ const BestLatte = () => {
         <Stack
           spacing={7}
           width={{ base: "85%", md: "50%" }}
-          fontSize={{ base: "17", md: "md" }}
+          fontSize={{ base: "16", md: "md" }}
         >
             <Text pb="3vh">It’s a cold morning and I wake up earlier than Eric.</Text> 
 
