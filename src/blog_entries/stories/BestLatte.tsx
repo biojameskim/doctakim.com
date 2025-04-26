@@ -179,7 +179,7 @@ const BestLatte = () => {
             />
 
             <Text>And if you know Eric personally, you might also know that this guy does not wake up to his alarms. </Text>
-            <Text pb="5vh">He’s frequently late to anything in the morning because his alarm only wakes his roommates up. </Text>
+            <Text pb="5vh">He’s frequently late to everything in the morning because his alarm only wakes his roommates up. </Text>
 
             <Text>But as every semester came to an end, if I was the first one to leave in the early morning, Eric would always wake up extra early just to say bye.</Text>
             <Text pb="5vh">And sometimes, he’d even accompany me for breakfast.</Text>
@@ -220,7 +220,7 @@ const BestLatte = () => {
 
             <Text pb="3vh">I don’t remember too vividly how we became friends but we really kicked it off. </Text>
 
-            <Text>We would play handball at recess together and we both learned Karate at the local community center together.</Text>
+            <Text>We would play handball at recess together and we both learned Karate at the local community center.</Text>
             <Text pb="5vh">We even had nicknames for each other. I called him gare bear every day and he told me to stop.</Text>
 
             <Text pb="5vh">When I think back to our hangouts in high school, I don’t really remember much besides talking for hours in the parking lot of random fast food restaurants or in the aisles of grocery stores.</Text>
@@ -308,7 +308,7 @@ const BestLatte = () => {
 
             <Text pb="3vh">One of the first things Jonah and I bonded over was our main goal in life. </Text>
 
-            <Text pb="3vh">We both talked about wanting to get married and raising children— being able to build and grow our own family. </Text>
+            <Text pb="3vh">We both talked about wanting to get married and raise children— being able to build and grow our own family. </Text>
 
             <Text>I told him I want three kids. </Text>
 
