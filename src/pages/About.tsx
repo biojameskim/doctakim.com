@@ -1,4 +1,4 @@
-import { FaLinkedin } from "react-icons/fa";
+// import { FaLinkedin } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import { CgWebsite } from "react-icons/cg";
 import {
