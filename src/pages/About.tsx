@@ -79,7 +79,7 @@ const About = () => {
               >
                 <FiMail />
               </Button>
-              <Button
+              {/* <Button
                 size="sm"
                 colorScheme="linkedin"
                 as="a"
@@ -87,13 +87,13 @@ const About = () => {
                 target={"_blank"}
               >
                 <FaLinkedin />
-              </Button>
+              </Button> */}
             </VStack>
 
             <VStack spacing={"1.4rem"} align={"left"} maxW={"md"} w={"full"}>
               <Text fontSize="0.9rem">Portfolio</Text>
               <Text fontSize="0.9rem">Email</Text>
-              <Text fontSize="0.9rem">James Kim</Text>
+              {/* <Text fontSize="0.9rem">James Kim</Text> */}
             </VStack>
           </HStack>
         </VStack>
@@ -106,16 +106,15 @@ const About = () => {
           mt="10"
         >
           <Heading fontWeight="normal" fontSize="2.3rem" pb="">
-            Hi, I'm James!
+            Hi, I'm James
           </Heading>
           <Text fontSize="1.1rem">
             I'm a student at Cornell studying Computer Science and Math.
           </Text>
           <Text fontSize="1.1rem">
-            In my free time, I'm an avid listener of Korean rap & hiphop music
-            and love to play tennis.
+            I listen to a lot of Korean rap & hiphop music and love to play tennis.
           </Text>
-          <Text fontSize="1.1rem">Feel free to reach out! ☕️</Text>
+          <Text fontSize="1.1rem">Feel free to reach out to me! ☕️</Text>
         </Box>
       </Flex>
     </div>
