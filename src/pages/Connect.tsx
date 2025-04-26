@@ -8,6 +8,7 @@ import {
   HStack,
   Button,
   Text,
+  Heading,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
@@ -26,15 +27,14 @@ const Connect = () => {
 
       <VStack align={"center"} maxW={"md"} w={"full"}>
         <Box>
-          <Text
-            className="page-title"
+          <Heading
             fontSize="4rem"
             fontWeight={"medium"}
             pt={"6vh"}
             pb={{ base: "2vh", md: "2vh" }}
           >
             Connect
-          </Text>
+          </Heading>
         </Box>
 
         <Box

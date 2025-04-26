@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 import Typewriter from "typewriter-effect";
 import { Helmet } from "react-helmet";
 import { useEffect } from "react";
@@ -14,13 +14,12 @@ const Home = () => {
         <title>biojameskim | Home</title>
       </Helmet>
       <Box textAlign="center">
-        <Text
-          className="page-title"
+        <Heading
           fontSize={{ base: "3.2rem", md: "4rem" }}
           pb={{ base: "2vh", md: "0" }}
         >
           Currently ...
-        </Text>
+        </Heading>
         <Box
           className="home-page-typewriter"
           fontSize="2rem"

@@ -1,6 +1,6 @@
-import { ChakraProvider, theme } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./fonts/james1-regular-webfont.woff";
+import theme from "./theme"
 
 // Pages
 import {
@@ -24,6 +24,7 @@ import {
   SophomoreSlump,
   Prayer,
   WistfulMemories,
+  BestLatte,
 } from "./blog_entries/blog_entries";
 // Blog Entries (Thoughts)
 import { MrsLupsaiu, FaceTime } from "./blog_entries/blog_entries";
@@ -67,6 +68,7 @@ export const App = () => (
           <Route path="/blog/treasure-hunt" element={<TreasureHunt />} />
           <Route path="/blog/sophomore-slump" element={<SophomoreSlump />} />
           <Route path="/blog/wistful-memories" element={<WistfulMemories />} />
+          <Route path="/blog/best-latte" element={<BestLatte />} />
           {/* Blog entry routes (Thoughts) */}
           <Route path="/blog/prayer" element={<Prayer />} />
           <Route path="/blog/dear-mrs-lupsaiu" element={<MrsLupsaiu />} />

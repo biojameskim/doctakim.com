@@ -20,7 +20,7 @@ export default function NavBar() {
         bg={useColorModeValue("gray.100", "gray.900")}
         color={useColorModeValue("gray.600", "white")}
         minH={"60px"}
-        py={{ base: 2 }}
+        py={{ base: 3 }}
         px={{ base: 4 }}
         align={"center"}
       >
@@ -47,7 +47,7 @@ export default function NavBar() {
               }}
               backgroundColor={useColorModeValue("gray.100", "gray.900")}
               justify={"flex-start"}
-              fontSize="2rem"
+              fontSize="2.1rem"
               fontWeight="bold"
             >
               James Kim

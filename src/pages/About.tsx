@@ -12,6 +12,7 @@ import {
   useColorModeValue,
   Flex,
   Image,
+  Heading
 } from "@chakra-ui/react";
 // import Carousel from "../components/AboutCarousel";
 import { Helmet } from "react-helmet";
@@ -29,15 +30,9 @@ const About = () => {
       </Helmet>
 
       <Center>
-        <Text
-          className="page-title"
-          fontSize="4rem"
-          fontWeight={"medium"}
-          pt={"6vh"}
-          pb="2vh"
-        >
+        <Heading textAlign='center' fontSize='4.4rem' fontWeight={'medium'} pt={'8vh'} pb={{ base: '2vh', md: '4vh' }} >
           About Me
-        </Text>
+        </Heading>
       </Center>
 
       <Flex
@@ -110,9 +105,9 @@ const About = () => {
           p={{ base: "3", md: "0" }}
           mt="10"
         >
-          <Text className="page-title" fontSize="2.3rem" pb="">
+          <Heading fontWeight="normal" fontSize="2.3rem" pb="">
             Hi, I'm James!
-          </Text>
+          </Heading>
           <Text fontSize="1.1rem">
             I'm a student at Cornell studying Computer Science and Math.
           </Text>

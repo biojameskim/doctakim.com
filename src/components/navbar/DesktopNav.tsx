@@ -31,7 +31,7 @@ const DesktopNav = () => {
             as={Button}
             _hover={{ bg: "none" }}
             backgroundColor={useColorModeValue("gray.100", "gray.900")}
-            fontSize="1.2rem"
+            fontSize="2rem"
             fontWeight="medium"
           >
             Blog

@@ -1,4 +1,4 @@
-import { Text, Link, Flex } from '@chakra-ui/react'
+import { Heading, Text, Link, Flex } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Helmet } from 'react-helmet';
 
@@ -9,9 +9,9 @@ const Hidden = () => {
         <title>biojameskim | Hidden</title>
       </Helmet>
 
-      <Text as='h1' className='blog-title' fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} px='3' >
+      <Heading as='h1' fontSize='3rem' textAlign={'center'} fontWeight={'medium'} pt={'12vh'} px='3' >
         Some things about me.
-      </Text>
+      </Heading>
 
       <Text as='h2' fontSize='lg' align='center' my='3vh'>
         <b>1.</b> I come from a family of bloggers.

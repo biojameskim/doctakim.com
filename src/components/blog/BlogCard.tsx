@@ -45,7 +45,7 @@ const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogC
                     <Text
                         fontWeight='semibold'
                         textTransform='uppercase'
-                        fontSize='1rem'
+                        fontSize='1.1rem'
                         letterSpacing='wide'
                         color='teal.600'
                         pt='3'
@@ -55,7 +55,7 @@ const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogC
                     <Text
                         mt={1}
                         display='block'
-                        fontSize='1.7rem'
+                        fontSize='1.8rem'
                         lineHeight='normal'
                         fontWeight='semibold'
                         maxW='100%'
@@ -67,7 +67,7 @@ const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogC
                         maxW='full'
                         mt={2}
                         color={useColorModeValue('gray.600', 'gray.400')}
-                        fontSize='1rem'
+                        fontSize='1.1rem'
                     >
                         {description}
                     </Text>

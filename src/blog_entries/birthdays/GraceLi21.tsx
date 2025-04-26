@@ -1,4 +1,4 @@
-import { Text, Stack } from "@chakra-ui/react"
+import { Text, Stack, Heading } from "@chakra-ui/react"
 import { Helmet } from 'react-helmet'
 import BlogImage from "../../components/blog/BlogImage"
 import { useEffect } from "react"
@@ -14,16 +14,14 @@ const GraceLi21 = () => {
         <title>biojameskim | Grace Li's 21st</title>
       </Helmet>
 
-      <Text className='blog-title' fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} px='3' >
+      <Heading fontSize='3.3rem' textAlign={'center'} fontWeight={'medium'} pt={'12vh'} px='3' >
         Dear Grace Li
-      </Text>
+      </Heading>
 
       <div className='blog-text'>
         <Text
-          fontFamily='century'
           fontSize='2xl'
           align={'center'}
-          fontWeight={'medium'}
           pt={'4vh'}
           pb={'10vh'} >
           April 12, 2023
@@ -33,7 +31,7 @@ const GraceLi21 = () => {
           spacing={7}
           width={{ base: '85%', md: '60%' }}
           fontSize={{ base: '17', md: 'lg' }}
-          fontFamily='century'>
+        >
 
           <Text><s>Grasli,</s></Text>
           <Text><s>LiLi,</s></Text>

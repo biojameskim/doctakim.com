@@ -12,6 +12,15 @@ export const story_data: BlogCardType[] = [
     pin: true
   },
   {
+    route: '/blog/best-latte',
+    release: 'April 2025',
+    title: 'The Best Latte of My Life',
+    description: "A warm sip.",
+    image: "../images/blog_pictures/Best-Latte/latte_cover.jpg",
+    alt: 'Family Photo',
+    pin: false
+  },
+  {
     route: '/blog/wistful-memories',
     release: 'April 2024',
     title: 'Wistful Memories',

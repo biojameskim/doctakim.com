@@ -1,4 +1,4 @@
-import { Text, Stack } from "@chakra-ui/react"
+import { Text, Stack, Heading } from "@chakra-ui/react"
 import { Helmet } from 'react-helmet'
 import BlogImage from "../../components/blog/BlogImage"
 import { useEffect } from "react"
@@ -14,16 +14,14 @@ const Angy20 = () => {
         <title>biojameskim | Angy's 20th</title>
       </Helmet>
 
-      <Text className='blog-title' fontSize='3rem' align={'center'} fontWeight={'medium'} pt={'12vh'} px='3' >
+      <Heading fontSize='3.3rem' textAlign={'center'} fontWeight={'medium'} pt={'12vh'} px='3' >
         Dear Angy
-      </Text>
+      </Heading>
 
       <div className='blog-text'>
         <Text
-          fontFamily='century'
           fontSize='2xl'
           align={'center'}
-          fontWeight={'medium'}
           pt={'4vh'}
           pb={'10vh'} >
           April 7, 2023
@@ -33,7 +31,7 @@ const Angy20 = () => {
           spacing={7}
           width={{ base: '85%', md: '60%' }}
           fontSize={{ base: '17', md: 'lg' }}
-          fontFamily='century'>
+        >
 
           <Text pb='5vh'>Angus Bangus Hocus Pocus,</Text>
           <Text pb='5vh'>HAPPY happy birthday, and welcome to the 2nd decade of

@@ -1,4 +1,4 @@
-import { Box, Text, Grid } from "@chakra-ui/react"
+import { Box, Grid, Heading } from "@chakra-ui/react"
 import { Helmet } from 'react-helmet';
 
 import { birthday_data } from "../../data/birthday_data"
@@ -12,9 +12,9 @@ const Birthdays = () => {
       </Helmet>
 
       <Box w='full'>
-        <Text className="page-title" align='center' fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '6vh' }} >
+        <Heading textAlign='center' fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '6vh' }} >
           Birthdays
-        </Text>
+        </Heading>
         <Grid w={{ base: 'full', md: '70%' }} templateColumns={{ md: 'repeat(3, 1fr)' }} gap='6' pb='10vh'>
           {birthday_data.map((item, index) =>
             <BirthdayCard

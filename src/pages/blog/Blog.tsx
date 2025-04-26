@@ -1,4 +1,4 @@
-import { Text, Box, Tabs, TabList, Tab, TabPanels, TabPanel, useColorModeValue } from "@chakra-ui/react"
+import { Box, Tabs, TabList, Tab, TabPanels, TabPanel, useColorModeValue, Heading } from "@chakra-ui/react"
 import { Helmet } from 'react-helmet';
 import { useEffect } from "react";
 import Stories from "./Stories";
@@ -16,9 +16,9 @@ const Blog = () => {
       </Helmet>
 
       <Box>
-        <Text className="page-title" align='center' fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '4vh' }} >
+        <Heading textAlign='center' fontSize='4.4rem' fontWeight={'medium'} pt={'8vh'} pb={{ base: '2vh', md: '4vh' }} >
           Blog
-        </Text>
+        </Heading>
         <Tabs orientation='horizontal' variant='soft-rounded' colorScheme='green' align='center'>
           <TabList paddingBottom='5vh'>
             <Tab color={useColorModeValue('gray.600', 'white')} >Stories</Tab>

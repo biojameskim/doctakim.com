@@ -1,4 +1,4 @@
-import { Text, Stack } from "@chakra-ui/react";
+import { Heading, Text, Stack } from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
 import BlogImage from "../../components/blog/BlogImage";
 import { useEffect } from "react";
@@ -14,24 +14,21 @@ const FaceTime = () => {
         <title>biojameskim | FaceTime</title>
       </Helmet>
 
-      <Text
-        className="blog-title"
-        fontSize="3rem"
-        align={"center"}
+      <Heading
+        fontSize="3.3rem"
+        textAlign={"center"}
         fontWeight={"medium"}
         pt={"12vh"}
       >
         FaceTime
-      </Text>
+      </Heading>
 
       <div className="blog-text">
         <Text
-          fontFamily="century"
           fontSize="2xl"
           align={"center"}
-          fontWeight={"medium"}
           pt={"4vh"}
-          pb={"10vh"}
+          pb={"15vh"}
         >
           May 2023
         </Text>
@@ -40,7 +37,6 @@ const FaceTime = () => {
           spacing={7}
           width={{ base: "85%", md: "50%" }}
           fontSize={{ base: "17", md: "md" }}
-          fontFamily="century"
         >
           <Text pb="5vh">
             I <i>hate</i> facetime.

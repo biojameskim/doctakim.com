@@ -1,4 +1,4 @@
-import { Text, Stack, Box } from "@chakra-ui/react";
+import { Heading, Text, Stack, Box } from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
 import BlogImage from "../../components/blog/BlogImage";
 import { useEffect } from "react";
@@ -14,25 +14,22 @@ const FreshmanStory = () => {
         <title>biojameskim | Freshman Story</title>
       </Helmet>
 
-      <Text
-        className="blog-title"
-        fontSize="3rem"
-        align={"center"}
+      <Heading
+        fontSize="3.3rem"
+        textAlign={"center"}
         fontWeight={"medium"}
         pt={"12vh"}
         px="3"
       >
         My Freshman College Story
-      </Text>
+      </Heading>
 
       <div className="blog-text">
         <Text
-          fontFamily="century"
           fontSize="2xl"
           align={"center"}
-          fontWeight={"medium"}
           pt={"4vh"}
-          pb={"10vh"}
+          pb={"15vh"}
         >
           May 2022
         </Text>
@@ -41,7 +38,6 @@ const FreshmanStory = () => {
           spacing={7}
           width={{ base: "85%", md: "50%" }}
           fontSize={{ base: "17", md: "md" }}
-          fontFamily="century"
         >
           <Text>My freshman college story begins in Syracuse, NY.</Text>
           <Text pb="5vh">Syracuse International Airport that is.</Text>

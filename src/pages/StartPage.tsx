@@ -74,7 +74,7 @@ const StartPage = () => {
                 MoveOut(0, -300)
               )}
             >
-              <Text color={useColorModeValue("black", "black")} fontSize="80%">
+              <Text fontFamily={"James"} color={useColorModeValue("black", "black")} fontSize="90%">
                 I'm from California
               </Text>
               <span style={{ fontSize: "60px" }}>🌴 🌴 🌴</span>
@@ -92,10 +92,10 @@ const StartPage = () => {
                 MoveOut(0, -300)
               )}
             >
-              <Text color={useColorModeValue("black", "black")} fontSize="60%">
+              <Text fontFamily={"James"} color={useColorModeValue("black", "black")} fontSize="70%">
                 But currently in
               </Text>
-              <Text color={useColorModeValue("black", "black")} fontSize="80%">
+              <Text fontFamily={"James"} color={useColorModeValue("black", "black")} fontSize="90%">
                 Ithaca, NY
               </Text>
               <span style={{ fontSize: "60px" }}>❄️ ❄️ ❄️</span>
@@ -105,8 +105,8 @@ const StartPage = () => {
 
         <ScrollPage>
           <Animator animation={batch(Fade(), Sticky(), MoveOut())}>
-            <Text style={{ fontSize: "50px" }}>I love learning new things</Text>
-            <Text style={{ fontSize: "50px" }}>and telling stories.</Text>
+            <Text fontFamily={"James"} style={{ fontSize: "60px" }}>I love learning new things</Text>
+            <Text fontFamily={"James"} style={{ fontSize: "60px" }}>and telling stories.</Text>
           </Animator>
         </ScrollPage>
 

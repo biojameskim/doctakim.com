@@ -1,4 +1,4 @@
-import { Text, Box, Tabs, TabList, Tab, TabPanels, TabPanel, useColorModeValue } from "@chakra-ui/react"
+import { Heading, Box, Tabs, TabList, Tab, TabPanels, TabPanel, useColorModeValue } from "@chakra-ui/react"
 import Employment from "./Employment"
 // import Projects from "./Projects"
 import Coursework from "./Coursework"
@@ -17,9 +17,9 @@ const Experience = () => {
       </Helmet>
 
       <Box>
-        <Text className="page-title" align='center' fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '4vh' }} >
+        <Heading textAlign='center' fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '4vh' }} >
           Experience
-        </Text>
+        </Heading>
         <Tabs orientation='horizontal' variant='soft-rounded' colorScheme='green' align='center'>
           <TabList>
             <Tab color={useColorModeValue('gray.600', 'white')} >Employment</Tab>
