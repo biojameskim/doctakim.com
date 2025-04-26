@@ -5,6 +5,7 @@ export { default as MySister } from "./stories/MySister"
 export { default as TreasureHunt } from "./stories/TreasureHunt"
 export { default as SophomoreSlump } from "./stories/SophomoreSlump"
 export { default as WistfulMemories } from "./stories/WistfulMemories"
+export { default as BestLatte } from "./stories/BestLatte"
 
 // Thoughts
 export { default as MrsLupsaiu } from "./thoughts/MrsLupsaiu"
