@@ -8,62 +8,81 @@ import {
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { Link as LinkRouter } from "react-router-dom";
-import DesktopNav from "./DesktopNav";
+import { AiOutlineHome } from "react-icons/ai";
 import MobileNav from "./MobileNav";
+import SocialButton from "../SocialButton";
 
 export default function NavBar() {
   const { colorMode, toggleColorMode } = useColorMode();
 
+  const bgColor = useColorModeValue("rgba(255, 255, 255, 0.8)", "rgba(26, 32, 44, 0.8)");
+  const textColor = useColorModeValue("gray.600", "white");
+
   return (
     <Box className="navbar">
       <Flex
-        bg={useColorModeValue("gray.100", "gray.900")}
-        color={useColorModeValue("gray.600", "white")}
+        bg={bgColor}
+        backdropFilter="blur(10px)"
+        color={textColor}
         minH={"60px"}
         py={{ base: 3 }}
         px={{ base: 4 }}
         align={"center"}
+        position="sticky"
+        top={4}
+        mt={4}
+        zIndex={999}
+        justify="center"
       >
-        <Flex
-          flex={{ base: 1, md: "auto" }}
-          ml={{ base: -2 }}
-          display={{ base: "flex", md: "none" }}
-        >
-          <MobileNav />
-        </Flex>
-
         <Flex
           flex={{ base: 1 }}
           alignItems="center"
-          justify={{ base: "center", md: "start" }}
+          justify="space-between"
+          maxW="7xl"
+          w="100%"
         >
-          <LinkRouter to="/about">
-            <Box
-              as={Button}
-              className="navbar-james"
-              _hover={{
-                bg: "none",
-                textShadow: "#FC0 0px 0px 10px",
-              }}
-              backgroundColor={useColorModeValue("gray.100", "gray.900")}
-              justify={"flex-start"}
-              fontSize="2.1rem"
-              fontWeight="bold"
-            >
-              James Kim
-            </Box>
-          </LinkRouter>
-          <Show below="md">
+          {/* Left Side: Logo & Home Icon */}
+          <Flex alignItems="center" gap={2}>
+            <LinkRouter to="/">
+              <Box
+                as="img"
+                src="/favicon_io/favicon-32x32.png"
+                alt="Logo"
+                borderRadius="full"
+                boxSize="32px"
+                _hover={{ cursor: "pointer", opacity: 0.8 }}
+              />
+            </LinkRouter>
+            <LinkRouter to="/home">
+              <SocialButton label={"Home"}>
+                <AiOutlineHome />
+              </SocialButton>
+            </LinkRouter>
+          </Flex>
+
+          {/* Right Side: Navigation & Theme Toggle */}
+          <Flex alignItems="center" gap={4}>
+            <Show below="md">
+              <MobileNav />
+            </Show>
+
+            <Show above="md">
+              <LinkRouter to="/blog">
+                <Button variant="ghost" fontSize="1.2rem" fontWeight="medium" borderRadius="full" size="sm" px={3}>
+                  Blog
+                </Button>
+              </LinkRouter>
+            </Show>
+
             <Button
               onClick={toggleColorMode}
-              backgroundColor={useColorModeValue("gray.100", "gray.900")}
+              variant="ghost"
+              size="sm"
+              fontSize="1.2rem"
+              borderRadius="full"
             >
               {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
             </Button>
-          </Show>
-
-          <Flex justify={"flex-end"} display={{ base: "none", md: "flex" }}>
-            <DesktopNav />
           </Flex>
         </Flex>
       </Flex>

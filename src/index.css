@@ -1,22 +1,28 @@
-* {
+/* * {
     margin: auto;
     padding: 0;
-}
+} */
 
 html {
     max-width: 100%;
     overflow-x: hidden;
 }
 
-/* body {
-    margin-right: calc(100vw - 100%);
-    font-family: DM Sans, sans-serif;
-} */
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--chakra-colors-gray-50);
+    /* Fallback */
+}
 
 /* FONTS */
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
-@import url('http://fonts.cdnfonts.com/css/century-schoolbook');
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
 
 @font-face {
     font-family: "James";
@@ -28,12 +34,12 @@ html {
 }
 
 .custom-font-button {
-    font-family: "James"
+    /* font-family: "James" */
 }
 
 .starter-page {
     font-weight: 600;
-    font-family: "James"
+    /* font-family: "James" */
 }
 
 /* NAVBAR */
@@ -42,7 +48,7 @@ html {
 }
 
 .navbar-james {
-    font-family: "James"
+    /* font-family: "James" */
 }
 
 .mobile-navigation {
@@ -147,15 +153,7 @@ html {
 }
 
 /* Blog */
-.blog-card {
-    transition: all 200ms ease-in-out;
-}
 
-.blog-card:hover {
-    -webkit-transform: translateY(-3px);
-    transform: translateY(-3px);
-    box-shadow: 0px 12px 10px lightgray;
-}
 
 a:hover {
     text-decoration: none;
@@ -170,4 +168,10 @@ a:hover {
 
 .birthday-card-link {
     width: 80%
+}
+
+.blog-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

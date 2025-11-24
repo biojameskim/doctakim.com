@@ -1,7 +1,8 @@
-import { Heading, Text, Stack } from "@chakra-ui/react";
+import { Heading, Text, Stack, Box } from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
 import BlogImage from "../../components/blog/BlogImage";
 import { useEffect } from "react";
+import { BLOG_STYLES } from "../blogStyles";
 
 const GrowingUp = () => {
   useEffect(() => {
@@ -14,30 +15,20 @@ const GrowingUp = () => {
         <title>biojameskim | Growing Up</title>
       </Helmet>
 
-      <Heading
-        fontSize={{ base: '3rem', md: "3.3rem"}} 
-        textAlign={"center"}
-        fontWeight={"medium"}
-        pt={"12vh"}
-      >
-        Growing Up
-      </Heading>
+      <Box {...BLOG_STYLES.headerContainer}>
+        <Heading {...BLOG_STYLES.title}>
+          Growing Up
+        </Heading>
 
-      <div className="blog-text">
-        <Text
-          fontSize="2xl"
-          align={"center"}
-          pt={"4vh"}
-          pb={"5vh"}
-        >
+        <Text {...BLOG_STYLES.date} pb="5vh">
           June 2022
         </Text>
+      </Box>
 
-        <Stack
-          spacing={7}
-          width={{ base: "85%", md: "50%" }}
-          fontSize={{ base: "16", md: "md" }}
-        >
+      <Box {...BLOG_STYLES.separatorLine} />
+
+      <div className="blog-text">
+        <Stack {...BLOG_STYLES.bodyContainer}>
           <BlogImage
             maxW="450px"
             src="../images/blog_pictures/Growing-Up/Pictures/aunt-before.jpg"
@@ -101,7 +92,9 @@ const GrowingUp = () => {
           <Text fontWeight="bold" paddingBottom={"2vh"}>
             —
           </Text>
+        </Stack>
 
+        <Stack {...BLOG_STYLES.bodyContainer} mt={7}>
           <BlogImage
             src="../images/blog_pictures/Growing-Up/Pictures/gpa-before.jpg"
             alt="Grandpa with two of his grandchildren"
@@ -161,7 +154,9 @@ const GrowingUp = () => {
           <Text fontWeight="bold" paddingBottom={"2vh"}>
             —
           </Text>
+        </Stack>
 
+        <Stack {...BLOG_STYLES.bodyContainer} mt={7}>
           <BlogImage
             src="../images/blog_pictures/Growing-Up/Pictures/cousins-before.jpg"
             alt="My cousins in the past"
@@ -222,7 +217,9 @@ const GrowingUp = () => {
           <Text fontWeight="bold" paddingBottom={"7vh"}>
             —
           </Text>
+        </Stack>
 
+        <Stack {...BLOG_STYLES.bodyContainer} mt={7}>
           <Text>
             Throughout elementary, middle, and high school, when people asked me
             what I wanted to be when I grew up, I only really had one thing in
@@ -280,7 +277,7 @@ const GrowingUp = () => {
             orientation="v"
           />
 
-          <Text pb="10vh">- James Kim</Text>
+          <Text pb="10vh"></Text>
         </Stack>
       </div>
     </div>

@@ -27,7 +27,7 @@ const StartPage = () => {
           <Animator
             animation={batch(Fade(), Move(), Sticky(), MoveOut(0, -200))}
           >
-            <span style={{ fontSize: "5rem" }}>Hi, I'm James.</span>
+            <Text as="span" fontSize={{ base: "3rem", md: "5rem" }} fontWeight="bold">Hi, I'm James.</Text>
             <Text
               className="scroll-icon"
               pt="2rem"
@@ -43,13 +43,13 @@ const StartPage = () => {
           <Animator
             animation={batch(Sticky(), Fade(), ZoomIn(2, 1), MoveOut(0, -500))}
           >
-            <span style={{ fontSize: "300%" }}>I'm studying</span>
+            <Text as="span" fontSize={{ base: "2rem", md: "3rem" }}>I'm studying</Text>
             <br />
-            <span style={{ fontSize: "600%" }}>CS at Cornell 👨🏻‍💻</span>
+            <Text as="span" fontSize={{ base: "3rem", md: "6rem" }} fontWeight="bold">CS at Cornell 👨🏻‍💻</Text>
           </Animator>
         </ScrollPage>
 
-        <ScrollPage>
+        {/* <ScrollPage>
           <Animator
             animation={batch(
               Fade(),
@@ -58,11 +58,11 @@ const StartPage = () => {
               MoveOut(0, -300)
             )}
           >
-            <span style={{ fontSize: "300%" }}>with a double major in</span>
+            <Text as="span" fontSize={{ base: "2rem", md: "3rem" }}>with a double major in</Text>
             <br />
-            <span style={{ fontSize: "500%" }}>Mathematics 🔢</span>
+            <Text as="span" fontSize={{ base: "3rem", md: "5rem" }} fontWeight="bold">Mathematics 🔢</Text>
           </Animator>
-        </ScrollPage>
+        </ScrollPage> */}
 
         <ScrollPage>
           <div className="from-california">
@@ -74,10 +74,13 @@ const StartPage = () => {
                 MoveOut(0, -300)
               )}
             >
-              <Text fontFamily={"James"} color={useColorModeValue("black", "black")} fontSize="90%">
-                I'm from California
+              <Text color={useColorModeValue("black", "black")} fontSize="70%">
+                Originally from
               </Text>
-              <span style={{ fontSize: "60px" }}>🌴 🌴 🌴</span>
+              <Text color={useColorModeValue("black", "black")} fontSize="90%">
+                (Southern) California 🌴
+              </Text>
+              {/* <Text as="span" fontSize={{ base: "3rem", md: "60px" }}>🌴 🌴 🌴</Text> */}
             </Animator>
           </div>
         </ScrollPage>
@@ -92,21 +95,21 @@ const StartPage = () => {
                 MoveOut(0, -300)
               )}
             >
-              <Text fontFamily={"James"} color={useColorModeValue("black", "black")} fontSize="70%">
+              <Text color={useColorModeValue("black", "black")} fontSize="70%">
                 But currently in
               </Text>
-              <Text fontFamily={"James"} color={useColorModeValue("black", "black")} fontSize="90%">
-                Ithaca, NY
+              <Text color={useColorModeValue("black", "black")} fontSize="90%">
+                Ithaca, NY ❄️
               </Text>
-              <span style={{ fontSize: "60px" }}>❄️ ❄️ ❄️</span>
+              {/* <Text as="span" fontSize={{ base: "3rem", md: "60px" }}>❄️ ❄️ ❄️</Text> */}
             </Animator>
           </div>
         </ScrollPage>
 
         <ScrollPage>
           <Animator animation={batch(Fade(), Sticky(), MoveOut())}>
-            <Text fontFamily={"James"} style={{ fontSize: "60px" }}>I love learning new things</Text>
-            <Text fontFamily={"James"} style={{ fontSize: "60px" }}>and telling stories.</Text>
+            <Text fontSize={{ base: "2rem", md: "60px" }}>Welcome to my corner</Text>
+            <Text fontSize={{ base: "2rem", md: "60px" }}>of the internet.</Text>
           </Animator>
         </ScrollPage>
 
@@ -116,24 +119,24 @@ const StartPage = () => {
           </Animator>
         </ScrollPage>
 
-        <ScrollPage>
+        {/* <ScrollPage>
           <Animator animation={batch(Sticky(), Fade(), ZoomIn(2, 1))}>
-            <span style={{ fontSize: "60px" }}>
+            <Text as="span" fontSize={{ base: "2rem", md: "60px" }} textAlign="center">
               Come check out what I'm doing!
-            </span>
+            </Text>
           </Animator>
-        </ScrollPage>
+        </ScrollPage> */}
 
-        <ScrollPage>
+        {/* <ScrollPage>
           <Animator animation={Fade()}>
             <span style={{ fontSize: "60px" }}> </span>
           </Animator>
-        </ScrollPage>
+        </ScrollPage> */}
 
         <ScrollPage>
           <Animator animation={batch(Sticky(), FadeIn(), ZoomIn(2, 1))}>
             <Link to="/home">
-              <span style={{ fontSize: "120px" }}>🏠</span>
+              <Text as="span" fontSize={{ base: "5rem", md: "120px" }}>🏠</Text>
             </Link>
             <Text
               className="scroll-icon"

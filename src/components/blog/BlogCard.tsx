@@ -18,6 +18,11 @@ const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogC
                 alignItems={'left'}
                 maxW={{ base: '98%', md: '100%' }}
                 position={'relative'}
+                transition="all 200ms ease-in-out"
+                _hover={{
+                    transform: "translateY(-3px)",
+                    boxShadow: useColorModeValue("0px 12px 10px lightgray", "0px 12px 10px rgba(0, 0, 0, 0.4)")
+                }}
             >
                 {pin && (
                     <Image
@@ -71,7 +76,7 @@ const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogC
                     >
                         {description}
                     </Text>
-    
+
                 </Stack>
 
             </Stack>

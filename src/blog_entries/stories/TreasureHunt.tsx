@@ -1,7 +1,8 @@
-import { Heading, Text, Stack } from "@chakra-ui/react";
+import { Heading, Text, Stack, Box } from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
 import BlogImage from "../../components/blog/BlogImage";
 import { useEffect } from "react";
+import { BLOG_STYLES } from "../blogStyles";
 
 const TreasureHunt = () => {
   useEffect(() => {
@@ -14,30 +15,20 @@ const TreasureHunt = () => {
         <title>biojameskim | Treasure Hunt</title>
       </Helmet>
 
-      <Heading
-        fontSize={{ base: '3rem', md: "3.3rem"}} 
-        textAlign={"center"}
-        fontWeight={"medium"}
-        pt={"12vh"}
-      >
-        Treasure Hunt
-      </Heading>
+      <Box {...BLOG_STYLES.headerContainer}>
+        <Heading {...BLOG_STYLES.title}>
+          Treasure Hunt
+        </Heading>
 
-      <div className="blog-text">
-        <Text
-          fontSize="2xl"
-          align={"center"}
-          pt={"4vh"}
-          pb={"15vh"}
-        >
+        <Text {...BLOG_STYLES.date}>
           October 2022
         </Text>
+      </Box>
 
-        <Stack
-          spacing={7}
-          width={{ base: "85%", md: "50%" }}
-          fontSize={{ base: "16", md: "md" }}
-        >
+      <Box {...BLOG_STYLES.separatorLine} />
+
+      <div className="blog-text">
+        <Stack {...BLOG_STYLES.bodyContainer}>
           <Text>I’m a Californian by heart.</Text>
           <Text>
             I’ve lived there since I was in third grade so most of my childhood
@@ -118,7 +109,9 @@ const TreasureHunt = () => {
           <Text fontWeight="bold" paddingY={"7vh"}>
             —
           </Text>
+        </Stack>
 
+        <Stack {...BLOG_STYLES.bodyContainer} mt={7}>
           <Text>
             Time to time, whenever we remembered, we would ask our dad what the
             contents of the treasure were.
@@ -241,7 +234,9 @@ const TreasureHunt = () => {
           <Text fontWeight="bold" paddingY={"7vh"}>
             —
           </Text>
+        </Stack>
 
+        <Stack {...BLOG_STYLES.bodyContainer} mt={7}>
           <Text>
             Ever since I was in elementary school, my dad took me and my brother
             out to the park to play tennis with him.
@@ -352,7 +347,9 @@ const TreasureHunt = () => {
           <Text fontWeight="bold" paddingBottom={"7vh"}>
             —
           </Text>
+        </Stack>
 
+        <Stack {...BLOG_STYLES.bodyContainer} mt={7}>
           <Text>I’m someone who doesn’t think too much about the past.</Text>
 
           <Text>
@@ -476,7 +473,7 @@ const TreasureHunt = () => {
             orientation="h"
           />
 
-          <Text pb="10vh">- James Kim</Text>
+          <Text pb="10vh"></Text>
         </Stack>
       </div>
     </div>

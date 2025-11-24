@@ -2,6 +2,7 @@ import { Heading, Text, Stack, Box } from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
 import BlogImage from "../../components/blog/BlogImage";
 import { useEffect } from "react";
+import { BLOG_STYLES } from "../blogStyles";
 
 const FreshmanStory = () => {
   useEffect(() => {
@@ -14,31 +15,23 @@ const FreshmanStory = () => {
         <title>biojameskim | Freshman Story</title>
       </Helmet>
 
-      <Heading
-        fontSize={{ base: '3rem', md: "3.3rem"}} 
-        textAlign={"center"}
-        fontWeight={"medium"}
-        pt={"12vh"}
-        px="3"
-      >
-        My Freshman College Story
-      </Heading>
-
-      <div className="blog-text">
-        <Text
-          fontSize="2xl"
-          align={"center"}
-          pt={"4vh"}
-          pb={"15vh"}
+      <Box {...BLOG_STYLES.headerContainer}>
+        <Heading
+          {...BLOG_STYLES.title}
+          px="3"
         >
+          My Freshman College Story
+        </Heading>
+
+        <Text {...BLOG_STYLES.date}>
           May 2022
         </Text>
+      </Box>
 
-        <Stack
-          spacing={7}
-          width={{ base: "85%", md: "50%" }}
-          fontSize={{ base: "16", md: "md" }}
-        >
+      <Box {...BLOG_STYLES.separatorLine} />
+
+      <div className="blog-text">
+        <Stack {...BLOG_STYLES.bodyContainer}>
           <Text>My freshman college story begins in Syracuse, NY.</Text>
           <Text pb="5vh">Syracuse International Airport that is.</Text>
 
@@ -765,7 +758,7 @@ const FreshmanStory = () => {
             </video>
           </Box>
 
-          <Text pb="10vh"> - James Kim</Text>
+          <Text pb="10vh"></Text>
         </Stack>
       </div>
     </div>

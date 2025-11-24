@@ -1,7 +1,8 @@
-import { Heading, Text, Stack } from "@chakra-ui/react";
+import { Heading, Text, Stack, Box } from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
 import BlogImage from "../../components/blog/BlogImage";
 import { useEffect } from "react";
+import { BLOG_STYLES } from "../blogStyles";
 
 const FaceTime = () => {
   useEffect(() => {
@@ -14,30 +15,20 @@ const FaceTime = () => {
         <title>biojameskim | FaceTime</title>
       </Helmet>
 
-      <Heading
-        fontSize={{ base: '3rem', md: "3.3rem"}} 
-        textAlign={"center"}
-        fontWeight={"medium"}
-        pt={"12vh"}
-      >
-        FaceTime
-      </Heading>
+      <Box {...BLOG_STYLES.headerContainer}>
+        <Heading {...BLOG_STYLES.title}>
+          FaceTime
+        </Heading>
 
-      <div className="blog-text">
-        <Text
-          fontSize="2xl"
-          align={"center"}
-          pt={"4vh"}
-          pb={"15vh"}
-        >
+        <Text {...BLOG_STYLES.date}>
           May 2023
         </Text>
+      </Box>
 
-        <Stack
-          spacing={7}
-          width={{ base: "85%", md: "50%" }}
-          fontSize={{ base: "16", md: "md" }}
-        >
+      <Box {...BLOG_STYLES.separatorLine} />
+
+      <div className="blog-text">
+        <Stack {...BLOG_STYLES.bodyContainer}>
           <Text pb="5vh">
             I <i>hate</i> facetime.
           </Text>
@@ -158,7 +149,7 @@ const FaceTime = () => {
             orientation="override"
           />
 
-          <Text pb="10vh"> - James Kim</Text>
+          <Text pb="10vh"></Text>
         </Stack>
       </div>
     </div>

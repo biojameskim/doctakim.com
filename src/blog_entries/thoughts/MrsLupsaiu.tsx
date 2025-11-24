@@ -1,7 +1,8 @@
-import { Heading, Text, Stack } from "@chakra-ui/react";
+import { Heading, Text, Stack, Box } from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
 import BlogImage from "../../components/blog/BlogImage";
 import { useEffect } from "react";
+import { BLOG_STYLES } from "../blogStyles";
 
 const MrsLupsaiu = () => {
   useEffect(() => {
@@ -14,30 +15,20 @@ const MrsLupsaiu = () => {
         <title>biojameskim | Dear Mrs. Lupsaiu</title>
       </Helmet>
 
-      <Heading
-        fontSize={{ base: '3rem', md: "3.3rem"}} 
-        textAlign={"center"}
-        fontWeight={"medium"}
-        pt={"12vh"}
-      >
-        Dear Mrs. Lupsaiu
-      </Heading>
+      <Box {...BLOG_STYLES.headerContainer}>
+        <Heading {...BLOG_STYLES.title}>
+          Dear Mrs. Lupsaiu
+        </Heading>
 
-      <div className="blog-text">
-        <Text
-          fontSize="2xl"
-          align={"center"}
-          pt={"4vh"}
-          pb={"15vh"}
-        >
+        <Text {...BLOG_STYLES.date}>
           December 2022
         </Text>
+      </Box>
 
-        <Stack
-          spacing={7}
-          width={{ base: "85%", md: "50%" }}
-          fontSize={{ base: "16", md: "md" }}
-        >
+      <Box {...BLOG_STYLES.separatorLine} />
+
+      <div className="blog-text">
+        <Stack {...BLOG_STYLES.bodyContainer}>
           <Text pb="7vh">December 26, 2022</Text>
 
           <Text pb="3vh">Dear Mrs. Lupsaiu,</Text>
@@ -276,7 +267,7 @@ const MrsLupsaiu = () => {
             orientation="v"
           />
 
-          <Text pb="10vh"> - James Kim</Text>
+          <Text pb="10vh"></Text>
 
           <Text textAlign="center" fontWeight="bold" pb="4vh"></Text>
           <Text textAlign="center">

@@ -1,7 +1,8 @@
-import { Heading, Text, Stack } from "@chakra-ui/react";
+import { Heading, Text, Stack, Box } from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
 import BlogImage from "../../components/blog/BlogImage";
 import { useEffect } from "react";
+import { BLOG_STYLES } from "../blogStyles";
 
 const WistfulMemories = () => {
   useEffect(() => {
@@ -14,30 +15,20 @@ const WistfulMemories = () => {
         <title>biojameskim | Wistful Memories</title>
       </Helmet>
 
-      <Heading
-        fontSize={{ base: '3rem', md: "3.3rem"}} 
-        textAlign={"center"}
-        fontWeight={"medium"}
-        pt={"12vh"}
-      >
-        Wistful Memories
-      </Heading>
+      <Box {...BLOG_STYLES.headerContainer}>
+        <Heading {...BLOG_STYLES.title}>
+          Wistful Memories
+        </Heading>
 
-      <div className="blog-text">
-        <Text
-          fontSize="2xl"
-          align={"center"}
-          pt={"4vh"}
-          pb={"15vh"}
-        >
+        <Text {...BLOG_STYLES.date}>
           April 2024
         </Text>
+      </Box>
 
-        <Stack
-          spacing={7}
-          width={{ base: "85%", md: "50%" }}
-          fontSize={{ base: "16", md: "md" }}
-        >
+      <Box {...BLOG_STYLES.separatorLine} />
+
+      <div className="blog-text">
+        <Stack {...BLOG_STYLES.bodyContainer}>
           <Text pb="3vh">Today I got pasta at the dining hall.</Text>
 
           <Text>
@@ -170,7 +161,9 @@ const WistfulMemories = () => {
           <Text fontWeight="bold" paddingY={"7vh"}>
             —
           </Text>
+        </Stack>
 
+        <Stack {...BLOG_STYLES.bodyContainer} mt={7}>
           <Text>
             While I was traveling in Toronto with some friends recently, we came
             across a small gift shop.
@@ -288,7 +281,9 @@ const WistfulMemories = () => {
           <Text fontWeight="bold" paddingBottom={"7vh"}>
             —
           </Text>
+        </Stack>
 
+        <Stack {...BLOG_STYLES.bodyContainer} mt={7}>
           <Text>
             My mom sent a photo to our family group chat the other day.
           </Text>
@@ -370,7 +365,9 @@ const WistfulMemories = () => {
           <Text fontWeight="bold" paddingBottom={"7vh"}>
             —
           </Text>
+        </Stack>
 
+        <Stack {...BLOG_STYLES.bodyContainer} mt={7}>
           <Text>
             I know it won’t take long before I forget these memories again.
           </Text>
@@ -433,7 +430,7 @@ const WistfulMemories = () => {
 
           <Text>and something I can come to love.</Text>
 
-          <Text py="10vh">- James Kim</Text>
+          <Text py="10vh"></Text>
         </Stack>
       </div>
     </div>

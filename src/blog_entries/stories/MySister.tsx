@@ -1,7 +1,8 @@
-import { Heading, Text, Stack } from "@chakra-ui/react";
+import { Heading, Text, Stack, Box } from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
 import BlogImage from "../../components/blog/BlogImage";
 import { useEffect } from "react";
+import { BLOG_STYLES } from "../blogStyles";
 
 const MySister = () => {
   useEffect(() => {
@@ -14,30 +15,20 @@ const MySister = () => {
         <title>biojameskim | My Sister</title>
       </Helmet>
 
-      <Heading
-        fontSize={{ base: '3rem', md: "3.3rem"}} 
-        textAlign={"center"}
-        fontWeight={"medium"}
-        pt={"12vh"}
-      >
-        My Sister
-      </Heading>
+      <Box {...BLOG_STYLES.headerContainer}>
+        <Heading {...BLOG_STYLES.title}>
+          My Sister
+        </Heading>
 
-      <div className="blog-text">
-        <Text
-          fontSize="2xl"
-          align={"center"}
-          pt={"4vh"}
-          pb={"15vh"}
-        >
+        <Text {...BLOG_STYLES.date}>
           August 2022
         </Text>
+      </Box>
 
-        <Stack
-          spacing={7}
-          width={{ base: "85%", md: "50%" }}
-          fontSize={{ base: "16", md: "md" }}
-        >
+      <Box {...BLOG_STYLES.separatorLine} />
+
+      <div className="blog-text">
+        <Stack {...BLOG_STYLES.bodyContainer}>
           <Text>I’m really not that mysterious of a guy.</Text>
           <Text>
             {" "}
@@ -70,7 +61,9 @@ const MySister = () => {
           <Text fontWeight="bold" paddingY={"7vh"}>
             —
           </Text>
+        </Stack>
 
+        <Stack {...BLOG_STYLES.bodyContainer} mt={7}>
           <Text>
             Growing up, my brother and I wanted to be world-class youtubers.
           </Text>
@@ -183,7 +176,9 @@ const MySister = () => {
           <Text fontWeight="bold" paddingBottom={"7vh"}>
             —
           </Text>
+        </Stack>
 
+        <Stack {...BLOG_STYLES.bodyContainer} mt={7}>
           <Text>I’ve always looked up to my brother.</Text>
           <Text> I started playing tennis because he played tennis,</Text>
           <Text>
@@ -280,7 +275,9 @@ const MySister = () => {
           <Text fontWeight="bold" paddingBottom={"7vh"}>
             —
           </Text>
+        </Stack>
 
+        <Stack {...BLOG_STYLES.bodyContainer} mt={7}>
           <Text>
             I read in a book somewhere that said kids are a breath of fresh air
             because they live in the present.
@@ -351,7 +348,9 @@ const MySister = () => {
           <Text fontWeight="bold" paddingY={"7vh"}>
             —
           </Text>
+        </Stack>
 
+        <Stack {...BLOG_STYLES.bodyContainer} mt={7}>
           <Text>
             I also can’t help but think what it would be like if one of these
             little girls was my younger sister.
@@ -465,7 +464,7 @@ const MySister = () => {
             orientation="v"
           />
 
-          <Text pb="10vh">- James Kim</Text>
+          <Text pb="10vh"></Text>
         </Stack>
       </div>
     </div>

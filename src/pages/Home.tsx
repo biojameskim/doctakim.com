@@ -1,49 +1,236 @@
-import { Box, Heading } from "@chakra-ui/react";
-import Typewriter from "typewriter-effect";
+import { FaLinkedin, FaSpotify } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
+import { CgWebsite } from "react-icons/cg";
+import {
+  Box,
+  Button,
+  Text,
+  VStack,
+  HStack,
+  useColorModeValue,
+  Flex,
+  Image,
+  Heading,
+  SimpleGrid,
+  Icon,
+  Divider
+} from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
+import { topSongs, topArtists } from "../data/top_songs_artists";
 
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  // Get previous month name
+  const getPreviousMonth = () => {
+    const now = new Date();
+    const previousMonth = new Date(now.getFullYear(), now.getMonth() - 1);
+    return previousMonth.toLocaleString('en-US', { month: 'long', year: 'numeric' });
+  };
+
+  const cardBg = useColorModeValue("gray.50", "gray.700");
+  const hoverBg = useColorModeValue("gray.100", "gray.600");
+  const accentColor = "teal.500";
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
-    <div className="home-page">
+    <div>
       <Helmet>
         <title>biojameskim | Home</title>
       </Helmet>
-      <Box textAlign="center">
-        <Heading
-          fontSize={{ base: "3.2rem", md: "4rem" }}
-          pb={{ base: "2vh", md: "0" }}
+
+      <Flex
+        w={{ base: "100%", md: "80%" }}
+        minH="80vh"
+        direction={{ base: "column", md: "row" }}
+        align={{ base: "center", md: "flex-start" }}
+        justify="center"
+        px="4"
+        pt={{ base: "8", md: "36" }}
+        pb="4"
+        ml={{ base: 0, md: 10 }}
+      >
+        {/* Fixed Profile Section */}
+        <VStack
+          align={"center"}
+          maxW={"md"}
+          w={"full"}
+          position={{ base: "relative", md: "sticky" }}
+          top={{ base: "0", md: "20" }}
+          alignSelf="flex-start"
         >
-          Currently ...
-        </Heading>
+          <Box
+            className="connect-image"
+            p="0.75rem"
+            shadow="md"
+            borderRadius="50%"
+            bg={useColorModeValue("gray.100", "gray.700")}
+          >
+            <Image
+              borderRadius="50%"
+              objectFit="contain"
+              width="190px"
+              src={"images/pictures/connect_2.jpg"}
+              alt="James Kim"
+            />
+          </Box>
+
+          <HStack spacing={3} align={"center"} maxW={"md"} pt="6">
+            <VStack spacing={"0.7rem"} align={"center"} maxW={"md"} pl="6">
+              <Button
+                size="sm"
+                colorScheme="teal"
+                as="a"
+                href={"https://biojameskim.me/"}
+                target={"_blank"}
+              >
+                <CgWebsite />
+              </Button>
+              <Button
+                size="sm"
+                colorScheme="telegram"
+                as="a"
+                href={"mailto:biojameskim2002@gmail.com"}
+              >
+                <FiMail />
+              </Button>
+              <Button
+                size="sm"
+                colorScheme="linkedin"
+                as="a"
+                href={"https://www.linkedin.com/in/biojameskim/"}
+                target={"_blank"}
+              >
+                <FaLinkedin />
+              </Button>
+            </VStack>
+
+            <VStack spacing={"1.4rem"} align={"left"} maxW={"md"} w={"full"}>
+              <Text fontSize="0.9rem">Portfolio</Text>
+              <Text fontSize="0.9rem">Email</Text>
+              <Text fontSize="0.9rem">LinkedIn</Text>
+            </VStack>
+          </HStack>
+        </VStack>
+
+        {/* Scrollable Content Section */}
         <Box
-          className="home-page-typewriter"
-          fontSize="2rem"
-          fontWeight="light"
+          w={{ base: "90%", md: "calc(100% - 2rem)" }}
+          pl={{ base: 0, md: 8 }}
+          pt={{ base: 8, md: 0 }}
+          maxH={{ base: "none", md: "calc(100vh - 200px)" }}
+          overflowY={{ base: "visible", md: "auto" }}
+          overflowX="hidden"
+          pr={{ base: 0, md: 4 }}
+          css={{
+            '&::-webkit-scrollbar': {
+              display: 'none',
+            },
+            '-ms-overflow-style': 'none',
+            'scrollbarWidth': 'none',
+          }}
         >
-          <Typewriter
-            options={{ loop: true }}
-            onInit={(typewriter) => {
-              typewriter
-                .typeString("Doing AI/ML research at Cornell 🧠")
-                .pauseFor(2000)
-                .deleteAll()
-                .typeString(
-                  "Thinking of new blog post ideas 📝 (check out my blog!)"
-                )
-                .pauseFor(2000)
-                .deleteAll()
-                .typeString("Trying to get better at tennis 🎾 ")
-                .pauseFor(2000)
-                .start();
-            }}
-          />
+          {/* Bio Section */}
+          <VStack spacing="1.1rem" align="flex-start" pb={8}>
+            <Heading fontWeight="bold" fontSize="2.3rem">
+              Hi, I'm James!
+            </Heading>
+            <Text fontSize="1.1rem">
+              I'm a MS student at Cornell studying Computer Science. I also did my undergrad at Cornell, where I majored in CS and Math.
+            </Text>
+            <Text fontSize="1.1rem">
+              In my free time, I'm an avid listener of Korean rap & hiphop music
+              and love to play tennis.
+            </Text>
+            <Text fontSize="1.1rem">Feel free to reach out! ☕️</Text>
+          </VStack>
+
+          {/* Separator */}
+          <Divider borderColor="gray.300" borderWidth="2px" my={8} mb={16} />
+
+          {/* Spotify Section */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            style={{ paddingBottom: '10rem' }}
+          >
+            <VStack spacing={8} align="flex-start">
+              <VStack spacing={2} align="flex-start">
+                <HStack fontSize="1.4rem" fontWeight="normal" color="gray.800">
+                  <Icon as={FaSpotify} color="#1DB954" boxSize={8} />
+                  <Text>Top Streams ({getPreviousMonth()})</Text>
+                </HStack>
+              </VStack>
+
+              <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6} w="full">
+                {/* Top Songs Column */}
+                <Box bg={cardBg} p={8} borderRadius="2xl" boxShadow="xl">
+                  <HStack mb={6} spacing={3}>
+                    <Heading size="lg">Top Songs</Heading>
+                  </HStack>
+                  <VStack spacing={4} align="stretch">
+                    {topSongs.map((song, index) => (
+                      <motion.div key={index} variants={itemVariants}>
+                        <HStack spacing={4} p={3} borderRadius="lg" _hover={{ bg: hoverBg }} transition="all 0.2s">
+                          <Text fontWeight="bold" color="gray.400" w="20px">{index + 1}</Text>
+                          <Image src={song.cover} alt={song.title} boxSize="50px" borderRadius="md" objectFit="cover" fallbackSrc="https://via.placeholder.com/50" />
+                          <Box>
+                            <Text fontWeight="bold" noOfLines={1}>{song.title}</Text>
+                            <Text fontSize="sm" color="gray.500" noOfLines={1}>{song.artist}</Text>
+                          </Box>
+                        </HStack>
+                      </motion.div>
+                    ))}
+                  </VStack>
+                </Box>
+
+                {/* Top Artists Column */}
+                <Box bg={cardBg} p={8} borderRadius="2xl" boxShadow="xl">
+                  <HStack mb={6} spacing={3}>
+                    <Heading size="lg">Top Artists</Heading>
+                  </HStack>
+                  <VStack spacing={4} align="stretch">
+                    {topArtists.map((artist, index) => (
+                      <motion.div key={index} variants={itemVariants}>
+                        <HStack spacing={4} p={3} borderRadius="lg" _hover={{ bg: hoverBg }} transition="all 0.2s">
+                          <Text fontWeight="bold" color="gray.400" w="20px">{index + 1}</Text>
+                          <Image src={artist.image} alt={artist.name} boxSize="50px" borderRadius="full" objectFit="cover" fallbackSrc="https://via.placeholder.com/50" />
+                          <Text fontWeight="bold">{artist.name}</Text>
+                        </HStack>
+                      </motion.div>
+                    ))}
+                  </VStack>
+                </Box>
+              </SimpleGrid>
+            </VStack>
+          </motion.div>
         </Box>
-      </Box>
+      </Flex>
     </div>
   );
 };

@@ -1,7 +1,8 @@
-import { Heading, Text, Stack } from "@chakra-ui/react";
+import { Heading, Text, Stack, Box } from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
 import BlogImage from "../../components/blog/BlogImage";
 import { useEffect } from "react";
+import { BLOG_STYLES } from "../blogStyles";
 
 const SophomoreSlump = () => {
   useEffect(() => {
@@ -14,26 +15,22 @@ const SophomoreSlump = () => {
         <title>biojameskim | Sophomore Slump</title>
       </Helmet>
 
-      <Heading
-        fontSize={{ base: '3rem', md: "3.3rem"}} 
-        textAlign={"center"}
-        fontWeight={"medium"}
-        pt={"12vh"}
-        px="3"
-      >
-        The Sophomore Slump
-      </Heading>
-
-      <div className="blog-text">
-        <Text
-          fontSize="2xl"
-          align={"center"}
-          pt={"4vh"}
-          pb={"15vh"}
+      <Box {...BLOG_STYLES.headerContainer}>
+        <Heading
+          {...BLOG_STYLES.title}
+          px="3"
         >
+          The Sophomore Slump
+        </Heading>
+
+        <Text {...BLOG_STYLES.date}>
           May 2023
         </Text>
+      </Box>
 
+      <Box {...BLOG_STYLES.separatorLine} />
+
+      <div className="blog-text">
         <Stack
           spacing={7}
           width={{ base: "85%", md: "50%" }}
@@ -278,7 +275,14 @@ const SophomoreSlump = () => {
           <Text fontWeight="bold" paddingBottom={"7vh"}>
             —
           </Text>
+        </Stack>
 
+        <Stack
+          spacing={7}
+          width={{ base: "85%", md: "50%" }}
+          fontSize={{ base: "16", md: "md" }}
+          mt={7}
+        >
           <Text pb="5vh">
             As I was forming all these new friendships, I realized that I really
             wanted to deepen the friendships I made last year too.
@@ -414,7 +418,14 @@ const SophomoreSlump = () => {
           <Text fontWeight="bold" paddingBottom={"7vh"}>
             —
           </Text>
+        </Stack>
 
+        <Stack
+          spacing={7}
+          width={{ base: "85%", md: "50%" }}
+          fontSize={{ base: "16", md: "md" }}
+          mt={7}
+        >
           <Text pb="5vh">
             Sophomore year was also a time of <i>a lot</i> of change.
           </Text>
@@ -503,7 +514,14 @@ const SophomoreSlump = () => {
           <Text fontWeight="bold" paddingBottom={"7vh"}>
             —
           </Text>
+        </Stack>
 
+        <Stack
+          spacing={7}
+          width={{ base: "85%", md: "50%" }}
+          fontSize={{ base: "16", md: "md" }}
+          mt={7}
+        >
           <Text>
             Over winter break, a bunch of people in my fellowship traveled to a
             conference together and I was in a hotel room with a bunch of senior
@@ -599,7 +617,14 @@ const SophomoreSlump = () => {
           <Text fontWeight="bold" paddingBottom={"7vh"}>
             —
           </Text>
+        </Stack>
 
+        <Stack
+          spacing={7}
+          width={{ base: "85%", md: "50%" }}
+          fontSize={{ base: "16", md: "md" }}
+          mt={7}
+        >
           <Text>
             Just a couple of weeks ago, my brother graduated from college.
           </Text>
@@ -714,7 +739,7 @@ const SophomoreSlump = () => {
             orientation="v"
           />
 
-          <Text pb="10vh"> - James Kim</Text>
+          <Text pb="10vh"></Text>
         </Stack>
       </div>
     </div>
