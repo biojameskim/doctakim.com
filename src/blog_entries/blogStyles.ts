@@ -26,7 +26,7 @@ export const BLOG_STYLES = {
     title: {
         fontSize: { base: '3rem', md: "2.7rem" },
         textAlign: "center" as const,
-        fontWeight: "medium" as const,
+        fontWeight: "bold" as const,
         mb: "2vh",
     },
 
@@ -35,6 +35,8 @@ export const BLOG_STYLES = {
         fontSize: "2xl",
         align: "center" as const,
         color: "gray.500",
+        fontWeight: "regular",
+        fontStyle: "italic",
     },
 
     // Body text container styling
@@ -43,5 +45,6 @@ export const BLOG_STYLES = {
         width: { base: "85%", md: "50%" },
         fontSize: { base: "16", md: "lg" },
         lineHeight: 1.8,
+        fontWeight: "medium"
     },
 } as const;

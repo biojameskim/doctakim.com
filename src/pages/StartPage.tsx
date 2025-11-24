@@ -24,7 +24,7 @@ const StartPage = () => {
     <div className="starter-page">
       <Show below="md">
         <Flex h="100vh" align="flex-start" justify="center" pt="35vh">
-          <Text fontSize="3rem" fontWeight="bold">Hi, I'm James.</Text>
+          <Text fontSize="3rem" fontWeight="medium">Hi, I'm James.</Text>
         </Flex>
       </Show>
       <Show above="md">
@@ -33,7 +33,7 @@ const StartPage = () => {
             <Animator
               animation={batch(Fade(), Move(), Sticky(), MoveOut(0, -200))}
             >
-              <Text as="span" fontSize={{ base: "3rem", md: "5rem" }} fontWeight="bold">Hi, I'm James.</Text>
+              <Text as="span" fontSize={{ base: "3rem", md: "5rem" }} fontWeight="medium">Hi, I'm James.</Text>
               <Text
                 className="scroll-icon"
                 pt="2rem"
@@ -49,9 +49,9 @@ const StartPage = () => {
             <Animator
               animation={batch(Sticky(), Fade(), ZoomIn(2, 1), MoveOut(0, -500))}
             >
-              <Text as="span" fontSize={{ base: "2rem", md: "3rem" }}>I'm studying</Text>
+              <Text as="span" fontSize={{ base: "2rem", md: "3rem" }} fontWeight="regular">I'm studying</Text>
               <br />
-              <Text as="span" fontSize={{ base: "3rem", md: "6rem" }} fontWeight="bold">CS at Cornell 👨🏻‍💻</Text>
+              <Text as="span" fontSize={{ base: "3rem", md: "6rem" }} fontWeight="medium">CS at Cornell 👨🏻‍💻</Text>
             </Animator>
           </ScrollPage>
 
@@ -80,10 +80,10 @@ const StartPage = () => {
                   MoveOut(0, -300)
                 )}
               >
-                <Text color={useColorModeValue("black", "black")} fontSize="70%">
+                <Text color={useColorModeValue("black", "black")} fontSize="70%" fontWeight="regular">
                   Originally from
                 </Text>
-                <Text color={useColorModeValue("black", "black")} fontSize="90%">
+                <Text color={useColorModeValue("black", "black")} fontSize="90%" fontWeight="medium">
                   California 🌴
                 </Text>
                 {/* <Text as="span" fontSize={{ base: "3rem", md: "60px" }}>🌴 🌴 🌴</Text> */}
@@ -101,10 +101,10 @@ const StartPage = () => {
                   MoveOut(0, -300)
                 )}
               >
-                <Text color={useColorModeValue("black", "black")} fontSize="70%">
+                <Text color={useColorModeValue("black", "black")} fontSize="70%" fontWeight="regular">
                   But currently in
                 </Text>
-                <Text color={useColorModeValue("black", "black")} fontSize="90%">
+                <Text color={useColorModeValue("black", "black")} fontSize="90%" fontWeight="medium">
                   Ithaca, NY ❄️
                 </Text>
                 {/* <Text as="span" fontSize={{ base: "3rem", md: "60px" }}>❄️ ❄️ ❄️</Text> */}
@@ -114,8 +114,8 @@ const StartPage = () => {
 
           <ScrollPage>
             <Animator animation={batch(Fade(), Sticky(), MoveOut())}>
-              <Text fontSize={{ base: "2rem", md: "60px" }}>Welcome to my corner</Text>
-              <Text fontSize={{ base: "2rem", md: "60px" }}>of the internet.</Text>
+              <Text fontSize={{ base: "2rem", md: "60px" }} fontWeight="medium">Welcome to my corner</Text>
+              <Text fontSize={{ base: "2rem", md: "60px" }} fontWeight="medium">of the internet.</Text>
             </Animator>
           </ScrollPage>
 

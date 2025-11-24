@@ -162,14 +162,14 @@ const Home = () => {
             <Heading fontWeight="bold" fontSize="2.3rem">
               Hi, I'm James!
             </Heading>
-            <Text fontSize="1.1rem">
+            <Text fontSize="1.1rem" fontWeight="medium">
               I'm a MS student at Cornell studying Computer Science. I also did my undergrad at Cornell, where I majored in CS and Math.
             </Text>
-            <Text fontSize="1.1rem">
+            <Text fontSize="1.1rem" fontWeight="medium">
               In my free time, I'm an avid listener of Korean rap & hiphop music
               and love to play tennis.
             </Text>
-            <Text fontSize="1.1rem">Feel free to reach out! ☕️</Text>
+            <Text fontSize="1.1rem" fontWeight="medium">Feel free to reach out! ☕️</Text>
           </VStack>
 
           {/* Separator */}

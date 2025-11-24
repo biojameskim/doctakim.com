@@ -3,13 +3,13 @@ import { extendTheme } from "@chakra-ui/react";
 
 export default extendTheme({
   fonts: {
-    heading: "'Nunito', sans-serif",
-    body: "'Nunito', sans-serif",
+    heading: "'Satoshi', sans-serif",
+    body: "'Satoshi', sans-serif",
   },
   components: {
-    Text: { baseStyle: { fontFamily: "'Nunito', sans-serif" } },
-    Heading: { baseStyle: { fontFamily: "'Nunito', sans-serif" } },
-    Button: { baseStyle: { fontFamily: "'Nunito', sans-serif" } },
+    Text: { baseStyle: { fontFamily: "'Satoshi', sans-serif" } },
+    Heading: { baseStyle: { fontFamily: "'Satoshi', sans-serif" } },
+    Button: { baseStyle: { fontFamily: "'Satoshi', sans-serif" } },
   },
   colors: {
     brand: {
