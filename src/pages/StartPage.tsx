@@ -23,7 +23,7 @@ const StartPage = () => {
   return (
     <div className="starter-page">
       <Show below="md">
-        <Flex h="100vh" align="center" justify="center">
+        <Flex h="100vh" align="flex-start" justify="center" pt="35vh">
           <Text fontSize="3rem" fontWeight="bold">Hi, I'm James.</Text>
         </Flex>
       </Show>

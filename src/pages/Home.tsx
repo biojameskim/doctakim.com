@@ -13,7 +13,8 @@ import {
   Heading,
   SimpleGrid,
   Icon,
-  Divider
+  Divider,
+  Stack
 } from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
 import { useEffect } from "react";
@@ -75,7 +76,7 @@ const Home = () => {
       >
         {/* Fixed Profile Section */}
         <Flex
-          direction={{ base: "row", md: "column" }}
+          direction="column"
           align="center"
           maxW={"md"}
           w={"full"}
@@ -94,14 +95,14 @@ const Home = () => {
             <Image
               borderRadius="50%"
               objectFit="contain"
-              width={{ base: "120px", md: "190px" }}
+              width={{ base: "180px", md: "190px" }}
               src={"images/pictures/connect_2.jpg"}
               alt="James Kim"
             />
           </Box>
 
-          <HStack spacing={3} align={"center"} maxW={"md"} pt={{ base: 0, md: 6 }}>
-            <VStack spacing={"0.7rem"} align={"center"} maxW={"md"} pl="6">
+          <HStack spacing={3} align={"center"} maxW={"md"} pt={{ base: 4, md: 6 }}>
+            <Stack direction={{ base: "row", md: "column" }} spacing={"0.7rem"} align={"center"} maxW={"md"} pl={{ base: 0, md: 6 }}>
               <Button
                 size="sm"
                 colorScheme="teal"
@@ -128,9 +129,9 @@ const Home = () => {
               >
                 <FaLinkedin />
               </Button>
-            </VStack>
+            </Stack>
 
-            <VStack spacing={"1.4rem"} align={"left"} maxW={"md"} w={"full"}>
+            <VStack spacing={"1.4rem"} align={"left"} maxW={"md"} w={"full"} display={{ base: "none", md: "flex" }}>
               <Text fontSize="0.9rem">Portfolio</Text>
               <Text fontSize="0.9rem">Email</Text>
               <Text fontSize="0.9rem">LinkedIn</Text>
