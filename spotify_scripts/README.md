@@ -35,7 +35,7 @@ This will:
 
 ### Customize Time Range
 
-By default, the script fetches your top tracks from the **last 4 weeks**. You can change this in `scripts/update_music.ts` by modifying the `time_range` parameter on lines 19-20:
+By default, the script fetches your top tracks from the **last 4 weeks**. You can change this in `spotify_scripts/update_music.ts` by modifying the `time_range` parameter on lines 19-20:
 
 **Available options:**
 - `'short_term'` - Last ~4 weeks (default)
@@ -53,12 +53,12 @@ To automatically update your music data every 4 weeks, set up a cron job:
 
 2. **Add this line** (runs at 2 AM on the 1st of every month):
    ```
-   0 2 1 * * /Users/jinhan/repos/doctakim.com/scripts/cron_update_music.sh >> /Users/jinhan/repos/doctakim.com/scripts/cron.log 2>&1
+   0 2 1 * * /Users/jinhan/repos/doctakim.com/spotify_scripts/cron_update_music.sh >> /Users/jinhan/repos/doctakim.com/spotify_scripts/cron.log 2>&1
    ```
 
 3. **Save and exit**
 
-The script will run automatically and log output to `scripts/cron.log`.
+The script will run automatically and log output to `spotify_scripts/cron.log`.
 
 ### Manual Updates
 

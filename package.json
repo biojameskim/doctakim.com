@@ -38,8 +38,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "update-music": "ts-node --transpile-only -O '{\"module\":\"commonjs\"}' scripts/update_music.ts",
-    "get-token": "ts-node --transpile-only -O '{\"module\":\"commonjs\"}' scripts/get_refresh_token.ts"
+    "update-music": "ts-node --transpile-only -O '{\"module\":\"commonjs\"}' spotify_scripts/update_music.ts",
+    "get-token": "ts-node --transpile-only -O '{\"module\":\"commonjs\"}' spotify_scripts/get_refresh_token.ts"
   },
   "eslintConfig": {
     "extends": "react-app"
