@@ -34,7 +34,6 @@ const Home = () => {
 
   const cardBg = useColorModeValue("gray.50", "gray.700");
   const hoverBg = useColorModeValue("gray.100", "gray.600");
-  const accentColor = "teal.500";
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -181,7 +180,7 @@ const Home = () => {
           >
             <VStack spacing={8} align="flex-start">
               <VStack spacing={2} align="flex-start">
-                <HStack fontSize="1.4rem" fontWeight="normal" color="gray.800">
+                <HStack fontSize="1.4rem" fontWeight="normal" color={useColorModeValue("gray.800", "white")}>
                   <Icon as={FaSpotify} color="#1DB954" boxSize={8} />
                   <Text>Top Streams ({getPreviousMonth()})</Text>
                 </HStack>
