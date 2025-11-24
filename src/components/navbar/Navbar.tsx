@@ -4,12 +4,11 @@ import {
   Button,
   useColorModeValue,
   useColorMode,
-  Show,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { Link as LinkRouter } from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
-import MobileNav from "./MobileNav";
+
 import SocialButton from "../SocialButton";
 
 export default function NavBar() {
@@ -62,17 +61,11 @@ export default function NavBar() {
 
           {/* Right Side: Navigation & Theme Toggle */}
           <Flex alignItems="center" gap={4}>
-            <Show below="md">
-              <MobileNav />
-            </Show>
-
-            <Show above="md">
-              <LinkRouter to="/blog">
-                <Button variant="ghost" fontSize="1.2rem" fontWeight="medium" borderRadius="full" size="sm" px={3}>
-                  Blog
-                </Button>
-              </LinkRouter>
-            </Show>
+            <LinkRouter to="/blog">
+              <Button variant="ghost" fontSize="1.2rem" fontWeight="medium" borderRadius="full" size="sm" px={3}>
+                Blog
+              </Button>
+            </LinkRouter>
 
             <Button
               onClick={toggleColorMode}

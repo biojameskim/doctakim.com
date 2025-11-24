@@ -10,7 +10,7 @@ export const BLOG_STYLES = {
         mx: "auto",
         mt: "10vh",
         px: "1rem",
-        pb: "10vh", // Spacing ABOVE the separator line
+        pb: "14vh", // Spacing ABOVE the separator line
     },
 
     // Separator line: Independently adjustable width

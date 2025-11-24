@@ -74,13 +74,15 @@ const Home = () => {
         ml={{ base: 0, md: 10 }}
       >
         {/* Fixed Profile Section */}
-        <VStack
-          align={"center"}
+        <Flex
+          direction={{ base: "row", md: "column" }}
+          align="center"
           maxW={"md"}
           w={"full"}
           position={{ base: "relative", md: "sticky" }}
           top={{ base: "0", md: "20" }}
           alignSelf="flex-start"
+          gap={4}
         >
           <Box
             className="connect-image"
@@ -92,13 +94,13 @@ const Home = () => {
             <Image
               borderRadius="50%"
               objectFit="contain"
-              width="190px"
+              width={{ base: "120px", md: "190px" }}
               src={"images/pictures/connect_2.jpg"}
               alt="James Kim"
             />
           </Box>
 
-          <HStack spacing={3} align={"center"} maxW={"md"} pt="6">
+          <HStack spacing={3} align={"center"} maxW={"md"} pt={{ base: 0, md: 6 }}>
             <VStack spacing={"0.7rem"} align={"center"} maxW={"md"} pl="6">
               <Button
                 size="sm"
@@ -134,7 +136,7 @@ const Home = () => {
               <Text fontSize="0.9rem">LinkedIn</Text>
             </VStack>
           </HStack>
-        </VStack>
+        </Flex>
 
         {/* Scrollable Content Section */}
         <Box
