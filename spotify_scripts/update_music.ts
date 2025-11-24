@@ -22,12 +22,14 @@ async function updateMusicData() {
         const songs = topTracks.body.items.map((track: any) => ({
             title: track.name,
             artist: track.artists.map((a: any) => a.name).join(', '),
-            cover: track.album.images[0]?.url || ''
+            cover: track.album.images[0]?.url || '',
+            link: track.external_urls?.spotify || ''
         }));
 
         const artists = topArtists.body.items.map((artist: any) => ({
             name: artist.name,
-            image: artist.images[0]?.url || ''
+            image: artist.images[0]?.url || '',
+            link: artist.external_urls?.spotify || ''
         }));
 
         const fileContent = `export const topSongs = ${JSON.stringify(songs, null, 4)};\n\nexport const topArtists = ${JSON.stringify(artists, null, 4)};\n`;

@@ -14,7 +14,8 @@ import {
   SimpleGrid,
   Icon,
   Divider,
-  Stack
+  Stack,
+  Link
 } from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
 import { useEffect } from "react";
@@ -183,47 +184,51 @@ const Home = () => {
           >
             <VStack spacing={8} align="flex-start">
               <VStack spacing={2} align="flex-start">
-                <HStack fontSize="1.4rem" fontWeight="normal" color={useColorModeValue("gray.800", "white")}>
-                  <Icon as={FaSpotify} color="#1DB954" boxSize={8} />
-                  <Text>Top Streams ({getPreviousMonth()})</Text>
+                <HStack fontSize="1.8rem" fontWeight="bold" spacing={3}>
+                  <Icon as={FaSpotify} color="#1DB954" boxSize={10} />
+                  <Text bgGradient="linear(to-r, #1DB954, #1ed760)" bgClip="text">Top Streams ({getPreviousMonth()})</Text>
                 </HStack>
               </VStack>
 
               <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6} w="full">
                 {/* Top Songs Column */}
-                <Box bg={cardBg} p={8} borderRadius="2xl" boxShadow="xl">
+                <Box bg={cardBg} p={5} borderRadius="2xl" boxShadow="xl">
                   <HStack mb={6} spacing={3}>
                     <Heading size="lg">Top Songs</Heading>
                   </HStack>
                   <VStack spacing={4} align="stretch">
                     {topSongs.map((song, index) => (
                       <motion.div key={index} variants={itemVariants}>
-                        <HStack spacing={4} p={3} borderRadius="lg" _hover={{ bg: hoverBg }} transition="all 0.2s">
-                          <Text fontWeight="bold" color="gray.400" w="20px">{index + 1}</Text>
-                          <Image src={song.cover} alt={song.title} boxSize="50px" borderRadius="md" objectFit="cover" fallbackSrc="https://via.placeholder.com/50" />
-                          <Box>
-                            <Text fontWeight="bold" noOfLines={1}>{song.title}</Text>
-                            <Text fontSize="sm" color="gray.500" noOfLines={1}>{song.artist}</Text>
-                          </Box>
-                        </HStack>
+                        <Link href={song.link} isExternal _hover={{ textDecoration: 'none' }}>
+                          <HStack spacing={4} p={3} borderRadius="lg" _hover={{ bg: hoverBg }} transition="all 0.2s" cursor="pointer">
+                            <Text fontWeight="bold" color="gray.400" w="20px">{index + 1}</Text>
+                            <Image src={song.cover} alt={song.title} boxSize="50px" borderRadius="md" objectFit="cover" fallbackSrc="https://via.placeholder.com/50" />
+                            <Box>
+                              <Text fontWeight="bold" noOfLines={1}>{song.title}</Text>
+                              <Text fontSize="sm" color="gray.500" noOfLines={1}>{song.artist}</Text>
+                            </Box>
+                          </HStack>
+                        </Link>
                       </motion.div>
                     ))}
                   </VStack>
                 </Box>
 
                 {/* Top Artists Column */}
-                <Box bg={cardBg} p={8} borderRadius="2xl" boxShadow="xl">
+                <Box bg={cardBg} p={5} borderRadius="2xl" boxShadow="xl">
                   <HStack mb={6} spacing={3}>
                     <Heading size="lg">Top Artists</Heading>
                   </HStack>
                   <VStack spacing={4} align="stretch">
                     {topArtists.map((artist, index) => (
                       <motion.div key={index} variants={itemVariants}>
-                        <HStack spacing={4} p={3} borderRadius="lg" _hover={{ bg: hoverBg }} transition="all 0.2s">
-                          <Text fontWeight="bold" color="gray.400" w="20px">{index + 1}</Text>
-                          <Image src={artist.image} alt={artist.name} boxSize="50px" borderRadius="full" objectFit="cover" fallbackSrc="https://via.placeholder.com/50" />
-                          <Text fontWeight="bold">{artist.name}</Text>
-                        </HStack>
+                        <Link href={artist.link} isExternal _hover={{ textDecoration: 'none' }}>
+                          <HStack spacing={4} p={3} borderRadius="lg" _hover={{ bg: hoverBg }} transition="all 0.2s" cursor="pointer">
+                            <Text fontWeight="bold" color="gray.400" w="20px">{index + 1}</Text>
+                            <Image src={artist.image} alt={artist.name} boxSize="50px" borderRadius="full" objectFit="cover" fallbackSrc="https://via.placeholder.com/50" />
+                            <Text fontWeight="bold">{artist.name}</Text>
+                          </HStack>
+                        </Link>
                       </motion.div>
                     ))}
                   </VStack>

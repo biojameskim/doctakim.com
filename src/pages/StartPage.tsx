@@ -84,7 +84,7 @@ const StartPage = () => {
                   Originally from
                 </Text>
                 <Text color={useColorModeValue("black", "black")} fontSize="90%">
-                  (Southern) California 🌴
+                  California 🌴
                 </Text>
                 {/* <Text as="span" fontSize={{ base: "3rem", md: "60px" }}>🌴 🌴 🌴</Text> */}
               </Animator>

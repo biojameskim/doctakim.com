@@ -45,10 +45,10 @@ export default function NavBar() {
             <LinkRouter to="/">
               <Box
                 as="img"
-                src="/favicon_io/favicon-32x32.png"
+                src="/favicon_io/apple-touch-icon.png"
                 alt="Logo"
                 borderRadius="full"
-                boxSize="32px"
+                boxSize="38px"
                 _hover={{ cursor: "pointer", opacity: 0.8 }}
               />
             </LinkRouter>
