@@ -14,6 +14,7 @@ import { Text, useColorModeValue, Show, Flex } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const StartPage = () => {
   useEffect(() => {
@@ -22,6 +23,9 @@ const StartPage = () => {
 
   return (
     <div className="starter-page">
+      <Helmet>
+        <title>biojameskim</title>
+      </Helmet>
       <Show below="md">
         <Flex h="100vh" align="flex-start" justify="center" pt="35vh">
           <Text fontSize="3rem" fontWeight="medium">Hi, I'm James.</Text>
