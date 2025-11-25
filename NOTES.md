@@ -2,6 +2,13 @@
 
 </br>
 
+### Font Family (Satoshi)
+- Light 300
+- Regular 400 (Default)
+- Medium 500
+- Bold 700
+- Black 900
+
 ### Testing on Local Host for Mobile Devices
 
 To test on localhost using your phone, use this command.
