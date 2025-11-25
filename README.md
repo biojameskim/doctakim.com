@@ -6,3 +6,5 @@ Check out my site <a href='https://doctakim.com' target='_blank'>here</a>
 
 
 Made with React (TS) and Chakra UI.
+
+Built with Node.js 20 LTS.

@@ -29,3 +29,6 @@ When uploading any photos, use lossy compression to reduce file size.
 ### Cover Photos for Blog
 - fotor.com
 - Keep each photo at 1280x960 --> (2048x1536, 1024x768, etc)
+
+### Deployment
+- Deployed with Netlify
