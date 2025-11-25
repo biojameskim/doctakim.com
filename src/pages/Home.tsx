@@ -1,4 +1,5 @@
 import { FaLinkedin, FaSpotify } from "react-icons/fa";
+import GracefulImage from "../components/GracefulImage";
 import { FiMail } from "react-icons/fi";
 import { CgWebsite } from "react-icons/cg";
 import {
@@ -93,10 +94,10 @@ const Home = () => {
             borderRadius="50%"
             bg={useColorModeValue("gray.100", "gray.700")}
           >
-            <Image
+            <GracefulImage
               borderRadius="50%"
               objectFit="contain"
-              width={{ base: "180px", md: "190px" }}
+              boxSize={{ base: "180px", md: "190px" }}
               src={"images/pictures/connect_2.jpg"}
               alt="James Kim"
             />

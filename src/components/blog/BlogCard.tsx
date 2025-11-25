@@ -1,4 +1,5 @@
-import { Stack, Box, Image, Text, useColorModeValue } from "@chakra-ui/react"
+import { Stack, Box, Image, Text, useColorModeValue, AspectRatio } from "@chakra-ui/react"
+import GracefulImage from "../GracefulImage"
 import { Link as LinkRouter } from 'react-router-dom'
 import { BlogCardType } from "../../types/BlogTypes"
 
@@ -37,13 +38,15 @@ const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogC
                 )}
 
                 <Box>
-                    <Image
-                        boxSize='full'
-                        borderRadius='2xl'
-                        w='full'
-                        src={image}
-                        alt={alt}
-                    />
+                    <AspectRatio ratio={4 / 3} borderRadius='2xl' overflow="hidden">
+                        <GracefulImage
+                            boxSize='full'
+                            w='full'
+                            h='full'
+                            src={image}
+                            alt={alt}
+                        />
+                    </AspectRatio>
                 </Box>
 
                 <Stack mt={{ base: 4, md: 0 }} ml={{ md: 6 }} maxW={'400'} >
