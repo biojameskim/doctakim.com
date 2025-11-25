@@ -28,7 +28,7 @@ const StartPage = () => {
       </Helmet>
       <Show below="md">
         <Flex h="100vh" align="flex-start" justify="center" pt="35vh">
-          <Text fontSize="3rem" fontWeight="medium">Hi, I'm James.</Text>
+          <Text fontSize="3rem" fontWeight="medium">Welcome.</Text>
         </Flex>
       </Show>
       <Show above="md">
