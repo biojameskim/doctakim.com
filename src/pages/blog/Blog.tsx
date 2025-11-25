@@ -16,7 +16,7 @@ const Blog = () => {
       </Helmet>
 
       <Box>
-        <Heading textAlign='center' fontSize='3.5rem' fontWeight={'medium'} pt={'8vh'} pb={{ base: '2vh', md: '4vh' }} >
+        <Heading textAlign='center' fontSize='3rem' fontWeight={'medium'} pt={'8vh'} pb={{ base: '2vh', md: '4vh' }} >
           Blog
         </Heading>
         <Tabs orientation='horizontal' variant='soft-rounded' colorScheme='green' align='center'>

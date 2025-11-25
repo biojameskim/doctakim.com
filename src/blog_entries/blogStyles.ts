@@ -24,7 +24,7 @@ export const BLOG_STYLES = {
 
     // Title styling
     title: {
-        fontSize: { base: '3rem', md: "2.7rem" },
+        fontSize: { base: '3rem', md: "2.5rem" },
         textAlign: "center" as const,
         fontWeight: "bold" as const,
         mb: "2vh",
@@ -32,7 +32,7 @@ export const BLOG_STYLES = {
 
     // Date styling
     date: {
-        fontSize: "2xl",
+        fontSize: { base: '2xl', md: "1.5rem" },
         align: "center" as const,
         color: "gray.500",
         fontWeight: "regular",
@@ -43,7 +43,7 @@ export const BLOG_STYLES = {
     bodyContainer: {
         spacing: 7,
         width: { base: "85%", md: "50%" },
-        fontSize: { base: "16", md: "lg" },
+        fontSize: { base: "16", md: "1.1rem" },
         lineHeight: 1.8,
         fontWeight: "medium"
     },

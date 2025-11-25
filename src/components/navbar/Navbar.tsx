@@ -37,7 +37,7 @@ export default function NavBar() {
           flex={{ base: 1 }}
           alignItems="center"
           justify="space-between"
-          maxW="7xl"
+          maxW="5xl"
           w="100%"
         >
           {/* Left Side: Logo & Home Icon */}
@@ -52,7 +52,7 @@ export default function NavBar() {
                 _hover={{ cursor: "pointer", opacity: 0.8 }}
               />
             </LinkRouter>
-            <LinkRouter to="/home">
+            <LinkRouter to="/home" style={{ borderRadius: '50%', display: 'inline-flex' }}>
               <SocialButton label={"Home"}>
                 <AiOutlineHome />
               </SocialButton>

@@ -28,7 +28,7 @@ const Footer = () => {
       >
         <Text>© 2025 James Kim</Text>
         <Stack direction={"row"} spacing={6} px={20}>
-          <Link to="/home">
+          <Link to="/home" style={{ borderRadius: '50%', display: 'inline-flex' }}>
             <SocialButton label={"Home"}>
               <AiOutlineHome />
             </SocialButton>

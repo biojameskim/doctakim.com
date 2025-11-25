@@ -48,9 +48,9 @@ const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogC
 
                 <Stack mt={{ base: 4, md: 0 }} ml={{ md: 6 }} maxW={'400'} >
                     <Text
-                        fontWeight='semibold'
+                        fontWeight='bold'
                         textTransform='uppercase'
-                        fontSize='1.1rem'
+                        fontSize='1rem'
                         letterSpacing='wide'
                         color='teal.600'
                         pt='3'
@@ -60,9 +60,9 @@ const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogC
                     <Text
                         mt={1}
                         display='block'
-                        fontSize='1.8rem'
+                        fontSize='1.6rem'
                         lineHeight='normal'
-                        fontWeight='semibold'
+                        fontWeight='bold'
                         maxW='100%'
                     >
                         {title}
