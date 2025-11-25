@@ -1,0 +1,16 @@
+[build]
+  # Build command
+  command = "npm run build"
+  # Directory with the build output
+  publish = "build"
+
+[build.environment]
+  # Use Node.js 20 LTS for builds and functions
+  NODE_VERSION = "20"
+
+# Optional: Configure functions if you have any
+[functions]
+  # Directory where your serverless functions are located
+  # directory = "functions"
+  # Node.js version for functions runtime
+  node_bundler = "esbuild"
