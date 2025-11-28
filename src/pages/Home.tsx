@@ -1,4 +1,4 @@
-import { FaLinkedin, FaSpotify } from "react-icons/fa";
+import { FaSpotify } from "react-icons/fa";
 import GracefulImage from "../components/GracefulImage";
 import { FiMail } from "react-icons/fi";
 import { CgWebsite } from "react-icons/cg";
@@ -19,6 +19,7 @@ import {
   Link
 } from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
+import { Link as RouterLink } from "react-router-dom";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { topSongs, topArtists } from "../data/top_songs_artists";
@@ -103,42 +104,25 @@ const Home = () => {
             />
           </Box>
 
-          <HStack spacing={3} align={"center"} maxW={"md"} pt={{ base: 4, md: 6 }}>
-            <Stack direction={{ base: "row", md: "column" }} spacing={"0.7rem"} align={"center"} maxW={"md"} pl={{ base: 0, md: 6 }}>
-              <Button
-                size="sm"
-                colorScheme="teal"
-                as="a"
-                href={"https://biojameskim.me/"}
-                target={"_blank"}
-              >
-                <CgWebsite />
-              </Button>
-              <Button
-                size="sm"
-                colorScheme="telegram"
-                as="a"
-                href={"mailto:biojameskim2002@gmail.com"}
-              >
-                <FiMail />
-              </Button>
-              <Button
-                size="sm"
-                colorScheme="linkedin"
-                as="a"
-                href={"https://www.linkedin.com/in/biojameskim/"}
-                target={"_blank"}
-              >
-                <FaLinkedin />
-              </Button>
-            </Stack>
-
-            <VStack spacing={"1.4rem"} align={"left"} maxW={"md"} w={"full"} display={{ base: "none", md: "flex" }}>
-              <Text fontSize="0.9rem">Portfolio</Text>
-              <Text fontSize="0.9rem">Email</Text>
-              <Text fontSize="0.9rem">LinkedIn</Text>
-            </VStack>
-          </HStack>
+          <Stack direction={"row"} spacing={"0.7rem"} align={"center"} justify={"center"} w={"full"} pt={{ base: 4, md: 4 }}>
+            <Button
+              size="sm"
+              colorScheme="teal"
+              as="a"
+              href={"https://biojameskim.me/"}
+              target={"_blank"}
+            >
+              <CgWebsite />
+            </Button>
+            <Button
+              size="sm"
+              colorScheme="telegram"
+              as="a"
+              href={"mailto:biojameskim2002@gmail.com"}
+            >
+              <FiMail />
+            </Button>
+          </Stack>
         </Flex>
 
         {/* Scrollable Content Section */}
@@ -161,16 +145,17 @@ const Home = () => {
           {/* Bio Section */}
           <VStack spacing="1.1rem" align="flex-start" pb={8}>
             <Heading fontWeight="bold" fontSize="2.0rem">
-              Hi, I'm James!
+              I'm James.
             </Heading>
             <Text fontSize="1.0rem" fontWeight="medium">
-              I'm a MS student at Cornell studying Computer Science. I also did my undergrad at Cornell, where I majored in CS and Math.
+              I'm currently based in Ithaca, where I've spent the past few years at Cornell.
+              I have a more academic website <Link as="a" target="_blank" href="https://biojameskim.me" color="green.500">here</Link>.
             </Text>
             <Text fontSize="1.0rem" fontWeight="medium">
-              In my free time, I'm an avid listener of Korean rap & hiphop music
-              and love to play tennis.
+              I enjoy logging moments of my life through journaling and I share some in my <Link as={RouterLink} to="/blog" color="green.500">Blog</Link>.
+              I also enjoy writing rap music (though I'm not as confident in sharing those).
             </Text>
-            <Text fontSize="1.0rem" fontWeight="medium">Feel free to reach out! ☕️</Text>
+            <Text fontSize="1.0rem" fontWeight="medium">If you'd like to connect, feel free to shoot me an <Link as="a" href="mailto:biojameskim2002@gmail.com" color="green.500">email</Link>.</Text>
           </VStack>
 
           {/* Separator */}
