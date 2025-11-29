@@ -6,7 +6,6 @@ import theme from "./theme"
 import {
   StartPage,
   Home,
-  Experience,
   Blog,
   NotFound,
   Hidden,
@@ -52,7 +51,6 @@ export const App = () => (
           <Route path="/" element={<StartPage />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<Home />} />
-          <Route path="/experience" element={<Experience />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/five" element={<FiveThings />} />
           <Route path="/five/:year" element={<FiveThings />} />

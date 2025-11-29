@@ -99,7 +99,7 @@ const Home = () => {
               borderRadius="50%"
               objectFit="contain"
               boxSize={{ base: "180px", md: "190px" }}
-              src={"images/pictures/connect_2.jpg"}
+              src={"images/profile/profile.jpg"}
               alt="James Kim"
             />
           </Box>

@@ -61,7 +61,7 @@ const FiveThings = () => {
             </Helmet>
 
             <Box>
-                <Heading textAlign='center' fontSize='1.8rem' fontWeight={'medium'} pt={'8vh'} pb={20} >
+                <Heading textAlign='center' fontSize={{ base: '1.6rem', md: '1.8rem' }} fontWeight={'medium'} pt={'8vh'} pb={20} >
                     5 things that made me smile
                 </Heading>
                 <Container maxW="container.lg" pb={10} pt={0} position="relative">

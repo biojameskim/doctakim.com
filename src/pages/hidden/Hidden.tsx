@@ -16,7 +16,7 @@ const Hidden = () => {
       <Text as='h2' fontSize='lg' align='center' my='3vh'>
         <b>1.</b> I come from a family of bloggers.
       </Text>
-      <Flex flexDirection='column' gap='2' mb='5vh'>
+      <Flex flexDirection='column' gap='2' mb='5vh' align='center'>
         <Link href='https://biokimcom.tistory.com/' isExternal>
           Dad's Website/Blog <ExternalLinkIcon mx='2px' />
         </Link>

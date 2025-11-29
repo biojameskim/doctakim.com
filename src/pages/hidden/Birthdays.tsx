@@ -12,10 +12,10 @@ const Birthdays = () => {
       </Helmet>
 
       <Box w='full'>
-        <Heading textAlign='center' fontSize='4rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '6vh' }} >
+        <Heading textAlign='center' fontSize='3rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '6vh' }} >
           Birthdays
         </Heading>
-        <Grid w={{ base: 'full', md: '70%' }} templateColumns={{ md: 'repeat(3, 1fr)' }} gap='6' pb='10vh'>
+        <Grid w={{ base: 'full', md: '70%' }} mx='auto' templateColumns={{ md: 'repeat(3, 1fr)' }} gap='6' pb='10vh'>
           {birthday_data.map((item, index) =>
             <BirthdayCard
               key={index}
