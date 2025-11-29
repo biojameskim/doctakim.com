@@ -307,7 +307,7 @@ const TreasureHunt = () => {
           </Text>
 
           <Text as="i" pb="10vh">
-            “Dad, what’s the treasure you hid at MIT ?”
+            “Dad, what’s the treasure you hid at MIT?”
           </Text>
 
           <Text pb="3vh">And just like always, he gave a response.</Text>

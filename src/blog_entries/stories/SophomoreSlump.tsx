@@ -31,7 +31,7 @@ const SophomoreSlump = () => {
       <Box {...BLOG_STYLES.separatorLine} />
 
       <div className="blog-text">
-        <Stack
+        <Stack {...BLOG_STYLES.bodyContainer}
           spacing={7}
           width={{ base: "85%", md: "50%" }}
           fontSize={{ base: "16", md: "md" }}
@@ -277,7 +277,7 @@ const SophomoreSlump = () => {
           </Text>
         </Stack>
 
-        <Stack
+        <Stack {...BLOG_STYLES.bodyContainer}
           spacing={7}
           width={{ base: "85%", md: "50%" }}
           fontSize={{ base: "16", md: "md" }}
@@ -420,7 +420,7 @@ const SophomoreSlump = () => {
           </Text>
         </Stack>
 
-        <Stack
+        <Stack {...BLOG_STYLES.bodyContainer}
           spacing={7}
           width={{ base: "85%", md: "50%" }}
           fontSize={{ base: "16", md: "md" }}
@@ -516,7 +516,7 @@ const SophomoreSlump = () => {
           </Text>
         </Stack>
 
-        <Stack
+        <Stack {...BLOG_STYLES.bodyContainer}
           spacing={7}
           width={{ base: "85%", md: "50%" }}
           fontSize={{ base: "16", md: "md" }}
@@ -619,7 +619,7 @@ const SophomoreSlump = () => {
           </Text>
         </Stack>
 
-        <Stack
+        <Stack {...BLOG_STYLES.bodyContainer}
           spacing={7}
           width={{ base: "85%", md: "50%" }}
           fontSize={{ base: "16", md: "md" }}
