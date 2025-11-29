@@ -2,9 +2,9 @@ import { Box, Text } from "@chakra-ui/react";
 import GracefulImage from "../GracefulImage";
 import { BlogImageType } from "../../types/BlogTypes";
 
-// maxW is set to 400px as default. This is the width of a vertical image.
+// maxW is set to 350px as default. This is the width of a vertical image.
 // When using BlogImage, if the image is horizontal, specify that with orientation='h'
-// If the image is vertical, it will just be set to maxW which is 400px
+// If the image is vertical, it will just be set to maxW which is 350px
 // You can override these two by not putting an orientation at all and just setting the maxW for an image.
 
 const BlogImage = ({
@@ -19,7 +19,7 @@ const BlogImage = ({
     <Box
       pt="5vh"
       pb="2vh"
-      maxWidth={orientation === "h" ? "500px" : maxW}
+      maxWidth={orientation === "h" ? "450px" : maxW}
       alignSelf="center"
     >
       <GracefulImage src={src} alt={alt} borderRadius="xl" />

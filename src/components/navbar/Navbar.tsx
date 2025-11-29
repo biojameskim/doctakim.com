@@ -2,6 +2,7 @@ import {
   Box,
   Flex,
   Button,
+  Text,
   useColorModeValue,
   useColorMode,
 } from "@chakra-ui/react";
@@ -60,22 +61,22 @@ export default function NavBar() {
           </Flex>
 
           {/* Right Side: Navigation & Theme Toggle */}
-          <Flex alignItems="center" gap={4}>
+          <Flex alignItems="center" gap={2}>
             <LinkRouter to="/blog">
               <Button variant="ghost" fontSize="1.2rem" fontWeight="medium" borderRadius="full" size="sm" px={3}>
                 Blog
               </Button>
             </LinkRouter>
 
-            <Button
-              onClick={toggleColorMode}
-              variant="ghost"
-              size="sm"
-              fontSize="1.2rem"
-              borderRadius="full"
-            >
+            <LinkRouter to="/five" style={{ borderRadius: '50%', display: 'inline-flex' }}>
+              <SocialButton label={"5 Things"}>
+                <Text fontWeight="bold">5</Text>
+              </SocialButton>
+            </LinkRouter>
+
+            <SocialButton label={"Toggle Theme"} onClick={toggleColorMode}>
               {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-            </Button>
+            </SocialButton>
           </Flex>
         </Flex>
       </Flex>

@@ -5,3 +5,4 @@ export { default as Blog } from './blog/Blog';
 export { default as Experience } from './experience/Experience';
 export { default as Hidden } from './hidden/Hidden';
 export { default as Birthdays } from './hidden/Birthdays';
+export { default as FiveThings } from "./FiveThings";

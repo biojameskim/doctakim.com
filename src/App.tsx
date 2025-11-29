@@ -11,6 +11,7 @@ import {
   NotFound,
   Hidden,
   Birthdays,
+  FiveThings,
 } from "./pages/pages";
 // Components
 import { NavBar, Footer } from "./components/components";
@@ -53,6 +54,9 @@ export const App = () => (
           <Route path="/about" element={<Home />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/five" element={<FiveThings />} />
+          <Route path="/five/:year" element={<FiveThings />} />
+          <Route path="/five/:year/:month" element={<FiveThings />} />
           <Route path="*" element={<NotFound />} />
           {/* Hidden pages */}
           <Route path="/hidden" element={<Hidden />} />

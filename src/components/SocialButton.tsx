@@ -4,9 +4,11 @@ import { chakra, VisuallyHidden, useColorModeValue } from '@chakra-ui/react';
 const SocialButton = ({
   children,
   label,
+  onClick,
 }: {
   children: ReactNode;
   label: string;
+  onClick?: () => void;
 }) => {
   return (
     <chakra.span
@@ -21,7 +23,9 @@ const SocialButton = ({
       transition={'background 0.3s ease'}
       _hover={{
         bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-      }}>
+      }}
+      onClick={onClick}
+    >
       <VisuallyHidden>{label}</VisuallyHidden>
       {children}
     </chakra.span>
