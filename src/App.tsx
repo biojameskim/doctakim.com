@@ -10,7 +10,7 @@ import {
   NotFound,
   Hidden,
   Birthdays,
-  FiveThings,
+  Gallery,
 } from "./pages/pages";
 // Components
 import { NavBar, Footer } from "./components/components";
@@ -52,9 +52,9 @@ export const App = () => (
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/five" element={<FiveThings />} />
-          <Route path="/five/:year" element={<FiveThings />} />
-          <Route path="/five/:year/:month" element={<FiveThings />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/gallery/:year" element={<Gallery />} />
+          <Route path="/gallery/:year/:month" element={<Gallery />} />
           <Route path="*" element={<NotFound />} />
           {/* Hidden pages */}
           <Route path="/hidden" element={<Hidden />} />

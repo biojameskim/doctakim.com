@@ -22,7 +22,7 @@ const BlogImage = ({
       maxWidth={orientation === "h" ? "450px" : maxW}
       alignSelf="center"
     >
-      <GracefulImage src={src} alt={alt} borderRadius="xl" />
+      <GracefulImage src={src} alt={alt} borderRadius="lg" />
       <Box height="0.5rem"></Box>
       <Text as="i" fontSize={{ base: "md", md: "md" }} paddingLeft="1.2rem">
         {caption}

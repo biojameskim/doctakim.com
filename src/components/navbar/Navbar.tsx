@@ -2,13 +2,12 @@ import {
   Box,
   Flex,
   Button,
-  Text,
   useColorModeValue,
   useColorMode,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { Link as LinkRouter } from "react-router-dom";
-import { AiOutlineHome } from "react-icons/ai";
+import { AiOutlineHome, AiOutlineCamera } from "react-icons/ai";
 
 import SocialButton from "../SocialButton";
 
@@ -68,9 +67,9 @@ export default function NavBar() {
               </Button>
             </LinkRouter>
 
-            <LinkRouter to="/five" style={{ borderRadius: '50%', display: 'inline-flex' }}>
-              <SocialButton label={"5 Things"}>
-                <Text fontWeight="bold">5</Text>
+            <LinkRouter to="/gallery" style={{ borderRadius: '50%', display: 'inline-flex' }}>
+              <SocialButton label={"Gallery"}>
+                <AiOutlineCamera />
               </SocialButton>
             </LinkRouter>
 

@@ -10,12 +10,13 @@ import {
     Icon,
     Button,
     useColorModeValue,
+    Flex,
 } from "@chakra-ui/react";
 import { FaFolder, FaArrowLeft } from "react-icons/fa";
-import { photoFolders } from "../data/five-things-folders";
+import { photoFolders } from "../data/gallery-folders";
 import BlogImage from "../components/blog/BlogImage";
 
-const FiveThings = () => {
+const Gallery = () => {
     const { year, month } = useParams();
     const navigate = useNavigate();
 
@@ -28,18 +29,18 @@ const FiveThings = () => {
         : null;
 
     const handleYearClick = (year: number) => {
-        navigate(`/five/${year}`);
+        navigate(`/gallery/${year}`);
     };
 
     const handleFolderClick = (folderMonth: string) => {
-        navigate(`/five/${selectedYear}/${folderMonth}`);
+        navigate(`/gallery/${selectedYear}/${folderMonth}`);
     };
 
     const handleBackClick = () => {
         if (selectedFolder) {
-            navigate(`/five/${selectedYear}`);
+            navigate(`/gallery/${selectedYear}`);
         } else if (selectedYear) {
-            navigate("/five");
+            navigate("/gallery");
         }
     };
 
@@ -57,21 +58,19 @@ const FiveThings = () => {
     return (
         <div>
             <Helmet>
-                <title>biojameskim | 5 Things</title>
+                <title>biojameskim | Gallery</title>
             </Helmet>
 
             <Box>
-                <Heading textAlign='center' fontSize={{ base: '1.6rem', md: '1.8rem' }} fontWeight={'medium'} pt={'8vh'} pb={20} >
-                    5 things that made me smile
-                </Heading>
-                <Container maxW="container.lg" pb={10} pt={0} position="relative">
+
+                <Container maxW="container.lg" pb={{ base: 20, md: 10 }} pt={{ base: 40, md: 28 }} minH="calc(100vh - 100px)" display="flex" flexDirection="column" position="relative">
                     {showBackButton && (
                         <Button
                             leftIcon={<FaArrowLeft />}
                             variant="ghost"
                             position="absolute"
-                            top="-60px"
-                            left={0}
+                            top={{ base: 24, md: 16 }}
+                            left={{ base: 4, md: 0 }}
                             onClick={handleBackClick}
                             borderRadius="full"
                             px={4}
@@ -80,7 +79,7 @@ const FiveThings = () => {
                             {backButtonText}
                         </Button>
                     )}
-                    <VStack spacing={8}>
+                    <VStack spacing={8} w="100%">
                         {selectedFolder ? (
                             <Box w="100%">
                                 <Heading as="h2" size="lg" mb={6}>
@@ -91,7 +90,7 @@ const FiveThings = () => {
                                         {selectedFolder.photos.map((photo, index) => (
                                             <VStack key={index} w="100%">
                                                 <BlogImage
-                                                    src={`/five_things/${selectedFolder.year}/${selectedFolder.month}/${photo.filename}`}
+                                                    src={photo.filename.startsWith('http') ? photo.filename : `/gallery/${selectedFolder.year}/${selectedFolder.month}/${photo.filename}`}
                                                     alt={photo.caption || `Photo ${index + 1}`}
                                                     caption={photo.caption}
                                                     orientation={photo.orientation}
@@ -105,26 +104,27 @@ const FiveThings = () => {
                             </Box>
                         ) : selectedYear ? (
                             <Box w="100%">
-                                <SimpleGrid columns={{ base: 2, md: 4 }} spacing={6} w="100%">
+                                <SimpleGrid columns={{ base: 1, md: 4 }} spacing={6} w="100%">
                                     {filteredFolders.length > 0 ? (
                                         filteredFolders.map((folder, index) => (
-                                            <Box key={index} display="flex" justifyContent="center" alignItems="center">
-                                                <VStack
-                                                    p={4}
-                                                    borderRadius="lg"
+                                            <Box key={index} display="flex" justifyContent={{ base: "flex-start", md: "center" }} alignItems="center">
+                                                <Flex
+                                                    direction={{ base: 'row', md: 'column' }}
+                                                    p={{ base: 2, md: 4 }}
+                                                    borderRadius={{ base: "xl", md: "lg" }}
                                                     _hover={{ bg: hoverBg, cursor: "pointer", transform: "scale(1.05)" }}
                                                     transition="all 0.2s"
                                                     onClick={() => handleFolderClick(folder.month)}
-                                                    spacing={2}
+                                                    gap={{ base: 4, md: 2 }}
                                                     align="center"
                                                     justify="center"
                                                     w="fit-content"
                                                 >
-                                                    <Icon as={FaFolder} color={folderColor} boxSize={20} />
+                                                    <Icon as={FaFolder} color={folderColor} boxSize={{ base: 6, md: 20 }} />
                                                     <Text fontSize="lg" fontWeight="medium">
                                                         {folder.month}-{folder.year}
                                                     </Text>
-                                                </VStack>
+                                                </Flex>
                                             </Box>
                                         ))
                                     ) : (
@@ -167,4 +167,4 @@ const FiveThings = () => {
     );
 };
 
-export default FiveThings;
+export default Gallery;

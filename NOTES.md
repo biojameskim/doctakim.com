@@ -32,3 +32,6 @@ When uploading any photos, use lossy compression to reduce file size.
 
 ### Deployment
 - Deployed with Netlify
+
+### Images
+- Hosted on Cloudinary
