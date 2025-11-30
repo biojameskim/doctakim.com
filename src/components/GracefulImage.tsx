@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Image, ImageProps, Skeleton, Box } from "@chakra-ui/react";
+import { Image, ImageProps, Skeleton, Box, useColorModeValue } from "@chakra-ui/react";
 
 interface GracefulImageProps extends ImageProps {
     // Add any specific props if needed, for now just extending ImageProps
@@ -8,6 +8,9 @@ interface GracefulImageProps extends ImageProps {
 const GracefulImage = (props: GracefulImageProps) => {
     const [isLoaded, setIsLoaded] = useState(false);
     const { src, alt, width, height, w, h, boxSize, borderRadius, objectFit, ...rest } = props;
+
+    const skeletonStartColor = useColorModeValue("gray.200", "gray.800");
+    const skeletonEndColor = useColorModeValue("gray.500", "gray.500");
 
     // Determine if we have a fixed height/boxSize to enforce dimensions
     const hasFixedDimensions = boxSize || height || h;
@@ -32,6 +35,8 @@ const GracefulImage = (props: GracefulImageProps) => {
                     height="100%"
                     isLoaded={isLoaded}
                     fadeDuration={0.5}
+                    startColor={skeletonStartColor}
+                    endColor={skeletonEndColor}
                 />
                 <Image
                     src={src}
@@ -53,6 +58,7 @@ const GracefulImage = (props: GracefulImageProps) => {
         <Box
             position="relative"
             width={boxWidth || "fit-content"}
+            minHeight={rest.minH || rest.minHeight}
             borderRadius={borderRadius}
             overflow="hidden"
             className="graceful-image-wrapper-intrinsic"
@@ -65,6 +71,8 @@ const GracefulImage = (props: GracefulImageProps) => {
                 height="100%"
                 isLoaded={isLoaded}
                 fadeDuration={0.5}
+                startColor={skeletonStartColor}
+                endColor={skeletonEndColor}
             />
             <Image
                 src={src}

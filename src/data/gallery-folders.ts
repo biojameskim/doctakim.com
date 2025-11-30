@@ -125,7 +125,7 @@ export const photoFolders: PhotoFolder[] = [
         photos: [
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764538311/IMG_8723_ahg0hv.jpg",
-                caption: "",
+                caption: "ethan.",
                 orientation: "v"
             },
             {
