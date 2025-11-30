@@ -12,6 +12,11 @@ export interface PhotoFolder {
 }
 
 // For "filename", can either be a URL or a path to a file in `public/gallery/2025/08`
+// {
+//     filename: "",
+//     caption: "",
+//     orientation: "v"
+// }
 export const photoFolders: PhotoFolder[] = [
     {
         year: 2025,
@@ -387,6 +392,11 @@ export const photoFolders: PhotoFolder[] = [
                 orientation: "v"
             },
             {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764541888/IMG_8185_kwj5zm.jpg",
+                caption: "ithaca year 5",
+                orientation: "v"
+            },
+            {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764537175/10_dk5s78.jpg",
                 caption: "",
                 orientation: "h"
@@ -404,6 +414,77 @@ export const photoFolders: PhotoFolder[] = [
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764537172/13_ypr8l8.jpg",
                 caption: "tsitp",
+                orientation: "v"
+            }
+        ]
+    },
+    {
+        year: 2025,
+        month: "07",
+        photos: [
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764541465/IMG_7606_kmo3u2.jpg",
+                caption: "",
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764541460/IMG_7608_mv98a4.jpg",
+                caption: "",
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764541460/IMG_7623_zavp5x.jpg",
+                caption: "",
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764541461/IMG_7662_lv6gat.jpg",
+                caption: "prayer posture",
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764541458/IMG_7673_hc3bjq.jpg",
+                caption: "",
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764541462/IMG_7682_irbkbf.jpg",
+                caption: "",
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764541458/IMG_7717_xmdmdr.jpg",
+                caption: "",
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764541465/IMG_7752_xtjzdw.jpg",
+                caption: "trip to sd",
+                orientation: "h"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764541467/IMG_7781_cml84q.jpg",
+                caption: "",
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764541464/IMG_7779_jg1vyy.jpg",
+                caption: "",
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764541466/IMG_7798_ylbozw.jpg",
+                caption: "the handoff",
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764541464/IMG_7816_slyb2x.jpg",
+                caption: "yummy",
+                orientation: "h"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764541467/IMG_7817_pfjf6z.jpg",
+                caption: "",
                 orientation: "v"
             }
         ]
