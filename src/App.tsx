@@ -55,6 +55,7 @@ export const App = () => (
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/gallery/:year" element={<Gallery />} />
           <Route path="/gallery/:year/:month" element={<Gallery />} />
+          <Route path="/gallery/:year/:month/:subfolder" element={<Gallery />} />
           <Route path="*" element={<NotFound />} />
           {/* Hidden pages */}
           <Route path="/hidden" element={<Hidden />} />

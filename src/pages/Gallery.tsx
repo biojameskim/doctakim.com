@@ -7,25 +7,27 @@ import {
     Text,
     SimpleGrid,
     VStack,
-    Icon,
     Button,
     useColorModeValue,
     Flex,
+    Image,
 } from "@chakra-ui/react";
-import { FaFolder, FaArrowLeft } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
 import { photoFolders } from "../data/gallery-folders";
 import BlogImage from "../components/blog/BlogImage";
 
 const Gallery = () => {
-    const { year, month } = useParams();
+    const { year, month, subfolder } = useParams();
     const navigate = useNavigate();
-
-    const folderColor = useColorModeValue("yellow.400", "yellow.200");
     const hoverBg = useColorModeValue("gray.50", "gray.700");
 
     const selectedYear = year ? parseInt(year) : null;
     const selectedFolder = selectedYear && month
         ? photoFolders.find(f => f.year === selectedYear && f.month === month) || null
+        : null;
+
+    const selectedSubfolder = selectedFolder && subfolder
+        ? selectedFolder.subfolders?.find(s => s.name === subfolder) || null
         : null;
 
     const handleYearClick = (year: number) => {
@@ -36,8 +38,14 @@ const Gallery = () => {
         navigate(`/gallery/${selectedYear}/${folderMonth}`);
     };
 
+    const handleSubfolderClick = (subfolderName: string) => {
+        navigate(`/gallery/${selectedYear}/${month}/${subfolderName}`);
+    };
+
     const handleBackClick = () => {
-        if (selectedFolder) {
+        if (selectedSubfolder) {
+            navigate(`/gallery/${selectedYear}/${month}`);
+        } else if (selectedFolder) {
             navigate(`/gallery/${selectedYear}`);
         } else if (selectedYear) {
             navigate("/gallery");
@@ -52,8 +60,8 @@ const Gallery = () => {
         ? photoFolders.filter(folder => folder.year === selectedYear)
         : [];
 
-    const showBackButton = selectedFolder || selectedYear;
-    const backButtonText = selectedFolder ? "Back" : "Back";
+    const showBackButton = selectedFolder || selectedYear || selectedSubfolder;
+    const backButtonText = "Back";
 
     return (
         <div>
@@ -80,11 +88,60 @@ const Gallery = () => {
                         </Button>
                     )}
                     <VStack spacing={8} w="100%">
-                        {selectedFolder ? (
+                        {selectedSubfolder ? (
+                            <Box w="100%">
+                                <Heading as="h2" size="lg" mb={6}>
+                                    {selectedSubfolder.name}
+                                </Heading>
+                                {selectedSubfolder.photos && selectedSubfolder.photos.length > 0 ? (
+                                    <SimpleGrid columns={1} spacing={0}>
+                                        {selectedSubfolder.photos.map((photo, index) => (
+                                            <VStack key={index} w="100%">
+                                                <BlogImage
+                                                    src={photo.filename.startsWith('http') ? photo.filename : `/gallery/${selectedFolder?.year}/${selectedFolder?.month}/${photo.filename}`}
+                                                    alt={photo.caption || `Photo ${index + 1}`}
+                                                    caption={photo.caption}
+                                                    orientation={photo.orientation}
+                                                    maxW={photo.maxW}
+                                                />
+                                            </VStack>))}
+                                    </SimpleGrid>
+                                ) : (
+                                    <Text>Nothing in this folder yet.</Text>
+                                )}
+                            </Box>
+                        ) : selectedFolder ? (
                             <Box w="100%">
                                 <Heading as="h2" size="lg" mb={6}>
                                     {selectedFolder.month}-{selectedFolder.year}
                                 </Heading>
+
+                                {selectedFolder.subfolders && selectedFolder.subfolders.length > 0 && (
+                                    <VStack spacing={4} w="100%" align="center" mb={8}>
+                                        {selectedFolder.subfolders.map((sub, index) => (
+                                            <Box key={index} display="flex" justifyContent="flex-start" alignItems="center" w="100%">
+                                                <Flex
+                                                    direction="row"
+                                                    p={{ base: 2, md: 4 }}
+                                                    borderRadius={{ base: "xl", md: "lg" }}
+                                                    _hover={{ bg: hoverBg, cursor: "pointer", transform: "scale(1.05)" }}
+                                                    transition="all 0.2s"
+                                                    onClick={() => handleSubfolderClick(sub.name)}
+                                                    gap={{ base: 4, md: 2 }}
+                                                    align="center"
+                                                    justify="flex-start"
+                                                    w="fit-content"
+                                                >
+                                                    <Image src="/papers.png" boxSize={8} />
+                                                    <Text fontSize="lg" fontWeight="medium">
+                                                        {sub.name}
+                                                    </Text>
+                                                </Flex>
+                                            </Box>
+                                        ))}
+                                    </VStack>
+                                )}
+
                                 {selectedFolder.photos.length > 0 ? (
                                     <SimpleGrid columns={1} spacing={0}>
                                         {selectedFolder.photos.map((photo, index) => (
@@ -99,7 +156,7 @@ const Gallery = () => {
                                             </VStack>))}
                                     </SimpleGrid>
                                 ) : (
-                                    <Text>Nothing in this folder yet.</Text>
+                                    !selectedFolder.subfolders || selectedFolder.subfolders.length === 0 ? <Text>Nothing in this folder yet.</Text> : null
                                 )}
                             </Box>
                         ) : selectedYear ? (
@@ -120,7 +177,7 @@ const Gallery = () => {
                                                     justify="center"
                                                     w="fit-content"
                                                 >
-                                                    <Icon as={FaFolder} color={folderColor} boxSize={{ base: 6, md: 20 }} />
+                                                    <Image src="/file-folder.png" boxSize={{ base: 8, md: 20 }} />
                                                     <Text fontSize="lg" fontWeight="medium">
                                                         {folder.month}-{folder.year}
                                                     </Text>
@@ -148,7 +205,7 @@ const Gallery = () => {
                                                 justify="center"
                                                 w="fit-content"
                                             >
-                                                <Icon as={FaFolder} color={folderColor} boxSize={20} />
+                                                <Image src="/file-folder.png" boxSize={20} />
                                                 <Text fontSize="lg" fontWeight="medium">
                                                     {year}
                                                 </Text>
