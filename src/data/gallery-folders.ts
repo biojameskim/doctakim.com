@@ -689,7 +689,7 @@ export const photoFolders: PhotoFolder[] = [
                 name: "Japan.zip", photos: [
                     {
                         filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764555138/IMG_8931_rtcwsb.jpg",
-                        caption: "",
+                        caption: "to osaka",
                         orientation: "h"
                     },
                     {
@@ -1051,7 +1051,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764559474/R0008948_cfdanu.jpg",
-                caption: "ellie + andrew's monday 7pm cg",
+                caption: "ellie + andrew's monday 7:30pm cg",
                 orientation: "h"
             },
             {

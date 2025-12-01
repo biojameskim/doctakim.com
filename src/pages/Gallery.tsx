@@ -132,7 +132,7 @@ const Gallery = () => {
                                                     justify="flex-start"
                                                     w="fit-content"
                                                 >
-                                                    <Image src="/papers.png" boxSize={8} />
+                                                    <Image src="/images/icons/papers.png" boxSize={8} />
                                                     <Text fontSize="lg" fontWeight="medium">
                                                         {sub.name}
                                                     </Text>
@@ -177,7 +177,7 @@ const Gallery = () => {
                                                     justify="center"
                                                     w="fit-content"
                                                 >
-                                                    <Image src="/file-folder.png" boxSize={{ base: 8, md: 20 }} />
+                                                    <Image src="/images/icons/file-folder.png" boxSize={{ base: 8, md: 20 }} />
                                                     <Text fontSize="lg" fontWeight="medium">
                                                         {folder.month}-{folder.year}
                                                     </Text>
@@ -205,7 +205,7 @@ const Gallery = () => {
                                                 justify="center"
                                                 w="fit-content"
                                             >
-                                                <Image src="/file-folder.png" boxSize={20} />
+                                                <Image src="/images/icons/file-folder.png" boxSize={20} />
                                                 <Text fontSize="lg" fontWeight="medium">
                                                     {year}
                                                 </Text>
