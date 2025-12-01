@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Navigate to the project directory
-cd /Users/jinhan/repos/doctakim.com
+# Navigate to the project directory (one level up from this script)
+cd "$(dirname "$0")/.."
 
 # Run the update music script
 npm run update-music
