@@ -103,6 +103,7 @@ const Gallery = () => {
                                                     caption={photo.caption}
                                                     orientation={photo.orientation}
                                                     maxW={photo.maxW}
+                                                    priority={index < 2}
                                                 />
                                             </VStack>))}
                                     </SimpleGrid>
@@ -152,6 +153,7 @@ const Gallery = () => {
                                                     caption={photo.caption}
                                                     orientation={photo.orientation}
                                                     maxW={photo.maxW}
+                                                    priority={index < 2}
                                                 />
                                             </VStack>))}
                                     </SimpleGrid>

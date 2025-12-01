@@ -1,6 +1,7 @@
 import { Box, Text } from "@chakra-ui/react";
 import GracefulImage from "../GracefulImage";
 import { BlogImageType } from "../../types/BlogTypes";
+import { getOptimizedImageUrl } from "../../utils/imageOptimizer";
 
 // maxW is set to 350px as default. This is the width of a vertical image.
 // When using BlogImage, if the image is horizontal, specify that with orientation='h'
@@ -14,7 +15,10 @@ const BlogImage = ({
   caption2,
   orientation,
   maxW = "350px",
-}: BlogImageType) => {
+  priority = false,
+}: BlogImageType & { priority?: boolean }) => {
+  const optimizedSrc = getOptimizedImageUrl(src);
+
   return (
     <Box
       pt="5vh"
@@ -23,10 +27,11 @@ const BlogImage = ({
       alignSelf="center"
     >
       <GracefulImage
-        src={src}
+        src={optimizedSrc}
         alt={alt}
         borderRadius="lg"
         minH={orientation === "h" ? "250px" : "350px"}
+        loading={priority ? "eager" : "lazy"}
       />
       <Box height="0.5rem"></Box>
       <Text as="i" fontSize={{ base: "md", md: "md" }} paddingLeft="1.2rem">
