@@ -55,8 +55,13 @@ export const photoFolders: PhotoFolder[] = [
                 orientation: "v"
             },
             {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764687329/IMG_9227_nuw1kh.jpg",
+                caption: "first snow",
+                orientation: "v"
+            },
+            {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764539411/IMG_9247_ez7vlm.jpg",
-                caption: "",
+                caption: "asked me to cook",
                 orientation: "h"
             },
             {
@@ -66,7 +71,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764539899/IMG_9505_svnwo2.jpg",
-                caption: "",
+                caption: "peeping tom",
                 orientation: "v"
             },
             {
@@ -100,6 +105,11 @@ export const photoFolders: PhotoFolder[] = [
                 orientation: "v"
             },
             {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764687667/IMG_9383_gegx8p.jpg",
+                caption: "",
+                orientation: "v"
+            },
+            {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764539433/IMG_9390_Afterlight_eqsfib.jpg",
                 caption: "thanksgiving",
                 orientation: "v"
@@ -126,7 +136,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764539416/IMG_9496_r14olf.jpg",
-                caption: "",
+                caption: "thanks mundelein",
                 orientation: "v"
             }
         ]
@@ -142,7 +152,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764538305/IMG_8748_zpjtmj.jpg",
-                caption: "",
+                caption: "lunar new year",
                 orientation: "v"
             },
             {
@@ -182,7 +192,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764538332/R0015748_ecdlg5.jpg",
-                caption: "",
+                caption: "er fall retreat",
                 orientation: "h"
             },
             {
@@ -222,7 +232,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764538768/IMG_9054_ywbimd.jpg",
-                caption: "aftermath of wine & cheese night",
+                caption: "wine & cheese night",
                 orientation: "v"
             },
             {
@@ -299,7 +309,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764536407/10_pvmhhr.jpg",
-                caption: "taverna",
+                caption: "taverna banfi",
                 orientation: "v"
             },
             {
@@ -308,14 +318,29 @@ export const photoFolders: PhotoFolder[] = [
                 orientation: "v"
             },
             {
-                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764536406/12_xalxsw.jpg",
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764536407/13_lmr5oj.jpg",
                 caption: "indian creek farm",
                 orientation: "h"
             },
             {
-                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764536407/13_lmr5oj.jpg",
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764683972/IMG_5822_ml5s89.jpg",
                 caption: "",
                 orientation: "h"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764536406/12_xalxsw.jpg",
+                caption: "",
+                orientation: "h"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764684155/IMG_8538_iic6sz.jpg",
+                caption: "",
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764684157/IMG_8547_ikljhm.jpg",
+                caption: "",
+                orientation: "v"
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764536409/14_wsnvy0.jpg",
@@ -355,7 +380,7 @@ export const photoFolders: PhotoFolder[] = [
         photos: [
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764537173/1_najtrt.jpg",
-                caption: "",
+                caption: "trip to sd",
                 orientation: "h"
             },
             {
@@ -380,6 +405,11 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764537172/6_smixrb.jpg",
+                caption: "david & goliath",
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764684899/IMG_8073_hhyh8o.jpg",
                 caption: "",
                 orientation: "v"
             },
@@ -390,7 +420,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764537174/8_j88kxc.jpg",
-                caption: "Theo! keep your hands to... yourself?",
+                caption: '"Theo! keep your hands to... yourself?"',
                 orientation: "v"
             },
             {
@@ -407,6 +437,11 @@ export const photoFolders: PhotoFolder[] = [
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764537175/10_dk5s78.jpg",
                 caption: "",
                 orientation: "h"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764685088/IMG_8190_cvsluv.jpg",
+                caption: "thanks melody",
+                orientation: "v"
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764537178/11_c2oaxc.jpg",
@@ -445,8 +480,13 @@ export const photoFolders: PhotoFolder[] = [
                 orientation: "v"
             },
             {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764685533/IMG_7632_r0zo0e.jpg",
+                caption: "secrets",
+                orientation: "h"
+            },
+            {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764541461/IMG_7662_lv6gat.jpg",
-                caption: "prayer posture",
+                caption: "prayer? posture",
                 orientation: "v"
             },
             {
@@ -456,7 +496,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764541462/IMG_7682_irbkbf.jpg",
-                caption: "",
+                caption: "mayleen",
                 orientation: "v"
             },
             {
@@ -476,7 +516,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764541464/IMG_7779_jg1vyy.jpg",
-                caption: "",
+                caption: "super soft",
                 orientation: "v"
             },
             {
@@ -486,7 +526,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764541464/IMG_7816_slyb2x.jpg",
-                caption: "yummy",
+                caption: "munch munch",
                 orientation: "h"
             },
             {
@@ -1050,6 +1090,11 @@ export const photoFolders: PhotoFolder[] = [
                 orientation: "v"
             },
             {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764559473/R0009340_pl5fch.jpg",
+                caption: "er senior appreciation",
+                orientation: "h"
+            },
+            {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764559474/R0008948_cfdanu.jpg",
                 caption: "ellie + andrew's monday 7:30pm cg",
                 orientation: "h"
@@ -1060,8 +1105,8 @@ export const photoFolders: PhotoFolder[] = [
                 orientation: "h"
             },
             {
-                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764559473/R0009340_pl5fch.jpg",
-                caption: "er senior appreciation",
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764559490/DSC03778_nzn5t3.jpg",
+                caption: "gina + david's saturday 4pm cg (david not present)",
                 orientation: "h"
             },
             {
@@ -1070,13 +1115,8 @@ export const photoFolders: PhotoFolder[] = [
                 orientation: "h"
             },
             {
-                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764559490/DSC03778_nzn5t3.jpg",
-                caption: "gina + david's saturday 4pm cg",
-                orientation: "h"
-            },
-            {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764559480/IMG_3575_aat0so.jpg",
-                caption: "",
+                caption: "smart freshmen",
                 orientation: "h"
             },
             {
@@ -1091,7 +1131,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764559462/IMG_6295_wk9vhz.jpg",
-                caption: "cg picnic",
+                caption: "cg picnic (david present)",
                 orientation: "v"
             },
             {
@@ -1151,7 +1191,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764559446/IMG_6482_cwljeu.jpg",
-                caption: "",
+                caption: "grad photos",
                 orientation: "v"
             },
             {
@@ -1161,7 +1201,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764559460/IMG_6522_iwrpvz.jpg",
-                caption: "",
+                caption: "think i got 3/10",
                 orientation: "v"
             },
             {
@@ -1191,7 +1231,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764559412/DSCF1459_ufwezy.jpg",
-                caption: "",
+                caption: "commencement",
                 orientation: "v"
             },
             {
@@ -1470,7 +1510,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764642108/IMG_5851_w5y2x8.jpg",
-                caption: "welcome to ithaca gary",
+                caption: "gary visits",
                 orientation: "v"
             },
             {
@@ -1490,12 +1530,12 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764642101/IMG_5877_gvpzmf.jpg",
-                caption: "burning calories",
+                caption: "the trial",
                 orientation: "v"
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764642096/IMG_5891_gdoe2w.jpg",
-                caption: "...for ice cream",
+                caption: "the reward",
                 orientation: "v"
             },
             {
@@ -1505,7 +1545,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764642119/IMG_5895_mpb9dz.jpg",
-                caption: "inner child",
+                caption: "",
                 orientation: "v"
             },
             {
@@ -1515,7 +1555,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764642096/IMG_5916_mqqngs.jpg",
-                caption: "",
+                caption: "paul's first froyo",
                 orientation: "h"
             },
             {
@@ -1639,7 +1679,7 @@ export const photoFolders: PhotoFolder[] = [
                     },
                     {
                         filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764642978/IMG_5385_otksbo.jpg",
-                        caption: "really didn't know derek liked aquariums this much",
+                        caption: "derek insisted we go to an aquarium",
                         orientation: "h"
                     },
                     {
@@ -1654,7 +1694,7 @@ export const photoFolders: PhotoFolder[] = [
                     },
                     {
                         filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764642979/IMG_5402_yubgl3.jpg",
-                        caption: "no caption needed",
+                        caption: "'nuff said",
                         orientation: "v"
                     },
                     {
@@ -1694,7 +1734,7 @@ export const photoFolders: PhotoFolder[] = [
                     },
                     {
                         filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764642984/IMG_5433_zalhwc.jpg",
-                        caption: "they asked if they could sleep in the same room as us",
+                        caption: "needed to sleep in the same room as us",
                         orientation: "v"
                     },
                     {
@@ -1709,7 +1749,7 @@ export const photoFolders: PhotoFolder[] = [
                     },
                     {
                         filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764643031/IMG_6737_cmo4jl.jpg",
-                        caption: "",
+                        caption: "fort lauderdale",
                         orientation: "h"
                     },
                     {
@@ -1779,7 +1819,7 @@ export const photoFolders: PhotoFolder[] = [
                     },
                     {
                         filename: "https://res.cloudinary.com/doypjterz/image/upload/v1764643020/IMG_5549_ybyauz.jpg",
-                        caption: "",
+                        caption: "back to orlando",
                         orientation: "h"
                     },
                     {
