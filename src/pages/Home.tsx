@@ -149,10 +149,10 @@ const Home = () => {
             </Heading>
             <Text fontSize="1.0rem" fontWeight="medium">
               I'm currently based in Ithaca, where I've spent the past few years at Cornell.
-              I have a more academic website <Link as="a" target="_blank" href="https://biojameskim.me" color="green.500">here</Link>.
+              I maintain a more academic website <Link as="a" target="_blank" href="https://biojameskim.me" color="green.500">here</Link>.
             </Text>
             <Text fontSize="1.0rem" fontWeight="medium">
-              I enjoy logging moments of my life through journaling and I share some in my <Link as={RouterLink} to="/blog" color="green.500">Blog</Link>.
+              I enjoy logging moments of my life through journaling and share some in my <Link as={RouterLink} to="/blog" color="green.500">Blog</Link>.
               I also enjoy writing rap music (though I'm not as confident in sharing those).
             </Text>
             <Text fontSize="1.0rem" fontWeight="medium">If you'd like to connect, feel free to shoot me an <Link as="a" href="mailto:biojameskim2002@gmail.com" color="green.500">email</Link>.</Text>
@@ -172,7 +172,11 @@ const Home = () => {
               <VStack spacing={2} align="flex-start">
                 <HStack fontSize="1.5rem" fontWeight="bold" spacing={3}>
                   <Icon as={FaSpotify} color="#1DB954" boxSize={8} />
-                  <Text bgGradient="linear(to-r, #1DB954, #1ed760)" bgClip="text">Top Streams ({getPreviousMonth()})</Text>
+                  <Text bgGradient="linear(to-r, #1DB954, #1ed760)" bgClip="text">
+                    <Box as="span" display={{ base: "block", md: "inline" }}>Top Streams</Box>
+                    <Box as="span" display={{ base: "none", md: "inline" }}> - </Box>
+                    <Box as="span" display={{ base: "block", md: "inline" }} fontSize={{ base: "1.1rem", md: "1.5rem" }}>{getPreviousMonth()}</Box>
+                  </Text>
                 </HStack>
               </VStack>
 
