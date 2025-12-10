@@ -44,7 +44,7 @@ const Home = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
+        staggerChildren: 0.05,
       },
     },
   };
@@ -55,7 +55,7 @@ const Home = () => {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 0.5,
+        duration: 0.3,
       },
     },
   };
@@ -188,7 +188,7 @@ const Home = () => {
                   </HStack>
                   <VStack spacing={4} align="stretch">
                     {topSongs.map((song, index) => (
-                      <motion.div key={index} variants={itemVariants}>
+                      <motion.div key={index} variants={itemVariants} style={{ willChange: 'opacity, transform' }}>
                         <Link href={song.link} isExternal _hover={{ textDecoration: 'none' }}>
                           <HStack spacing={3} p={2} borderRadius="lg" _hover={{ bg: hoverBg }} transition="all 0.2s" cursor="pointer">
                             <Text fontWeight="bold" color="gray.400" w="16px" fontSize="sm">{index + 1}</Text>
@@ -211,7 +211,7 @@ const Home = () => {
                   </HStack>
                   <VStack spacing={4} align="stretch">
                     {topArtists.map((artist, index) => (
-                      <motion.div key={index} variants={itemVariants}>
+                      <motion.div key={index} variants={itemVariants} style={{ willChange: 'opacity, transform' }}>
                         <Link href={artist.link} isExternal _hover={{ textDecoration: 'none' }}>
                           <HStack spacing={3} p={2} borderRadius="lg" _hover={{ bg: hoverBg }} transition="all 0.2s" cursor="pointer">
                             <Text fontWeight="bold" color="gray.400" w="16px" fontSize="sm">{index + 1}</Text>
