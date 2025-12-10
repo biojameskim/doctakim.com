@@ -10,16 +10,30 @@ import {
   Sticky,
   ZoomIn,
 } from "react-scroll-motion";
-import { Text, useColorModeValue, Show, Flex } from "@chakra-ui/react";
+import { Text, useColorModeValue, Show, Image as ChakraImage, VStack } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
+import { motion } from "framer-motion";
+
 const StartPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const mobileImageVariants = {
+    offscreen: { y: 20, opacity: 0 },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut"
+      }
+    }
+  };
 
   return (
     <div className="starter-page">
@@ -27,9 +41,35 @@ const StartPage = () => {
         <title>biojameskim</title>
       </Helmet>
       <Show below="md">
-        <Flex h="100vh" align="flex-start" justify="center" pt="35vh">
-          <Text fontSize="3rem" fontWeight="medium">Welcome.</Text>
-        </Flex>
+        <VStack spacing="50vh" pt="20vh" pb="50vh" align="center" justify="start" w="100%">
+          <motion.div
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.2, margin: "-100px" }}
+            variants={mobileImageVariants}
+            style={{ display: "flex", justifyContent: "center", width: "100%" }}
+          >
+            <ChakraImage src="images/profile/frame1.png" alt="Welcome" htmlWidth="70%" />
+          </motion.div>
+          <motion.div
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.2, margin: "-100px" }}
+            variants={mobileImageVariants}
+            style={{ display: "flex", justifyContent: "center", width: "100%" }}
+          >
+            <ChakraImage src="images/profile/frame2.png" alt="Frame 2" htmlWidth="70%" />
+          </motion.div>
+          <motion.div
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.2, margin: "-100px" }}
+            variants={mobileImageVariants}
+            style={{ display: "flex", justifyContent: "center", width: "100%" }}
+          >
+            <ChakraImage src="images/profile/frame3.png" alt="Frame 3" htmlWidth="70%" />
+          </motion.div>
+        </VStack>
       </Show>
       <Show above="md">
         <ScrollContainer>
