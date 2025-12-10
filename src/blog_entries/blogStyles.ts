@@ -15,7 +15,7 @@ export const BLOG_STYLES = {
 
     // Separator line: Independently adjustable width
     separatorLine: {
-        maxW: { base: "90%", md: "750px" }, // Controls width of JUST the separator line
+        maxW: { base: "80%", md: "750px" }, // Controls width of JUST the separator line
         mx: "auto",
         borderBottom: "2px solid",   // Line thickness and style
         borderColor: "gray.300",     // Line color
@@ -24,7 +24,7 @@ export const BLOG_STYLES = {
 
     // Title styling
     title: {
-        fontSize: { base: '3rem', md: "2.5rem" },
+        fontSize: { base: '2.4rem', md: "2.5rem" },
         textAlign: "center" as const,
         fontWeight: "bold" as const,
         mb: "2vh",

@@ -40,7 +40,7 @@ const FreshmanStory = () => {
             and I arrived at Syracuse a little after 2 am.
           </Text>
           <Text>
-            Much to our dismay, there were 0 Ubers available at that time.
+            Much to our dismay, there were zero Ubers available at that time.
           </Text>
           <Text pb="5vh">At a freakin’ international airport.</Text>
 
@@ -63,7 +63,7 @@ const FreshmanStory = () => {
             Holland International Living Center (HILC), I was happy.
           </Text>
 
-          <Text>Until I looked over at Ganędagǫ.</Text>
+          <Text>Until I looked over at Ganedago.</Text>
 
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/2hilcvsganedago.png"

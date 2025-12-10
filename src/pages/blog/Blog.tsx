@@ -20,7 +20,7 @@ const Blog = () => {
           Blog
         </Heading>
         <Tabs orientation='horizontal' variant='soft-rounded' colorScheme='green' align='center'>
-          <TabList paddingBottom='5vh'>
+          <TabList paddingBottom='5vh' gap={{ base: '0.2rem', md: '0.5rem' }}>
             <Tab color={useColorModeValue('gray.600', 'white')} >Stories</Tab>
             <Tab color={useColorModeValue('gray.600', 'white')}>Thoughts</Tab>
           </TabList>

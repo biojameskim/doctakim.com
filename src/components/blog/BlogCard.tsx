@@ -38,7 +38,7 @@ const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogC
                 )}
 
                 <Box>
-                    <AspectRatio ratio={4 / 3} borderRadius='2xl' overflow="hidden">
+                    <AspectRatio ratio={4 / 3} borderRadius='xl' overflow="hidden">
                         <GracefulImage
                             boxSize='full'
                             w='full'
