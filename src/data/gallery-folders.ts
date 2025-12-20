@@ -27,6 +27,232 @@ export interface Subfolder {
 export const photoFolders: PhotoFolder[] = [
     {
         year: 2025,
+        month: "12",
+        photos: [
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260464/IMG_9539_miyu3n.jpg",
+                caption: "back in ithaca",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260464/IMG_9564_eh0ooq.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260469/IMG_9575_wehndz.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260464/IMG_9584_c8uc9v.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260464/IMG_9607_m7wl7y.jpg",
+                caption: "zzz",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260466/IMG_9619_sldzfj.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260466/IMG_9628_gbfki4.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260470/IMG_5155_newkwm.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260480/IMG_1428_f88r0o.jpg",
+                caption: "one more felly",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260470/IMG_9687_gnfzai.jpg",
+                caption: "king jonah",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260474/IMG_9699_u6gxnn.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260468/IMG_9716_wanpcp.jpg",
+                caption: "lab secret santa",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260466/IMG_9723_kqopkj.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260468/IMG_9717_ra4vug.jpg",
+                caption: 'lauren\'s "cheatsheet"',  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260474/IMG_9728_tfyj87.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260470/IMG_9752_quntlm.jpg",
+                caption: "haozheng's cooking",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260470/IMG_9766_b6pmpp.jpg",
+                caption: "jiajun & fiona",  
+                orientation: "h"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260473/IMG_9773_ve7ofu.jpg",
+                caption: "in the studio",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260475/IMG_9792_u7bbgr.jpg",
+                caption: "derek visits",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260472/IMG_9805_mwymav.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260475/IMG_9831_zrzxpz.jpg",
+                caption: "bday dinner",  
+                orientation: "h"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260478/IMG_1536_ppxdqm.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260474/IMG_9837_rbvaft.jpg",
+                caption: "",  
+                orientation: "h"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260476/IMG_9842_kay8og.jpg",
+                caption: "last hangout for a while",  
+                orientation: "v"
+            },
+            // {
+            //     filename: "",
+            //     caption: "",  
+            //     orientation: "v"
+            // },
+            // {
+            //     filename: "",
+            //     caption: "",  
+            //     orientation: "v"
+            // },
+            // {
+            //     filename: "",
+            //     caption: "",  
+            //     orientation: "v"
+            // },
+            // {
+            //     filename: "",
+            //     caption: "",  
+            //     orientation: "v"
+            // },
+            // {
+            //     filename: "",
+            //     caption: "",  
+            //     orientation: "v"
+            // },
+            // {
+            //     filename: "",
+            //     caption: "",  
+            //     orientation: "v"
+            // },
+            // {
+            //     filename: "",
+            //     caption: "",  
+            //     orientation: "v"
+            // },
+            // {
+            //     filename: "",
+            //     caption: "",  
+            //     orientation: "v"
+            // },
+            // {
+            //     filename: "",
+            //     caption: "",  
+            //     orientation: "v"
+            // },
+            // {
+            //     filename: "",
+            //     caption: "",  
+            //     orientation: "v"
+            // },
+            // {
+            //     filename: "",
+            //     caption: "",  
+            //     orientation: "v"
+            // },
+            // {
+            //     filename: "",
+            //     caption: "",  
+            //     orientation: "v"
+            // },
+            // {
+            //     filename: "",
+            //     caption: "",  
+            //     orientation: "v"
+            // },
+            // {
+            //     filename: "",
+            //     caption: "",  
+            //     orientation: "v"
+            // },
+            // {
+            //     filename: "",
+            //     caption: "",  
+            //     orientation: "v"
+            // },
+            // {
+            //     filename: "",
+            //     caption: "",  
+            //     orientation: "v"
+            // },
+            // {
+            //     filename: "",
+            //     caption: "",  
+            //     orientation: "v"
+            // },
+            // {
+            //     filename: "",
+            //     caption: "",  
+            //     orientation: "v"
+            // },
+            // {
+            //     filename: "",
+            //     caption: "",  
+            //     orientation: "v"
+            // },
+            // {
+            //     filename: "",
+            //     caption: "",  
+            //     orientation: "v"
+            // }
+        ]
+    },
+    {
+        year: 2025,
         month: "11",
         photos: [
             {
