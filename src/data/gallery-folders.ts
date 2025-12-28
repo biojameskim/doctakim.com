@@ -149,91 +149,131 @@ export const photoFolders: PhotoFolder[] = [
                 caption: "last hangout for a while",  
                 orientation: "v"
             },
-            // {
-            //     filename: "",
-            //     caption: "",  
-            //     orientation: "v"
-            // },
-            // {
-            //     filename: "",
-            //     caption: "",  
-            //     orientation: "v"
-            // },
-            // {
-            //     filename: "",
-            //     caption: "",  
-            //     orientation: "v"
-            // },
-            // {
-            //     filename: "",
-            //     caption: "",  
-            //     orientation: "v"
-            // },
-            // {
-            //     filename: "",
-            //     caption: "",  
-            //     orientation: "v"
-            // },
-            // {
-            //     filename: "",
-            //     caption: "",  
-            //     orientation: "v"
-            // },
-            // {
-            //     filename: "",
-            //     caption: "",  
-            //     orientation: "v"
-            // },
-            // {
-            //     filename: "",
-            //     caption: "",  
-            //     orientation: "v"
-            // },
-            // {
-            //     filename: "",
-            //     caption: "",  
-            //     orientation: "v"
-            // },
-            // {
-            //     filename: "",
-            //     caption: "",  
-            //     orientation: "v"
-            // },
-            // {
-            //     filename: "",
-            //     caption: "",  
-            //     orientation: "v"
-            // },
-            // {
-            //     filename: "",
-            //     caption: "",  
-            //     orientation: "v"
-            // },
-            // {
-            //     filename: "",
-            //     caption: "",  
-            //     orientation: "v"
-            // },
-            // {
-            //     filename: "",
-            //     caption: "",  
-            //     orientation: "v"
-            // },
-            // {
-            //     filename: "",
-            //     caption: "",  
-            //     orientation: "v"
-            // },
-            // {
-            //     filename: "",
-            //     caption: "",  
-            //     orientation: "v"
-            // },
-            // {
-            //     filename: "",
-            //     caption: "",  
-            //     orientation: "v"
-            // },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903474/IMG_9860_nvefnw.jpg",
+                caption: "morning in seattle",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903481/IMG_9876_pycwuj.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903480/IMG_9899_rjxqcb.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903481/IMG_9902_deo5uz.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903468/IMG_9924_mwu4td.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903481/IMG_9932_brwdbt.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903481/IMG_9934_u3tz4e.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903481/IMG_9953_wryx2y.jpg",
+                caption: "whistler",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903482/IMG_9975_pf6zhz.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903469/IMG_9976_gvgslp.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903482/IMG_9984_wpau3f.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903468/IMG_0002_bqgf6l.jpg",
+                caption: "",  
+                orientation: "h"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903474/IMG_0009_zd8kbv.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903468/DSCF2493-2_y76srw.jpg",
+                caption: "back home",  
+                orientation: "h"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903474/IMG_0026_is8ksm.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903468/DSCF2501_kk54g4.jpg",
+                caption: "",  
+                orientation: "h"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903482/IMG_0050_b0d7dh.jpg",
+                caption: "christmas morning",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903474/IMG_0056_lhatab.jpg",
+                caption: "",  
+                orientation: "h"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903468/IMG_0061_csanii.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903475/IMG_0081_ol7axy.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903475/IMG_0096_kp6p3p.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903468/IMG_0102_d4y1v5.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903475/IMG_0116_tbzane.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903480/IMG_0123_gxvnoh.jpg",
+                caption: "",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903469/IMG_0129_u5uhnu.jpg",
+                caption: "",  
+                orientation: "v"
+            }
             // {
             //     filename: "",
             //     caption: "",  
