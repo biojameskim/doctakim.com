@@ -273,17 +273,17 @@ export const photoFolders: PhotoFolder[] = [
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903469/IMG_0129_u5uhnu.jpg",
                 caption: "",  
                 orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766984821/IMG_0163_s1lvex.jpg",
+                caption: "newspaper",  
+                orientation: "v"
+            },
+            {
+                filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766984820/IMG_0171_owlsgt.jpg",
+                caption: "",  
+                orientation: "v"
             }
-            // {
-            //     filename: "",
-            //     caption: "",  
-            //     orientation: "v"
-            // },
-            // {
-            //     filename: "",
-            //     caption: "",  
-            //     orientation: "v"
-            // },
             // {
             //     filename: "",
             //     caption: "",  
