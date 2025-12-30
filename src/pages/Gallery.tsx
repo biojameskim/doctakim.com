@@ -71,14 +71,14 @@ const Gallery = () => {
 
             <Box>
 
-                <Container maxW="container.lg" pb={{ base: 20, md: 10 }} pt={{ base: 40, md: 28 }} minH="calc(100vh - 100px)" display="flex" flexDirection="column" position="relative">
+                <Container maxW="container.lg" pb={{ base: 20, md: 10 }} pt={{ base: 28, md: 28 }} minH="calc(100vh - 100px)" display="flex" flexDirection="column" position="relative">
                     {showBackButton && (
                         <Button
                             leftIcon={<FaArrowLeft />}
                             variant="ghost"
                             position="absolute"
-                            top={{ base: 24, md: 16 }}
-                            left={{ base: 4, md: 0 }}
+                            top={{ base: 22, md: 14 }}
+                            left={{ base: 2, md: 0 }}
                             onClick={handleBackClick}
                             borderRadius="full"
                             px={4}
@@ -90,7 +90,7 @@ const Gallery = () => {
                     <VStack spacing={8} w="100%">
                         {selectedSubfolder ? (
                             <Box w="100%">
-                                <Heading as="h2" size="lg" mb={6}>
+                                <Heading as="h2" fontWeight="normal" fontSize={{ base: "1.2rem", md: "1.3rem" }} mb={6}>
                                     {selectedSubfolder.name}
                                 </Heading>
                                 {selectedSubfolder.photos && selectedSubfolder.photos.length > 0 ? (
@@ -103,6 +103,8 @@ const Gallery = () => {
                                                     caption={photo.caption}
                                                     orientation={photo.orientation}
                                                     maxW={photo.maxW}
+                                                    borderRadius="none"
+                                                    captionFontFamily="monospace"
                                                 />
                                             </VStack>))}
                                     </SimpleGrid>
@@ -112,7 +114,7 @@ const Gallery = () => {
                             </Box>
                         ) : selectedFolder ? (
                             <Box w="100%">
-                                <Heading as="h2" size="lg" mb={6}>
+                                <Heading as="h2" fontWeight="semibold" fontSize={{ base: "1.3rem", md: "1.5rem" }} mb={6}>
                                     {selectedFolder.month}-{selectedFolder.year}
                                 </Heading>
 
@@ -123,8 +125,8 @@ const Gallery = () => {
                                                 <Flex
                                                     direction="row"
                                                     p={{ base: 2, md: 4 }}
-                                                    borderRadius={{ base: "xl", md: "lg" }}
-                                                    _hover={{ bg: hoverBg, cursor: "pointer", transform: "scale(1.05)" }}
+                                                    borderRadius="none"
+                                                    _hover={{ bg: hoverBg, cursor: "pointer" }}
                                                     transition="all 0.2s"
                                                     onClick={() => handleSubfolderClick(sub.name)}
                                                     gap={{ base: 4, md: 2 }}
@@ -133,7 +135,7 @@ const Gallery = () => {
                                                     w="fit-content"
                                                 >
                                                     <Image src="/images/icons/papers.png" boxSize={8} />
-                                                    <Text fontSize="lg" fontWeight="medium">
+                                                    <Text fontWeight="normal" fontSize={{ base: "1rem", md: "1rem" }}>
                                                         {sub.name}
                                                     </Text>
                                                 </Flex>
@@ -147,11 +149,13 @@ const Gallery = () => {
                                         {selectedFolder.photos.map((photo, index) => (
                                             <VStack key={index} w="100%">
                                                 <BlogImage
-                                                    src={photo.filename.startsWith('http') ? photo.filename : `/gallery/${selectedFolder.year}/${selectedFolder.month}/${photo.filename}`}
+                                                    src={photo.filename.startsWith('http') ? photo.filename : `/gallery/${selectedFolder?.year}/${selectedFolder?.month}/${photo.filename}`}
                                                     alt={photo.caption || `Photo ${index + 1}`}
                                                     caption={photo.caption}
                                                     orientation={photo.orientation}
                                                     maxW={photo.maxW}
+                                                    borderRadius="none"
+                                                    captionFontFamily="monospace"
                                                 />
                                             </VStack>))}
                                     </SimpleGrid>
@@ -160,7 +164,7 @@ const Gallery = () => {
                                 )}
                             </Box>
                         ) : selectedYear ? (
-                            <Box w="100%">
+                            <Box w={{ base: "100%", md: "85%" }}>
                                 <SimpleGrid columns={{ base: 1, md: 4 }} spacing={6} w="100%">
                                     {filteredFolders.length > 0 ? (
                                         filteredFolders.map((folder, index) => (
@@ -168,17 +172,17 @@ const Gallery = () => {
                                                 <Flex
                                                     direction={{ base: 'row', md: 'column' }}
                                                     p={{ base: 2, md: 4 }}
-                                                    borderRadius={{ base: "xl", md: "lg" }}
-                                                    _hover={{ bg: hoverBg, cursor: "pointer", transform: "scale(1.05)" }}
+                                                    borderRadius="none"
+                                                    _hover={{ bg: hoverBg, cursor: "pointer" }}
                                                     transition="all 0.2s"
                                                     onClick={() => handleFolderClick(folder.month)}
-                                                    gap={{ base: 4, md: 2 }}
+                                                    gap={{ base: 2, md: 2 }}
                                                     align="center"
                                                     justify="center"
                                                     w="fit-content"
                                                 >
-                                                    <Image src="/images/icons/file-folder.png" boxSize={{ base: 8, md: 20 }} />
-                                                    <Text fontSize="lg" fontWeight="medium">
+                                                    <Image src="/images/icons/file-folder.png" boxSize={{ base: 8, md: 16 }} />
+                                                    <Text fontSize={{ base: "1rem", md: "1rem" }} fontWeight="normal">
                                                         {folder.month}-{folder.year}
                                                     </Text>
                                                 </Flex>
@@ -190,14 +194,14 @@ const Gallery = () => {
                                 </SimpleGrid>
                             </Box>
                         ) : (
-                            <SimpleGrid columns={{ base: 2, md: 4 }} spacing={6} w="100%">
+                            <SimpleGrid columns={{ base: 2, md: 4 }} spacing={6} w={{ base: "100%", md: "85%" }}>
                                 {years.length > 0 ? (
                                     years.map((year, index) => (
                                         <Box key={index} display="flex" justifyContent="center" alignItems="center">
                                             <VStack
                                                 p={4}
-                                                borderRadius="lg"
-                                                _hover={{ bg: hoverBg, cursor: "pointer", transform: "scale(1.05)" }}
+                                                borderRadius="none"
+                                                _hover={{ bg: hoverBg, cursor: "pointer" }}
                                                 transition="all 0.2s"
                                                 onClick={() => handleYearClick(year)}
                                                 spacing={2}
@@ -205,8 +209,8 @@ const Gallery = () => {
                                                 justify="center"
                                                 w="fit-content"
                                             >
-                                                <Image src="/images/icons/file-folder.png" boxSize={20} />
-                                                <Text fontSize="lg" fontWeight="medium">
+                                                <Image src="/images/icons/file-folder.png" boxSize={16} />
+                                                <Text fontSize={{ base: "1rem", md: "1.1rem" }} fontWeight="medium">
                                                     {year}
                                                 </Text>
                                             </VStack>

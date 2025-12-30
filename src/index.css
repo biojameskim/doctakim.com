@@ -8,6 +8,15 @@ html {
     overflow-x: hidden;
 }
 
+@font-face {
+    font-family: 'Monaspace Neon';
+    src: url('./fonts/MonaspaceNeon/Monaspace Neon Var.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 100% 125%;
+    font-display: swap;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -15,111 +24,13 @@ body {
     padding-bottom: env(safe-area-inset-bottom);
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
-    font-family: 'Satoshi', sans-serif;
+    font-family: 'Monaspace Neon', monospace;
     background-color: var(--chakra-colors-gray-50);
     /* Fallback */
 }
 
 /* FONTS */
-@font-face {
-    font-family: 'Satoshi';
-    src: url('./fonts/Satoshi/Satoshi-Light.woff2') format('woff2'),
-        url('./fonts/Satoshi/Satoshi-Light.woff') format('woff'),
-        url('./fonts/Satoshi/Satoshi-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-display: swap;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'Satoshi';
-    src: url('./fonts/Satoshi/Satoshi-LightItalic.woff2') format('woff2'),
-        url('./fonts/Satoshi/Satoshi-LightItalic.woff') format('woff'),
-        url('./fonts/Satoshi/Satoshi-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-display: swap;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Satoshi';
-    src: url('./fonts/Satoshi/Satoshi-Regular.woff2') format('woff2'),
-        url('./fonts/Satoshi/Satoshi-Regular.woff') format('woff'),
-        url('./fonts/Satoshi/Satoshi-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Satoshi';
-    src: url('./fonts/Satoshi/Satoshi-Italic.woff2') format('woff2'),
-        url('./fonts/Satoshi/Satoshi-Italic.woff') format('woff'),
-        url('./fonts/Satoshi/Satoshi-Italic.ttf') format('truetype');
-    font-weight: 400;
-    font-display: swap;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Satoshi';
-    src: url('./fonts/Satoshi/Satoshi-Medium.woff2') format('woff2'),
-        url('./fonts/Satoshi/Satoshi-Medium.woff') format('woff'),
-        url('./fonts/Satoshi/Satoshi-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-display: swap;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Satoshi';
-    src: url('./fonts/Satoshi/Satoshi-MediumItalic.woff2') format('woff2'),
-        url('./fonts/Satoshi/Satoshi-MediumItalic.woff') format('woff'),
-        url('./fonts/Satoshi/Satoshi-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-display: swap;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Satoshi';
-    src: url('./fonts/Satoshi/Satoshi-Bold.woff2') format('woff2'),
-        url('./fonts/Satoshi/Satoshi-Bold.woff') format('woff'),
-        url('./fonts/Satoshi/Satoshi-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-display: swap;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Satoshi';
-    src: url('./fonts/Satoshi/Satoshi-BoldItalic.woff2') format('woff2'),
-        url('./fonts/Satoshi/Satoshi-BoldItalic.woff') format('woff'),
-        url('./fonts/Satoshi/Satoshi-BoldItalic.ttf') format('truetype');
-    font-weight: 700;
-    font-display: swap;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Satoshi';
-    src: url('./fonts/Satoshi/Satoshi-Black.woff2') format('woff2'),
-        url('./fonts/Satoshi/Satoshi-Black.woff') format('woff'),
-        url('./fonts/Satoshi/Satoshi-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-display: swap;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Satoshi';
-    src: url('./fonts/Satoshi/Satoshi-BlackItalic.woff2') format('woff2'),
-        url('./fonts/Satoshi/Satoshi-BlackItalic.woff') format('woff'),
-        url('./fonts/Satoshi/Satoshi-BlackItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-display: swap;
-    font-style: italic;
-}
 
 @font-face {
     font-family: "James";

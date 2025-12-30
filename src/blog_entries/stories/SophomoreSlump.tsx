@@ -2,9 +2,11 @@ import { Heading, Text, Stack, Box } from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
 import BlogImage from "../../components/blog/BlogImage";
 import { useEffect } from "react";
-import { BLOG_STYLES } from "../blogStyles";
+import { useBlogStyles } from "../blogStyles";
 
 const SophomoreSlump = () => {
+  const BLOG_STYLES = useBlogStyles();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

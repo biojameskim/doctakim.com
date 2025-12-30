@@ -17,6 +17,7 @@ const Stories = () => {
         w={{ base: 'full', md: '90%' }}
         gap={{ base: '4', md: '12' }}
         textAlign={'left'}
+        alignItems={'stretch'}
       >
         {story_data.map((item, index) =>
           <BlogCard

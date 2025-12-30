@@ -1,6 +1,7 @@
 import { Box, Text } from "@chakra-ui/react";
 import GracefulImage from "../GracefulImage";
 import { BlogImageType } from "../../types/BlogTypes";
+import { useColorModeValue } from "@chakra-ui/react";
 
 // maxW is set to 350px as default. This is the width of a vertical image.
 // When using BlogImage, if the image is horizontal, specify that with orientation='h'
@@ -14,6 +15,9 @@ const BlogImage = ({
   caption2,
   orientation,
   maxW = "350px",
+  borderRadius,
+  captionFontFamily,
+  italic = false,
 }: BlogImageType) => {
 
   return (
@@ -27,16 +31,16 @@ const BlogImage = ({
       <GracefulImage
         src={src}
         alt={alt}
-        borderRadius="lg"
+        borderRadius={borderRadius || "none"}
         minH={orientation === "h" ? "250px" : "350px"}
         w="100%"
       />
       <Box height="0.5rem"></Box>
-      <Text as="i" fontSize={{ base: "md", md: "md" }} paddingLeft="1.2rem">
+      <Text as={italic ? "i" : "p"} fontSize={{ base: "0.8rem", md: "0.8rem" }} fontFamily={captionFontFamily} color={useColorModeValue("gray.500", "gray.400")}>
         {caption}
       </Text>
       <br></br>
-      <Text as="i" fontSize={{ base: "md", md: "md" }} paddingLeft="1.2rem">
+      <Text as={italic ? "i" : "p"} fontSize={{ base: "0.8rem", md: "0.8rem" }} fontFamily={captionFontFamily}>
         {caption2}
       </Text>
     </Box>

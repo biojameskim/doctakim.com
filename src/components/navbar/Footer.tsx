@@ -26,7 +26,7 @@ const Footer = () => {
         justify={{ base: "center", md: "space-between" }}
         align={{ base: "center", md: "center" }}
       >
-        <Text>© 2025 James Kim</Text>
+        <Text fontSize={{ md: "0.9rem" }}>© 2025 James Kim</Text>
         <Stack direction={"row"} spacing={6} px={20}>
           <Link to="/home" style={{ borderRadius: '50%', display: 'inline-flex' }}>
             <SocialButton label={"Home"}>

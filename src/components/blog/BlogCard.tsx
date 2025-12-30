@@ -5,7 +5,7 @@ import { BlogCardType } from "../../types/BlogTypes"
 
 const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogCardType) => {
     return (
-        <LinkRouter to={route}>
+        <LinkRouter to={route} style={{ display: 'flex', flexDirection: 'column' }}>
             <Stack as="a"
                 className='blog-card'
                 p={4}
@@ -20,6 +20,7 @@ const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogC
                 maxW={{ base: '98%', md: '100%' }}
                 position={'relative'}
                 transition="all 200ms ease-in-out"
+                h="full"
                 _hover={{
                     transform: "translateY(-3px)",
                     boxShadow: useColorModeValue("0px 12px 10px lightgray", "0px 12px 10px rgba(0, 0, 0, 0.4)")
@@ -51,7 +52,7 @@ const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogC
 
                 <Stack mt={{ base: 4, md: 0 }} ml={{ md: 6 }} maxW={'400'} >
                     <Text
-                        fontWeight='bold'
+                        fontWeight='semibold'
                         textTransform='uppercase'
                         fontSize='1rem'
                         letterSpacing='wide'
@@ -63,9 +64,9 @@ const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogC
                     <Text
                         mt={1}
                         display='block'
-                        fontSize='1.6rem'
+                        fontSize='1.4rem'
                         lineHeight='normal'
-                        fontWeight='bold'
+                        fontWeight='medium'
                         maxW='100%'
                     >
                         {title}
@@ -75,7 +76,8 @@ const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogC
                         maxW='full'
                         mt={2}
                         color={useColorModeValue('gray.600', 'gray.400')}
-                        fontSize='1.1rem'
+                        fontSize='0.9rem'
+                        fontWeight='normal'
                     >
                         {description}
                     </Text>

@@ -25,6 +25,7 @@ const SocialButton = ({
         bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
       }}
       onClick={onClick}
+      fontSize={'md'}
     >
       <VisuallyHidden>{label}</VisuallyHidden>
       {children}

@@ -16,13 +16,13 @@ const Blog = () => {
       </Helmet>
 
       <Box>
-        <Heading textAlign='center' fontSize='3rem' fontWeight={'medium'} pt={'8vh'} pb={{ base: '2vh', md: '4vh' }} >
+        <Heading textAlign='center' fontSize={{ base: '2.2rem', md: '2.6rem' }} fontWeight={'medium'} pt={'8vh'} pb={{ base: '2vh', md: '4vh' }} >
           Blog
         </Heading>
         <Tabs orientation='horizontal' variant='soft-rounded' colorScheme='green' align='center'>
           <TabList paddingBottom='5vh' gap={{ base: '0.2rem', md: '0.5rem' }}>
-            <Tab color={useColorModeValue('gray.600', 'white')} >Stories</Tab>
-            <Tab color={useColorModeValue('gray.600', 'white')}>Thoughts</Tab>
+            <Tab fontWeight={'normal'} fontSize={{ base: '0.9rem', md: '1rem' }} color={useColorModeValue('gray.600', 'white')} >Stories</Tab>
+            <Tab fontWeight={'normal'} fontSize={{ base: '0.9rem', md: '1rem' }} color={useColorModeValue('gray.600', 'white')}>Thoughts</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>

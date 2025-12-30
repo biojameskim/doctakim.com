@@ -14,7 +14,10 @@ export type BlogImageType = {
   caption?: string,
   caption2?: string,
   orientation?: string,
-  maxW?: string
+  maxW?: string,
+  borderRadius?: string,
+  captionFontFamily?: string,
+  italic?: boolean
 }
 
 export type BirthdayCardType = {
