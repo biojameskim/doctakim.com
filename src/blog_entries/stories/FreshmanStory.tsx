@@ -20,7 +20,6 @@ const FreshmanStory = () => {
       <Box {...BLOG_STYLES.headerContainer}>
         <Heading
           {...BLOG_STYLES.title}
-          px="3"
         >
           My Freshman College Story
         </Heading>

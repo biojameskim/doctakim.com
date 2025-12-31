@@ -42,17 +42,19 @@ export default function NavBar() {
         >
           {/* Left Side: Logo & Home Icon */}
           <Flex alignItems="center" gap={2}>
-            <LinkRouter to="/">
+            <LinkRouter to="/" style={{ WebkitTapHighlightColor: "transparent", display: "block" }}>
               <Box
                 as="img"
                 src="/favicon_io/apple-touch-icon.png"
                 alt="Logo"
                 borderRadius="full"
                 boxSize="38px"
-                _hover={{ cursor: "pointer", opacity: 0.8 }}
+                _hover={{ cursor: "pointer", opacity: { base: 1, md: 0.8 } }}
+                _active={{ opacity: 1 }}
+                css={{ WebkitTapHighlightColor: "transparent", touchAction: "manipulation" }}
               />
             </LinkRouter>
-            <LinkRouter to="/home" style={{ borderRadius: '50%', display: 'inline-flex' }}>
+            <LinkRouter to="/home" style={{ borderRadius: '50%', display: 'inline-flex', WebkitTapHighlightColor: "transparent" }}>
               <SocialButton label={"Home"}>
                 <AiOutlineHome />
               </SocialButton>
@@ -69,14 +71,15 @@ export default function NavBar() {
                 borderRadius="full"
                 size="sm"
                 px={3}
-                _hover={{ base: {}, md: {} }}
-                _active={{ base: {}, md: {} }}
+                _hover={{ base: { bg: "transparent" }, md: {} }}
+                _active={{ base: { bg: "transparent" }, md: {} }}
+                css={{ WebkitTapHighlightColor: "transparent", touchAction: "manipulation" }}
               >
                 Blog
               </Button>
             </LinkRouter>
 
-            <LinkRouter to="/gallery" style={{ borderRadius: '50%', display: 'inline-flex' }}>
+            <LinkRouter to="/gallery" style={{ borderRadius: '50%', display: 'inline-flex', WebkitTapHighlightColor: "transparent" }}>
               <SocialButton label={"Gallery"}>
                 <AiOutlineCamera />
               </SocialButton>

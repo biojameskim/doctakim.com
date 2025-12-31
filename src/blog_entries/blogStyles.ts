@@ -29,7 +29,7 @@ export const useBlogStyles = () => {
 
         // Title styling
         title: {
-            fontSize: { base: '1.8rem', md: "2rem" },
+            fontSize: { base: '1.6rem', md: "1.8rem" },
             textAlign: "center" as const,
             fontWeight: "medium" as const,
             mb: "2vh",
@@ -37,7 +37,7 @@ export const useBlogStyles = () => {
 
         // Date styling
         date: {
-            fontSize: { base: '1.3rem', md: "1.4rem" },
+            fontSize: { base: '1.1rem', md: "1.2rem" },
             align: "center" as const,
             color: dateColor,
             fontWeight: "normal",

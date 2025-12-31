@@ -20,7 +20,6 @@ const Prayer = () => {
       <Box {...BLOG_STYLES.headerContainer}>
         <Heading
           {...BLOG_STYLES.title}
-          px="3"
         >
           Prayer
         </Heading>

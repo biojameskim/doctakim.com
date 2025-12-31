@@ -26,6 +26,7 @@ const SocialButton = ({
       }}
       onClick={onClick}
       fontSize={'md'}
+      css={{ WebkitTapHighlightColor: "transparent", touchAction: "manipulation" }}
     >
       <VisuallyHidden>{label}</VisuallyHidden>
       {children}

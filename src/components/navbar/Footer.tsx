@@ -26,9 +26,9 @@ const Footer = () => {
         justify={{ base: "center", md: "space-between" }}
         align={{ base: "center", md: "center" }}
       >
-        <Text fontSize={{ md: "0.9rem" }}>© 2025 James Kim</Text>
+        <Text fontSize={{ base: "0.8rem", md: "0.9rem" }}>© 2025 James Kim</Text>
         <Stack direction={"row"} spacing={6} px={20}>
-          <Link to="/home" style={{ borderRadius: '50%', display: 'inline-flex' }}>
+          <Link to="/home" style={{ borderRadius: '50%', display: 'inline-flex', WebkitTapHighlightColor: "transparent" }}>
             <SocialButton label={"Home"}>
               <AiOutlineHome />
             </SocialButton>
@@ -40,6 +40,7 @@ const Footer = () => {
               window.scrollTo(0, 0);
             }}
             cursor="pointer"
+            css={{ WebkitTapHighlightColor: "transparent" }}
           >
             <SocialButton label={"BacktoStart"}>
               <VscDebugRestart />

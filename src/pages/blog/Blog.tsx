@@ -21,8 +21,8 @@ const Blog = () => {
         </Heading>
         <Tabs orientation='horizontal' variant='soft-rounded' colorScheme='green' align='center'>
           <TabList paddingBottom='5vh' gap={{ base: '0.2rem', md: '0.5rem' }}>
-            <Tab fontWeight={'normal'} fontSize={{ base: '0.9rem', md: '1rem' }} color={useColorModeValue('gray.600', 'white')} >Stories</Tab>
-            <Tab fontWeight={'normal'} fontSize={{ base: '0.9rem', md: '1rem' }} color={useColorModeValue('gray.600', 'white')}>Thoughts</Tab>
+            <Tab fontWeight={'normal'} fontSize={{ base: '0.9rem', md: '1rem' }} color={useColorModeValue('gray.600', 'white')} _active={{ bg: 'transparent' }} css={{ WebkitTapHighlightColor: "transparent", touchAction: "manipulation" }}>Stories</Tab>
+            <Tab fontWeight={'normal'} fontSize={{ base: '0.9rem', md: '1rem' }} color={useColorModeValue('gray.600', 'white')} _active={{ bg: 'transparent' }} css={{ WebkitTapHighlightColor: "transparent", touchAction: "manipulation" }}>Thoughts</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>

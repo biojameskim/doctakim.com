@@ -20,7 +20,6 @@ const BestLatte = () => {
       <Box {...BLOG_STYLES.headerContainer}>
         <Heading
           {...BLOG_STYLES.title}
-          px="3"
         >
           The Best Latte of My Life
         </Heading>

@@ -20,7 +20,6 @@ const SophomoreSlump = () => {
       <Box {...BLOG_STYLES.headerContainer}>
         <Heading
           {...BLOG_STYLES.title}
-          px="3"
         >
           The Sophomore Slump
         </Heading>
@@ -34,9 +33,6 @@ const SophomoreSlump = () => {
 
       <div className="blog-text">
         <Stack {...BLOG_STYLES.bodyContainer}
-          spacing={7}
-          width={{ base: "85%", md: "50%" }}
-          fontSize={{ base: "16", md: "md" }}
         >
           <Text>
             Summer passed by in a breeze and before I knew it, I was on the road

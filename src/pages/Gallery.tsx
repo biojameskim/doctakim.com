@@ -82,8 +82,9 @@ const Gallery = () => {
                             onClick={handleBackClick}
                             borderRadius="full"
                             px={4}
-                            _hover={{ base: {}, md: { bg: hoverBg } }}
-                            _active={{ base: {}, md: {} }}
+                            _hover={{ base: { bg: "transparent" }, md: { bg: hoverBg } }}
+                            _active={{ base: { bg: "transparent" }, md: {} }}
+                            css={{ WebkitTapHighlightColor: "transparent" }}
                         >
                             {backButtonText}
                         </Button>
@@ -91,7 +92,7 @@ const Gallery = () => {
                     <VStack spacing={8} w="100%">
                         {selectedSubfolder ? (
                             <Box w="100%">
-                                <Heading as="h2" fontWeight="normal" fontSize={{ base: "1.2rem", md: "1.3rem" }} mb={6}>
+                                <Heading as="h2" fontWeight="normal" fontSize={{ base: "1.1rem", md: "1.2rem" }} mb={6}>
                                     {selectedSubfolder.name}
                                 </Heading>
                                 {selectedSubfolder.photos && selectedSubfolder.photos.length > 0 ? (
@@ -115,7 +116,7 @@ const Gallery = () => {
                             </Box>
                         ) : selectedFolder ? (
                             <Box w="100%">
-                                <Heading as="h2" fontWeight="semibold" fontSize={{ base: "1.3rem", md: "1.5rem" }} mb={6}>
+                                <Heading as="h2" fontWeight="semibold" fontSize={{ base: "1.2rem", md: "1.4rem" }} mb={6}>
                                     {selectedFolder.month}-{selectedFolder.year}
                                 </Heading>
 
@@ -130,13 +131,13 @@ const Gallery = () => {
                                                     _hover={{ base: { cursor: "pointer" }, md: { bg: hoverBg, cursor: "pointer" } }}
                                                     transition="all 0.2s"
                                                     onClick={() => handleSubfolderClick(sub.name)}
-                                                    gap={{ base: 4, md: 2 }}
+                                                    gap={{ base: 1.5, md: 2 }}
                                                     align="center"
                                                     justify="flex-start"
                                                     w="fit-content"
                                                 >
                                                     <Image src="/images/icons/papers.png" boxSize={8} />
-                                                    <Text fontWeight="normal" fontSize={{ base: "1rem", md: "1rem" }}>
+                                                    <Text fontWeight="normal" fontSize={{ base: "0.9rem", md: "1rem" }}>
                                                         {sub.name}
                                                     </Text>
                                                 </Flex>
@@ -177,13 +178,14 @@ const Gallery = () => {
                                                     _hover={{ base: { cursor: "pointer" }, md: { bg: hoverBg, cursor: "pointer" } }}
                                                     transition="all 0.2s"
                                                     onClick={() => handleFolderClick(folder.month)}
-                                                    gap={{ base: 2, md: 2 }}
-                                                    align="center"
+                                                    gap={{ base: 1.5, md: 2 }}
+                                                    align={{ base: "center", md: "center" }}
                                                     justify="center"
                                                     w="fit-content"
+                                                    css={{ WebkitTapHighlightColor: "transparent" }}
                                                 >
                                                     <Image src="/images/icons/file-folder.png" boxSize={{ base: 8, md: 16 }} />
-                                                    <Text fontSize={{ base: "1rem", md: "1rem" }} fontWeight="normal">
+                                                    <Text fontSize={{ base: "0.9rem", md: "0.9rem" }} fontWeight="normal">
                                                         {folder.month}-{folder.year}
                                                     </Text>
                                                 </Flex>
@@ -211,7 +213,7 @@ const Gallery = () => {
                                                 w="fit-content"
                                             >
                                                 <Image src="/images/icons/file-folder.png" boxSize={16} />
-                                                <Text fontSize={{ base: "1rem", md: "1.1rem" }} fontWeight="medium">
+                                                <Text fontSize={{ base: "0.9rem", md: "0.9rem" }} fontWeight="normal">
                                                     {year}
                                                 </Text>
                                             </VStack>

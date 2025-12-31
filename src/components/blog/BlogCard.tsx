@@ -5,7 +5,7 @@ import { BlogCardType } from "../../types/BlogTypes"
 
 const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogCardType) => {
     return (
-        <LinkRouter to={route} style={{ display: 'flex', flexDirection: 'column' }}>
+        <LinkRouter to={route} style={{ display: 'flex', flexDirection: 'column', WebkitTapHighlightColor: "transparent" }}>
             <Stack as="a"
                 className='blog-card'
                 p={4}
@@ -25,6 +25,7 @@ const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogC
                     transform: "translateY(-3px)",
                     boxShadow: useColorModeValue("0px 12px 10px lightgray", "0px 12px 10px rgba(0, 0, 0, 0.4)")
                 }}
+                css={{ WebkitTapHighlightColor: "transparent", touchAction: "manipulation" }}
             >
                 {pin && (
                     <Image
