@@ -82,7 +82,8 @@ const Gallery = () => {
                             onClick={handleBackClick}
                             borderRadius="full"
                             px={4}
-                            _hover={{ bg: hoverBg }}
+                            _hover={{ base: {}, md: { bg: hoverBg } }}
+                            _active={{ base: {}, md: {} }}
                         >
                             {backButtonText}
                         </Button>
@@ -126,7 +127,7 @@ const Gallery = () => {
                                                     direction="row"
                                                     p={{ base: 2, md: 4 }}
                                                     borderRadius="none"
-                                                    _hover={{ bg: hoverBg, cursor: "pointer" }}
+                                                    _hover={{ base: { cursor: "pointer" }, md: { bg: hoverBg, cursor: "pointer" } }}
                                                     transition="all 0.2s"
                                                     onClick={() => handleSubfolderClick(sub.name)}
                                                     gap={{ base: 4, md: 2 }}
@@ -173,7 +174,7 @@ const Gallery = () => {
                                                     direction={{ base: 'row', md: 'column' }}
                                                     p={{ base: 2, md: 4 }}
                                                     borderRadius="none"
-                                                    _hover={{ bg: hoverBg, cursor: "pointer" }}
+                                                    _hover={{ base: { cursor: "pointer" }, md: { bg: hoverBg, cursor: "pointer" } }}
                                                     transition="all 0.2s"
                                                     onClick={() => handleFolderClick(folder.month)}
                                                     gap={{ base: 2, md: 2 }}
@@ -201,7 +202,7 @@ const Gallery = () => {
                                             <VStack
                                                 p={4}
                                                 borderRadius="none"
-                                                _hover={{ bg: hoverBg, cursor: "pointer" }}
+                                                _hover={{ base: { cursor: "pointer" }, md: { bg: hoverBg, cursor: "pointer" } }}
                                                 transition="all 0.2s"
                                                 onClick={() => handleYearClick(year)}
                                                 spacing={2}

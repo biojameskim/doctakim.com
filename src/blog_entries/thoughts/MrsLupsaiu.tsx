@@ -261,7 +261,7 @@ const MrsLupsaiu = () => {
           <Text>James</Text>
 
           <BlogImage
-            maxW="450px"
+            // maxW="450px"
             src="../images/blog_pictures/Dear-Mrs-Lupsaiu/Pictures/me and lupsaiu.jpeg"
             alt="A picture of me and Mrs. Lupsaiu"
             caption="Mrs. Lupsaiu"

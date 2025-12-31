@@ -62,7 +62,16 @@ export default function NavBar() {
           {/* Right Side: Navigation & Theme Toggle */}
           <Flex alignItems="center" gap={2}>
             <LinkRouter to="/blog">
-              <Button variant="ghost" fontSize="1.1rem" fontWeight="normal" borderRadius="full" size="sm" px={3}>
+              <Button
+                variant="ghost"
+                fontSize="1.1rem"
+                fontWeight="normal"
+                borderRadius="full"
+                size="sm"
+                px={3}
+                _hover={{ base: {}, md: {} }}
+                _active={{ base: {}, md: {} }}
+              >
                 Blog
               </Button>
             </LinkRouter>

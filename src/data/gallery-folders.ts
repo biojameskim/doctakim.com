@@ -41,7 +41,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260469/IMG_9575_wehndz.jpg",
-                caption: "",
+                caption: "cis holiday party",
                 orientation: "v"
             },
             {
@@ -106,7 +106,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260470/IMG_9752_quntlm.jpg",
-                caption: "haozheng's cooking",
+                caption: "chef haozheng",
                 orientation: "v"
             },
             {
@@ -206,7 +206,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903468/IMG_0002_bqgf6l.jpg",
-                caption: "",
+                caption: "hot tub",
                 orientation: "h"
             },
             {
@@ -216,7 +216,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903468/DSCF2493-2_y76srw.jpg",
-                caption: "back home",
+                caption: "home",
                 orientation: "h"
             },
             {
@@ -226,7 +226,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903468/DSCF2501_kk54g4.jpg",
-                caption: "",
+                caption: "mom's bday",
                 orientation: "h"
             },
             {
