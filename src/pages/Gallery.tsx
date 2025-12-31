@@ -135,8 +135,9 @@ const Gallery = () => {
                                                     align="center"
                                                     justify="flex-start"
                                                     w="fit-content"
+                                                    css={{ WebkitTapHighlightColor: "transparent", touchAction: "manipulation" }}
                                                 >
-                                                    <Image src="/images/icons/papers.png" boxSize={8} />
+                                                    <Image src="/images/icons/binder-sm.png" boxSize={8} loading='eager' />
                                                     <Text fontWeight="normal" fontSize={{ base: "0.9rem", md: "1rem" }}>
                                                         {sub.name}
                                                     </Text>
@@ -182,9 +183,9 @@ const Gallery = () => {
                                                     align={{ base: "center", md: "center" }}
                                                     justify="center"
                                                     w="fit-content"
-                                                    css={{ WebkitTapHighlightColor: "transparent" }}
+                                                    css={{ WebkitTapHighlightColor: "transparent", touchAction: "manipulation" }}
                                                 >
-                                                    <Image src="/images/icons/file-folder.png" boxSize={{ base: 8, md: 16 }} />
+                                                    <Image src="/images/icons/file-folder.png" boxSize={{ base: 8, md: 16 }} loading='eager' />
                                                     <Text fontSize={{ base: "0.9rem", md: "0.9rem" }} fontWeight="normal">
                                                         {folder.month}-{folder.year}
                                                     </Text>
@@ -211,8 +212,9 @@ const Gallery = () => {
                                                 align="center"
                                                 justify="center"
                                                 w="fit-content"
+                                                css={{ WebkitTapHighlightColor: "transparent", touchAction: "manipulation" }}
                                             >
-                                                <Image src="/images/icons/file-folder.png" boxSize={16} />
+                                                <Image src="/images/icons/file-folder.png" boxSize={16} loading='eager' />
                                                 <Text fontSize={{ base: "0.9rem", md: "0.9rem" }} fontWeight="normal">
                                                     {year}
                                                 </Text>
