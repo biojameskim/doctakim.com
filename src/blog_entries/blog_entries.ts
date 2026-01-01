@@ -11,6 +11,7 @@ export { default as BestLatte } from "./stories/BestLatte"
 export { default as MrsLupsaiu } from "./thoughts/MrsLupsaiu"
 export { default as FaceTime } from "./thoughts/FaceTime"
 export { default as Prayer } from "./thoughts/Prayer"
+export { default as WhyCornell } from "./thoughts/WhyCornell"
 
 // Birthdays
 export { default as GraceLo20 } from "./birthdays/GraceLo20"

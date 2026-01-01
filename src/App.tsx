@@ -21,12 +21,16 @@ import {
   MySister,
   TreasureHunt,
   SophomoreSlump,
-  Prayer,
   WistfulMemories,
   BestLatte,
 } from "./blog_entries/blog_entries";
 // Blog Entries (Thoughts)
-import { MrsLupsaiu, FaceTime } from "./blog_entries/blog_entries";
+import {
+  MrsLupsaiu,
+  FaceTime,
+  Prayer,
+  WhyCornell
+} from "./blog_entries/blog_entries";
 // Blog Entries (Birthdays)
 import {
   GraceLo20,
@@ -75,6 +79,7 @@ export const App = () => (
           <Route path="/blog/prayer" element={<Prayer />} />
           <Route path="/blog/dear-mrs-lupsaiu" element={<MrsLupsaiu />} />
           <Route path="/blog/facetime" element={<FaceTime />} />
+          <Route path="/blog/why-cornell" element={<WhyCornell />} />
           {/* Birthday routes */}
           <Route path="/birthdays/grace-lo-20th" element={<GraceLo20 />} />
           <Route path="/birthdays/grace-li-21st" element={<GraceLi21 />} />

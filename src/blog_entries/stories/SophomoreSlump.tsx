@@ -18,15 +18,8 @@ const SophomoreSlump = () => {
       </Helmet>
 
       <Box {...BLOG_STYLES.headerContainer}>
-        <Heading
-          {...BLOG_STYLES.title}
-        >
-          The Sophomore Slump
-        </Heading>
-
-        <Text {...BLOG_STYLES.date}>
-          May 2023
-        </Text>
+        <Heading {...BLOG_STYLES.title}> The Sophomore Slump </Heading>
+        <Text {...BLOG_STYLES.date}> May 2023 </Text>
       </Box>
 
       <Box {...BLOG_STYLES.separatorLine} />

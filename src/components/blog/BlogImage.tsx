@@ -18,13 +18,15 @@ const BlogImage = ({
   borderRadius,
   captionFontFamily,
   italic = false,
+  pt,
+  pb,
 }: BlogImageType) => {
 
   return (
     <Box
-      pt="5vh"
-      pb="2vh"
-      maxWidth={orientation === "h" ? "450px" : maxW}
+      pt={pt ? pt : "5vh"}
+      pb={pb ? pb : "5vh"}
+      maxWidth={orientation === "override" ? maxW : (orientation === "h" ? "450px" : maxW)}
       width="100%"
       alignSelf="center"
     >
@@ -32,8 +34,9 @@ const BlogImage = ({
         src={src}
         alt={alt}
         borderRadius={borderRadius || "none"}
-        minH={orientation === "h" ? "250px" : "350px"}
+        minH={orientation === "override" ? "auto" : (orientation === "h" ? "250px" : "350px")}
         w="100%"
+        objectFit={orientation === "override" ? "contain" : "cover"}
       />
       <Box height="0.5rem"></Box>
       <Text as={italic ? "i" : "p"} fontSize={{ base: "0.8rem", md: "0.8rem" }} fontFamily={captionFontFamily} color={useColorModeValue("gray.500", "gray.400")}>

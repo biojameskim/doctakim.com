@@ -1,13 +1,14 @@
 import { useState } from "react";
-import { Image, ImageProps, Skeleton, Box, useColorModeValue } from "@chakra-ui/react";
+import { Image, ImageProps, Skeleton, Box, useColorModeValue, useBreakpointValue } from "@chakra-ui/react";
 
-interface GracefulImageProps extends ImageProps {
-    // Add any specific props if needed, for now just extending ImageProps
+interface GracefulImageProps extends Omit<ImageProps, 'src'> {
+    src: string | object;
 }
 
 const GracefulImage = (props: GracefulImageProps) => {
     const [isLoaded, setIsLoaded] = useState(false);
     const { src, alt, width, height, w, h, boxSize, borderRadius, objectFit, ...rest } = props;
+    const resolvedSrc = useBreakpointValue(typeof src === 'object' ? src : { base: src });
 
     const skeletonStartColor = useColorModeValue("gray.200", "gray.800");
     const skeletonEndColor = useColorModeValue("gray.500", "gray.500");
@@ -39,7 +40,7 @@ const GracefulImage = (props: GracefulImageProps) => {
                     endColor={skeletonEndColor}
                 />
                 <Image
-                    src={src}
+                    src={resolvedSrc as string}
                     alt={alt}
                     onLoad={() => setIsLoaded(true)}
                     opacity={isLoaded ? 1 : 0}
@@ -75,7 +76,7 @@ const GracefulImage = (props: GracefulImageProps) => {
                 endColor={skeletonEndColor}
             />
             <Image
-                src={src}
+                src={resolvedSrc as string}
                 alt={alt}
                 onLoad={() => setIsLoaded(true)}
                 opacity={isLoaded ? 1 : 0}

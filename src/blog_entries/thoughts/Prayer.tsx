@@ -18,9 +18,7 @@ const Prayer = () => {
       </Helmet>
 
       <Box {...BLOG_STYLES.headerContainer}>
-        <Heading
-          {...BLOG_STYLES.title}
-        >
+        <Heading {...BLOG_STYLES.title}>
           Prayer
         </Heading>
 

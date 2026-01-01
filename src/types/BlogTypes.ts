@@ -9,15 +9,17 @@ export type BlogCardType = {
 }
 
 export type BlogImageType = {
-  src: string,
+  src: string | object,
   alt: string,
   caption?: string,
   caption2?: string,
   orientation?: string,
-  maxW?: string,
+  maxW?: string | object,
   borderRadius?: string,
   captionFontFamily?: string,
   italic?: boolean
+  pt?: string,
+  pb?: string
 }
 
 export type BirthdayCardType = {

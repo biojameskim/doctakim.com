@@ -187,7 +187,6 @@ const StartPage = () => {
             <Animator animation={batch(Sticky(), FadeIn(), ZoomIn(2, 1))}>
               <Link to="/home">
                 <ChakraImage src="/images/icons/home-sm.png" boxSize={{ md: 28 }} />
-                {/* <Text as="span" fontSize={{ md: "6rem" }}>🏠</Text> */}
               </Link>
               <Text
                 className="scroll-icon"

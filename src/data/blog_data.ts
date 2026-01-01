@@ -70,6 +70,15 @@ export const story_data: BlogCardType[] = [
 // Data for Thoughts in Blog
 export const thoughts_data: BlogCardType[] = [
   {
+    route: '/blog/why-cornell',
+    release: 'December 2025',
+    title: 'Why I chose Cornell',
+    description: "Making decisions.",
+    image: "https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg", // You can use Cloudinary or any external URLs here!
+    alt: 'Why Cornell Cover',
+    pin: false
+  },
+  {
     route: '/blog/prayer',
     release: 'June 2023',
     title: 'Prayer',
