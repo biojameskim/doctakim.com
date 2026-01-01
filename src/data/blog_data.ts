@@ -74,8 +74,8 @@ export const thoughts_data: BlogCardType[] = [
     release: 'December 2025',
     title: 'Why I chose Cornell',
     description: "Making decisions.",
-    image: "https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg", // You can use Cloudinary or any external URLs here!
-    alt: 'Why Cornell Cover',
+    image: "https://res.cloudinary.com/doypjterz/image/upload/v1767230153/cornell-cover-min_aruv2b.jpg",
+    alt: 'Olin Library',
     pin: false
   },
   {
