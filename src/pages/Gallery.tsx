@@ -111,7 +111,7 @@ const Gallery = () => {
                                             </VStack>))}
                                     </SimpleGrid>
                                 ) : (
-                                    <Text>Nothing in this folder yet.</Text>
+                                    <Text>Nothing here yet.</Text>
                                 )}
                             </Box>
                         ) : selectedFolder ? (
@@ -163,7 +163,7 @@ const Gallery = () => {
                                             </VStack>))}
                                     </SimpleGrid>
                                 ) : (
-                                    !selectedFolder.subfolders || selectedFolder.subfolders.length === 0 ? <Text>Nothing in this folder yet.</Text> : null
+                                    !selectedFolder.subfolders || selectedFolder.subfolders.length === 0 ? <Text>Nothing here yet.</Text> : null
                                 )}
                             </Box>
                         ) : selectedYear ? (

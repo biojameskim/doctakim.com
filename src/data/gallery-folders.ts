@@ -26,6 +26,13 @@ export interface Subfolder {
 // }
 export const photoFolders: PhotoFolder[] = [
     {
+        year: 2026,
+        month: "01",
+        photos: [
+
+        ]
+    },
+    {
         year: 2025,
         month: "12",
         photos: [

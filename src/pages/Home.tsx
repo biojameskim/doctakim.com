@@ -29,13 +29,6 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Get previous month name
-  const getPreviousMonth = () => {
-    const now = new Date();
-    const previousMonth = new Date(now.getFullYear(), now.getMonth() - 1);
-    return previousMonth.toLocaleString('en-US', { month: 'long', year: 'numeric' });
-  };
-
   const cardBg = useColorModeValue("gray.50", "gray.700");
   const hoverBg = useColorModeValue("gray.100", "gray.600");
 
@@ -173,9 +166,7 @@ const Home = () => {
                 <HStack fontSize="1.5rem" fontWeight="semibold" spacing={3}>
                   <Icon as={FaSpotify} color="#1DB954" boxSize={8} />
                   <Text bgGradient="linear(to-r, #1DB954, #1ed760)" bgClip="text">
-                    <Box as="span" display={{ base: "block", md: "inline" }} fontSize={{ base: "1.1rem", md: "1.4rem" }}>Top Streams</Box>
-                    <Box as="span" display={{ base: "none", md: "inline" }}> - </Box>
-                    <Box as="span" display={{ base: "block", md: "inline" }} fontSize={{ base: "1.2rem", md: "1.4rem" }}>{getPreviousMonth()}</Box>
+                    <Box as="span" display={{ base: "block", md: "inline" }} fontSize={{ base: "1.1rem", md: "1.4rem" }}>Recently...</Box>
                   </Text>
                 </HStack>
               </VStack>
