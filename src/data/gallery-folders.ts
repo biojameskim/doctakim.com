@@ -2327,7 +2327,7 @@ export const photoFolders: PhotoFolder[] = [
                         orientation: "v"
                     },
                     {
-                        filename: "https://res.cloudinary.com/doypjterz/image/upload/v1767572201/IMG_4376_uoocrg.jpg",
+                        filename: "https://res.cloudinary.com/doypjterz/image/upload/v1767575478/IMG_4376_qp4rjh.jpg",
                         caption: "",
                         orientation: "v"
                     },
