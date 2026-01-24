@@ -1,0 +1,60 @@
+name: Update Spotify Music
+
+on:
+  schedule:
+    # Weekly schedule; workflow skips every other week in the first step.
+    - cron: "0 5 * * 1"
+  workflow_dispatch:
+
+jobs:
+  update-music:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Skip if not biweekly
+        id: biweekly
+        run: |
+          week=$(date -u +%V)
+          if [ $((10#$week % 2)) -ne 0 ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+
+      - name: Set up Node
+        if: steps.biweekly.outputs.skip != 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install dependencies
+        if: steps.biweekly.outputs.skip != 'true'
+        run: npm ci
+
+      - name: Update music data
+        if: steps.biweekly.outputs.skip != 'true'
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+        run: npm run update-music
+
+      - name: Commit and push if changed
+        if: steps.biweekly.outputs.skip != 'true'
+        run: |
+          if git status --porcelain src/data/top_songs_artists.ts | grep .; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add src/data/top_songs_artists.ts
+            git commit -m "chore: update Spotify music data"
+            git push origin HEAD:master
+          else
+            echo "No changes to commit."
+          fi
