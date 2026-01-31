@@ -6,10 +6,10 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/6QCzWMWJSSRk671GThuYlt"
     },
     {
-        "title": "Sincere Lies (Feat. GARY)",
-        "artist": "BIG Naughty, GARY",
-        "cover": "https://i.scdn.co/image/ab67616d0000b27399f28cac91270c4d4cbb9e3d",
-        "link": "https://open.spotify.com/track/1NK9RWPSHo1sti3n5gSR7z"
+        "title": "Writing's On The Wall - Live",
+        "artist": "Kristina Moe Hals",
+        "cover": "https://i.scdn.co/image/ab67616d0000b2736617af32f2eb152278189414",
+        "link": "https://open.spotify.com/track/1PU9JydesQ8bmlhmZUmGyk"
     },
     {
         "title": "Obsession",
@@ -18,16 +18,16 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/40XiAOitWuV9bJKh4DHHpB"
     },
     {
-        "title": "LLL (Live, Laugh & Love) (Prod. An Shinae & Philtre)",
-        "artist": "Shin Hea Sol",
-        "cover": "https://i.scdn.co/image/ab67616d0000b273470eb0770b6da04bf0a903ed",
-        "link": "https://open.spotify.com/track/5z95hsqZSzdx3w0mSfWJ0r"
-    },
-    {
         "title": "CHANEL",
         "artist": "Tyla",
         "cover": "https://i.scdn.co/image/ab67616d0000b273c1cfff2e89a49729b648e56d",
         "link": "https://open.spotify.com/track/4VxTzYm00mg82MuoT35Ja7"
+    },
+    {
+        "title": "Stupid boys (feat. Choi Seong)",
+        "artist": "TOIL, Jayci yucca, Choi Seong",
+        "cover": "https://i.scdn.co/image/ab67616d0000b27356d891cffd7279bef45bc62e",
+        "link": "https://open.spotify.com/track/16LT4dkbtmA8K1kQS6Yw3S"
     }
 ];
 
@@ -43,18 +43,18 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/4FAFRhpZUK7DnI1VWX2STP"
     },
     {
+        "name": "Gist",
+        "image": "https://i.scdn.co/image/ab6761610000e5ebb5c35dbc24274551f58e6681",
+        "link": "https://open.spotify.com/artist/7MWT3sTDz6GemZla4Y5oCk"
+    },
+    {
+        "name": "GIRIBOY",
+        "image": "https://i.scdn.co/image/ab6761610000e5ebbddc6fbd6f3557379cc671b0",
+        "link": "https://open.spotify.com/artist/2MtHuR0W2idZdF7x4wddqq"
+    },
+    {
         "name": "h3hyeon",
         "image": "https://i.scdn.co/image/ab6761610000e5eb2a6da1e4b0ad58a24c8d2b2a",
         "link": "https://open.spotify.com/artist/2VjfPlcTFJhQSe8ALJJ1dz"
-    },
-    {
-        "name": "Gwyn Dorado",
-        "image": "https://i.scdn.co/image/ab6761610000e5eb63cc9f35ee92890645548bb7",
-        "link": "https://open.spotify.com/artist/7pZ42lLRSlDnoPCfINXCn9"
-    },
-    {
-        "name": "BIG Naughty",
-        "image": "https://i.scdn.co/image/ab6761610000e5ebc381cb345091097555f955f4",
-        "link": "https://open.spotify.com/artist/7cEaNXXTHx3LokbjUUyHal"
     }
 ];
