@@ -12,12 +12,6 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/1PU9JydesQ8bmlhmZUmGyk"
     },
     {
-        "title": "Obsession",
-        "artist": "Isabel van Gelder",
-        "cover": "https://i.scdn.co/image/ab67616d0000b273c4eab94c82e42abf0ee8f0dc",
-        "link": "https://open.spotify.com/track/40XiAOitWuV9bJKh4DHHpB"
-    },
-    {
         "title": "CHANEL",
         "artist": "Tyla",
         "cover": "https://i.scdn.co/image/ab67616d0000b273c1cfff2e89a49729b648e56d",
@@ -28,6 +22,12 @@ export const topSongs = [
         "artist": "TOIL, Jayci yucca, Choi Seong",
         "cover": "https://i.scdn.co/image/ab67616d0000b27356d891cffd7279bef45bc62e",
         "link": "https://open.spotify.com/track/16LT4dkbtmA8K1kQS6Yw3S"
+    },
+    {
+        "title": "Don’t Care (feat. Gist, CHANGMO)",
+        "artist": "TOIL, Jayci yucca, Gist, CHANGMO",
+        "cover": "https://i.scdn.co/image/ab67616d0000b27356d891cffd7279bef45bc62e",
+        "link": "https://open.spotify.com/track/2J25VHItwp5f4uIX1niN2E"
     }
 ];
 
