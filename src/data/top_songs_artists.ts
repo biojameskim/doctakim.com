@@ -24,10 +24,10 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/16LT4dkbtmA8K1kQS6Yw3S"
     },
     {
-        "title": "Don’t Care (feat. Gist, CHANGMO)",
-        "artist": "TOIL, Jayci yucca, Gist, CHANGMO",
-        "cover": "https://i.scdn.co/image/ab67616d0000b27356d891cffd7279bef45bc62e",
-        "link": "https://open.spotify.com/track/2J25VHItwp5f4uIX1niN2E"
+        "title": "you're a liar (you love me)",
+        "artist": "Cil",
+        "cover": "https://i.scdn.co/image/ab67616d0000b2735bbd4648472e7a8fb36ac25c",
+        "link": "https://open.spotify.com/track/1LI8rDhxrRe9iQLECjntwG"
     }
 ];
 
@@ -48,13 +48,13 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/7MWT3sTDz6GemZla4Y5oCk"
     },
     {
+        "name": "J. Cole",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb492b7b1b9abaa9bb393ab317",
+        "link": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
+    },
+    {
         "name": "GIRIBOY",
         "image": "https://i.scdn.co/image/ab6761610000e5ebbddc6fbd6f3557379cc671b0",
         "link": "https://open.spotify.com/artist/2MtHuR0W2idZdF7x4wddqq"
-    },
-    {
-        "name": "h3hyeon",
-        "image": "https://i.scdn.co/image/ab6761610000e5eb2a6da1e4b0ad58a24c8d2b2a",
-        "link": "https://open.spotify.com/artist/2VjfPlcTFJhQSe8ALJJ1dz"
     }
 ];
