@@ -15,7 +15,7 @@ export const story_data: BlogCardType[] = [
     route: '/blog/out-of-context',
     release: 'February 2026',
     title: 'Out of Context',
-    description: "A little unexpected.",
+    description: "Just a little unexpected.",
     image: "https://res.cloudinary.com/doypjterz/image/upload/v1771476193/cover_iobzb4.jpg",
     alt: 'Family Photo',
     pin: false
