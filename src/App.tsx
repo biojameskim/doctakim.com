@@ -23,6 +23,7 @@ import {
   SophomoreSlump,
   WistfulMemories,
   BestLatte,
+  OutofContext
 } from "./blog_entries/blog_entries";
 // Blog Entries (Thoughts)
 import {
@@ -75,6 +76,7 @@ export const App = () => (
           <Route path="/blog/sophomore-slump" element={<SophomoreSlump />} />
           <Route path="/blog/wistful-memories" element={<WistfulMemories />} />
           <Route path="/blog/best-latte" element={<BestLatte />} />
+          <Route path="/blog/out-of-context" element={<OutofContext />} />
           {/* Blog entry routes (Thoughts) */}
           <Route path="/blog/prayer" element={<Prayer />} />
           <Route path="/blog/dear-mrs-lupsaiu" element={<MrsLupsaiu />} />

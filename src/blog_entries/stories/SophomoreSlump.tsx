@@ -270,8 +270,6 @@ const SophomoreSlump = () => {
 
         <Stack {...BLOG_STYLES.bodyContainer}
           spacing={7}
-          width={{ base: "85%", md: "50%" }}
-          fontSize={{ base: "16", md: "md" }}
           mt={7}
         >
           <Text pb="5vh">
@@ -413,8 +411,6 @@ const SophomoreSlump = () => {
 
         <Stack {...BLOG_STYLES.bodyContainer}
           spacing={7}
-          width={{ base: "85%", md: "50%" }}
-          fontSize={{ base: "16", md: "md" }}
           mt={7}
         >
           <Text pb="5vh">
@@ -509,8 +505,6 @@ const SophomoreSlump = () => {
 
         <Stack {...BLOG_STYLES.bodyContainer}
           spacing={7}
-          width={{ base: "85%", md: "50%" }}
-          fontSize={{ base: "16", md: "md" }}
           mt={7}
         >
           <Text>
@@ -612,8 +606,6 @@ const SophomoreSlump = () => {
 
         <Stack {...BLOG_STYLES.bodyContainer}
           spacing={7}
-          width={{ base: "85%", md: "50%" }}
-          fontSize={{ base: "16", md: "md" }}
           mt={7}
         >
           <Text>

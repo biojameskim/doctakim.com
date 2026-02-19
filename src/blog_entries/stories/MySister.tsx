@@ -243,25 +243,25 @@ const MySister = () => {
           <Text>I’ve never dated anyone before.</Text>
           <Text pb="5vh">But the coach doesn't play the game, does he?</Text>
 
-          <Text as="i" fontSize="xl" paddingLeft={"2rem"}>
+          <Text as="i" fontSize="sm" paddingLeft={"2rem"}>
             “So there’s this guy…”
           </Text>
-          <Text pb="4vh">
+          <Text py="4vh">
             What’s his full name, what’s his age, where does he go to school,
             and what do his parents do?
           </Text>
 
-          <Text as="i" fontSize="xl" paddingLeft={"2rem"}>
+          <Text as="i" fontSize="sm" paddingLeft={"2rem"}>
             “I think about him all the time and I get butterflies in my stomach
             every time I see him. I just want to be with him. Does this mean I
             like him?”
           </Text>
-          <Text pb="4vh">I don’t think so.</Text>
+          <Text py="4vh">I don’t think so.</Text>
 
-          <Text as="i" fontSize="xl" paddingLeft={"2rem"}>
+          <Text as="i" fontSize="sm" paddingLeft={"2rem"}>
             “I’m sure I like him. I think I’m gonna go for it.”
           </Text>
-          <Text pb="4vh">
+          <Text py="4vh">
             Give me a list of the top 10 reasons why you like him.
           </Text>
 

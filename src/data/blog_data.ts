@@ -12,12 +12,21 @@ export const story_data: BlogCardType[] = [
     pin: true
   },
   {
+    route: '/blog/out-of-context',
+    release: 'February 2026',
+    title: 'Out of Context',
+    description: "A tad unexpected.",
+    image: "https://res.cloudinary.com/doypjterz/image/upload/v1771476193/cover_iobzb4.jpg",
+    alt: 'Family Photo',
+    pin: false
+  },
+  {
     route: '/blog/best-latte',
     release: 'April 2025',
     title: 'The Best Latte of My Life',
     description: "A warm sip.",
     image: "../images/blog_pictures/Best-Latte/latte_cover.jpg",
-    alt: 'Family Photo',
+    alt: 'A cup of latte',
     pin: false
   },
   {
