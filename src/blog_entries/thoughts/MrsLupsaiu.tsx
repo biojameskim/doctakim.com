@@ -31,7 +31,7 @@ const MrsLupsaiu = () => {
 
       <div className="blog-text">
         <Stack {...BLOG_STYLES.bodyContainer}>
-          <Text pb="7vh">December 26, 2022</Text>
+          <Text fontWeight="bold" pb="7vh">December 26, 2022</Text>
 
           <Text pb="3vh">Dear Mrs. Lupsaiu,</Text>
 

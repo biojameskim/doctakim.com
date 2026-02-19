@@ -164,14 +164,14 @@ const OutofContext = () => {
                     <Text pb={"15vh"}>but I’m lucky to even get a handshake from him.</Text>
                     <Text pb={"35vh"}>Sometimes, I’m a little scared he might lash out whenever I go for a pat on the back.</Text>
                     <Text pb={"10vh"}>And it makes sense—</Text>
-                    <Text pb={"30vh"}>Some families are less "touchy" than others.</Text>
+                    <Text pb={"40vh"}>Some families are less "touchy" than others.</Text>
                     <Text pb={"15vh"}>But the first time I met his parents,</Text>
                     <Text pb={"10vh"}>his dad shouted <Text as="span" fontStyle="italic">"bring it in for a big one, boy"</Text> as he engulfed Jonah in a big bear hug.</Text>
                     <Text pb={"30vh"}>His mom quickly joined in, referring to him as <Text as="span" fontStyle="italic">"my Jonah."</Text></Text>
                     <Text pb={"15vh"}>Now of course Jonah didn’t reciprocate the hug,</Text>
                     <Text pb={"15vh"}>standing there motionless,</Text>
-                    <Text pb={"35vh"}>but I realized there definitely was no shortage of physical affection in his family.</Text>
-                    <Text pb={"25vh"}>I was also wrong to think that Jonah’s hatred for junk food stemmed deep in his family.</Text>
+                    <Text pb={"50vh"}>but I realized there definitely was no shortage of physical affection in his family.</Text>
+                    <Text pb={"45vh"}>I was also wrong to think that Jonah’s hatred for junk food stemmed deep in his family.</Text>
                     <Text pb={"15vh"}>Turns out it’s just him.</Text>
 
                     <BlogImage
@@ -186,7 +186,7 @@ const OutofContext = () => {
                     <Text pb={"15vh"}>As I stood there watching Jonah’s family wrapped around him tightly,</Text>
                     <Text pb={"15vh"}>I didn’t recognize this part of Jonah.</Text>
                     <Text pb={"35vh"}>It was outside the context of how I knew him.</Text>
-                    <Text pb={"30vh"}>But I smiled as I (more confidently) reached in for a pat on the back.</Text>                    
+                    <Text pb={"30vh"}>But I smiled as I (more confidently) reached in for a pat on the back.</Text>
 
                     <Text fontWeight="bold" paddingBottom={"7vh"}>—</Text>
 
@@ -214,6 +214,8 @@ const OutofContext = () => {
                         pb="20vh"
                     />
 
+                    <Text fontWeight="bold" paddingBottom={"7vh"}>—</Text>
+
                     <Text pb={"30vh"}>Some of the people I know exist in just one context.</Text>
                     <Text pb={"20vh"}>There’s friends I’ll only see during class and we’ll always say hi, sometimes talk about hanging out, but never follow up.</Text>
                     <Text pb={"10vh"}>There’s also a lot of people at church who I really enjoy talking with,</Text>
@@ -225,7 +227,7 @@ const OutofContext = () => {
                     <Text pb={"35vh"}>I’ve seen them moving through many different contexts.</Text>
 
                     <Text pb={"10vh"}>Derek and I used to live together, and whenever his door was slightly ajar,</Text>
-                    <Text pb={"20vh"}>I couldn’t help myself but to take a quick peek into his room.</Text>
+                    <Text pb={"20vh"}>I couldn’t help myself but to take a quick peep into his room.</Text>
                     <Text pb={"10vh"}>Sure enough,</Text>
                     <Text pb={"20vh"}>he was either reclining in his chair playing poker or taking a nap in his bed.</Text>
                     <Text pb={"10vh"}>But every Friday night,</Text>
@@ -243,7 +245,7 @@ const OutofContext = () => {
 
                     <Text pb={"15vh"}>And I occasionally spot Matthew at the dining hall in his bright red, plaid pajama pants.</Text>
                     <Text pb={"7vh"}>You probably don't want to stand behind him in line,</Text>
-                    <Text pb={"30vh"}>Because he never leaves any bacon for the rest of us.</Text>   
+                    <Text pb={"30vh"}>Because he never leaves any bacon for the rest of us.</Text>
                     <Text pb={"15vh"}>But sometimes he’ll put his nice dress pants on,</Text>
                     <Text pb={"40vh"}>where he switches into an intelligent, charismatic law school student who often inspires me with his writing.</Text>
 
@@ -253,13 +255,13 @@ const OutofContext = () => {
                     <Text pb={"15vh"}>stumped by a brain teaser given to him by his parents (how to be nice to his girlfriend).</Text>
 
                     <BlogImage
-                            src="https://res.cloudinary.com/doypjterz/image/upload/v1771474969/IMG_7491_slkycl.jpg"
-                            alt="Lunch with Caleb and Jonah"
-                            caption='“So if you have 3 red balls and 2 blue in a bag...”'
-                            orientation="v"
-                            pt="10vh"
-                            pb="20vh"
-                        />
+                        src="https://res.cloudinary.com/doypjterz/image/upload/v1771474969/IMG_7491_slkycl.jpg"
+                        alt="Lunch with Caleb and Jonah"
+                        caption='“So if you have 3 red balls and 2 blue in a bag...”'
+                        orientation="v"
+                        pt="10vh"
+                        pb="20vh"
+                    />
 
                     <Text pb={"35vh"}>And some people are really special because they can bring out aspects of others that I can’t bring out myself.</Text>
                     <Text pb={"15vh"}>No matter how hard I try, I can’t seem to bring out that same lighthearted side of Elisabeth that only Melody can bring out.</Text>
@@ -291,19 +293,18 @@ const OutofContext = () => {
                     <Text pb={"35vh"}>I’ve started getting dinner with people from church throughout the week.</Text>
                     <Text pb={"15vh"}>And the more I switch between these different contexts,</Text>
                     <Text pb={"35vh"}>The more the lines between each of them starts to blur.</Text>
-                    <Text pb={"25vh"}>It’s no longer as clear where my role in one context begins and where it ends.</Text>
+                    <Text pb={"40vh"}>It’s no longer as clear where my role in one context begins and where it ends.</Text>
                     <Text pb={"45vh"}>But I realize that’s where I can understand myself the best.</Text>
                     <Text pb={"15vh"}>I start to find the parts of myself that don't change <Text as="span" fontStyle="italic">between</Text> each context,</Text>
                     <Text pb={"35vh"}>but the parts that remain constant <Text as="span" fontStyle="italic">despite</Text> them.</Text>
                     <Text pb={"35vh"}>And I think that’s why I like seeing other people this way too.</Text>
-                    <Text pb={"15vh"}>From the contexts where they shine the most,</Text>
-                    <Text pb={"25vh"}>to the ones that glow a little less—</Text>
-                    <Text pb={"45vh"}>Each part comes together to help me better understand the whole.</Text>
+                    <Text pb={"10vh"}>From the contexts where they shine the most,</Text>
+                    <Text pb={"35vh"}>to the ones that glow a little less—</Text>
+                    <Text pb={"55vh"}>Each part comes together to help me better understand the whole.</Text>
                     <Text pb={"10vh"}>Because after all,</Text>
-                    <Text pb={"50vh"}>It’s all the same person.</Text>
-                    <Text pb={"30vh"}>Just from another view,</Text>
-                    <Text pb={"40vh"}>A little unexpected,</Text>
-                    <Text pb={"55vh"}>And a little <Text as="span" fontStyle="italic">out of context.</Text></Text>        
+                    <Text pb={"60vh"}>It’s all the same person.</Text>
+                    <Text pb={"60vh"}>Just a little unexpected,</Text>
+                    <Text pb={"50vh"}>And a little <Text as="span" fontStyle="italic">out of context.</Text></Text>
 
 
                 </Stack>
