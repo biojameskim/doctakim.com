@@ -100,7 +100,7 @@ const OutofContext = () => {
                     <Text pb={"25vh"}>But one of the first times we visited his family in Korea,</Text>
                     <Text pb={"20vh"}>I watched in horror as his older brother pinched my dad’s cheek with one hand,</Text>
                     <Text pb={"30vh"}>Squeezed his butt with the other,</Text>
-                    <Text pb={"50vh"}>And started calling him a “fat piggy.”</Text>
+                    <Text pb={"50vh"}>And started calling him a <Text as="span" fontStyle="italic">"fat piggy."</Text></Text>
                     <Text pb={"20vh"}>Sure, there was a time my dad was overweight.</Text>
                     <Text pb={"40vh"}>But that was over 40 years ago when he was in elementary school.</Text>
                     <Text pb={"15vh"}>His brother is about twice his size now.</Text>
@@ -287,7 +287,7 @@ const OutofContext = () => {
                     <Text pb={"35vh"}>Where I just want to switch back to what’s comfortable.</Text>
                     <Text pb={"25vh"}>But recently, I’ve been more intentional about trying to merge some of my contexts together.</Text>
                     <Text pb={"15vh"}>I’ve started cracking some more jokes during lab meetings.</Text>
-                    <Text pb={"15vh"}>I’ve been trying to explain new CS research papers I read to my dad.</Text>
+                    <Text pb={"15vh"}>I’ve started explaining some CS research papers I read to my dad.</Text>
                     <Text pb={"35vh"}>I’ve started getting dinner with people from church throughout the week.</Text>
                     <Text pb={"15vh"}>And the more I switch between these different contexts,</Text>
                     <Text pb={"35vh"}>The more the lines between each of them starts to blur.</Text>
