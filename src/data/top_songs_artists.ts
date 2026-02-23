@@ -6,16 +6,10 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/12Gy0qkKK6MLnXta8GZ1Og"
     },
     {
-        "title": "Writing's On The Wall - Live",
-        "artist": "Kristina Moe Hals",
-        "cover": "https://i.scdn.co/image/ab67616d0000b2736617af32f2eb152278189414",
-        "link": "https://open.spotify.com/track/1PU9JydesQ8bmlhmZUmGyk"
-    },
-    {
-        "title": "CHANEL",
-        "artist": "Tyla",
-        "cover": "https://i.scdn.co/image/ab67616d0000b273c1cfff2e89a49729b648e56d",
-        "link": "https://open.spotify.com/track/4VxTzYm00mg82MuoT35Ja7"
+        "title": "STAY on FIRE (feat. DEAN)",
+        "artist": "Sik-K, DEAN",
+        "cover": "https://i.scdn.co/image/ab67616d0000b273066b21e2163607a1cf44b6a1",
+        "link": "https://open.spotify.com/track/6PpxPJyQYHGeiUCYy6jF02"
     },
     {
         "title": "you're a liar (you love me)",
@@ -24,28 +18,24 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/1LI8rDhxrRe9iQLECjntwG"
     },
     {
-        "title": "Waiting For The Rain",
-        "artist": "Isabel van Gelder",
-        "cover": "https://i.scdn.co/image/ab67616d0000b273b0fb9251635ac480e5559bec",
-        "link": "https://open.spotify.com/track/2cLgf3ZOH8u6nZtdUFr6N0"
+        "title": "119",
+        "artist": "MilliMax",
+        "cover": "https://i.scdn.co/image/ab67616d0000b273ef8f8b97a1ea6a9649a37344",
+        "link": "https://open.spotify.com/track/0QnNd5atV8NQWo0Y5KTcYr"
+    },
+    {
+        "title": "Memories of the Alhambra",
+        "artist": "george",
+        "cover": "https://i.scdn.co/image/ab67616d0000b27307df635f3a56fc6625f59b44",
+        "link": "https://open.spotify.com/track/3qYpMhH0qjzqFCrB5iGvta"
     }
 ];
 
 export const topArtists = [
     {
-        "name": "Isabel van Gelder",
-        "image": "https://i.scdn.co/image/ab6761610000e5eb39b830ed12cd609767fa91e9",
-        "link": "https://open.spotify.com/artist/4FAFRhpZUK7DnI1VWX2STP"
-    },
-    {
         "name": "Coffeeboy",
         "image": "https://i.scdn.co/image/ab67616d0000b27328bf0a2c855048128ec1ca01",
         "link": "https://open.spotify.com/artist/5F0ZKImhec2HLnFQzsl1CM"
-    },
-    {
-        "name": "TOIL",
-        "image": "https://i.scdn.co/image/ab6761610000e5eb078840d41e1ac86f88d7522e",
-        "link": "https://open.spotify.com/artist/698zn8fEOIr1OrfqG4283S"
     },
     {
         "name": "GIRIBOY",
@@ -56,5 +46,15 @@ export const topArtists = [
         "name": "Gist",
         "image": "https://i.scdn.co/image/ab6761610000e5ebb5c35dbc24274551f58e6681",
         "link": "https://open.spotify.com/artist/7MWT3sTDz6GemZla4Y5oCk"
+    },
+    {
+        "name": "J. Cole",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb492b7b1b9abaa9bb393ab317",
+        "link": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
+    },
+    {
+        "name": "TRADE L",
+        "image": "https://i.scdn.co/image/ab6761610000e5ebf8ba8dcab9f8bcf8ed94becb",
+        "link": "https://open.spotify.com/artist/6b29EYSqnLhUyxC3yyNbyr"
     }
 ];
