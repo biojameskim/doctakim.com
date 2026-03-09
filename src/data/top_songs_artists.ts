@@ -18,16 +18,16 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/0VGeaj4sDq9UnwzSxiVgkZ"
     },
     {
+        "title": "Good Flirts (feat. Kendrick Lamar & Momo Boyd)",
+        "artist": "Baby Keem, Kendrick Lamar, Momo Boyd",
+        "cover": "https://i.scdn.co/image/ab67616d0000b27308a27a15cf37664f0dab6ab7",
+        "link": "https://open.spotify.com/track/5sHeIGDbdzw8DeO57XZKIy"
+    },
+    {
         "title": "TOXICK",
         "artist": "Sik-K",
         "cover": "https://i.scdn.co/image/ab67616d0000b2737fb900185f50b09371a95ee6",
         "link": "https://open.spotify.com/track/58usw15bgarns0kTKmNP9U"
-    },
-    {
-        "title": "Highs and Goodbyes",
-        "artist": "BIG Naughty",
-        "cover": "https://i.scdn.co/image/ab67616d0000b273d7fcfd08c87ec1132f3249ae",
-        "link": "https://open.spotify.com/track/2R8AgS1dQcau9LXnfKBIGa"
     }
 ];
 
@@ -48,13 +48,13 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/6b29EYSqnLhUyxC3yyNbyr"
     },
     {
+        "name": "Baby Keem",
+        "image": "https://i.scdn.co/image/ab6761610000e5ebe45a6e4cee2ef5f4c0fec713",
+        "link": "https://open.spotify.com/artist/5SXuuuRpukkTvsLuUknva1"
+    },
+    {
         "name": "Coffeeboy",
         "image": "https://i.scdn.co/image/ab67616d0000b27328bf0a2c855048128ec1ca01",
         "link": "https://open.spotify.com/artist/5F0ZKImhec2HLnFQzsl1CM"
-    },
-    {
-        "name": "Crying City",
-        "image": "https://i.scdn.co/image/ab6761610000e5ebe24be798385f764efaa0c6eb",
-        "link": "https://open.spotify.com/artist/324QqTOkQyG8CUlphElsdD"
     }
 ];
