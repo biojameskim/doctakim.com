@@ -1,11 +1,5 @@
 export const topSongs = [
     {
-        "title": "Reason Why",
-        "artist": "Sally Kim",
-        "cover": "https://i.scdn.co/image/ab67616d0000b273f956831e43369754c15e112e",
-        "link": "https://open.spotify.com/track/12Gy0qkKK6MLnXta8GZ1Og"
-    },
-    {
         "title": "PLACEs & EXes",
         "artist": "Sik-K",
         "cover": "https://i.scdn.co/image/ab67616d0000b2737fb900185f50b09371a95ee6",
@@ -28,6 +22,12 @@ export const topSongs = [
         "artist": "Sik-K",
         "cover": "https://i.scdn.co/image/ab67616d0000b2737fb900185f50b09371a95ee6",
         "link": "https://open.spotify.com/track/58usw15bgarns0kTKmNP9U"
+    },
+    {
+        "title": "Highs and Goodbyes",
+        "artist": "BIG Naughty",
+        "cover": "https://i.scdn.co/image/ab67616d0000b273d7fcfd08c87ec1132f3249ae",
+        "link": "https://open.spotify.com/track/2R8AgS1dQcau9LXnfKBIGa"
     }
 ];
 
@@ -53,8 +53,8 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/5SXuuuRpukkTvsLuUknva1"
     },
     {
-        "name": "Coffeeboy",
-        "image": "https://i.scdn.co/image/ab67616d0000b27328bf0a2c855048128ec1ca01",
-        "link": "https://open.spotify.com/artist/5F0ZKImhec2HLnFQzsl1CM"
+        "name": "Bruno Mars",
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc7688aad1bf03986934d7e26",
+        "link": "https://open.spotify.com/artist/0du5cEVh5yTK9QJze8zA0C"
     }
 ];
