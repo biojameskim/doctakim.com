@@ -30,7 +30,8 @@ import {
   MrsLupsaiu,
   FaceTime,
   Prayer,
-  WhyCornell
+  WhyCornell,
+  GodsLove
 } from "./blog_entries/blog_entries";
 // Blog Entries (Birthdays)
 import {
@@ -82,6 +83,7 @@ export const App = () => (
           <Route path="/blog/dear-mrs-lupsaiu" element={<MrsLupsaiu />} />
           <Route path="/blog/facetime" element={<FaceTime />} />
           <Route path="/blog/why-cornell" element={<WhyCornell />} />
+          <Route path="/blog/gods-love" element={<GodsLove />} />
           {/* Birthday routes */}
           <Route path="/birthdays/grace-lo-20th" element={<GraceLo20 />} />
           <Route path="/birthdays/grace-li-21st" element={<GraceLi21 />} />
