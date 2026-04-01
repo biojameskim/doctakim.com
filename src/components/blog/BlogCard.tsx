@@ -34,7 +34,7 @@ const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogC
                         width='35px'
                         right='-4'
                         top='-4'
-                        src={'images/icons/redpin.png'}
+                        src={'/images/icons/redpin.png'}
                         alt='Red pin'
                     />
                 )}

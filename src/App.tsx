@@ -1,5 +1,5 @@
 import { ChakraProvider } from "@chakra-ui/react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import theme from "./theme"
 
 // Pages
@@ -57,7 +57,9 @@ export const App = () => (
           <Route path="/" element={<StartPage />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog" element={<Navigate to="/blog/stories" replace />} />
+          <Route path="/blog/stories" element={<Blog />} />
+          <Route path="/blog/thoughts" element={<Blog />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/gallery/:year" element={<Gallery />} />
           <Route path="/gallery/:year/:month" element={<Gallery />} />
