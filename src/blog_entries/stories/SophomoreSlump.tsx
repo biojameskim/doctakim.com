@@ -292,7 +292,7 @@ const SophomoreSlump = () => {
             alt="Simon trying to kiss me."
             caption="Simon is persistent. I mean consistent."
             orientation="override"
-            maxW="700px"
+            maxW="650px"
           />
 
           <Text>The friends that showed their care.</Text>
@@ -445,7 +445,7 @@ const SophomoreSlump = () => {
             alt="Lydia, Kate/Shungo, and Katie"
             caption="Good food, better people."
             orientation="override"
-            maxW="700px"
+            maxW="600px"
           />
 
           <Text pb="5vh">

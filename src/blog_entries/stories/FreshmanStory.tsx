@@ -193,7 +193,8 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/8dp dough updated.png"
             alt="Angie and Elisabeth at DP Dough"
             caption="I don't think Elisabeth likes when I take pictures of her eating"
-            orientation="h"
+            orientation="override"
+            maxW="500px"
           />
 
           <Text>We played games together…</Text>
@@ -270,7 +271,8 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/16sheesh faces.png"
             alt="dum moment shows off their sheesh faces"
             caption="The girls made us do this"
-            orientation="h"
+            orientation="override"
+            maxW="650px"
           />
 
           <Text>But don’t get me wrong.</Text>
@@ -521,7 +523,7 @@ const FreshmanStory = () => {
             alt="Upperclassmen boys grab meals with me"
             caption="Great food, greater company"
             orientation="override"
-            maxW="500px"
+            maxW="600px"
           />
 
           <Text>Others showed their love in different ways.</Text>
@@ -559,7 +561,8 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/40daniel and barry.png"
             alt="The three boys with Daniel and Barry"
             caption="Dashing Daniel and Beefy Barry can't escape our skinship"
-            orientation="h"
+            orientation="override"
+            maxW="600px"
           />
 
           <Text fontWeight="bold" paddingBottom={"7vh"}>
@@ -654,7 +657,8 @@ const FreshmanStory = () => {
           <BlogImage
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/46-hilcmems-1.png"
             alt="Memories at HILC"
-            orientation="h"
+            orientation="override"
+            maxW="750px"
           />
 
           <Text>
@@ -686,7 +690,8 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/46hilc memoreis.png"
             alt="Memories at HILC"
             caption="Sleepless nights"
-            orientation="h"
+            orientation="override"
+            maxW="750px"
           />
 
           <Text>
