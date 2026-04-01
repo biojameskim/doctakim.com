@@ -122,7 +122,7 @@ const GodsLove = () => {
                     <Text pb={"5vh"}>To know that God has loved us so deeply since before we knew ourselves, and that</Text>
 
                     <Text as="i" paddingLeft="2rem">"neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord."</Text>
-                    <Text paddingLeft="2rem" pb={"15vh"}>Romans 8:39 ESV</Text>
+                    <Text paddingLeft="2rem" pb={"15vh"}>Romans 8:39 NIV</Text>
 
                     {/* Footnotes Section */}
                     <FootnotesSection>
