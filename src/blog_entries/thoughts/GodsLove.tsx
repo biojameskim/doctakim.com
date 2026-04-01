@@ -24,7 +24,7 @@ const GodsLove = () => {
                 </Heading>
 
                 <Text {...BLOG_STYLES.date}>
-                    March 2026
+                    April 2026
                 </Text>
             </Box>
 

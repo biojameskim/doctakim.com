@@ -80,12 +80,12 @@ export const story_data: BlogCardType[] = [
 export const thoughts_data: BlogCardType[] = [
   {
     route: '/blog/gods-love',
-    release: 'March 2026',
+    release: 'April 2026',
     title: "Thoughts about God's Love",
-    description: "--",
+    description: "Shadows.",
     image: "https://res.cloudinary.com/doypjterz/image/upload/v1774994859/DSC02651_nigimm.jpg",
     alt: 'Dad, bro, and me running',
-    pin: false
+    pin: true
   },
   {
     route: '/blog/why-cornell',
