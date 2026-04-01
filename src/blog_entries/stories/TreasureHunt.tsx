@@ -289,7 +289,6 @@ const TreasureHunt = () => {
           <Text>“Are we playing tennis today?”</Text>
 
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/Treasure-Hunt/Pictures/7 daddys_boy.jpg"
             alt="Dad lifting me up in his arms"
             caption="Daddy's boy"

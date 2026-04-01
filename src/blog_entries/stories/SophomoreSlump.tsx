@@ -533,7 +533,7 @@ const SophomoreSlump = () => {
             alt="Tiffany's text messages to us"
             caption="We're sorry, Tiffany."
             orientation="override"
-            maxW="360px"
+            maxW="300px"
           />
 
           <BlogImage

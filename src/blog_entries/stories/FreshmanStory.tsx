@@ -92,7 +92,6 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/3mom cry.jpeg"
             alt="Mom crying"
             caption="Mom said the food was just TOO good"
@@ -149,7 +148,6 @@ const FreshmanStory = () => {
           <Text>I had a friend I could explore these fellowships with.</Text>
 
           <BlogImage
-            maxW="500px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/5eric and i worm.jpeg"
             alt="Me and Eric almost kiss"
             caption="Eric and I learn there's more to explore than just Christian fellowships"
@@ -167,7 +165,7 @@ const FreshmanStory = () => {
             alt="My friend, Derek"
             caption="Insert: Derpy Derek"
             caption2="Derek has the broadest shoulders I've ever seen"
-            orientation="h"
+            orientation="v"
           />
 
           <Text>And the three of us became six…</Text>
@@ -294,14 +292,12 @@ const FreshmanStory = () => {
             orientation="h"
           />
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/18angie sleeping.jpeg"
             alt="Angie sleeping in Cocktail"
             caption="I think Angie said the same thing"
             orientation="v"
           />
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/19derek_coc.jpeg"
             alt="Derek plays games in Cocktail"
             caption='Derek: "Just one more round"'
@@ -346,7 +342,6 @@ const FreshmanStory = () => {
           <Text>Some people I met were super wise…</Text>
 
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/22wise_gras.jpeg"
             alt="Me and Grace at felly dessert"
             caption="Wise Grace is always ready to impart her knowledge to me"
@@ -356,7 +351,6 @@ const FreshmanStory = () => {
           <Text>While others, not so much.</Text>
 
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/23unwise_gras.jpeg"
             alt="Grace and I grab lunch together"
             caption="This is the same person"
@@ -369,7 +363,6 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/24_711.jpeg"
             alt="The 7/11 gang enjoys snacks at unholy hours"
             caption={`"Look guys, it's only 3am!"`}
@@ -382,7 +375,6 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/25tired amy.jpeg"
             alt="Tired Amy"
             caption="Amy is tired."
@@ -397,21 +389,18 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/26aleena design.jpeg"
             alt="Aleena makes a gingerbread house"
             caption="Aleena has a bright future as a design major"
             orientation="v"
           />
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/27simon teeth.jpeg"
             alt="Simon brushes his teeth very well"
             caption="Simon (pre-dent) shows us the proper way to brush our teeth"
             orientation="v"
           />
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/28studious micah.jpeg"
             alt="Micah studies during dance practice"
             caption="Micah seizes every opportunity to study."
@@ -441,7 +430,6 @@ const FreshmanStory = () => {
             orientation="h"
           />
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/30sophia.jpeg"
             alt="Me and Sophia"
             caption="My small group leader, Sophia"
@@ -463,7 +451,6 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/31nature.jpeg"
             alt="A waterfall on Cornell's campus"
             caption="My view on the walk to class"
@@ -476,7 +463,6 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/32brrrr.jpeg"
             alt="Cassy, me, and Jackie in our winter jackets"
             caption="Three Southern Californians brace for the fierce winter"
@@ -534,20 +520,19 @@ const FreshmanStory = () => {
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/36simon_david_dwoo_food2.png"
             alt="Upperclassmen boys grab meals with me"
             caption="Great food, greater company"
-            orientation="h"
+            orientation="override"
+            maxW="500px"
           />
 
           <Text>Others showed their love in different ways.</Text>
 
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/37andrew hand.jpeg"
             alt="Andrew goes on a run with me"
             caption="Affectionate Andrew holds his hand out for me to grab so I don't lag too far behind"
             orientation="v"
           />
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/38laz haircut.jpeg"
             alt="Laz gives me a haircut"
             caption="Luscious Laz gives me a complimentary haircut"
@@ -617,7 +602,6 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/42failed haircut.jpeg"
             alt="Eating a sandwich after a bad haircut"
             caption="One of many failed haircuts"
@@ -629,7 +613,6 @@ const FreshmanStory = () => {
           <Text>I learned how clean armpits could be when you wax them,</Text>
 
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Freshman-College-Story/Pictures/43armpits.jpeg"
             alt="Derek and Simon get their armpits waxed during Large Group"
             caption="Fresh 'pits x2"

@@ -151,7 +151,6 @@ const MySister = () => {
           <Text>One more person to cry over kdramas with.</Text>
 
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Sister/Pictures/5sad crash landing.png"
             alt='Me crying after watching "Crash Landing on You"'
             caption='"Crash Landing on You" was sad'
@@ -266,7 +265,6 @@ const MySister = () => {
           </Text>
 
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Sister/Pictures/9 i know love.jpeg"
             alt="A picture of me with sunglasses. Swag."
             caption="Love... Dating... Heartbreak..."
@@ -363,7 +361,6 @@ const MySister = () => {
           </Text>
 
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Sister/Pictures/leah screw off.jpg"
             alt=""
             caption={`Leah: "I'm gonna cut your finger off and stab you"`}
@@ -459,7 +456,6 @@ const MySister = () => {
           <Text>Come give the Kim brothers a chance.</Text>
 
           <BlogImage
-            maxW="450px"
             src="../images/blog_pictures/My-Sister/Pictures/cool and cooler.jpeg"
             alt="Me and bro being very cool"
             caption="Cool and cooler"
