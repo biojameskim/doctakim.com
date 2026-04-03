@@ -117,7 +117,7 @@ const Gallery = () => {
                         ) : selectedFolder ? (
                             <Box w="100%">
                                 <Heading as="h2" fontWeight="semibold" fontSize={{ base: "1.2rem", md: "1.4rem" }} mb={6}>
-                                    {selectedFolder.month}-{selectedFolder.year}
+                                    {selectedFolder.month}-{selectedFolder.year.toString().slice(-2)}
                                 </Heading>
 
                                 {selectedFolder.subfolders && selectedFolder.subfolders.length > 0 && (
@@ -187,7 +187,7 @@ const Gallery = () => {
                                                 >
                                                     <Image src="/images/icons/file-folder.png" boxSize={{ base: 8, md: 16 }} loading='eager' />
                                                     <Text fontSize={{ base: "0.9rem", md: "0.9rem" }} fontWeight="normal">
-                                                        {folder.month}-{folder.year}
+                                                        {folder.month}-{folder.year.toString().slice(-2)}
                                                     </Text>
                                                 </Flex>
                                             </Box>
