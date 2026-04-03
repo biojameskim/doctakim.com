@@ -29,7 +29,7 @@ const Blog = () => {
         <title>biojameskim | Blog</title>
       </Helmet>
 
-      <Box>
+      <Box maxW={{ base: '100%', md: '90%', lg: '85%' }} mx='auto'>
         <Heading textAlign='center' fontSize={{ base: '2.2rem', md: '2.6rem' }} fontWeight={'medium'} pt={'8vh'} pb={{ base: '2vh', md: '4vh' }} >
           Blog
         </Heading>

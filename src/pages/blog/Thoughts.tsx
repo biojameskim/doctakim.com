@@ -14,7 +14,7 @@ const Thoughts = () => {
     <div>
       <Grid
         templateColumns={{ md: 'repeat(3, 1fr)' }}
-        w={{ base: 'full', md: '90%' }}
+        w='100%'
         gap={{ base: '4', md: '12' }}
         textAlign={'left'}
         alignItems={'stretch'}
