@@ -1,4 +1,20 @@
 import { BlogCardType } from "../types/BlogTypes"
+import {
+  FreshmanStory,
+  GrowingUp,
+  MySister,
+  TreasureHunt,
+  SophomoreSlump,
+  WistfulMemories,
+  BestLatte,
+  OutofContext,
+  MrsLupsaiu,
+  FaceTime,
+  Prayer,
+  WhyCornell,
+  GodsLove,
+  LoveLetter
+} from "../blog_entries/blog_entries";
 
 // Data for Stories in Blog
 export const story_data: BlogCardType[] = [
@@ -9,7 +25,8 @@ export const story_data: BlogCardType[] = [
     description: "I'm on a hunt.",
     image: "/images/blog_pictures/Treasure-Hunt/treasure-hunt.jpeg",
     alt: "Dad and Me",
-    pin: true
+    pin: true,
+    component: TreasureHunt
   },
   {
     route: '/blog/out-of-context',
@@ -18,7 +35,8 @@ export const story_data: BlogCardType[] = [
     description: "Just a little unexpected.",
     image: "https://res.cloudinary.com/doypjterz/image/upload/v1771476193/cover_iobzb4.jpg",
     alt: 'Family Photo',
-    pin: false
+    pin: false,
+    component: OutofContext
   },
   {
     route: '/blog/best-latte',
@@ -27,7 +45,8 @@ export const story_data: BlogCardType[] = [
     description: "A warm sip.",
     image: "/images/blog_pictures/Best-Latte/latte_cover.jpg",
     alt: 'A cup of latte',
-    pin: false
+    pin: false,
+    component: BestLatte
   },
   {
     route: '/blog/wistful-memories',
@@ -36,7 +55,8 @@ export const story_data: BlogCardType[] = [
     description: "The memories that come and go.",
     image: "/images/blog_pictures/Wistful-Memories/wistful-memories.jpeg",
     alt: 'Family Photo',
-    pin: false
+    pin: false,
+    component: WistfulMemories
   },
   {
     route: '/blog/sophomore-slump',
@@ -45,7 +65,8 @@ export const story_data: BlogCardType[] = [
     description: "Halfway done.",
     image: "/images/blog_pictures/The-Sophomore-Slump/ss_cover.jpeg",
     alt: 'Dum moment',
-    pin: false
+    pin: false,
+    component: SophomoreSlump
   },
   {
     route: '/blog/my-sister',
@@ -54,7 +75,8 @@ export const story_data: BlogCardType[] = [
     description: "I don't tell very many people about my sister.",
     image: "/images/blog_pictures/My-Sister/my_sister_cover.jpg",
     alt: 'Me, my brother, and my sister',
-    pin: false
+    pin: false,
+    component: MySister
   },
   {
     route: '/blog/growing-up',
@@ -63,7 +85,8 @@ export const story_data: BlogCardType[] = [
     description: "Youth is fleeting.",
     image: "/images/blog_pictures/Growing-Up/growing-up.jpeg",
     alt: 'Baby James',
-    pin: false
+    pin: false,
+    component: GrowingUp
   },
   {
     route: '/blog/my-freshman-college-story',
@@ -72,7 +95,8 @@ export const story_data: BlogCardType[] = [
     description: "It's been a hell of a year.",
     image: "/images/blog_pictures/My-Freshman-College-Story/freshman-story.jpeg",
     alt: 'Dum moment',
-    pin: false
+    pin: false,
+    component: FreshmanStory
   }
 ]
 
@@ -85,7 +109,8 @@ export const thoughts_data: BlogCardType[] = [
     description: "Shadows.",
     image: "https://res.cloudinary.com/doypjterz/image/upload/v1774994859/DSC02651_nigimm.jpg",
     alt: 'Dad, bro, and me running',
-    pin: true
+    pin: true,
+    component: GodsLove
   },
   {
     route: '/blog/why-cornell',
@@ -94,7 +119,8 @@ export const thoughts_data: BlogCardType[] = [
     description: "Making decisions.",
     image: "https://res.cloudinary.com/doypjterz/image/upload/v1767230153/cornell-cover-min_aruv2b.jpg",
     alt: 'Olin Library',
-    pin: false
+    pin: false,
+    component: WhyCornell
   },
   {
     route: '/blog/prayer',
@@ -103,7 +129,8 @@ export const thoughts_data: BlogCardType[] = [
     description: "Sometimes, I just don't wanna pray.",
     image: "/images/blog_pictures/Prayer/pray_cover.jpeg",
     alt: 'Brother and Me.',
-    pin: false
+    pin: false,
+    component: Prayer
   },
   {
     route: '/blog/facetime',
@@ -112,7 +139,8 @@ export const thoughts_data: BlogCardType[] = [
     description: "I hate facetime.",
     image: "/images/blog_pictures/FaceTime/ft_cover.jpg",
     alt: 'Mrs.Lupsaiu and me',
-    pin: false
+    pin: false,
+    component: FaceTime
   },
   {
     route: '/blog/dear-mrs-lupsaiu',
@@ -121,6 +149,21 @@ export const thoughts_data: BlogCardType[] = [
     description: "I wish there was more time.",
     image: "/images/blog_pictures/Dear-Mrs-Lupsaiu/me and lupsaiu.jpg",
     alt: 'Mrs.Lupsaiu and me',
-    pin: false
+    pin: false,
+    component: MrsLupsaiu
   },
+]
+
+// Data for Fiction in Blog
+export const fiction_data: BlogCardType[] = [
+  {
+    route: '/blog/letter-to-former-lover',
+    release: 'April 2026',
+    title: 'A letter to a former lover',
+    description: "",
+    image: "https://res.cloudinary.com/doypjterz/image/upload/v1775339771/gemini_1_lp9oi2.png",
+    alt: '',
+    pin: false,
+    component: LoveLetter
+  }
 ]

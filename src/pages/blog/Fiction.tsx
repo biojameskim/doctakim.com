@@ -1,0 +1,39 @@
+import { useEffect } from "react";
+import { Grid } from "@chakra-ui/react"
+import BlogCard from "../../components/blog/BlogCard"
+
+import { fiction_data } from "../../data/blog_data";
+
+const Fiction = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+  return (
+    <div>
+      <Grid
+        templateColumns={{ md: 'repeat(3, 1fr)' }}
+        w='100%'
+        gap={{ base: '4', md: '12' }}
+        textAlign={'left'}
+        alignItems={'stretch'}
+      >
+        {fiction_data.map((item, index) =>
+          <BlogCard
+            key={index}
+            route={item.route}
+            release={item.release}
+            title={item.title}
+            description={item.description}
+            image={item.image}
+            alt={item.alt}
+            pin={item.pin}
+          />
+        )}
+      </Grid>
+    </div >
+  )
+}
+
+export default Fiction

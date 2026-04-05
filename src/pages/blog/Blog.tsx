@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import Stories from "./Stories";
 import Thoughts from "./Thoughts";
+import Fiction from "./Fiction";
 
 const Blog = () => {
   const navigate = useNavigate();
@@ -13,13 +14,15 @@ const Blog = () => {
     window.scrollTo(0, 0)
   }, [])
 
-  const tabIndex = location.pathname.includes('/blog/thoughts') ? 1 : 0;
+  const tabIndex = location.pathname.includes('/blog/thoughts') ? 1 : location.pathname.includes('/blog/fiction') ? 2 : 0;
 
   const handleTabsChange = (index: number) => {
     if (index === 0) {
       navigate('/blog/stories');
-    } else {
+    } else if (index === 1) {
       navigate('/blog/thoughts');
+    } else {
+      navigate('/blog/fiction');
     }
   };
 
@@ -37,6 +40,7 @@ const Blog = () => {
           <TabList paddingBottom='5vh' gap={{ base: '0.2rem', md: '0.5rem' }}>
             <Tab fontWeight={'normal'} fontSize={{ base: '0.9rem', md: '1rem' }} color={useColorModeValue('gray.600', 'white')} _active={{ bg: 'transparent' }} css={{ WebkitTapHighlightColor: "transparent", touchAction: "manipulation" }}>Stories</Tab>
             <Tab fontWeight={'normal'} fontSize={{ base: '0.9rem', md: '1rem' }} color={useColorModeValue('gray.600', 'white')} _active={{ bg: 'transparent' }} css={{ WebkitTapHighlightColor: "transparent", touchAction: "manipulation" }}>Thoughts</Tab>
+            <Tab fontWeight={'normal'} fontSize={{ base: '0.9rem', md: '1rem' }} color={useColorModeValue('gray.600', 'white')} _active={{ bg: 'transparent' }} css={{ WebkitTapHighlightColor: "transparent", touchAction: "manipulation" }}>Fiction</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>
@@ -44,6 +48,9 @@ const Blog = () => {
             </TabPanel>
             <TabPanel>
               <Thoughts />
+            </TabPanel>
+            <TabPanel>
+              <Fiction />
             </TabPanel>
           </TabPanels>
         </Tabs>

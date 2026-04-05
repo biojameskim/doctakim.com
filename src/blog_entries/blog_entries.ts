@@ -15,6 +15,9 @@ export { default as Prayer } from "./thoughts/Prayer"
 export { default as WhyCornell } from "./thoughts/WhyCornell"
 export { default as GodsLove } from "./thoughts/GodsLove"
 
+// Fiction
+export { default as LoveLetter } from "./fiction/LoveLetter"
+
 // Birthdays
 export { default as GraceLo20 } from "./birthdays/GraceLo20"
 export { default as GraceLi21 } from "./birthdays/GraceLi21"

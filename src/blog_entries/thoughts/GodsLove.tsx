@@ -35,7 +35,7 @@ const GodsLove = () => {
 
                     <Text pb={"10vh"}>Last summer, I read Tim Keller’s <Text as="span" fontStyle="italic">“The Meaning of Marriage.”</Text></Text>
                     <Text pb={"5vh"}>Not that I’m thinking of getting married soon, </Text>
-                    <Text pb={"10vh"}>but it’s always good to plan ahead<FootnoteRef index={2} id="plan-ahead" />.</Text>
+                    <Text pb={"10vh"}>but it’s always good to plan ahead.<FootnoteRef index={2} id="plan-ahead" /></Text>
                     <Text pb={"10vh"}>One thing I’m not particularly happy about is that even after reading something really good, I’m quick to forget it.</Text>
                     <Text pb={"5vh"}>Yet one thing that's stuck with me from that book is Keller’s definition of <Text as="span" fontStyle="italic">love.</Text></Text>
                     <Text pb={"10vh"}>He says that love isn’t a feeling, but rather a commitment. </Text>

@@ -1,3 +1,5 @@
+import React from "react";
+
 export type BlogCardType = {
   route: string,
   title: string,
@@ -5,7 +7,8 @@ export type BlogCardType = {
   release: string,
   image: string,
   alt: string,
-  pin: boolean
+  pin: boolean,
+  component: React.ElementType
 }
 
 export type BlogImageType = {

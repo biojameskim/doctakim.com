@@ -3,7 +3,7 @@ import GracefulImage from "../GracefulImage"
 import { Link as LinkRouter } from 'react-router-dom'
 import { BlogCardType } from "../../types/BlogTypes"
 
-const BlogCard = ({ route, title, description, release, image, alt, pin }: BlogCardType) => {
+const BlogCard = ({ route, title, description, release, image, alt, pin }: Omit<BlogCardType, 'component'>) => {
     return (
         <LinkRouter to={route} style={{ display: 'flex', flexDirection: 'column', WebkitTapHighlightColor: "transparent" }}>
             <Stack as="a"
