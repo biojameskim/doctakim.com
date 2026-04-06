@@ -1,9 +1,15 @@
 export const topSongs = [
     {
-        "title": "Good Flirts (feat. Kendrick Lamar & Momo Boyd)",
-        "artist": "Baby Keem, Kendrick Lamar, Momo Boyd",
-        "cover": "https://i.scdn.co/image/ab67616d0000b27308a27a15cf37664f0dab6ab7",
-        "link": "https://open.spotify.com/track/5sHeIGDbdzw8DeO57XZKIy"
+        "title": "Butterfly (Feat. Loopy)",
+        "artist": "ASH ISLAND, Loopy",
+        "cover": "https://i.scdn.co/image/ab67616d0000b2734b298b413c01a66a85fa5347",
+        "link": "https://open.spotify.com/track/1pRSaQf9bPUDRWXOxWc3Vu"
+    },
+    {
+        "title": "WATER (Feat. Car, the garden)",
+        "artist": "ASH ISLAND, Car, the garden",
+        "cover": "https://i.scdn.co/image/ab67616d0000b2734b298b413c01a66a85fa5347",
+        "link": "https://open.spotify.com/track/4JgId66CQQw0YnoeMEVvd8"
     },
     {
         "title": "Nothing Left",
@@ -12,22 +18,16 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/0Sq6JK9kyC4MQa3KrJj5CB"
     },
     {
-        "title": "Half of Me",
-        "artist": "Kim Seungmin, RYUL, Layone, OLNL, Cosmic Boy",
-        "cover": "https://i.scdn.co/image/ab67616d0000b273253eab2ea080ea963e7d8a47",
-        "link": "https://open.spotify.com/track/6PamJ2UnSulqQh7ctzSxzu"
-    },
-    {
         "title": "TOO LATE (Feat. GIRIBOY)",
         "artist": "SEIN, Gist, GIRIBOY",
         "cover": "https://i.scdn.co/image/ab67616d0000b2738ada17b46aab5169f5928fc1",
         "link": "https://open.spotify.com/track/4CrPNUTchkUzbz4LGACtch"
     },
     {
-        "title": "No Security",
-        "artist": "Baby Keem",
-        "cover": "https://i.scdn.co/image/ab67616d0000b27308a27a15cf37664f0dab6ab7",
-        "link": "https://open.spotify.com/track/4LGFc5Vv5YlqTvWIa37CbG"
+        "title": "Summer Eyes",
+        "artist": "OHYUL of LNGSHOT",
+        "cover": "https://i.scdn.co/image/ab67616d0000b273b9fcfd72373138cad8b96ede",
+        "link": "https://open.spotify.com/track/7A5wLWFB6m3n7gZ4Fg1Z1r"
     }
 ];
 
@@ -43,9 +43,9 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/0du5cEVh5yTK9QJze8zA0C"
     },
     {
-        "name": "Baby Keem",
-        "image": "https://i.scdn.co/image/ab6761610000e5ebe45a6e4cee2ef5f4c0fec713",
-        "link": "https://open.spotify.com/artist/5SXuuuRpukkTvsLuUknva1"
+        "name": "ASH ISLAND",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb3e4becdd5732e924b98d4d9a",
+        "link": "https://open.spotify.com/artist/7IEhlwWQA7pCkEvzwwHehE"
     },
     {
         "name": "Leellamarz",
@@ -53,8 +53,8 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/79g2STpP2iV1xfgHuhrhX0"
     },
     {
-        "name": "HAON",
-        "image": "https://i.scdn.co/image/ab6761610000e5ebaae8ad30b0c3f56562bb59b1",
-        "link": "https://open.spotify.com/artist/2krUNMgFZYm5s4Nn0g91W9"
+        "name": "TOIL",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb078840d41e1ac86f88d7522e",
+        "link": "https://open.spotify.com/artist/698zn8fEOIr1OrfqG4283S"
     }
 ];
