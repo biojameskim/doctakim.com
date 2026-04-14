@@ -13,7 +13,8 @@ import {
   Prayer,
   WhyCornell,
   GodsLove,
-  LoveLetter
+  LoveLetter,
+  ChasingTheSun,
 } from "../blog_entries/blog_entries";
 
 // Data for Stories in Blog
@@ -157,13 +158,23 @@ export const thoughts_data: BlogCardType[] = [
 // Data for Fiction in Blog
 export const fiction_data: BlogCardType[] = [
   {
-    route: '/blog/letter-to-former-lover',
+    route: '/blog/chasing-the-sun',
     release: 'April 2026',
+    title: 'Chasing the sun',
+    description: "",
+    image: "https://res.cloudinary.com/doypjterz/image/upload/v1776139067/chasing-the-sun_agoobm.png",
+    alt: '',
+    pin: false,
+    component: ChasingTheSun
+  },
+  {
+    route: '/blog/letter-to-former-lover',
+    release: 'January 2026',
     title: 'A letter to a former lover',
     description: "",
     image: "https://res.cloudinary.com/doypjterz/image/upload/v1775339771/gemini_1_lp9oi2.png",
     alt: '',
     pin: false,
     component: LoveLetter
-  }
+  },
 ]

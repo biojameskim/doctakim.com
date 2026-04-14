@@ -17,6 +17,7 @@ export { default as GodsLove } from "./thoughts/GodsLove"
 
 // Fiction
 export { default as LoveLetter } from "./fiction/LoveLetter"
+export { default as ChasingTheSun } from "./fiction/ChasingTheSun"
 
 // Birthdays
 export { default as GraceLo20 } from "./birthdays/GraceLo20"
