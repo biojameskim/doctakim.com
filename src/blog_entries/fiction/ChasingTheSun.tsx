@@ -34,8 +34,8 @@ const GodsLove = () => {
                     <Text pb="20vh">The drive to work is always rushed.</Text>
                     <Text pb="5vh">I calculated how long it takes to make breakfast, shower, and get dressed—</Text>
                     <Text pb="20vh">working backwards to set my alarm.</Text>
-                    <Text pb="5vh">And I swear I left myself plenty of time.</Text>
-                    <Text pb="20vh">But I’m always racing the clock.</Text>
+                    <Text pb="5vh">And I swear I left myself plenty of time,</Text>
+                    <Text pb="20vh">but I’m always racing the clock.</Text>
                     <Text pb="10vh">And the later I am, the worse my luck is. </Text>
                     <Text pb="5vh">The lights taunt me today, flashing red just as I approach.</Text>
                     <Text pb="10vh">And to hell with that damned slow minivan in front of me. </Text>
@@ -49,14 +49,14 @@ const GodsLove = () => {
                     <Text pb="20vh">I wave at Jerome, who’s manning the front desk today.</Text>
                     <Text pb="45vh">In the back of the office, I put my bag down and finally get a chance to breathe.</Text>
                     <Text pb="30vh">Today marks year seven at the post office.</Text>
-                    <Text pb="20vh">I don’t like talking with customers so I'd much rather be in the back, sorting through all the mail.</Text>
+                    <Text pb="20vh">I don’t like talking with customers so I very much enjoy being in the back, sorting through all the mail.</Text>
                     <Text pb="10vh">It gets repetitive, but I know it’s important work. </Text>
                     <Text pb="30vh">Jerome tells me we run America.</Text>
                     <Text pb="20vh">It’s busier around this time of year, and I only last 3 hours before my neck needs a break. </Text>
                     <Text pb="10vh">I step outside for a cigarette.</Text>
                     <Text pb="20vh">In the artificial garden they planted around the parking lot, the hydrangeas are blooming again.</Text>
                     <Text pb="5vh">But the slight drizzle extinguishes my flame, </Text>
-                    <Text pb="5vh">cutting my break short.</Text>
+                    <Text pb="5vh">and cuts my break short.</Text>
 
                     <Text fontWeight="bold" paddingBottom={"40vh"}>—</Text>
 
@@ -66,7 +66,7 @@ const GodsLove = () => {
                     <Text pb="5vh">I roll down my window. </Text>
                     <Text pb="20vh">It always smells the best after it rains.</Text>
                     <Text pb="10vh">It’s not a long drive back. </Text>
-                    <Text pb="5vh">Just straight down Westin and then a right at the big Safeway. </Text>
+                    <Text pb="5vh">Just straight down Westin and then a <Text as="span" fontStyle="italic">right</Text> at the big Safeway. </Text>
                     <Text pb="30vh">A little further down and you’ll see the gate to my community, <Text as="span" fontStyle="italic">Foxborough Estates.</Text></Text>
                     <Text pb="20vh">I light a cigarette.</Text>
                     <Text pb="10vh">Winter must be ending because the sun is getting longer. </Text>
@@ -81,10 +81,10 @@ const GodsLove = () => {
                     <Text pb="5vh">I look forward and see the Safeway.</Text>
                     <Text pb="20vh">I look up to my left and see the sun.</Text>
                     <Text pb="25vh">The light turns green.</Text>
-                    <Text pb="5vh">I grip the steering wheel a little harder.</Text>
                     <Text pb="20vh">My cigarette burns a little brighter.</Text>
+                    <Text pb="5vh">I grip the steering wheel a little harder,</Text>
                     <Text pb="15vh">And I turn.</Text>
-                    <Text pb="40vh" as="span" fontStyle="italic">Left.</Text>
+                    <Text pb="45vh" as="span" fontStyle="italic">Left.</Text>
 
                     <Text pb="20vh">I don’t know how.</Text>
                     <Text pb="40vh">Nor do I know where.</Text>

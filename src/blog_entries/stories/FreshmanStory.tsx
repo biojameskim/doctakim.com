@@ -1,8 +1,9 @@
-import { Heading, Text, Stack, Box } from "@chakra-ui/react";
+import { Heading, Text, Stack, Box, Link } from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
 import BlogImage from "../../components/blog/BlogImage";
 import { useEffect } from "react";
 import { useBlogStyles } from "../blogStyles";
+import { FootnoteRef, FootnotesSection, FootnoteItem } from "../../components/blog/Footnotes";
 
 const FreshmanStory = () => {
   const BLOG_STYLES = useBlogStyles();
@@ -21,7 +22,7 @@ const FreshmanStory = () => {
         <Heading
           {...BLOG_STYLES.title}
         >
-          My Freshman College Story
+          My Freshman College Story<FootnoteRef index={1} id="title" />
         </Heading>
 
         <Text {...BLOG_STYLES.date}>
@@ -746,6 +747,17 @@ const FreshmanStory = () => {
               <source src="../images/blog_pictures/My-Freshman-College-Story/Pictures/48bye hilc.mov" />
             </video>
           </Box>
+
+          {/* Footnotes Section */}
+          <FootnotesSection>
+            <FootnoteItem index={1} id="title">
+              <Text as="span">
+                This blog is an homage to my brother's blog of the <Link href="https://www.biojaeson.com/page_1/my-freshman-college-story" color="green.500">same title</Link>.
+                I imitated the structure of his blog for this one because I liked it so much.
+                He's the one who got me started with blogging, and I largely attribute the start of my love for writing to him.
+              </Text>
+            </FootnoteItem>
+          </FootnotesSection>
 
           <Text pb="10vh"></Text>
         </Stack>
