@@ -36,22 +36,24 @@ const GodsLove = () => {
                     <Text pb="20vh">working backwards to set my alarm.</Text>
                     <Text pb="5vh">And I swear I left myself plenty of time,</Text>
                     <Text pb="20vh">but I’m always racing the clock.</Text>
-                    <Text pb="10vh">And the later I am, the worse my luck is. </Text>
+                    {/* <Text pb="10vh">And the later I am, the worse my luck is. </Text>
                     <Text pb="5vh">The lights taunt me today, flashing red just as I approach.</Text>
                     <Text pb="10vh">And to hell with that damned slow minivan in front of me. </Text>
                     <Text pb="20vh">I race past to the left.</Text>
                     <Text pb="5vh">When I look towards the driver to give a dirty look, </Text>
                     <Text pb="20vh">a sweet old lady smiles at me. </Text>
-                    <Text pb="35vh">It’s forced, but I smile back.</Text>
+                    <Text pb="35vh">It’s forced, but I smile back.</Text> */}
 
-                    <Text pb="20vh">I pull in to my favorite spot in the corner of the parking lot.</Text>
-                    <Text pb="5vh">I scurry into the office, one hand holding my bag, the other grappling with the last two buttons under my collar. </Text>
-                    <Text pb="20vh">I wave at Jerome, who’s manning the front desk today.</Text>
+                    <Text pb="5vh">I pull in to my favorite spot in the corner of the parking lot.</Text>
+                    <Text pb="10vh">My tires have gently eroded the gravel underneath, leaving two faint lines of dirt.</Text>
+
+                    <Text pb="20vh">I scurry into the office, one hand holding my bag, the other grappling with the last two buttons under my collar. </Text>
+                    {/* <Text pb="20vh">I wave at Jerome, who’s manning the front desk today.</Text> */}
                     <Text pb="45vh">In the back of the office, I put my bag down and finally get a chance to breathe.</Text>
                     <Text pb="30vh">Today marks year seven at the post office.</Text>
-                    <Text pb="20vh">I don’t like talking with customers so I very much enjoy being in the back, sorting through all the mail.</Text>
+                    <Text pb="20vh">I don’t enjoy talking with customers so I'm usually in the back, sorting through all the mail.</Text>
                     <Text pb="10vh">It gets repetitive, but I know it’s important work. </Text>
-                    <Text pb="30vh">Jerome tells me we run America.</Text>
+                    <Text pb="30vh">My coworker tells me we run America.</Text>
                     <Text pb="20vh">It’s busier around this time of year, and I only last 3 hours before my neck needs a break. </Text>
                     <Text pb="10vh">I step outside for a cigarette.</Text>
                     <Text pb="20vh">In the artificial garden they planted around the parking lot, the hydrangeas are blooming again.</Text>
