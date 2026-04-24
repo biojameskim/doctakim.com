@@ -36,13 +36,14 @@ const GodsLove = () => {
                     <Text pb="20vh">working backwards to set my alarm.</Text>
                     <Text pb="5vh">And I swear I left myself plenty of time,</Text>
                     <Text pb="20vh">but I’m always racing the clock.</Text>
-                    {/* <Text pb="10vh">And the later I am, the worse my luck is. </Text>
+                    {/* <Text pb="10vh">And the later I am, the worse my luck is. </Text> */}
                     <Text pb="5vh">The lights taunt me today, flashing red just as I approach.</Text>
-                    <Text pb="10vh">And to hell with that damned slow minivan in front of me. </Text>
-                    <Text pb="20vh">I race past to the left.</Text>
-                    <Text pb="5vh">When I look towards the driver to give a dirty look, </Text>
-                    <Text pb="20vh">a sweet old lady smiles at me. </Text>
-                    <Text pb="35vh">It’s forced, but I smile back.</Text> */}
+                    <Text pb="15vh">And to hell with that damned slow minivan in front of me. </Text>
+                    {/* <Text pb="20vh">I race past to the left.</Text> */}
+                    <Text pb="10vh">I race past to the left, ready to give dirty look, </Text>
+                    <Text pb="20vh">but a sweet old lady is smiling at me. </Text>
+                    {/* <Text pb="35vh">It’s forced, but I smile back.</Text> */}
+                    <Text fontWeight="bold" paddingBottom={"40vh"}>—</Text>
 
                     <Text pb="5vh">I pull in to my favorite spot in the corner of the parking lot.</Text>
                     <Text pb="10vh">My tires have gently eroded the gravel underneath, leaving two faint lines of dirt.</Text>
