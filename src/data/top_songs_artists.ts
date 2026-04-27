@@ -24,10 +24,10 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/4JgId66CQQw0YnoeMEVvd8"
     },
     {
-        "title": "TOO LATE (Feat. GIRIBOY)",
-        "artist": "SEIN, Gist, GIRIBOY",
-        "cover": "https://i.scdn.co/image/ab67616d0000b2738ada17b46aab5169f5928fc1",
-        "link": "https://open.spotify.com/track/4CrPNUTchkUzbz4LGACtch"
+        "title": "SAY MY NAME",
+        "artist": "DIMO REX",
+        "cover": "https://i.scdn.co/image/ab67616d0000b2739eec196e7ea4b2402ee9b417",
+        "link": "https://open.spotify.com/track/5Rh1Uh43TL5maI0LQaR818"
     }
 ];
 
@@ -43,9 +43,9 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/2u7CP5T30c8ctenzXgEV1W"
     },
     {
-        "name": "SEIN",
-        "image": "https://i.scdn.co/image/ab6761610000e5ebb4a6bab6fe76c32594e164ae",
-        "link": "https://open.spotify.com/artist/5lFfUYKyl9GIFe3dmrc0eg"
+        "name": "GRIO",
+        "image": "https://i.scdn.co/image/ab6761610000e5eba6acd9254b68531a13885197",
+        "link": "https://open.spotify.com/artist/0MjC05t54hhvrqLBsIeTbu"
     },
     {
         "name": "Dept",
@@ -53,8 +53,8 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/48JtfAggQQpfUXQNxkGm5U"
     },
     {
-        "name": "BIG Naughty",
-        "image": "https://i.scdn.co/image/ab6761610000e5ebc381cb345091097555f955f4",
-        "link": "https://open.spotify.com/artist/7cEaNXXTHx3LokbjUUyHal"
+        "name": "DIMO REX",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb3acb943a00626ac299c3d755",
+        "link": "https://open.spotify.com/artist/0GAYGBzZBTtYKkHIZs9ADH"
     }
 ];
