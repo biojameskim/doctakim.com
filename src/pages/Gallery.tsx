@@ -103,6 +103,7 @@ const Gallery = () => {
                                                     src={photo.filename.startsWith('http') ? photo.filename : `/gallery/${selectedFolder?.year}/${selectedFolder?.month}/${photo.filename}`}
                                                     alt={photo.caption || `Photo ${index + 1}`}
                                                     caption={photo.caption}
+                                                    captionLink={photo.captionLink}
                                                     orientation={photo.orientation}
                                                     maxW={photo.maxW}
                                                     borderRadius="none"
@@ -155,6 +156,7 @@ const Gallery = () => {
                                                     src={photo.filename.startsWith('http') ? photo.filename : `/gallery/${selectedFolder?.year}/${selectedFolder?.month}/${photo.filename}`}
                                                     alt={photo.caption || `Photo ${index + 1}`}
                                                     caption={photo.caption}
+                                                    captionLink={photo.captionLink}
                                                     orientation={photo.orientation}
                                                     maxW={photo.maxW}
                                                     borderRadius="none"

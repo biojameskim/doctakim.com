@@ -1,4 +1,5 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, Link } from "@chakra-ui/react";
+import { Link as LinkRouter } from "react-router-dom";
 import GracefulImage from "../GracefulImage";
 import { BlogImageType } from "../../types/BlogTypes";
 import { useColorModeValue } from "@chakra-ui/react";
@@ -12,6 +13,7 @@ const BlogImage = ({
   src,
   alt,
   caption,
+  captionLink,
   caption2,
   orientation,
   maxW = "350px",
@@ -21,6 +23,7 @@ const BlogImage = ({
   pt,
   pb,
 }: BlogImageType) => {
+  const captionColor = useColorModeValue("gray.500", "gray.400");
 
   return (
     <Box
@@ -39,10 +42,16 @@ const BlogImage = ({
         objectFit={orientation === "override" ? "contain" : "cover"}
       />
       <Box height="0.5rem"></Box>
-      <Text as={italic ? "i" : "p"} fontSize={{ base: "0.8rem", md: "0.8rem" }} fontFamily={captionFontFamily} color={useColorModeValue("gray.500", "gray.400")}>
-        {caption}
+      <Text as={italic ? "i" : "p"} fontSize={{ base: "0.8rem", md: "0.8rem" }} fontFamily={captionFontFamily} color={captionColor}>
+        {captionLink ? (
+          <Link as={LinkRouter} to={captionLink} textDecoration="underline">
+            {caption}
+          </Link>
+        ) : (
+          caption
+        )}
       </Text>
-      <Text as={italic ? "i" : "p"} fontSize={{ base: "0.8rem", md: "0.8rem" }} fontFamily={captionFontFamily} color={useColorModeValue("gray.500", "gray.400")}>
+      <Text as={italic ? "i" : "p"} fontSize={{ base: "0.8rem", md: "0.8rem" }} fontFamily={captionFontFamily} color={captionColor}>
         {caption2}
       </Text>
     </Box>

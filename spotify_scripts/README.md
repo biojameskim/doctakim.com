@@ -4,6 +4,10 @@ This folder contains scripts to automatically fetch top songs and artists from S
 
 ## Setup (One-Time)
 
+### Set `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET` in `.env` file
+
+Go to Spotify Developer Dashboard (<https://developer.spotify.com/dashboard>) to get these.
+
 ### Generate Refresh Token
 
 Run this command to get refresh token:
@@ -13,6 +17,7 @@ npm run get-token
 ```
 
 This will:
+
 - Start a local server on port 8888
 - Print an authorization URL
 - Open the URL in your browser and authorize the app
@@ -30,6 +35,7 @@ npm run update-music
 ```
 
 This will:
+
 - Fetch your top 5 songs and top 5 artists from Spotify
 - Update `src/data/top_songs_artists.ts` with the new data
 
@@ -38,6 +44,7 @@ This will:
 By default, the script fetches your top tracks from the **last 4 weeks**. You can change this in `spotify_scripts/update_music.ts` by modifying the `time_range` parameter on lines 19-20:
 
 **Available options:**
+
 - `'short_term'` - Last ~4 weeks (default)
 - `'medium_term'` - Last ~6 months
 - `'long_term'` - All time (several years)
@@ -47,11 +54,13 @@ By default, the script fetches your top tracks from the **last 4 weeks**. You ca
 To automatically update your music data every 4 weeks, set up a cron job:
 
 1. **Edit your crontab:**
+
    ```bash
    crontab -e
    ```
 
 2. **Add this line** (runs at 2 AM on the 1st of every month):
+
    ```
    0 2 1 * * /Users/jinhan/repos/doctakim.com/spotify_scripts/cron_update_music.sh >> /Users/jinhan/repos/doctakim.com/spotify_scripts/cron.log 2>&1
    ```
@@ -67,14 +76,17 @@ You can also run `npm run update-music` manually whenever you want to update the
 ## Troubleshooting
 
 **Error: "INVALID_CLIENT: Insecure redirect URI"**
+
 - Make sure you added `http://127.0.0.1:8888/callback` (not localhost) to your Spotify app's Redirect URIs
 - Make sure you saved the changes in the Spotify Dashboard
 
 **Error: "EADDRINUSE: address already in use"**
+
 - Port 8888 is already in use
 - Kill the process: `lsof -ti:8888 | xargs kill -9`
 - Try again
 
 **Error: "Invalid access token"**
+
 - Your refresh token may have expired
 - Run `npm run get-token` again to get a new one

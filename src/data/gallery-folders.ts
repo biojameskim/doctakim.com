@@ -1,6 +1,7 @@
 export interface Photo {
     filename: string;
     caption?: string;
+    captionLink?: string;
     orientation: "v" | "h" | "override";
     maxW?: string;
 }
@@ -31,7 +32,7 @@ export const photoFolders: PhotoFolder[] = [
         photos: [
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1777698447/IMG_1123_henoqu.jpg",
-                caption: "",
+                caption: "vital",
                 orientation: "v"
             },
             {
@@ -41,7 +42,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1777698446/IMG_1133_iayeef.jpg",
-                caption: "",
+                caption: "egg rolls",
                 orientation: "h"
             },
             {
@@ -57,6 +58,7 @@ export const photoFolders: PhotoFolder[] = [
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1777698448/IMG_1236_harjms.jpg",
                 caption: "chasing the sun",
+                captionLink: "/blog/chasing-the-sun",
                 orientation: "v"
             },
             {
@@ -96,7 +98,7 @@ export const photoFolders: PhotoFolder[] = [
             },
             {
                 filename: "https://res.cloudinary.com/doypjterz/image/upload/v1777698453/IMG_1339_xbhipm.jpg",
-                caption: "",
+                caption: "weeee",
                 orientation: "v"
             },
             {

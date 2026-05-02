@@ -15,6 +15,7 @@ export type BlogImageType = {
   src: string | object,
   alt: string,
   caption?: string,
+  captionLink?: string,
   caption2?: string,
   orientation?: string,
   maxW?: string | object,

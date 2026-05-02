@@ -31,22 +31,22 @@ const GodsLove = () => {
             <div className="blog-text">
                 <Stack {...BLOG_STYLES.bodyContainer}>
 
-                    <Text pb="20vh">The drive to work is always rushed.</Text>
+                    <Text pb="30vh">The drive to work is always rushed.</Text>
                     <Text pb="5vh">I calculated how long it takes to make breakfast, shower, and get dressed—</Text>
-                    <Text pb="20vh">working backwards to set my alarm.</Text>
+                    <Text pb="30vh">working backwards to set my alarm.</Text>
                     <Text pb="5vh">And I swear I left myself plenty of time,</Text>
-                    <Text pb="20vh">but I’m always racing the clock.</Text>
+                    <Text pb="35vh">but I’m always racing the clock.</Text>
                     {/* <Text pb="10vh">And the later I am, the worse my luck is. </Text> */}
-                    <Text pb="5vh">The lights taunt me today, flashing red just as I approach.</Text>
-                    <Text pb="15vh">And to hell with that damned slow minivan in front of me. </Text>
+                    <Text pb="10vh">The lights taunt me today, flashing red just as I approach.</Text>
+                    <Text pb="30vh">And to hell with that damned slow minivan in front of me. </Text>
                     {/* <Text pb="20vh">I race past to the left.</Text> */}
-                    <Text pb="10vh">I race past to the left, ready to give dirty look, </Text>
-                    <Text pb="20vh">but a sweet old lady is smiling at me. </Text>
+                    <Text pb="15vh">I race past to the left, ready to give dirty look, </Text>
+                    <Text pb="20vh">But a sweet old lady is smiling at me. </Text>
                     {/* <Text pb="35vh">It’s forced, but I smile back.</Text> */}
                     <Text fontWeight="bold" paddingBottom={"40vh"}>—</Text>
 
                     <Text pb="5vh">I pull in to my favorite spot in the corner of the parking lot.</Text>
-                    <Text pb="10vh">My tires have gently eroded the gravel underneath, leaving two faint lines of dirt.</Text>
+                    <Text pb="15vh">My tires have gently eroded the gravel underneath, leaving two faint lines of dirt.</Text>
 
                     <Text pb="20vh">I scurry into the office, one hand holding my bag, the other grappling with the last two buttons under my collar. </Text>
                     {/* <Text pb="20vh">I wave at Jerome, who’s manning the front desk today.</Text> */}
