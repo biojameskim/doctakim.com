@@ -24,10 +24,10 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/29iva9idM6rFCPUlu7Rhxl"
     },
     {
-        "title": "Butterfly (Feat. Loopy)",
-        "artist": "ASH ISLAND, Loopy",
-        "cover": "https://i.scdn.co/image/ab67616d0000b2734b298b413c01a66a85fa5347",
-        "link": "https://open.spotify.com/track/1pRSaQf9bPUDRWXOxWc3Vu"
+        "title": "BDB",
+        "artist": "BIG Naughty, pH-1, lIlBOI, Woodie Gochild",
+        "cover": "https://i.scdn.co/image/ab67616d0000b273a052001a600aa60907111cce",
+        "link": "https://open.spotify.com/track/2ByhyDS34VGCRnwdwBWLnk"
     }
 ];
 
