@@ -24,10 +24,10 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/29iva9idM6rFCPUlu7Rhxl"
     },
     {
-        "title": "BDB",
-        "artist": "BIG Naughty, pH-1, lIlBOI, Woodie Gochild",
-        "cover": "https://i.scdn.co/image/ab67616d0000b273a052001a600aa60907111cce",
-        "link": "https://open.spotify.com/track/2ByhyDS34VGCRnwdwBWLnk"
+        "title": "Just Friend?",
+        "artist": "Gist, Suen",
+        "cover": "https://i.scdn.co/image/ab67616d0000b2737a723ea60753a2dca0363ae0",
+        "link": "https://open.spotify.com/track/5opWwg1VdkYg7P9PxuPlaV"
     }
 ];
 
@@ -38,14 +38,9 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/6b29EYSqnLhUyxC3yyNbyr"
     },
     {
-        "name": "AKMU",
-        "image": "https://i.scdn.co/image/ab6761610000e5eb1d615b0cee186e63bd735c19",
-        "link": "https://open.spotify.com/artist/6OwKE9Ez6ALxpTaKcT5ayv"
-    },
-    {
-        "name": "pH-1",
-        "image": "https://i.scdn.co/image/ab6761610000e5ebb4e1a93443ecd2faf97cc2e1",
-        "link": "https://open.spotify.com/artist/2u7CP5T30c8ctenzXgEV1W"
+        "name": "Gist",
+        "image": "https://i.scdn.co/image/ab6761610000e5ebb5c35dbc24274551f58e6681",
+        "link": "https://open.spotify.com/artist/7MWT3sTDz6GemZla4Y5oCk"
     },
     {
         "name": "GRIO",
@@ -53,8 +48,13 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/0MjC05t54hhvrqLBsIeTbu"
     },
     {
-        "name": "Dept",
-        "image": "https://i.scdn.co/image/ab6761610000e5ebf4049abe534413dcb05448cc",
-        "link": "https://open.spotify.com/artist/48JtfAggQQpfUXQNxkGm5U"
+        "name": "DIMO REX",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb3acb943a00626ac299c3d755",
+        "link": "https://open.spotify.com/artist/0GAYGBzZBTtYKkHIZs9ADH"
+    },
+    {
+        "name": "Jiggy",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb25f8cd0cc5a52607c615a6c1",
+        "link": "https://open.spotify.com/artist/2sa36h30ZEDK6hEXv7IvP9"
     }
 ];
