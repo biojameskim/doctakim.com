@@ -6,28 +6,28 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/0VhJrBsZWXVXY7vkHpP66T"
     },
     {
-        "title": "Forever & ever more (Feat. Mingginyu, Choi Seong)",
-        "artist": "GRIO, Mingginyu, Choi Seong",
-        "cover": "https://i.scdn.co/image/ab67616d0000b2738527927e59d7bae6f1ba4bf4",
-        "link": "https://open.spotify.com/track/0kETTMrXIBmYWjl1RqEPRc"
-    },
-    {
         "title": "xoxo (feat. Leellamarz)",
         "artist": "TRADE L, Leellamarz",
         "cover": "https://i.scdn.co/image/ab67616d0000b273e48f04195a0e0c57920eaf5f",
         "link": "https://open.spotify.com/track/67JCwSgOyfmrGELvb2SFPC"
     },
     {
-        "title": "YUKON",
-        "artist": "Justin Bieber",
-        "cover": "https://i.scdn.co/image/ab67616d0000b273d65c4773bc5061fd27facc5b",
-        "link": "https://open.spotify.com/track/29iva9idM6rFCPUlu7Rhxl"
+        "title": "Forever & ever more (Feat. Mingginyu, Choi Seong)",
+        "artist": "GRIO, Mingginyu, Choi Seong",
+        "cover": "https://i.scdn.co/image/ab67616d0000b2738527927e59d7bae6f1ba4bf4",
+        "link": "https://open.spotify.com/track/0kETTMrXIBmYWjl1RqEPRc"
     },
     {
         "title": "Just Friend?",
         "artist": "Gist, Suen",
         "cover": "https://i.scdn.co/image/ab67616d0000b2737a723ea60753a2dca0363ae0",
         "link": "https://open.spotify.com/track/5opWwg1VdkYg7P9PxuPlaV"
+    },
+    {
+        "title": "LONDON",
+        "artist": "LEON",
+        "cover": "https://i.scdn.co/image/ab67616d0000b273a1e44054e970a6cdc70ca161",
+        "link": "https://open.spotify.com/track/7wvDBpsWzCdjjXCn24E654"
     }
 ];
 
@@ -48,9 +48,9 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/0MjC05t54hhvrqLBsIeTbu"
     },
     {
-        "name": "DIMO REX",
-        "image": "https://i.scdn.co/image/ab6761610000e5eb3acb943a00626ac299c3d755",
-        "link": "https://open.spotify.com/artist/0GAYGBzZBTtYKkHIZs9ADH"
+        "name": "Nosun",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb491f4067247dd222b89ec56f",
+        "link": "https://open.spotify.com/artist/0BHYZCuuyLl53LVgeC3pUa"
     },
     {
         "name": "Jiggy",
