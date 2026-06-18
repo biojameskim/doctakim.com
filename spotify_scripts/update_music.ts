@@ -12,8 +12,33 @@ const spotifyApi = new SpotifyWebApi({
 });
 
 async function updateMusicData() {
+    let data;
     try {
-        const data = await spotifyApi.refreshAccessToken();
+        data = await spotifyApi.refreshAccessToken();
+    } catch (error: any) {
+        // Spotify (effective July 20, 2026): refresh tokens expire after six months.
+        // An expired/revoked token returns HTTP 400 invalid_grant. Per Spotify's guidance,
+        // do NOT retry — discard it and re-run the sign-in flow to mint a new one.
+        const isInvalidGrant = error?.statusCode === 400 && error?.body?.error === 'invalid_grant';
+        if (isInvalidGrant) {
+            console.error(
+                '\n=== SPOTIFY REFRESH TOKEN EXPIRED (invalid_grant) ===\n' +
+                'The stored SPOTIFY_REFRESH_TOKEN is no longer valid and must be replaced.\n' +
+                'To re-authorize:\n' +
+                '  1. Run `npm run get-token` locally and complete the Spotify sign-in.\n' +
+                '  2. Copy the new refresh token into your .env and update the GitHub secret:\n' +
+                '       gh secret set SPOTIFY_REFRESH_TOKEN\n' +
+                '  3. Re-run this workflow (Actions > Update Spotify Music > Run workflow).\n' +
+                '=====================================================\n'
+            );
+        } else {
+            console.error('Error refreshing Spotify access token:', error);
+        }
+        // Exit non-zero so the GitHub Action fails loudly instead of silently going green.
+        process.exit(1);
+    }
+
+    try {
         spotifyApi.setAccessToken(data.body['access_token']);
 
         const topTracks = await spotifyApi.getMyTopTracks({ limit: 5, time_range: 'short_term' });
@@ -40,6 +65,7 @@ async function updateMusicData() {
         console.log('Successfully updated music data!');
     } catch (error) {
         console.error('Error updating music data:', error);
+        process.exit(1);
     }
 }
 

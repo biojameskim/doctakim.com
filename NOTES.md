@@ -35,3 +35,12 @@ When uploading any photos, use lossy compression to reduce file size.
 
 ### Images
 - Hosted on Cloudinary
+
+### Spotify Refresh Token (re-auth runbook)
+As of July 20, 2026 Spotify refresh tokens expire after six months. When the stored
+token expires, the weekly `Update Spotify Music` Action fails with `invalid_grant`
+and GitHub emails the failure. To re-authorize:
+1. `npm run get-token` and complete the Spotify sign-in.
+2. Update the GitHub secret: `gh secret set SPOTIFY_REFRESH_TOKEN` (paste the new
+   token), and update `.env` for local runs.
+3. Re-run the workflow: Actions > Update Spotify Music > Run workflow.
