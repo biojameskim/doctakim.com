@@ -67,7 +67,7 @@ const HerFace = () => {
                     <Text pb="20vh">Emily’s nine next week.</Text> 
                     <Text pb="10vh">I don’t want to give up, but with each day that passes, hope slowly evades me.</Text> 
                     <Text pb="5vh">Every day is another day my mother ages.</Text> 
-                    <Text pb="20vh">Another day where “today” might be her last. </Text> 
+                    <Text pb="20vh">Another day where <Text as="span" fontStyle="italic">today</Text> might be her last. </Text> 
                     <Text pb="40vh">Then how could I possibly find her?</Text> 
                     <Text pb="5vh">But now—</Text> 
                     <Text pb="25vh">I’m no longer afraid.</Text> 
