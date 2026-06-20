@@ -15,6 +15,7 @@ import {
   GodsLove,
   LoveLetter,
   ChasingTheSun,
+  HerFace,
 } from "../blog_entries/blog_entries";
 
 // Data for Stories in Blog
@@ -157,6 +158,16 @@ export const thoughts_data: BlogCardType[] = [
 
 // Data for Fiction in Blog
 export const fiction_data: BlogCardType[] = [
+  {
+    route: '/blog/her-face',
+    release: 'June 2026',
+    title: 'Her face',
+    description: "",
+    image: "https://res.cloudinary.com/doypjterz/image/upload/v1781965382/her-face_aol44b.png",
+    alt: '',
+    pin: false,
+    component: HerFace
+  },
   {
     route: '/blog/chasing-the-sun',
     release: 'April 2026',
