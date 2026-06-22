@@ -2,7 +2,8 @@ name: Update Spotify Music
 
 on:
   schedule:
-    # Weekly schedule (Mondays at 07:00 EST = 12:00 UTC).
+    # Weekly, Mondays at 12:00 UTC. GitHub cron is always UTC (no DST adjustment),
+    # so this lands at 08:00 EDT in summer / 07:00 EST in winter.
     - cron: "0 12 * * 1"
   workflow_dispatch:
 
