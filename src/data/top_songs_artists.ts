@@ -12,16 +12,16 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/054sC9yq2txJbEdTvsih2v"
     },
     {
-        "title": "Joy, Sorrow, A Beautiful Heart",
-        "artist": "AKMU",
-        "cover": "https://i.scdn.co/image/ab67616d0000b273bd15713cf9824b7842bcd290",
-        "link": "https://open.spotify.com/track/3yKUJbZjAWlteUSjnNv3UK"
-    },
-    {
         "title": "TikTok(feat.g0nny)",
         "artist": "Peakboy, g0nny",
         "cover": "https://i.scdn.co/image/ab67616d0000b27379ee276fdf3ecb84e1da8439",
         "link": "https://open.spotify.com/track/4BllKnDcK3zDN6Fsamb1ko"
+    },
+    {
+        "title": "SAY MY NAME",
+        "artist": "DIMO REX",
+        "cover": "https://i.scdn.co/image/ab67616d0000b2739eec196e7ea4b2402ee9b417",
+        "link": "https://open.spotify.com/track/5Rh1Uh43TL5maI0LQaR818"
     },
     {
         "title": "Heavy Serenade",
@@ -33,14 +33,14 @@ export const topSongs = [
 
 export const topArtists = [
     {
-        "name": "Olivia Rodrigo",
-        "image": "https://i.scdn.co/image/ab6761610000e5ebb14eb4dcfd2f3858bed06e44",
-        "link": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
-    },
-    {
         "name": "SeeYa",
         "image": "https://i.scdn.co/image/ab67616d0000b2738396387db00bf95a17f9d109",
         "link": "https://open.spotify.com/artist/3Mbxr8TL0Sny7dUNicKWm2"
+    },
+    {
+        "name": "Olivia Rodrigo",
+        "image": "https://i.scdn.co/image/ab6761610000e5ebb14eb4dcfd2f3858bed06e44",
+        "link": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
     },
     {
         "name": "dress",
@@ -48,13 +48,13 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/72b1XZ6SmDRgHEOB7ypw9z"
     },
     {
-        "name": "Milena",
-        "image": "https://i.scdn.co/image/ab6761610000e5ebf7a24a6e14e58a3106344603",
-        "link": "https://open.spotify.com/artist/2ODok2cPMF1Z1gZetfaL6n"
+        "name": "ZENE THE ZILLA",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb8bd5b71d17a832329dc0ad04",
+        "link": "https://open.spotify.com/artist/1MMbv4LTpwbh2APtXuwaZN"
     },
     {
-        "name": "TRADE L",
-        "image": "https://i.scdn.co/image/ab6761610000e5ebe13dfdbe28c8c79cad859e2e",
-        "link": "https://open.spotify.com/artist/6b29EYSqnLhUyxC3yyNbyr"
+        "name": "Ourealgoat",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4c2d2b8da9020eb463b3e27f",
+        "link": "https://open.spotify.com/artist/3YRGcoHMIvWleQfa0qa1D1"
     }
 ];
