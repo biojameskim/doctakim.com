@@ -108,8 +108,8 @@ const Home = () => {
                     <motion.div key={index} variants={itemVariants} style={{ willChange: 'opacity, transform' }}>
                       <Link href={song.link} isExternal _hover={{ textDecoration: 'none' }}>
                         <HStack spacing={3} p={2} borderRadius="lg" _hover={{ bg: hoverBg }} transition="all 0.2s" cursor="pointer">
-                          <Text fontWeight="bold" color="gray.400" w="16px" fontSize="sm">{index + 1}</Text>
-                          <Image src={song.cover} alt={song.title} boxSize="40px" borderRadius="md" objectFit="cover" fallbackSrc="https://via.placeholder.com/50" />
+                          <Text fontWeight="bold" color="gray.400" w="16px" flexShrink={0} fontSize="sm">{index + 1}</Text>
+                          <Image src={song.cover} alt={song.title} boxSize="40px" flexShrink={0} borderRadius="md" objectFit="cover" fallbackSrc="https://via.placeholder.com/50" />
                           <Box>
                             <Text fontWeight="medium" fontSize={{ base: "0.9rem", md: "0.8rem" }} noOfLines={1}>{song.title}</Text>
                             <Text fontWeight="normal" fontSize="0.7rem" color="gray.500" noOfLines={1}>{song.artist}</Text>
@@ -131,8 +131,8 @@ const Home = () => {
                     <motion.div key={index} variants={itemVariants} style={{ willChange: 'opacity, transform' }}>
                       <Link href={artist.link} isExternal _hover={{ textDecoration: 'none' }}>
                         <HStack spacing={3} p={2} borderRadius="lg" _hover={{ bg: hoverBg }} transition="all 0.2s" cursor="pointer">
-                          <Text fontWeight="bold" color="gray.400" w="16px" fontSize="sm">{index + 1}</Text>
-                          <Image src={artist.image} alt={artist.name} boxSize="40px" borderRadius="full" objectFit="cover" fallbackSrc="https://via.placeholder.com/50" />
+                          <Text fontWeight="bold" color="gray.400" w="16px" flexShrink={0} fontSize="sm">{index + 1}</Text>
+                          <Image src={artist.image} alt={artist.name} boxSize="40px" flexShrink={0} borderRadius="full" objectFit="cover" fallbackSrc="https://via.placeholder.com/50" />
                           <Text fontWeight="semibold" fontSize="sm">{artist.name}</Text>
                         </HStack>
                       </Link>
