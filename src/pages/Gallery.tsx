@@ -13,7 +13,7 @@ import {
     Image,
 } from "@chakra-ui/react";
 import { FaArrowLeft } from "react-icons/fa";
-import { photoFolders } from "../data/gallery-folders";
+import { photoFolders } from "../data/gallery";
 import BlogImage from "../components/blog/BlogImage";
 
 const Gallery = () => {
