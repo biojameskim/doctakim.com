@@ -24,24 +24,14 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/0UjaZizYPg1UWH96ybOZ0n"
     },
     {
-        "title": "Please Don't",
-        "artist": "SeeYa",
-        "cover": "https://i.scdn.co/image/ab67616d0000b2737f4c12ad8a94354fc9bb11d8",
-        "link": "https://open.spotify.com/track/054sC9yq2txJbEdTvsih2v"
+        "title": "TT (feat. Wonstein)",
+        "artist": "TRADE L, Wonstein",
+        "cover": "https://i.scdn.co/image/ab67616d0000b273c587a8081e183fc773b6cb7d",
+        "link": "https://open.spotify.com/track/4HHF5Qiq8BkACweSTH8QHU"
     }
 ];
 
 export const topArtists = [
-    {
-        "name": "Olivia Rodrigo",
-        "image": "https://i.scdn.co/image/ab6761610000e5ebb14eb4dcfd2f3858bed06e44",
-        "link": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
-    },
-    {
-        "name": "SeeYa",
-        "image": "https://i.scdn.co/image/ab67616d0000b2737f4c12ad8a94354fc9bb11d8",
-        "link": "https://open.spotify.com/artist/3Mbxr8TL0Sny7dUNicKWm2"
-    },
     {
         "name": "Ourealgoat",
         "image": "https://i.scdn.co/image/ab6761610000e5eb4c2d2b8da9020eb463b3e27f",
@@ -53,8 +43,18 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/4T6xiCykTP9rCNaEPU7D4q"
     },
     {
+        "name": "ZENE THE ZILLA",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb8bd5b71d17a832329dc0ad04",
+        "link": "https://open.spotify.com/artist/1MMbv4LTpwbh2APtXuwaZN"
+    },
+    {
         "name": "Blue.D",
         "image": "https://i.scdn.co/image/ab6761610000e5ebd67a90318aaa25129164bc31",
         "link": "https://open.spotify.com/artist/0rK0ZPLX4fKnFSbqs6gYfY"
+    },
+    {
+        "name": "Leellamarz",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4eaf216b35e7c5ac20f91c4d",
+        "link": "https://open.spotify.com/artist/79g2STpP2iV1xfgHuhrhX0"
     }
 ];
