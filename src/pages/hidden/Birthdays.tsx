@@ -1,8 +1,8 @@
-import { Box, Grid, Heading } from "@chakra-ui/react"
+import { Box, Flex, Heading, Link, Text } from "@chakra-ui/react"
 import { Helmet } from 'react-helmet';
+import { Link as LinkRouter } from 'react-router-dom'
 
 import { birthday_data } from "../../data/birthday_data"
-import BirthdayCard from "../../components/blog/BirthdayCard"
 
 const Birthdays = () => {
   return (
@@ -11,20 +11,20 @@ const Birthdays = () => {
         <title>biojameskim | Birthdays</title>
       </Helmet>
 
-      <Box w='full'>
-        <Heading textAlign='center' fontSize='3rem' fontWeight={'medium'} pt={'6vh'} pb={{ base: '2vh', md: '6vh' }} >
+      <Box maxW={{ base: '100%', md: '90%', lg: '85%' }} mx='auto'>
+        <Heading textAlign='center' fontSize={{ base: '2.2rem', md: '2.6rem' }} fontWeight={'medium'} pt={'8vh'} pb={{ base: '2vh', md: '4vh' }} >
           Birthdays
         </Heading>
-        <Grid w={{ base: 'full', md: '70%' }} mx='auto' templateColumns={{ md: 'repeat(3, 1fr)' }} gap='6' pb='10vh'>
-          {birthday_data.map((item, index) =>
-            <BirthdayCard
-              key={index}
-              title={item.title}
-              date={item.date}
-              route={item.route}
-            />
-          )}
-        </Grid>
+        <Flex flexDirection='column' gap='2' pb='10vh' align='center'>
+          {birthday_data.map((item) => (
+            <Link as={LinkRouter} to={item.route} key={item.route} fontSize={{ base: '0.9rem', md: '1rem' }}>
+              {item.title}
+              <Text as='span' color='gray.500' ml='2'>
+                {item.date}
+              </Text>
+            </Link>
+          ))}
+        </Flex>
       </Box>
     </div>
   )

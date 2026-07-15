@@ -106,17 +106,6 @@ body {
     box-shadow: 0px 12px 10px lightgray;
 }
 
-/* Coursework & Birthdays */
-.hover-card {
-    transition: all 200ms ease-in-out;
-}
-
-.hover-card:hover {
-    -webkit-transform: translateY(-3px);
-    transform: translateY(-3px);
-    box-shadow: 0px 12px 10px lightgray;
-}
-
 /* Skills */
 .skills-card {
     transition: all 200ms ease-in-out;
@@ -151,10 +140,6 @@ a:hover {
     width: auto;
     max-width: 500px;
     max-height: 500px;
-}
-
-.birthday-card-link {
-    width: 80%
 }
 
 .blog-text {
