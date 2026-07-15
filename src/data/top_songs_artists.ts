@@ -1,9 +1,21 @@
 export const topSongs = [
     {
+        "title": "Rain Drops (Feat. Chodan of QWER)",
+        "artist": "Mad Clown, Chodan",
+        "cover": "https://i.scdn.co/image/ab67616d0000b2732ebb1a2b7764c328c33dd54e",
+        "link": "https://open.spotify.com/track/0mJ95hBlmJ7FOdPDTBs7RD"
+    },
+    {
         "title": "Say It",
         "artist": "AtHeart",
         "cover": "https://i.scdn.co/image/ab67616d0000b273a2399c7f4150f8f4fccfb50c",
         "link": "https://open.spotify.com/track/2oDizoGsTI166tSrBsotGT"
+    },
+    {
+        "title": "Down the Line (Feat. Swervy)",
+        "artist": "untell, Swervy",
+        "cover": "https://i.scdn.co/image/ab67616d0000b2736d85605be1f8409447b398c3",
+        "link": "https://open.spotify.com/track/0oKTBfZFsEkzCxa7BC3pjx"
     },
     {
         "title": "Crushed",
@@ -16,18 +28,6 @@ export const topSongs = [
         "artist": "DIMO REX",
         "cover": "https://i.scdn.co/image/ab67616d0000b2739eec196e7ea4b2402ee9b417",
         "link": "https://open.spotify.com/track/5Rh1Uh43TL5maI0LQaR818"
-    },
-    {
-        "title": "우리 사랑했잖아",
-        "artist": "DAVICHI, T-ARA",
-        "cover": "https://i.scdn.co/image/ab67616d0000b27344aea13fd7a6f55173d76813",
-        "link": "https://open.spotify.com/track/0UjaZizYPg1UWH96ybOZ0n"
-    },
-    {
-        "title": "TT (feat. Wonstein)",
-        "artist": "TRADE L, Wonstein",
-        "cover": "https://i.scdn.co/image/ab67616d0000b273c587a8081e183fc773b6cb7d",
-        "link": "https://open.spotify.com/track/4HHF5Qiq8BkACweSTH8QHU"
     }
 ];
 
@@ -53,8 +53,8 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/0rK0ZPLX4fKnFSbqs6gYfY"
     },
     {
-        "name": "Leellamarz",
-        "image": "https://i.scdn.co/image/ab6761610000e5eb4eaf216b35e7c5ac20f91c4d",
-        "link": "https://open.spotify.com/artist/79g2STpP2iV1xfgHuhrhX0"
+        "name": "ARON",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb6c184b0f2f5abf3f3c251535",
+        "link": "https://open.spotify.com/artist/6h24lCuHJ3kk71eeCMxFpB"
     }
 ];
