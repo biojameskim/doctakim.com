@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Monaspace Neon';
+    src: url('./fonts/MonaspaceNeon/Monaspace Neon Var.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 100% 125%;
+    font-display: swap;
+    font-style: normal;
+}

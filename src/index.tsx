@@ -1,4 +1,3 @@
-import "./preloadFonts"
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react"
 import * as React from "react"
 import * as ReactDOM from "react-dom/client"
