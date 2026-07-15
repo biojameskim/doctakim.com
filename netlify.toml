@@ -5,10 +5,10 @@
   publish = "build"
 
 [build.environment]
-  # Use Node.js 20 LTS for builds and functions
-  NODE_VERSION = "20"
-  # Explicitly set Node.js 20 for serverless functions runtime
-  AWS_LAMBDA_JS_RUNTIME = "nodejs20.x"
+  # Use Node.js 24 LTS for builds and functions
+  NODE_VERSION = "24"
+  # Explicitly set Node.js 24 for serverless functions runtime
+  AWS_LAMBDA_JS_RUNTIME = "nodejs24.x"
 
 # Optional: Configure functions if you have any
 [functions]
