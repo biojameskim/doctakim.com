@@ -30,4 +30,5 @@ export type BirthdayCardType = {
   title: string,
   date: string,
   route: string,
+  component: React.ElementType
 }

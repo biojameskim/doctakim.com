@@ -1,4 +1,4 @@
-import { EmploymentCardType } from "../types/ExperienceTypes"
+import { EmploymentCardType } from "./ExperienceTypes"
 
 const employment_data: EmploymentCardType[] = [
   {

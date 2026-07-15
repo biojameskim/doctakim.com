@@ -16,13 +16,8 @@ import {
 import { NavBar, Footer } from "./components/components";
 // Blog Entries Data
 import { story_data, thoughts_data, fiction_data } from "./data/blog_data";
-// Blog Entries (Birthdays)
-import {
-  GraceLo20,
-  GraceLi21,
-  Derek20,
-  Angy20,
-} from "./blog_entries/blog_entries";
+// Birthdays Data
+import { birthday_data } from "./data/birthday_data";
 
 // Google Analytics
 import ReactGA from "react-ga4";
@@ -64,10 +59,10 @@ export const App = () => (
           {fiction_data.map((item) => (
             <Route key={item.route} path={item.route} element={<item.component />} />
           ))}
-          <Route path="/birthdays/grace-lo-20th" element={<GraceLo20 />} />
-          <Route path="/birthdays/grace-li-21st" element={<GraceLi21 />} />
-          <Route path="/birthdays/derek-20th" element={<Derek20 />} />
-          <Route path="/birthdays/angy-20th" element={<Angy20 />} />
+          {/* Birthday routes */}
+          {birthday_data.map((item) => (
+            <Route key={item.route} path={item.route} element={<item.component />} />
+          ))}
         </Routes>
       </div>
       <div className="footer-pin">

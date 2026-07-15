@@ -2,7 +2,7 @@ import { Flex, Text, useColorModeValue } from "@chakra-ui/react"
 import { BirthdayCardType } from "../../types/BlogTypes"
 import { Link as LinkRouter } from 'react-router-dom'
 
-const BirthdayCard = ({ title, date, route }: BirthdayCardType) => {
+const BirthdayCard = ({ title, date, route }: Omit<BirthdayCardType, 'component'>) => {
   return (
     <LinkRouter to={route} className="birthday-card-link">
       <Flex

@@ -1,10 +1,6 @@
-export type Coursework = {
-  courseTitle: string,
-  courseNumber: string,
-  affiliation: string
-}
+import { CourseworkCardType } from "./ExperienceTypes"
 
-export const coursework_data: Coursework[] = [
+export const coursework_data: CourseworkCardType[] = [
   {
     courseTitle: "Machine Learning",
     courseNumber: "CS 4780",
