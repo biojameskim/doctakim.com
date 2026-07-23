@@ -10,16 +10,14 @@ import { AiOutlineHome, AiOutlineCamera } from "react-icons/ai";
 import SocialButton from "../SocialButton";
 
 export default function NavBar() {
-  // Kept opaque on purpose: Safari 26+ samples the background-color of a sticky
-  // element near the top of the viewport to tint its toolbar, and a translucent
-  // one leaves the resulting color up to Safari. See index.css.
-  const bgColor = useColorModeValue("white", "gray.800");
+  const bgColor = useColorModeValue("rgba(255, 255, 255, 0.8)", "rgba(26, 32, 44, 0.8)");
   const textColor = useColorModeValue("gray.600", "white");
 
   return (
     <Box className="navbar">
       <Flex
         bg={bgColor}
+        backdropFilter="blur(10px)"
         color={textColor}
         minH={"60px"}
         py={{ base: 3 }}

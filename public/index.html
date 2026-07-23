@@ -11,9 +11,9 @@
   <meta charset="utf-8" />
   <meta name='viewport' content='width=device-width, initial-scale=1, viewport-fit=cover'>
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
-  <!-- Safari 26+ ignores theme-color and samples the page background instead (see index.css).
-       These still drive Android Chrome and older iOS Safari; the media attribute lets the
-       browser resolve them itself, which it re-evaluates on a system appearance change. -->
+  <!-- Browser UI color. The media attribute lets the browser pick and re-evaluate these
+       itself on a system appearance change, so no JS is involved. Honored by Chrome and
+       by Safari through 18; Safari 26+ ignores theme-color and derives its own tint. -->
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#1a202c" media="(prefers-color-scheme: dark)" />
   <title>biojameskim</title>
