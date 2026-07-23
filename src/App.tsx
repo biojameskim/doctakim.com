@@ -1,6 +1,4 @@
-import { ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import theme from "./theme"
 
 // Pages
 import {
@@ -15,6 +13,7 @@ import {
 // Components
 import { NavBar, Footer } from "./components/components";
 import SEO from "./components/SEO";
+import ThemeColorSync from "./components/ThemeColorSync";
 // Blog Entries Data
 import { story_data, thoughts_data, fiction_data } from "./data/blog_data";
 // Birthdays Data
@@ -26,7 +25,8 @@ const TRACKING_ID = "G-1SF4Z7N7NS";
 ReactGA.initialize(TRACKING_ID);
 
 export const App = () => (
-  <ChakraProvider theme={theme}>
+  <>
+    <ThemeColorSync />
     <Router>
       {/* Site-wide default description/OG/Twitter tags; pages render their own <SEO>
           deeper in the tree to override these (react-helmet-async merges by depth). */}
@@ -93,5 +93,5 @@ export const App = () => (
         <Footer />
       </div>
     </Router>
-  </ChakraProvider>
+  </>
 );

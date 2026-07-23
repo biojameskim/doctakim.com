@@ -6,6 +6,7 @@
 html {
     max-width: 100%;
     overflow-x: hidden;
+    background-color: #f7fafc;
 }
 
 body {
@@ -16,8 +17,14 @@ body {
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
     font-family: 'Monaspace Neon', monospace;
-    background-color: var(--chakra-colors-gray-50);
-    /* Fallback */
+    background-color: #f7fafc;
+}
+
+@media (prefers-color-scheme: dark) {
+    html,
+    body {
+        background-color: #1a202c;
+    }
 }
 
 /* FONTS */
