@@ -18,6 +18,7 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { topSongs, topArtists } from "../data/top_songs_artists";
 import SEO from "../components/SEO";
+import NowPlaying from "../components/NowPlaying";
 
 // Inline placeholder so broken cover art doesn't depend on an external service.
 const FALLBACK_IMAGE = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50'%3E%3Crect width='50' height='50' fill='%23cccccc'/%3E%3C/svg%3E";
@@ -101,6 +102,8 @@ const Home = () => {
                 </Text>
               </HStack>
             </VStack>
+
+            <NowPlaying />
 
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6} w="full">
               {/* Top Songs Column */}
