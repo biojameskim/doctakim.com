@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, Link, Text } from "@chakra-ui/react"
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link as LinkRouter } from 'react-router-dom'
 
 import { birthday_data } from "../../data/birthday_data"

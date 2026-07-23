@@ -1,9 +1,13 @@
 import { Text, Box } from "@chakra-ui/react"
 import { Link } from "react-router-dom"
+import { Helmet } from "react-helmet-async"
 
 const NotFound = () => {
   return (
     <div>
+      <Helmet>
+        <title>biojameskim | Not Found</title>
+      </Helmet>
       <Text align='center' fontSize='1.5rem' fontWeight={'semibold'} pt={'14vh'} mb='0' pb='0'>
         Oops!
       </Text>

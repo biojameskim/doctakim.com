@@ -1,6 +1,7 @@
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react"
 import * as React from "react"
 import * as ReactDOM from "react-dom/client"
+import { HelmetProvider } from "react-helmet-async"
 import { App } from "./App"
 import "./index.css"
 
@@ -10,10 +11,11 @@ const root = ReactDOM.createRoot(container)
 
 root.render(
   <React.StrictMode>
-    <ChakraProvider>
-        <ColorModeScript />
-        <App />
-    </ChakraProvider>
+    <HelmetProvider>
+      <ChakraProvider>
+          <ColorModeScript />
+          <App />
+      </ChakraProvider>
+    </HelmetProvider>
   </React.StrictMode>,
 )
-

@@ -1,5 +1,5 @@
 import { Heading, Text, Stack, Box, Link, useColorModeValue } from "@chakra-ui/react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import BlogImage from "../../components/blog/BlogImage";
 import { useEffect } from "react";
 import { Link as RouterLink } from "react-router-dom";

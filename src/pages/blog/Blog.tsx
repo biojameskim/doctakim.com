@@ -1,10 +1,11 @@
 import { Box, Tabs, TabList, Tab, TabPanels, TabPanel, useColorModeValue, Heading } from "@chakra-ui/react"
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import Stories from "./Stories";
 import Thoughts from "./Thoughts";
 import Fiction from "./Fiction";
+import SEO from "../../components/SEO";
 
 const Blog = () => {
   const navigate = useNavigate();
@@ -31,6 +32,7 @@ const Blog = () => {
       <Helmet>
         <title>biojameskim | Blog</title>
       </Helmet>
+      <SEO title="biojameskim | Blog" description="Stories, thoughts, and fiction from James Kim." url="/blog" />
 
       <Box maxW={{ base: '100%', md: '90%', lg: '85%' }} mx='auto'>
         <Heading textAlign='center' fontSize={{ base: '2.2rem', md: '2.6rem' }} fontWeight={'medium'} pt={'8vh'} pb={{ base: '2vh', md: '4vh' }} >

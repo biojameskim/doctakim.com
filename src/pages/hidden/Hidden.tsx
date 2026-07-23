@@ -1,6 +1,6 @@
 import { Box, Heading, Text, Link, VStack, useColorModeValue } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const Hidden = () => {
   const mutedColor = useColorModeValue('gray.600', 'gray.400')

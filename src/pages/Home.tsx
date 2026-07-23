@@ -12,11 +12,12 @@ import {
   Divider,
   Link
 } from "@chakra-ui/react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Link as RouterLink } from "react-router-dom";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { topSongs, topArtists } from "../data/top_songs_artists";
+import SEO from "../components/SEO";
 
 const Home = () => {
   useEffect(() => {
@@ -52,6 +53,7 @@ const Home = () => {
       <Helmet>
         <title>biojameskim | Home</title>
       </Helmet>
+      <SEO title="biojameskim | Home" description="I'm James — currently based in Ithaca, studying at Cornell. Welcome to my corner of the internet." url="/home" />
 
       <Box
         w="100%"

@@ -14,9 +14,10 @@ import { Text, useColorModeValue, Show, Image as ChakraImage, VStack } from "@ch
 import { Link } from "react-router-dom";
 import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
 import { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 import { motion } from "framer-motion";
+import SEO from "../components/SEO";
 
 const StartPage = () => {
   useEffect(() => {
@@ -40,6 +41,7 @@ const StartPage = () => {
       <Helmet>
         <title>biojameskim</title>
       </Helmet>
+      <SEO title="biojameskim" url="/" />
       <Show below="md">
         <VStack spacing="50vh" pt="20vh" pb="50vh" align="center" justify="start" w="100%">
           <motion.div
