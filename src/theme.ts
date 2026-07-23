@@ -2,6 +2,10 @@
 import { extendTheme } from "@chakra-ui/react";
 
 export default extendTheme({
+  config: {
+    initialColorMode: "system",
+    useSystemColorMode: true,
+  },
   fonts: {
     heading: "'Monaspace Neon'",
     body: "'Monaspace Neon'",

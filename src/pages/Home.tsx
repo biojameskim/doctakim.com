@@ -19,6 +19,9 @@ import { motion } from "framer-motion";
 import { topSongs, topArtists } from "../data/top_songs_artists";
 import SEO from "../components/SEO";
 
+// Inline placeholder so broken cover art doesn't depend on an external service.
+const FALLBACK_IMAGE = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50'%3E%3Crect width='50' height='50' fill='%23cccccc'/%3E%3C/svg%3E";
+
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -111,7 +114,7 @@ const Home = () => {
                       <Link href={song.link} isExternal _hover={{ textDecoration: 'none' }}>
                         <HStack spacing={3} p={2} borderRadius="lg" _hover={{ bg: hoverBg }} transition="all 0.2s" cursor="pointer">
                           <Text fontWeight="bold" color="gray.400" w="16px" flexShrink={0} fontSize="sm">{index + 1}</Text>
-                          <Image src={song.cover} alt={song.title} boxSize="40px" flexShrink={0} borderRadius="md" objectFit="cover" fallbackSrc="https://via.placeholder.com/50" />
+                          <Image src={song.cover} alt={song.title} boxSize="40px" flexShrink={0} borderRadius="md" objectFit="cover" fallbackSrc={FALLBACK_IMAGE} />
                           <Box>
                             <Text fontWeight="medium" fontSize={{ base: "0.9rem", md: "0.8rem" }} noOfLines={1}>{song.title}</Text>
                             <Text fontWeight="normal" fontSize="0.7rem" color="gray.500" noOfLines={1}>{song.artist}</Text>
@@ -134,7 +137,7 @@ const Home = () => {
                       <Link href={artist.link} isExternal _hover={{ textDecoration: 'none' }}>
                         <HStack spacing={3} p={2} borderRadius="lg" _hover={{ bg: hoverBg }} transition="all 0.2s" cursor="pointer">
                           <Text fontWeight="bold" color="gray.400" w="16px" flexShrink={0} fontSize="sm">{index + 1}</Text>
-                          <Image src={artist.image} alt={artist.name} boxSize="40px" flexShrink={0} borderRadius="full" objectFit="cover" fallbackSrc="https://via.placeholder.com/50" />
+                          <Image src={artist.image} alt={artist.name} boxSize="40px" flexShrink={0} borderRadius="full" objectFit="cover" fallbackSrc={FALLBACK_IMAGE} />
                           <Text fontWeight="semibold" fontSize="sm">{artist.name}</Text>
                         </HStack>
                       </Link>

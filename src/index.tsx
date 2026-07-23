@@ -3,6 +3,7 @@ import * as React from "react"
 import * as ReactDOM from "react-dom/client"
 import { HelmetProvider } from "react-helmet-async"
 import { App } from "./App"
+import theme from "./theme"
 import "./index.css"
 
 const container = document.getElementById("root")
@@ -13,7 +14,7 @@ root.render(
   <React.StrictMode>
     <HelmetProvider>
       <ChakraProvider>
-          <ColorModeScript />
+          <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <App />
       </ChakraProvider>
     </HelmetProvider>
