@@ -3,10 +3,22 @@
     padding: 0;
 } */
 
+/* Single source of truth for the page background.
+   Safari 26+ ignores <meta name="theme-color"> and instead samples the
+   background-color of the body (falling back to html) to tint its top and
+   bottom toolbars. It samples at render time and does not re-sample when JS
+   mutates styles after paint, so the background has to come from a plain CSS
+   media query the browser resolves itself. Chakra's own body background is
+   turned off in theme.js so it doesn't override these.
+   Values match Chakra's chakra-body-bg: white / gray.800. */
+:root {
+    color-scheme: light dark;
+}
+
 html {
     max-width: 100%;
     overflow-x: hidden;
-    background-color: #f7fafc;
+    background-color: #ffffff;
 }
 
 body {
@@ -17,10 +29,11 @@ body {
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
     font-family: 'Monaspace Neon', monospace;
-    background-color: #f7fafc;
+    background-color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
+
     html,
     body {
         background-color: #1a202c;

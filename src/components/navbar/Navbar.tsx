@@ -3,25 +3,23 @@ import {
   Flex,
   Button,
   useColorModeValue,
-  useColorMode,
 } from "@chakra-ui/react";
-import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { Link as LinkRouter } from "react-router-dom";
 import { AiOutlineHome, AiOutlineCamera } from "react-icons/ai";
 
 import SocialButton from "../SocialButton";
 
 export default function NavBar() {
-  const { colorMode, toggleColorMode } = useColorMode();
-
-  const bgColor = useColorModeValue("rgba(255, 255, 255, 0.8)", "rgba(26, 32, 44, 0.8)");
+  // Kept opaque on purpose: Safari 26+ samples the background-color of a sticky
+  // element near the top of the viewport to tint its toolbar, and a translucent
+  // one leaves the resulting color up to Safari. See index.css.
+  const bgColor = useColorModeValue("white", "gray.800");
   const textColor = useColorModeValue("gray.600", "white");
 
   return (
     <Box className="navbar">
       <Flex
         bg={bgColor}
-        backdropFilter="blur(10px)"
         color={textColor}
         minH={"60px"}
         py={{ base: 3 }}
@@ -61,7 +59,7 @@ export default function NavBar() {
             </LinkRouter>
           </Flex>
 
-          {/* Right Side: Navigation & Theme Toggle */}
+          {/* Right Side: Navigation */}
           <Flex alignItems="center" gap={2}>
             <LinkRouter to="/blog">
               <Button
@@ -84,10 +82,6 @@ export default function NavBar() {
                 <AiOutlineCamera />
               </SocialButton>
             </LinkRouter>
-
-            <SocialButton label={"Toggle Theme"} onClick={toggleColorMode}>
-              {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-            </SocialButton>
           </Flex>
         </Flex>
       </Flex>

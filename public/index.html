@@ -11,13 +11,31 @@
   <meta charset="utf-8" />
   <meta name='viewport' content='width=device-width, initial-scale=1, viewport-fit=cover'>
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
-  <meta name="theme-color" content="#f7fafc" />
+  <!-- Safari 26+ ignores theme-color and samples the page background instead (see index.css).
+       These still drive Android Chrome and older iOS Safari; the media attribute lets the
+       browser resolve them itself, which it re-evaluates on a system appearance change. -->
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1a202c" media="(prefers-color-scheme: dark)" />
   <title>biojameskim</title>
   <!-- description/OG/Twitter tags are rendered by <SEO> (react-helmet-async) per page,
        including a site-wide default in App.tsx, so they aren't duplicated here. -->
 </head>
 
 <body>
+  <!-- Applies the system color mode before first paint so Chakra's components don't
+       flash the wrong theme. Chakra's <ColorModeScript> can't do this in CRA: React
+       renders it into the tree, and scripts inserted that way never execute. -->
+  <script>
+    (function () {
+      try {
+        var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var mode = dark ? "dark" : "light";
+        document.documentElement.dataset.theme = mode;
+        document.documentElement.style.colorScheme = mode;
+        document.body.classList.add(dark ? "chakra-ui-dark" : "chakra-ui-light");
+      } catch (e) { }
+    })();
+  </script>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
   <!--

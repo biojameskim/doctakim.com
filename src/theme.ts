@@ -1,10 +1,21 @@
-// src/theme.js
+// src/theme.ts
 import { extendTheme } from "@chakra-ui/react";
 
 export default extendTheme({
   config: {
     initialColorMode: "system",
     useSystemColorMode: true,
+  },
+  styles: {
+    global: {
+      // Chakra injects its global styles via emotion at runtime, so they land
+      // after index.css in the cascade and would win. Inheriting from <html>
+      // hands the background back to the media query in index.css while still
+      // giving <body> a resolved color for Safari 26 to sample for its toolbars.
+      body: {
+        bg: "inherit",
+      },
+    },
   },
   fonts: {
     heading: "'Monaspace Neon'",

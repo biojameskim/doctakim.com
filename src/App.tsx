@@ -13,7 +13,6 @@ import {
 // Components
 import { NavBar, Footer } from "./components/components";
 import SEO from "./components/SEO";
-import ThemeColorSync from "./components/ThemeColorSync";
 // Blog Entries Data
 import { story_data, thoughts_data, fiction_data } from "./data/blog_data";
 // Birthdays Data
@@ -26,7 +25,6 @@ ReactGA.initialize(TRACKING_ID);
 
 export const App = () => (
   <>
-    <ThemeColorSync />
     <Router>
       {/* Site-wide default description/OG/Twitter tags; pages render their own <SEO>
           deeper in the tree to override these (react-helmet-async merges by depth). */}
