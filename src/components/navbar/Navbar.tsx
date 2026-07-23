@@ -58,7 +58,7 @@ export default function NavBar() {
           </Flex>
 
           {/* Right Side: Navigation */}
-          <Flex alignItems="center" gap={2}>
+          <Flex alignItems="center" gap={1}>
             <LinkRouter to="/blog">
               <Button
                 variant="ghost"
@@ -66,7 +66,7 @@ export default function NavBar() {
                 fontWeight="normal"
                 borderRadius="full"
                 size="sm"
-                px={3}
+                px={2}
                 _hover={{ base: { bg: "transparent" }, md: {} }}
                 _active={{ base: { bg: "transparent" }, md: {} }}
                 css={{ WebkitTapHighlightColor: "transparent", touchAction: "manipulation" }}

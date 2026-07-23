@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
   <link rel="manifest" href="/favicon_io/site.webmanifest">
   <meta charset="utf-8" />
+  <meta name="color-scheme" content="light dark" />
   <meta name='viewport' content='width=device-width, initial-scale=1, viewport-fit=cover'>
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
   <!-- Browser UI color. The media attribute lets the browser pick and re-evaluate these
@@ -22,9 +23,7 @@
 </head>
 
 <body>
-  <!-- Applies the system color mode before first paint so Chakra's components don't
-       flash the wrong theme. Chakra's <ColorModeScript> can't do this in CRA: React
-       renders it into the tree, and scripts inserted that way never execute. -->
+  <!-- Give Chakra the system theme before the app mounts to avoid a color flash. -->
   <script>
     (function () {
       try {
