@@ -14,7 +14,7 @@ const MrsLupsaiu = () => {
   return (
     <div>
       <Helmet>
-        <title>biojameskim | Dear Mrs. Lupsaiu</title>
+        <title>Blog | Dear Mrs. Lupsaiu</title>
       </Helmet>
 
       <Box {...BLOG_STYLES.headerContainer}>

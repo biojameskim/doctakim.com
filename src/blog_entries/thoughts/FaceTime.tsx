@@ -14,7 +14,7 @@ const FaceTime = () => {
   return (
     <div>
       <Helmet>
-        <title>biojameskim | FaceTime</title>
+        <title>Blog | FaceTime</title>
       </Helmet>
 
       <Box {...BLOG_STYLES.headerContainer}>

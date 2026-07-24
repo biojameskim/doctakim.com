@@ -14,7 +14,7 @@ const TreasureHunt = () => {
   return (
     <div>
       <Helmet>
-        <title>biojameskim | Treasure Hunt</title>
+        <title>Blog | Treasure Hunt</title>
       </Helmet>
 
       <Box {...BLOG_STYLES.headerContainer}>

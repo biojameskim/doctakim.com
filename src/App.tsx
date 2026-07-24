@@ -53,7 +53,7 @@ export const App = () => (
           {story_data.map((item) => (
             <Route key={item.route} path={item.route} element={
               <>
-                <SEO title={`biojameskim | ${item.title}`} description={item.description} image={item.image} url={item.route} type="article" />
+                <SEO title={`Blog | ${item.title}`} description={item.description} image={item.image} url={item.route} type="article" />
                 <item.component />
               </>
             } />
@@ -62,7 +62,7 @@ export const App = () => (
           {thoughts_data.map((item) => (
             <Route key={item.route} path={item.route} element={
               <>
-                <SEO title={`biojameskim | ${item.title}`} description={item.description} image={item.image} url={item.route} type="article" />
+                <SEO title={`Blog | ${item.title}`} description={item.description} image={item.image} url={item.route} type="article" />
                 <item.component />
               </>
             } />
@@ -71,7 +71,7 @@ export const App = () => (
           {fiction_data.map((item) => (
             <Route key={item.route} path={item.route} element={
               <>
-                <SEO title={`biojameskim | ${item.title}`} description={item.description} image={item.image} url={item.route} type="article" />
+                <SEO title={`Blog | ${item.title}`} description={item.description} image={item.image} url={item.route} type="article" />
                 <item.component />
               </>
             } />

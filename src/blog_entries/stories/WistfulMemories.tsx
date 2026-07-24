@@ -14,7 +14,7 @@ const WistfulMemories = () => {
   return (
     <div>
       <Helmet>
-        <title>biojameskim | Wistful Memories</title>
+        <title>Blog | Wistful Memories</title>
       </Helmet>
 
       <Box {...BLOG_STYLES.headerContainer}>

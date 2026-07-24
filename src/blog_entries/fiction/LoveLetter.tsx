@@ -13,7 +13,7 @@ const LoveLetter = () => {
     return (
         <div>
             <Helmet>
-                <title>biojameskim | Letter</title>
+                <title>Blog | Letter</title>
             </Helmet>
 
             <Box {...BLOG_STYLES.headerContainer}>

@@ -13,7 +13,7 @@ const GodsLove = () => {
     return (
         <div>
             <Helmet>
-                <title>biojameskim | Chasing the sun</title>
+                <title>Blog | Chasing the sun</title>
             </Helmet>
 
             <Box {...BLOG_STYLES.headerContainer}>

@@ -13,7 +13,7 @@ const HerFace = () => {
     return (
         <div>
             <Helmet>
-                <title>biojameskim | Her face</title>
+                <title>Blog | Her face</title>
             </Helmet>
 
             <Box {...BLOG_STYLES.headerContainer}>

@@ -13,7 +13,7 @@ const FictionStory = () => {
     return (
         <div>
             <Helmet>
-                <title>biojameskim | TITLE</title>
+                <title>Blog | TITLE</title>
             </Helmet>
 
             <Box {...BLOG_STYLES.headerContainer}>

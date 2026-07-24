@@ -14,7 +14,7 @@ const GrowingUp = () => {
   return (
     <div>
       <Helmet>
-        <title>biojameskim | Growing Up</title>
+        <title>Blog | Growing Up</title>
       </Helmet>
 
       <Box {...BLOG_STYLES.headerContainer}>

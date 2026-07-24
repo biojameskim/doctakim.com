@@ -14,7 +14,7 @@ const BestLatte = () => {
   return (
     <div>
       <Helmet>
-        <title>biojameskim | Best Latte</title>
+        <title>Blog | Best Latte</title>
       </Helmet>
 
       <Box {...BLOG_STYLES.headerContainer}>

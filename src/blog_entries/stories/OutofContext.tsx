@@ -14,7 +14,7 @@ const OutofContext = () => {
     return (
         <div>
             <Helmet>
-                <title>biojameskim | Out of Context </title>
+                <title>Blog | Out of Context</title>
             </Helmet>
 
             <Box {...BLOG_STYLES.headerContainer}>
