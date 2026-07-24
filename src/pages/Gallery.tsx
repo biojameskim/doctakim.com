@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { useParams, useNavigate } from "react-router-dom";
 import {
     Box,
@@ -15,6 +15,7 @@ import {
 import { FaArrowLeft } from "react-icons/fa";
 import { photoFolders } from "../data/gallery";
 import BlogImage from "../components/blog/BlogImage";
+import SEO from "../components/SEO";
 
 const Gallery = () => {
     const { year, month, subfolder } = useParams();
@@ -68,6 +69,7 @@ const Gallery = () => {
             <Helmet>
                 <title>biojameskim | Gallery</title>
             </Helmet>
+            <SEO title="biojameskim | Gallery" description="Photos from James Kim." url="/gallery" />
 
             <Box>
 

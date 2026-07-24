@@ -8,6 +8,11 @@ This folder contains scripts to automatically fetch top songs and artists from S
 
 Go to Spotify Developer Dashboard (<https://developer.spotify.com/dashboard>) to get these.
 
+The homepage's now-playing card also uses these values as Netlify environment
+variables. After adding or changing the `user-read-currently-playing` scope, run
+`npm run get-token` again and update `SPOTIFY_REFRESH_TOKEN` in both `.env` and
+Netlify. Spotify refresh tokens expire after six months and must then be renewed.
+
 ### Generate Refresh Token
 
 Run this command to get refresh token:

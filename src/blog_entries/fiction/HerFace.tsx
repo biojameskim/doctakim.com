@@ -1,5 +1,5 @@
 import { Heading, Text, Stack, Box } from "@chakra-ui/react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { useEffect } from "react";
 import { useBlogStyles } from "../blogStyles";
 
@@ -13,7 +13,7 @@ const HerFace = () => {
     return (
         <div>
             <Helmet>
-                <title>biojameskim | Her face</title>
+                <title>Blog | Her face</title>
             </Helmet>
 
             <Box {...BLOG_STYLES.headerContainer}>

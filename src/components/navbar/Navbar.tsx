@@ -3,17 +3,13 @@ import {
   Flex,
   Button,
   useColorModeValue,
-  useColorMode,
 } from "@chakra-ui/react";
-import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { Link as LinkRouter } from "react-router-dom";
 import { AiOutlineHome, AiOutlineCamera } from "react-icons/ai";
 
 import SocialButton from "../SocialButton";
 
 export default function NavBar() {
-  const { colorMode, toggleColorMode } = useColorMode();
-
   const bgColor = useColorModeValue("rgba(255, 255, 255, 0.8)", "rgba(26, 32, 44, 0.8)");
   const textColor = useColorModeValue("gray.600", "white");
 
@@ -61,8 +57,8 @@ export default function NavBar() {
             </LinkRouter>
           </Flex>
 
-          {/* Right Side: Navigation & Theme Toggle */}
-          <Flex alignItems="center" gap={2}>
+          {/* Right Side: Navigation */}
+          <Flex alignItems="center" gap={1}>
             <LinkRouter to="/blog">
               <Button
                 variant="ghost"
@@ -70,7 +66,7 @@ export default function NavBar() {
                 fontWeight="normal"
                 borderRadius="full"
                 size="sm"
-                px={3}
+                px={2}
                 _hover={{ base: { bg: "transparent" }, md: {} }}
                 _active={{ base: { bg: "transparent" }, md: {} }}
                 css={{ WebkitTapHighlightColor: "transparent", touchAction: "manipulation" }}
@@ -84,10 +80,6 @@ export default function NavBar() {
                 <AiOutlineCamera />
               </SocialButton>
             </LinkRouter>
-
-            <SocialButton label={"Toggle Theme"} onClick={toggleColorMode}>
-              {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-            </SocialButton>
           </Flex>
         </Flex>
       </Flex>

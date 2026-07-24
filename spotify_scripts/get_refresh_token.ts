@@ -21,7 +21,7 @@ const spotifyApi = new SpotifyWebApi({
     redirectUri: redirectUri
 });
 
-const scopes = ['user-top-read'];
+const scopes = ['user-top-read', 'user-read-currently-playing'];
 
 const server = http.createServer(async (req, res) => {
     const parsedUrl = url.parse(req.url || '', true);

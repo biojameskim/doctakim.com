@@ -9,15 +9,32 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
   <link rel="manifest" href="/favicon_io/site.webmanifest">
   <meta charset="utf-8" />
+  <meta name="color-scheme" content="light dark" />
   <meta name='viewport' content='width=device-width, initial-scale=1, viewport-fit=cover'>
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Home" />
+  <!-- Browser UI color. The media attribute lets the browser pick and re-evaluate these
+       itself on a system appearance change, so no JS is involved. Honored by Chrome and
+       by Safari through 18; Safari 26+ ignores theme-color and derives its own tint. -->
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1a202c" media="(prefers-color-scheme: dark)" />
   <title>biojameskim</title>
-  <meta name="description" content="Hi, I'm James. Welcome to my website." />
+  <!-- description/OG/Twitter tags are rendered by <SEO> (react-helmet-async) per page,
+       including a site-wide default in App.tsx, so they aren't duplicated here. -->
 </head>
 
 <body>
+  <!-- Give Chakra the system theme before the app mounts to avoid a color flash. -->
+  <script>
+    (function () {
+      try {
+        var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var mode = dark ? "dark" : "light";
+        document.documentElement.dataset.theme = mode;
+        document.documentElement.style.colorScheme = mode;
+        document.body.classList.add(dark ? "chakra-ui-dark" : "chakra-ui-light");
+      } catch (e) { }
+    })();
+  </script>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
   <!--

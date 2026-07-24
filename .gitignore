@@ -24,3 +24,9 @@ yarn-debug.log*
 yarn-error.log*
 
 spotify_scripts/cron.log
+
+# personal tracking, not for the repo
+TODO.md
+# Local Netlify folder
+.netlify
+deno.lock

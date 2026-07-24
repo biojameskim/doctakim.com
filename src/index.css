@@ -3,9 +3,19 @@
     padding: 0;
 } */
 
+/* The site follows the OS appearance. color-scheme tells the browser the page
+   supports both, so form controls, scrollbars and the default canvas get native
+   light/dark treatment. The html background is a pre-JS fallback: it paints the
+   canvas before the bundle loads so the page doesn't flash white, and Chakra
+   takes over <body> from then on. Values match Chakra's chakra-body-bg. */
+:root {
+    color-scheme: light dark;
+}
+
 html {
     max-width: 100%;
     overflow-x: hidden;
+    background-color: #ffffff;
 }
 
 body {
@@ -16,8 +26,12 @@ body {
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
     font-family: 'Monaspace Neon', monospace;
-    background-color: var(--chakra-colors-gray-50);
-    /* Fallback */
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: #1a202c;
+    }
 }
 
 /* FONTS */

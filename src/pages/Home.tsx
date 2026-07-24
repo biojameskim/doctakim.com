@@ -12,11 +12,16 @@ import {
   Divider,
   Link
 } from "@chakra-ui/react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Link as RouterLink } from "react-router-dom";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { topSongs, topArtists } from "../data/top_songs_artists";
+import SEO from "../components/SEO";
+import NowPlaying from "../components/NowPlaying";
+
+// Inline placeholder so broken cover art doesn't depend on an external service.
+const FALLBACK_IMAGE = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50'%3E%3Crect width='50' height='50' fill='%23cccccc'/%3E%3C/svg%3E";
 
 const Home = () => {
   useEffect(() => {
@@ -52,6 +57,7 @@ const Home = () => {
       <Helmet>
         <title>biojameskim | Home</title>
       </Helmet>
+      <SEO title="biojameskim | Home" description="I'm James — currently based in Ithaca, studying at Cornell. Welcome to my corner of the internet." url="/home" />
 
       <Box
         w="100%"
@@ -97,6 +103,8 @@ const Home = () => {
               </HStack>
             </VStack>
 
+            <NowPlaying />
+
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6} w="full">
               {/* Top Songs Column */}
               <Box bg={cardBg} p={4} borderRadius="2xl" boxShadow="xl">
@@ -109,7 +117,7 @@ const Home = () => {
                       <Link href={song.link} isExternal _hover={{ textDecoration: 'none' }}>
                         <HStack spacing={3} p={2} borderRadius="lg" _hover={{ bg: hoverBg }} transition="all 0.2s" cursor="pointer">
                           <Text fontWeight="bold" color="gray.400" w="16px" flexShrink={0} fontSize="sm">{index + 1}</Text>
-                          <Image src={song.cover} alt={song.title} boxSize="40px" flexShrink={0} borderRadius="md" objectFit="cover" fallbackSrc="https://via.placeholder.com/50" />
+                          <Image src={song.cover} alt={song.title} boxSize="40px" flexShrink={0} borderRadius="md" objectFit="cover" fallbackSrc={FALLBACK_IMAGE} />
                           <Box>
                             <Text fontWeight="medium" fontSize={{ base: "0.9rem", md: "0.8rem" }} noOfLines={1}>{song.title}</Text>
                             <Text fontWeight="normal" fontSize="0.7rem" color="gray.500" noOfLines={1}>{song.artist}</Text>
@@ -132,7 +140,7 @@ const Home = () => {
                       <Link href={artist.link} isExternal _hover={{ textDecoration: 'none' }}>
                         <HStack spacing={3} p={2} borderRadius="lg" _hover={{ bg: hoverBg }} transition="all 0.2s" cursor="pointer">
                           <Text fontWeight="bold" color="gray.400" w="16px" flexShrink={0} fontSize="sm">{index + 1}</Text>
-                          <Image src={artist.image} alt={artist.name} boxSize="40px" flexShrink={0} borderRadius="full" objectFit="cover" fallbackSrc="https://via.placeholder.com/50" />
+                          <Image src={artist.image} alt={artist.name} boxSize="40px" flexShrink={0} borderRadius="full" objectFit="cover" fallbackSrc={FALLBACK_IMAGE} />
                           <Text fontWeight="semibold" fontSize="sm">{artist.name}</Text>
                         </HStack>
                       </Link>
