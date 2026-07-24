@@ -98,11 +98,11 @@ const Blog = () => {
       >
         <Button
           size='xs'
-          h='7'
-          px='3'
+          h='8'
+          px='4'
           rounded='full'
           fontWeight='normal'
-          fontSize='0.72rem'
+          fontSize='0.8rem'
           letterSpacing='0.05em'
           color={useColorModeValue('teal.600', 'teal.300')}
           bg={useColorModeValue('rgba(255, 255, 255, 0.92)', 'rgba(26, 32, 44, 0.92)')}
