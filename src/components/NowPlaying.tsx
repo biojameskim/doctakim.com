@@ -3,7 +3,6 @@ import {
   HStack,
   Image,
   Link,
-  Skeleton,
   Text,
   useColorModeValue,
   usePrefersReducedMotion,
@@ -25,7 +24,6 @@ const POLL_INTERVAL_MS = 30_000;
 
 const NowPlaying = () => {
   const [playback, setPlayback] = useState<NowPlayingData | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
   const cardBg = useColorModeValue("gray.50", "gray.700");
   const cardHoverBg = useColorModeValue("gray.100", "gray.600");
   const mutedColor = useColorModeValue("gray.500", "gray.400");
@@ -45,8 +43,6 @@ const NowPlaying = () => {
     } catch {
       // The weekly music lists still work if Spotify or the function is unavailable.
       setPlayback(null);
-    } finally {
-      setIsLoading(false);
     }
   }, []);
 
@@ -70,10 +66,6 @@ const NowPlaying = () => {
       document.removeEventListener("visibilitychange", refreshWhenVisible);
     };
   }, [refreshPlayback]);
-
-  if (isLoading) {
-    return <Skeleton w="full" h="88px" borderRadius="2xl" />;
-  }
 
   if (!playback?.isPlaying) {
     return null;
