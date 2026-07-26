@@ -59,7 +59,7 @@ async function updateMusicData() {
 
         const fileContent = `export const topSongs = ${JSON.stringify(songs, null, 4)};\n\nexport const topArtists = ${JSON.stringify(artists, null, 4)};\n`;
 
-        const outputPath = path.join(__dirname, '../src/data/top_songs_artists.ts');
+        const outputPath = path.join(__dirname, '../../src/data/top_songs_artists.ts');
         fs.writeFileSync(outputPath, fileContent);
 
         console.log('Successfully updated music data!');

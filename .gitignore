@@ -18,12 +18,13 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.env.media.local
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-spotify_scripts/cron.log
+scripts/spotify/cron.log
 
 # personal tracking, not for the repo
 TODO.md
