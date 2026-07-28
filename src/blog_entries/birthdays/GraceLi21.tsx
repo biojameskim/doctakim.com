@@ -52,7 +52,7 @@ const GraceLi21 = () => {
             all these different sides of who you are to me.</Text>
 
           <BlogImage
-            src="../images/birthdays/grace-li-21/gli_1.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/grace-li-21/gli-1-47da147cdb.jpg"
             alt="Grace Li"
             caption="Who… Who is this girl?"
             orientation='v'
@@ -70,7 +70,7 @@ const GraceLi21 = () => {
           <Text>Or you’re gonna have to take the test on the spot.</Text>
 
           <BlogImage
-            src="../images/birthdays/grace-li-21/gli_2.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/grace-li-21/gli-2-d8f52c05f7.jpg"
             alt="Grace falls asleep at Church"
             caption='"Grace! Grace! Are you… ok?"'
             orientation='v'
@@ -94,7 +94,7 @@ const GraceLi21 = () => {
             that LiLi is our leader (after Jesus of course).</Text>
 
           <BlogImage
-            src="../images/birthdays/grace-li-21/gli_3.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/grace-li-21/gli-3-833e6d9c55.jpg"
             alt="Christmas party at the Highlands"
             caption="Even leaders have their flaws.  :)"
             orientation='v'
@@ -115,7 +115,7 @@ const GraceLi21 = () => {
             the serious.</Text>
 
           <BlogImage
-            src="../images/birthdays/grace-li-21/gli_4.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/grace-li-21/gli-4-6537916c97.jpg"
             alt="Grace cooks for James"
             caption="Yummy yummy in my tummy"
             orientation='v'
@@ -130,7 +130,7 @@ const GraceLi21 = () => {
             never stop being Grasli, LiLi, and Grace Li.</Text>
 
           <BlogImage
-            src="../images/birthdays/grace-li-21/gli_5.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/grace-li-21/gli-5-4025b7f975.jpg"
             alt="Grace doesn't share umbrella with James"
             caption="Grace Leech: the evil side of Grace"
             orientation='v'

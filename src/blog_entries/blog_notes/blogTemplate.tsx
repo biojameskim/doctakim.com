@@ -36,7 +36,7 @@ const GodsLove = () => {
                     <Text pb={"10vh"}>Last summer, I read Tim Keller’s <Text as="span" fontStyle="italic">“The Meaning of Marriage.”</Text></Text>
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1774995413/IMG_9113_1_a0gl1w.jpg"
+                        src="https://images.doctakim.com/blogs/thoughts/gods-love/img-9113-1-a0gl1w-d4b25e9d78.jpg"
                         alt="Derek and Melody hugging"
                         caption="love?"
                         orientation="h"

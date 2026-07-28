@@ -48,7 +48,7 @@ const Derek20 = () => {
           <Text>It was you and me. Together.</Text>
 
           <BlogImage
-            src="../images/birthdays/derek-20/dl_1.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/derek-20/dl-1-e852ab34a1.jpg"
             alt="Derek and I go swimming"
             caption="Swimming this friday?"
             orientation='v'
@@ -60,7 +60,7 @@ const Derek20 = () => {
             but he was pretty dang bad at predicting the weather.</Text>
 
           <BlogImage
-            src="../images/birthdays/derek-20/dl_2.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/derek-20/dl-2-665c75b153.jpg"
             alt="Derek and I get rained on during tennis"
             caption="Not again."
             orientation='v'
@@ -75,7 +75,7 @@ const Derek20 = () => {
             with you.</Text>
 
           <BlogImage
-            src="../images/birthdays/derek-20/dl_3.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/derek-20/dl-3-20d8e383b0.jpg"
             alt="Derek and I play tennis in the cold"
             caption="Freakin' cold"
             orientation='v'
@@ -87,7 +87,7 @@ const Derek20 = () => {
           <Text>which meant we spent <i>a lot</i> of time together.</Text>
 
           <BlogImage
-            src="../images/birthdays/derek-20/dl_4.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/derek-20/dl-4-03f71a5674.jpg"
             alt="Derek doodles during algo review session"
             caption={`"Derek. You're paying attention right?"`}
             orientation='v'
@@ -105,7 +105,7 @@ const Derek20 = () => {
             basic noonchi.</Text>
 
           <BlogImage
-            src="../images/birthdays/derek-20/dl_5.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/derek-20/dl-5-d7c853fd7b.jpg"
             alt="Derek and I lay on a pole"
             caption="What in the world were we thinking"
             orientation='h'
@@ -128,7 +128,7 @@ const Derek20 = () => {
             supporting each other.</Text>
 
           <BlogImage
-            src="../images/birthdays/derek-20/dl_6.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/derek-20/dl-6-177209353c.jpg"
             alt="Derek and Me."
             caption="<3"
             orientation='v'
@@ -142,7 +142,7 @@ const Derek20 = () => {
             same warm, bubbly feeling inside.</Text>
 
           <BlogImage
-            src="../images/birthdays/derek-20/dl_7.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/derek-20/dl-7-9eb7dcea7f.jpg"
             alt="Derek and worship team."
             caption="Sexiest man on worship team (by far)"
             orientation='v'

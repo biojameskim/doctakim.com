@@ -27,8 +27,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "update-music": "ts-node --transpile-only -O '{\"module\":\"commonjs\"}' spotify_scripts/update_music.ts",
-    "get-token": "ts-node --transpile-only -O '{\"module\":\"commonjs\"}' spotify_scripts/get_refresh_token.ts"
+    "media:gallery": "node scripts/media/upload-gallery.mjs",
+    "media:blog": "node scripts/media/upload-blog.mjs",
+    "media:blogs": "node scripts/media/migrate-blog-media.mjs",
+    "update-music": "ts-node --transpile-only -O '{\"module\":\"commonjs\"}' scripts/spotify/update_music.ts",
+    "get-token": "ts-node --transpile-only -O '{\"module\":\"commonjs\"}' scripts/spotify/get_refresh_token.ts"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -46,7 +49,10 @@
     ]
   },
   "devDependencies": {
+    "@aws-sdk/client-s3": "^3.1095.0",
     "@types/spotify-web-api-node": "^5.0.11",
+    "ffmpeg-static": "^5.3.0",
+    "sharp": "^0.35.3",
     "ts-node": "^10.9.2",
     "typescript": "^4.9.5"
   }

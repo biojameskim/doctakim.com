@@ -35,7 +35,7 @@ const SophomoreSlump = () => {
           <Text>but that doesn’t mean I was alone.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss1.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss1-be493ad1ac.jpg"
             alt="Road trip with Grace and Angie"
             caption="Road trip with Grace and Angie"
             orientation="v"
@@ -51,7 +51,7 @@ const SophomoreSlump = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss2.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss2-73d9cef3ff.jpg"
             alt="AAIV reunion in NYC"
             caption="Reunited."
             orientation="v"
@@ -60,7 +60,7 @@ const SophomoreSlump = () => {
           <Text>Some of my friends changed a lot…</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss3.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss3-b0ba0eef99.jpg"
             alt="Eric's new haircut"
             caption="Eric gets a dashing new haircut"
             orientation="v"
@@ -69,7 +69,7 @@ const SophomoreSlump = () => {
           <Text>While others, more or less, stayed the same.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss4.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss4-266ee3e935.jpg"
             alt="Derek is soaking wet"
             caption="Derek always forgets his umbrella"
             orientation="v"
@@ -91,7 +91,7 @@ const SophomoreSlump = () => {
           <Text>which meant she had to take her breakfast to go.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss5.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss5-ed5f756d80.jpg"
             alt="Elisabeth holds a pancake"
             caption="“Elisabeth… Do you… want a fork?”"
             orientation="v"
@@ -103,7 +103,7 @@ const SophomoreSlump = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss6.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss6-fa59a11574.jpg"
             alt="Shara on a run"
             caption="Shara and I go on our first (and last) run of the year"
             orientation="v"
@@ -119,7 +119,7 @@ const SophomoreSlump = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss7.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss7-2fe195fe91.jpg"
             alt="Melody eats the ice pops"
             caption="“Melody! The ice pops are for the freshmen…”"
             orientation="v"
@@ -133,7 +133,7 @@ const SophomoreSlump = () => {
           <Text>And hopefully friendly?</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss8.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss8-40bbcc0cf2.jpg"
             alt="Melody kissing Jesus"
             caption="Melody is forgiven."
             orientation="v"
@@ -145,14 +145,14 @@ const SophomoreSlump = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss9.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss9-9f0f64f94c.jpg"
             alt="Ben holding a slice of pie"
             caption="Ben and other freshmen bake more than enough pie to share"
             orientation="v"
           />
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss10.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss10-6d630c279e.jpg"
             alt="Elaine and Ben under an umbrella"
             caption="Elaine makes sure Ben doesn’t get wet"
             orientation="v"
@@ -161,7 +161,7 @@ const SophomoreSlump = () => {
           <Text>While others, not so much.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss11.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss11-f8f5792875.jpg"
             alt="Jonah doesn't share his umbrella"
             caption="Joanna and Bella need an Elaine, not a Jonah"
             orientation="v"
@@ -172,7 +172,7 @@ const SophomoreSlump = () => {
           <Text>Both emotionally…</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss12.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss12-9a135584aa.jpg"
             alt="Amy and Aleena"
             caption="Amy offers Aleena a helping hand"
             orientation="v"
@@ -181,14 +181,14 @@ const SophomoreSlump = () => {
           <Text>and physically.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss13.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss13-c91862e230.jpg"
             alt="Jaden and I hugging"
             caption="“Jaden, my arm is falling asleep.”"
             orientation="v"
           />
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss14.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss14-a6878e9c70.jpg"
             alt="Jaden hugging Jonah"
             caption="Jaden just wants a hug"
             orientation="v"
@@ -197,7 +197,7 @@ const SophomoreSlump = () => {
           <Text>Some were just… interesting.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss15.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss15-63b60f58c1.jpg"
             alt="Max licking cake off his hand"
             caption="I think Max really likes this cake"
             orientation="v"
@@ -209,7 +209,7 @@ const SophomoreSlump = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss16.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss16-6d07c4e082.jpg"
             alt="Jonah and Me"
             caption="Jonah and Me."
             orientation="h"
@@ -229,7 +229,7 @@ const SophomoreSlump = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss17.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss17-6c2b88d651.jpg"
             alt="Jonah reads an interesting novel"
             caption="A book for intellects"
             orientation="v"
@@ -246,7 +246,7 @@ const SophomoreSlump = () => {
           <Text>So I made sure he had some sugar here and there.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss18.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss18-8aef11f984.jpg"
             alt="Jonah eating a chocolate bar"
             caption="Jonah doesn’t want to admit the chocolate bar is good"
             orientation="v"
@@ -257,7 +257,7 @@ const SophomoreSlump = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss19.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss19-daee5f2b42.jpg"
             alt="Jonah and Me at the Getty"
             caption="“Does your body… move?”"
             orientation="v"
@@ -279,7 +279,7 @@ const SophomoreSlump = () => {
           <Text>So I tried my best to find that balance.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss20.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss20-f4d0017b14.jpg"
             alt="Playing Nerts with friends"
             caption="16 consecutive rounds of Nerts really deepens friendships"
             orientation="v"
@@ -288,7 +288,7 @@ const SophomoreSlump = () => {
           <Text>I was thankful for the friends that remained consistent.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss21.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss21-6b8aaa1ab8.jpg"
             alt="Simon trying to kiss me."
             caption="Simon is persistent. I mean consistent."
             orientation="override"
@@ -298,7 +298,7 @@ const SophomoreSlump = () => {
           <Text>The friends that showed their care.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss22.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss22-adb2caecff.jpg"
             alt="Angie and Grace hem my pants"
             caption="Angie and Grace help me hem my pants"
             orientation="v"
@@ -309,7 +309,7 @@ const SophomoreSlump = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss23.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss23-9abb9ee915.jpg"
             alt="Friends in Boston"
             caption="Touching John Harvard’s foot is good luck (÷ 6)"
             orientation="v"
@@ -327,7 +327,7 @@ const SophomoreSlump = () => {
           <Text>I learned some useful life skills…</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss24.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss24-63ff42ca27.jpg"
             alt="Crafting the perfect lighting for Daniel and Cherrie"
             caption="Crafting the perfect lighting for Daniel and Cherrie"
             orientation="h"
@@ -336,7 +336,7 @@ const SophomoreSlump = () => {
           <Text>And also just useful things about life.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss25.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss25-b2a7018de3.jpg"
             alt="Derek and I holding a tampon"
             caption="“Derek. Derek. What… is this?”"
             orientation="v"
@@ -368,7 +368,7 @@ const SophomoreSlump = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss26.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss26-478dcea297.jpg"
             alt="Playing at Second Dam"
             caption="The water was ICY cold"
             orientation="v"
@@ -380,7 +380,7 @@ const SophomoreSlump = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss27.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss27-94baf7ad0a.jpg"
             alt="Stargazing on a cloudy night"
             caption="Stargazing on a cloudy night"
             orientation="v"
@@ -389,7 +389,7 @@ const SophomoreSlump = () => {
           <Text>To the most intimate moments,</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss28.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss28-19e684eade.jpg"
             alt="Eric and Jonah wrestle"
             caption="Eric and Jonah engage in a passionate struggle"
             orientation="v"
@@ -398,7 +398,7 @@ const SophomoreSlump = () => {
           <Text>And to some of the best meals I’ve had in Ithaca.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss29.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss29-c1272a82d1.jpg"
             alt="Aleena orders chicken at a steak restaurant"
             caption="I don’t think Aleena likes what she ordered"
             orientation="v"
@@ -420,7 +420,7 @@ const SophomoreSlump = () => {
           <Text>It was a time where enemies became lovers,</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss30.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss30-1b4f38a428.jpg"
             alt="Jonah and Bella"
             caption="Jonah and Bella reassure me that they’re just friends"
             orientation="h"
@@ -429,7 +429,7 @@ const SophomoreSlump = () => {
           <Text>A time where coincidence led to new relationships,</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss31.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss31-2af4322f28.jpg"
             alt="Gloria makes hot pot"
             caption="Next door neighbor Gloria invites us over for hot pot"
             orientation="v"
@@ -441,7 +441,7 @@ const SophomoreSlump = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss32.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss32-56d7acf14d.jpg"
             alt="Lydia, Kate/Shungo, and Katie"
             caption="Good food, better people."
             orientation="override"
@@ -456,7 +456,7 @@ const SophomoreSlump = () => {
           <Text>Ithaca was still just as beautiful.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss33.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss33-2982367486.jpg"
             alt="Fall in Ithaca"
             caption="My view on the walk back home from class"
             orientation="v"
@@ -467,7 +467,7 @@ const SophomoreSlump = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss34.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss34-aea3e7c75c.jpg"
             alt="Boys Gen group photo"
             caption="Boys Generation is b-b-back"
             orientation="h"
@@ -476,7 +476,7 @@ const SophomoreSlump = () => {
           <Text>And I guess some people don’t really change.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss35.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss35-dc2087902d.jpg"
             alt="Grace Chen wearing birkenstocks"
             caption="Rain or Shine, Winter or Summer, Grace Chen loves her birks"
             orientation="v"
@@ -490,7 +490,7 @@ const SophomoreSlump = () => {
           <Text>But the care stayed the same too.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss36.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss36-e1dfca5cd3.jpg"
             alt="Highlands girls"
             caption="The Highlands girls are great at cooking"
             caption2="(in no particular order)"
@@ -519,7 +519,7 @@ const SophomoreSlump = () => {
           <Text>So I made sure to cherish every moment I had with them.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss37.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss37-afb9025900.jpg"
             alt="Five guys on a bed"
             caption="Bed for five?"
             orientation="v"
@@ -529,7 +529,7 @@ const SophomoreSlump = () => {
           <Text>But I guess some people weren’t having as much fun as us.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss38.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss38-3c9b7cfe21.jpg"
             alt="Tiffany's text messages to us"
             caption="We're sorry, Tiffany."
             orientation="override"
@@ -537,7 +537,7 @@ const SophomoreSlump = () => {
           />
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss39.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss39-f57c7f1b3c.jpg"
             alt="Tiffany and Simon"
             caption="Tiffany and Simon the next morning"
             orientation="v"
@@ -558,7 +558,7 @@ const SophomoreSlump = () => {
           <Text>I had to imagine a Cornell without them.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss40.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss40-bf85f46e7d.jpg"
             alt="David and Me"
             caption="Dazzling David"
             orientation="h"
@@ -577,7 +577,7 @@ const SophomoreSlump = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss41.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss41-eeace4bb8a.jpg"
             alt="Simon, Mark, and Kent"
             caption="Lunch tomorrow?"
             orientation="override"
@@ -593,7 +593,7 @@ const SophomoreSlump = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss42.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss42-f5006b452d.jpg"
             alt="Sophia, Mark, and Me"
             caption="Mark Pon Fan Club"
             orientation="v"
@@ -627,7 +627,7 @@ const SophomoreSlump = () => {
           <Text>And it’s all going by too fast.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss43.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss43-c7b726b8d3.jpg"
             alt="Dum Moment"
             caption="Rising Juniors"
             orientation="h"
@@ -665,7 +665,7 @@ const SophomoreSlump = () => {
           <Text>I’m getting closer to the things I want to do.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss44.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss44-cefd93adc3.jpg"
             alt="2023 AAIV merch"
             caption="A good reminder"
             orientation="v"
@@ -690,7 +690,7 @@ const SophomoreSlump = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss45.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss45-fb78f8f2e1.jpg"
             alt="Derek, Grace, and Me"
             caption=""
             orientation="h"
@@ -716,7 +716,7 @@ const SophomoreSlump = () => {
           <Text>I just can’t wait to go back.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/The-Sophomore-Slump/Pictures/ss46.jpeg"
+            src="https://images.doctakim.com/blogs/stories/sophomore-slump/ss46-b5dfc1b168.jpg"
             alt="AAIV on the slope"
             caption="Spring in Ithaca"
             orientation="v"

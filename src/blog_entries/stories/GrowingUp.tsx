@@ -32,7 +32,7 @@ const GrowingUp = () => {
       <div className="blog-text">
         <Stack {...BLOG_STYLES.bodyContainer}>
           <BlogImage
-            src="../images/blog_pictures/Growing-Up/Pictures/aunt-before.jpg"
+            src="https://images.doctakim.com/blogs/stories/growing-up/aunt-before-39feb95350.jpg"
             alt="Aunt taking a nap"
             caption="A 5 minute power nap/prayer goes a long way"
             orientation="v"
@@ -84,7 +84,7 @@ const GrowingUp = () => {
           <Text>My aunt is getting older.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Growing-Up/Pictures/aunt-after.jpeg"
+            src="https://images.doctakim.com/blogs/stories/growing-up/aunt-after-56113ddf72.jpg"
             alt="Aunt holding hands and singing with Uncle"
             caption="Aunt is still young at heart"
             orientation="h"
@@ -97,7 +97,7 @@ const GrowingUp = () => {
 
         <Stack {...BLOG_STYLES.bodyContainer} mt={7}>
           <BlogImage
-            src="../images/blog_pictures/Growing-Up/Pictures/gpa-before.jpg"
+            src="https://images.doctakim.com/blogs/stories/growing-up/gpa-before-9c21535897.jpg"
             alt="Grandpa with two of his grandchildren"
             caption="Grandpa loves his grandchildren"
             orientation="v"
@@ -145,7 +145,7 @@ const GrowingUp = () => {
           <Text> My grandpa is getting older.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Growing-Up/Pictures/gpa-after.jpeg"
+            src="https://images.doctakim.com/blogs/stories/growing-up/gpa-after-137a4b6604.jpg"
             alt="Grandpa laying down on sofa"
             caption="It's okay, grandpa."
             orientation="v"
@@ -158,7 +158,7 @@ const GrowingUp = () => {
 
         <Stack {...BLOG_STYLES.bodyContainer} mt={7}>
           <BlogImage
-            src="../images/blog_pictures/Growing-Up/Pictures/cousins-before.jpg"
+            src="https://images.doctakim.com/blogs/stories/growing-up/cousins-before-2eb6c28c9a.jpg"
             alt="My cousins in the past"
             caption="A swaggy and cool Instagram-worthy picture"
             orientation="h"
@@ -208,7 +208,7 @@ const GrowingUp = () => {
           <Text>My sisters are getting older.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Growing-Up/Pictures/cousins-after.jpeg"
+            src="https://images.doctakim.com/blogs/stories/growing-up/cousins-after-2280264648.jpg"
             alt="My cousins in the present."
             caption="A less swaggy and cool Instagram-worthy picture"
             orientation="h"
@@ -270,8 +270,7 @@ const GrowingUp = () => {
           <Text>I’m getting older too.</Text>
 
           <BlogImage
-            // src="../images/blog_pictures/Growing-Up/Pictures/me-before-and-after.png"
-            src="../images/blog_pictures/Growing-Up/Pictures/me_updated090323.jpeg"
+            src="https://images.doctakim.com/blogs/stories/growing-up/me-updated090323-5f9e816a75.jpg"
             alt="Me before and after"
             caption="Puberty."
             orientation="v"

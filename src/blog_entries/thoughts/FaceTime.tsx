@@ -45,7 +45,7 @@ const FaceTime = () => {
 
           <BlogImage
             maxW="280px"
-            src="../images/blog_pictures/FaceTime/Pictures/ft_1.jpeg"
+            src="https://images.doctakim.com/blogs/thoughts/facetime/ft-1-345792a411.jpg"
             alt="Facetime with Mom and Dad."
             orientation="override"
           />
@@ -74,7 +74,7 @@ const FaceTime = () => {
 
           <BlogImage
             maxW="280px"
-            src="../images/blog_pictures/FaceTime/Pictures/ft_2.jpeg"
+            src="https://images.doctakim.com/blogs/thoughts/facetime/ft-2-0d4d8319f6.jpg"
             alt="Facetime with Brother."
             orientation="override"
           />
@@ -108,7 +108,7 @@ const FaceTime = () => {
 
           <BlogImage
             maxW="280px"
-            src="../images/blog_pictures/FaceTime/Pictures/ft_3.jpeg"
+            src="https://images.doctakim.com/blogs/thoughts/facetime/ft-3-4d5f864f8b.jpg"
             alt="Mom not available for FaceTime."
             orientation="override"
           />
@@ -146,7 +146,7 @@ const FaceTime = () => {
 
           <BlogImage
             maxW="280px"
-            src="../images/blog_pictures/FaceTime/Pictures/ft_4.jpeg"
+            src="https://images.doctakim.com/blogs/thoughts/facetime/ft-4-ee8340472a.jpg"
             alt="My brother and Me."
             orientation="override"
           />

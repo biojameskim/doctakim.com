@@ -261,7 +261,7 @@ const MrsLupsaiu = () => {
           <Text>James</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Dear-Mrs-Lupsaiu/Pictures/me and lupsaiu.jpeg"
+            src="https://images.doctakim.com/blogs/thoughts/dear-mrs-lupsaiu/me-and-lupsaiu-7f8ad7ac9a.jpg"
             alt="A picture of me and Mrs. Lupsaiu"
             caption="Mrs. Lupsaiu"
             caption2="May 2021"

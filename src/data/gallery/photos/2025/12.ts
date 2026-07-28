@@ -5,257 +5,257 @@ export const folder: PhotoFolder = {
     month: "12",
     photos: [
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260464/IMG_9539_miyu3n.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/001-img-9539-miyu3n-65f65ddf0e.jpg",
             caption: "back in ithaca",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260464/IMG_9564_eh0ooq.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/002-img-9564-eh0ooq-08ea375cd6.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260469/IMG_9575_wehndz.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/003-img-9575-wehndz-2e955cd024.jpg",
             caption: "cis holiday party",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260464/IMG_9584_c8uc9v.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/004-img-9584-c8uc9v-bc8ce22584.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260464/IMG_9607_m7wl7y.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/005-img-9607-m7wl7y-c78758f7a3.jpg",
             caption: "zzz",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260466/IMG_9619_sldzfj.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/006-img-9619-sldzfj-418f6d9a85.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260466/IMG_9628_gbfki4.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/007-img-9628-gbfki4-3c8ece4607.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260470/IMG_5155_newkwm.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/008-img-9629-newkwm-96e3e15292.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260480/IMG_1428_f88r0o.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/009-img-9630-f88r0o-28234019c6.jpg",
             caption: "one more felly",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260470/IMG_9687_gnfzai.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/010-img-9687-gnfzai-1540344ea6.jpg",
             caption: "king jonah",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260474/IMG_9699_u6gxnn.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/011-img-9699-u6gxnn-9afd735d74.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260468/IMG_9716_wanpcp.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/012-img-9716-wanpcp-a0766db45d.jpg",
             caption: "lab secret santa",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260466/IMG_9723_kqopkj.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/013-img-9723-kqopkj-ebbbcbc360.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260468/IMG_9717_ra4vug.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/014-img-9724-ra4vug-eee86ca01e.jpg",
             caption: "lauren's \"cheatsheet\"",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260474/IMG_9728_tfyj87.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/015-img-9728-tfyj87-3614555423.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260470/IMG_9752_quntlm.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/016-img-9752-quntlm-9af8a66ac0.jpg",
             caption: "chef haozheng",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260470/IMG_9766_b6pmpp.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/017-img-9766-b6pmpp-e3b1e95a74.jpg",
             caption: "jiajun & fiona",
             orientation: "h"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260473/IMG_9773_ve7ofu.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/018-img-9773-ve7ofu-45e53c0deb.jpg",
             caption: "in the studio",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260475/IMG_9792_u7bbgr.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/019-img-9792-u7bbgr-43c09b033f.jpg",
             caption: "derek visits",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260472/IMG_9805_mwymav.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/020-img-9805-mwymav-f877952019.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260475/IMG_9831_zrzxpz.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/021-img-9831-zrzxpz-2fd60e6a69.jpg",
             caption: "bday dinner",
             orientation: "h"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260478/IMG_1536_ppxdqm.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/022-img-9832-ppxdqm-02a0af6bd8.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260474/IMG_9837_rbvaft.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/023-img-9837-rbvaft-02793f8edd.jpg",
             caption: "",
             orientation: "h"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766260476/IMG_9842_kay8og.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/024-img-9842-kay8og-0fa86b26c2.jpg",
             caption: "last hangout for a while",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903474/IMG_9860_nvefnw.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/025-img-9860-nvefnw-5f200c17a2.jpg",
             caption: "morning in seattle",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903481/IMG_9876_pycwuj.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/026-img-9876-pycwuj-3238192f68.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903480/IMG_9899_rjxqcb.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/027-img-9899-rjxqcb-83d02f07f0.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903481/IMG_9902_deo5uz.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/028-img-9902-deo5uz-6daec81280.jpg",
             caption: "vancouver",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903468/IMG_9924_mwu4td.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/029-img-9924-mwu4td-9c1a123bc1.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903481/IMG_9932_brwdbt.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/030-img-9932-brwdbt-09d7938c8f.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903481/IMG_9934_u3tz4e.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/031-img-9934-u3tz4e-1a2c091f26.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903481/IMG_9953_wryx2y.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/032-img-9953-wryx2y-bdf74cd484.jpg",
             caption: "whistler",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903482/IMG_9975_pf6zhz.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/033-img-9975-pf6zhz-1b67b3c113.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903469/IMG_9976_gvgslp.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/034-img-9976-gvgslp-b3d5850462.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903482/IMG_9984_wpau3f.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/035-img-9984-wpau3f-999a7742b8.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903468/IMG_0002_bqgf6l.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/036-img-10000-bqgf6l-cf28ab9ab3.jpg",
             caption: "hot tub",
             orientation: "h"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903474/IMG_0009_zd8kbv.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/037-img-10001-zd8kbv-282a49ec05.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903468/DSCF2493-2_y76srw.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/038-img-10002-21a568b784.jpg",
             caption: "home",
             orientation: "h"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903474/IMG_0026_is8ksm.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/039-img-10003-3191b5a56f.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903468/DSCF2501_kk54g4.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/040-img-10004-ce9ce900b7.jpg",
             caption: "mom's bday",
             orientation: "h"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903482/IMG_0050_b0d7dh.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/041-img-10005-e842574a1f.jpg",
             caption: "christmas morning",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903474/IMG_0056_lhatab.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/042-z-1-00661f1c7f.jpg",
             caption: "",
             orientation: "h"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903468/IMG_0061_csanii.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/043-z-2-9be53df34a.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903475/IMG_0081_ol7axy.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/044-z-3-1837511b21.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903475/IMG_0096_kp6p3p.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/045-z-4-428abfeacf.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903468/IMG_0102_d4y1v5.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/046-zz-5-28ed31668f.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903475/IMG_0116_tbzane.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/047-zz-6-5320cd3cfb.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903480/IMG_0123_gxvnoh.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/048-zz-7-813c857a18.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766903469/IMG_0129_u5uhnu.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/049-zz-8-12b421d06c.jpg",
             caption: "",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766984821/IMG_0163_s1lvex.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/050-zz-9-b408d4766f.jpg",
             caption: "newspaper",
             orientation: "v"
         },
         {
-            filename: "https://res.cloudinary.com/doypjterz/image/upload/v1766984820/IMG_0171_owlsgt.jpg",
+            filename: "https://images.doctakim.com/gallery/2025/12/051-zz-10-40e0589820.jpg",
             caption: "",
             orientation: "v"
         }
