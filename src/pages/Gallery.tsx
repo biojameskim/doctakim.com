@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useLayoutEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import {
     Box,
@@ -21,6 +22,10 @@ const Gallery = () => {
     const { year, month, subfolder } = useParams();
     const navigate = useNavigate();
     const hoverBg = useColorModeValue("gray.50", "gray.700");
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+    }, [year, month, subfolder]);
 
     const selectedYear = year ? parseInt(year) : null;
     const selectedFolder = selectedYear && month
