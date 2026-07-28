@@ -55,7 +55,7 @@ const Angy20 = () => {
             because if I looked back 10 years, well, I was still in the womb.</Text>
 
           <BlogImage
-            src="../images/birthdays/angy-20/ah_1.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/angy-20/ah-1-74f08bbad2.jpg"
             alt="Angy and Lilian hanging on a bar."
             caption="Angy is prolly the same person she was 10 years ago."
             orientation='v'
@@ -74,7 +74,7 @@ const Angy20 = () => {
             much, much stronger.</Text>
 
           <BlogImage
-            src="../images/birthdays/angy-20/ah_2.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/angy-20/ah-2-522cbff2dd.jpg"
             alt="Angy and Grace twinning at the gym."
             caption="Angy prolly cried a lot in the past decade too."
             orientation='v'
@@ -97,7 +97,7 @@ const Angy20 = () => {
           <Text>And wow am I glad that God has placed you where you are right now.</Text>
 
           <BlogImage
-            src="../images/birthdays/angy-20/ah_3.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/angy-20/ah-3-285c9f5e68.jpg"
             alt="Angy lost in a library."
             caption='“God! God… Where am I?”'
             orientation='v'
@@ -119,7 +119,7 @@ const Angy20 = () => {
           <Text>these are the pictures I cherish the most as I look back at my semester.</Text>
 
           <BlogImage
-            src="../images/birthdays/angy-20/ah_4.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/angy-20/ah-4-d730eb5089.jpg"
             alt="0.5 photo at Boston."
             caption="The time your hand was legit in the guy’s face"
             orientation='v'
@@ -135,7 +135,7 @@ const Angy20 = () => {
             deep inside, you enjoy my presence too.</Text>
 
           <BlogImage
-            src="../images/birthdays/angy-20/ah_5.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/angy-20/ah-5-0fd2594be4.jpg"
             alt="Angy gives me a dirty look."
             caption="At least I think so…"
             orientation='v'
@@ -154,7 +154,7 @@ const Angy20 = () => {
             your hesitations.</Text>
 
           <BlogImage
-            src="../images/birthdays/angy-20/ah_6.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/angy-20/ah-6-aff0511c88.jpg"
             alt="Angy in an apron."
             caption="Next small group leader???"
             orientation='v'
@@ -176,7 +176,7 @@ const Angy20 = () => {
           <Text>Right?</Text>
 
           <BlogImage
-            src="../images/birthdays/angy-20/ah_7.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/angy-20/ah-7-e4c3a41df7.jpg"
             alt="Angy and Melody smiling."
             caption="All smiles."
             orientation='v'

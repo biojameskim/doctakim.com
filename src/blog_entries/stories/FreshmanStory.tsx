@@ -53,7 +53,7 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/1airport.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/1airport-c948ca2ef5.jpg"
             alt="Sleeping at the airport"
             caption={`Mom: "James, you should've just gone to Berkeley"`}
             caption2='Dad: "zzzz"'
@@ -68,7 +68,7 @@ const FreshmanStory = () => {
           <Text>Until I looked over at Ganedago.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/2hilcvsganedago.png"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/2hilcvsganedago-92db31e1f4.png"
             alt="HILC next to Ganedago"
             caption="I pay the same housing as the people who live in Ganedago"
             orientation="h"
@@ -93,7 +93,7 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/3mom cry.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/3mom-cry-7c1e06d383.jpg"
             alt="Mom crying"
             caption="Mom said the food was just TOO good"
             orientation="v"
@@ -132,7 +132,7 @@ const FreshmanStory = () => {
           <Text>And we both... liked watching ping pong.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/4me and eric.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/4me-and-eric-a50466d608.jpg"
             alt="Me and Eric"
             caption="Ecstatic Eric"
             orientation="h"
@@ -149,7 +149,7 @@ const FreshmanStory = () => {
           <Text>I had a friend I could explore these fellowships with.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/5eric and i worm.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/5eric-and-i-worm-515bd69e4c.jpg"
             alt="Me and Eric almost kiss"
             caption="Eric and I learn there's more to explore than just Christian fellowships"
             orientation="v"
@@ -162,7 +162,7 @@ const FreshmanStory = () => {
           <Text>The two of us became three…</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/6derek .jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/6derek-48564afd40.jpg"
             alt="My friend, Derek"
             caption="Insert: Derpy Derek"
             caption2="Derek has the broadest shoulders I've ever seen"
@@ -172,7 +172,7 @@ const FreshmanStory = () => {
           <Text>And the three of us became six…</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/7abnormal.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/7abnormal-bcc363fae3.jpg"
             alt="The six members of dum moment"
             caption="Insert: Abnormal Angie, Goofy Grace, Exotic Elisabeth"
             orientation="h"
@@ -185,13 +185,13 @@ const FreshmanStory = () => {
           <Text>We munched together…</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/8cooking.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/8cooking-3a9fd6966f.jpg"
             alt="Cooking together"
             caption="Cooking means stealing and reheating the already cooked dining hall chicken"
             orientation="h"
           />
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/8dp dough updated.png"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/8dp-dough-updated-8764b9c413.png"
             alt="Angie and Elisabeth at DP Dough"
             caption="I don't think Elisabeth likes when I take pictures of her eating"
             orientation="override"
@@ -201,13 +201,13 @@ const FreshmanStory = () => {
           <Text>We played games together…</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/9show and tell2.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/9show-and-tell2-0bee303ae6.jpg"
             alt="Eric and Elisabeth dance for us"
             caption="Unamusing dance battles"
             orientation="h"
           />
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/10skribble.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/10skribble-eb846ee01f.jpg"
             alt="dum moment plays skribbl.io together"
             caption="Angie doesn't know how to draw a spoon"
             orientation="h"
@@ -216,13 +216,13 @@ const FreshmanStory = () => {
           <Text>And we explored the outdoors together…</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/11snow angels.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/11snow-angels-6e9d541b39.jpg"
             alt="Making snow angels together"
             caption="REAL snow angels"
             orientation="h"
           />
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/12concrete angel.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/12concrete-angel-68490c45e6.jpg"
             alt="Angie makes a concrete angel"
             caption="Angie shows us what a concrete angel is"
             orientation="h"
@@ -235,13 +235,13 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/13leg wrestling.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/13leg-wrestling-9e16cc3156.jpg"
             alt="Grace and Elisabeth wrestle with their legs"
             caption="Grace and Elisabeth like being touchy"
             orientation="h"
           />
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/14balance.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/14balance-84342c05b5.jpg"
             alt="Grace and Elisabeth try to balance on each other"
             caption="A little too touchy"
             orientation="h"
@@ -253,7 +253,7 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/15studying for fun.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/15studying-for-fun-8810e87fcb.jpg"
             alt="dum moment studies together"
             caption="Studying together"
             orientation="h"
@@ -269,7 +269,7 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/16sheesh faces.png"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/16sheesh-faces-7d7c014766.png"
             alt="dum moment shows off their sheesh faces"
             caption="The girls made us do this"
             orientation="override"
@@ -289,19 +289,19 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/17eric sleeping.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/17eric-sleeping-da6b57a7fa.jpg"
             alt="Eric sleeping"
             caption="Eric said he concentrates better with his eyes closed"
             orientation="h"
           />
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/18angie sleeping.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/18angie-sleeping-6007c72b28.jpg"
             alt="Angie sleeping in Cocktail"
             caption="I think Angie said the same thing"
             orientation="v"
           />
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/19derek_coc.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/19derek-coc-1ceb05b4e7.jpg"
             alt="Derek plays games in Cocktail"
             caption='Derek: "Just one more round"'
             orientation="v"
@@ -317,7 +317,7 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/20cherrie_starin.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/20cherrie-starin-dba424d512.jpg"
             alt="Cherrie, Karen, and Elisabeth do work at felly dessert"
             caption="Don't mess with Cherrie when her essay is due in 2 hours"
             orientation="h"
@@ -336,7 +336,7 @@ const FreshmanStory = () => {
           <Text>Some people reminded me of family.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/21sabrina.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/21sabrina-443769bc99.jpg"
             alt="Me and Sabrina"
             caption="Me and my brother, Sabrina"
             orientation="h"
@@ -345,7 +345,7 @@ const FreshmanStory = () => {
           <Text>Some people I met were super wise…</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/22wise_gras.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/22wise-gras-a3b2e6e213.jpg"
             alt="Me and Grace at felly dessert"
             caption="Wise Grace is always ready to impart her knowledge to me"
             orientation="v"
@@ -354,7 +354,7 @@ const FreshmanStory = () => {
           <Text>While others, not so much.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/23unwise_gras.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/23unwise-gras-106c802525.jpg"
             alt="Grace and I grab lunch together"
             caption="This is the same person"
             orientation="h"
@@ -366,7 +366,7 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/24_711.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/24-711-4a58a416f1.jpg"
             alt="The 7/11 gang enjoys snacks at unholy hours"
             caption={`"Look guys, it's only 3am!"`}
             orientation="v"
@@ -378,7 +378,7 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/25tired amy.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/25tired-amy-100a99e67c.jpg"
             alt="Tired Amy"
             caption="Amy is tired."
             caption2="Tired of us saying no to trips to 7-Eleven"
@@ -392,19 +392,19 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/26aleena design.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/26aleena-design-7ce51d3af3.jpg"
             alt="Aleena makes a gingerbread house"
             caption="Aleena has a bright future as a design major"
             orientation="v"
           />
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/27simon teeth.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/27simon-teeth-1f7743e68c.jpg"
             alt="Simon brushes his teeth very well"
             caption="Simon (pre-dent) shows us the proper way to brush our teeth"
             orientation="v"
           />
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/28studious micah.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/28studious-micah-1d123ef53b.jpg"
             alt="Micah studies during dance practice"
             caption="Micah seizes every opportunity to study."
             caption2="Even the 3 minute break during dance practice"
@@ -427,13 +427,13 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/29betterwedsg.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/29betterwedsg-155071eea9.jpg"
             alt="Wednesday small group group photo"
             caption="The best Wednesday small group"
             orientation="h"
           />
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/30sophia.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/30sophia-54c4fd0e89.jpg"
             alt="Me and Sophia"
             caption="My small group leader, Sophia"
             caption2="W is for the best Wednesday small group"
@@ -454,7 +454,7 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/31nature.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/31nature-33c8affb79.jpg"
             alt="A waterfall on Cornell's campus"
             caption="My view on the walk to class"
             orientation="v"
@@ -466,7 +466,7 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/32brrrr.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/32brrrr-705123268f.jpg"
             alt="Cassy, me, and Jackie in our winter jackets"
             caption="Three Southern Californians brace for the fierce winter"
             orientation="h"
@@ -478,13 +478,13 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/33sleeping beauties.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/33sleeping-beauties-ab1646acfb.jpg"
             alt="Sarah and Simon sleep on the couches in HILC"
             caption="So close... yet so far... Simon wishes he was Sarah's green jacket"
             orientation="h"
           />
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/34cherrie_melody2.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/34cherrie-melody2-4ea3922137.jpg"
             alt="Cherrie and Melody rest on each other"
             caption="Cherrie and Melody make me feel lonely (and block my view of the front)"
             orientation="h"
@@ -506,7 +506,7 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/35cherrie cookies.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/35cherrie-cookies-fcdacb55e6.jpg"
             alt="Cherrie and her cookies"
             caption="Caring Cherrie baked cookies and delivered it to all the freshmen"
             orientation="h"
@@ -520,7 +520,7 @@ const FreshmanStory = () => {
           <Text>Usually in the form of grabbing a meal with me.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/36simon_david_dwoo_food2.png"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/36simon-david-dwoo-food2-3936d4a94d.png"
             alt="Upperclassmen boys grab meals with me"
             caption="Great food, greater company"
             orientation="override"
@@ -530,19 +530,19 @@ const FreshmanStory = () => {
           <Text>Others showed their love in different ways.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/37andrew hand.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/37andrew-hand-a98d2bc6d5.jpg"
             alt="Andrew goes on a run with me"
             caption="Affectionate Andrew holds his hand out for me to grab so I don't lag too far behind"
             orientation="v"
           />
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/38laz haircut.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/38laz-haircut-202d40e101.jpg"
             alt="Laz gives me a haircut"
             caption="Luscious Laz gives me a complimentary haircut"
             orientation="v"
           />
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/39Alan ride.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/39alan-ride-66af7966c4.jpg"
             alt="Alan gives freshmen a ride back to North"
             caption="Adorable Alan risks a ticket so the freshies can go home safely"
             orientation="h"
@@ -559,7 +559,7 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/40daniel and barry.png"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/40daniel-and-barry-b74e870036.png"
             alt="The three boys with Daniel and Barry"
             caption="Dashing Daniel and Beefy Barry can't escape our skinship"
             orientation="override"
@@ -580,7 +580,7 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/41care_package.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/41care-package-c437ede8b3.jpg"
             alt="Care package from my parents"
             caption="Care package from Mama and Papa Kim"
             caption2="Note says: We love you so much. Eat healthy and study hard."
@@ -606,7 +606,7 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/42failed haircut.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/42failed-haircut-497098a0b1.jpg"
             alt="Eating a sandwich after a bad haircut"
             caption="One of many failed haircuts"
             caption2="I was so sad I bought myself a consolation sandwich"
@@ -617,7 +617,7 @@ const FreshmanStory = () => {
           <Text>I learned how clean armpits could be when you wax them,</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/43armpits.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/43armpits-8339ae51c5.jpg"
             alt="Derek and Simon get their armpits waxed during Large Group"
             caption="Fresh 'pits x2"
             orientation="v"
@@ -627,7 +627,7 @@ const FreshmanStory = () => {
           <Text>(only if Grace and Ro-Ann are the teachers),</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/44boys_gen.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/44boys-gen-7e4ae63937.jpg"
             alt="Boyz Re-Generation's performance"
             caption="Emerging kpop group"
             caption2='"Boyz Re-Generation"'
@@ -656,7 +656,7 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/46-hilcmems-1.png"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/46-hilcmems-1-98c80dde40.png"
             alt="Memories at HILC"
             orientation="override"
             maxW="750px"
@@ -667,7 +667,7 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/45hilc zzz.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/45hilc-zzz-cd70126a1c.jpg"
             alt="Dum Moment sleeping at HILC"
             caption="Breakfast anyone?"
             orientation="h"
@@ -688,7 +688,7 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/46hilc memoreis.png"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/46hilc-memoreis-dcd3f6a181.png"
             alt="Memories at HILC"
             caption="Sleepless nights"
             orientation="override"
@@ -711,7 +711,7 @@ const FreshmanStory = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Freshman-College-Story/Pictures/47perfect match.jpeg"
+            src="https://images.doctakim.com/blogs/stories/freshman-story/47perfect-match-982a48e0da.jpg"
             alt="Grace's perfect match"
             caption='Our first "Perfect Match" experience'
             orientation="h"
@@ -744,7 +744,7 @@ const FreshmanStory = () => {
             overflow="hidden"
           >
             <video controls>
-              <source src="../images/blog_pictures/My-Freshman-College-Story/Pictures/48bye hilc.mov" />
+              <source src="https://images.doctakim.com/blogs/stories/freshman-story/48bye-hilc-dcd9c1346e.mp4" />
             </video>
           </Box>
 

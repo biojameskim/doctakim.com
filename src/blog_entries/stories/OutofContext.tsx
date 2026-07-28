@@ -75,7 +75,7 @@ const OutofContext = () => {
 
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1771474974/IMG_0677_iiwc08.jpg"
+                        src="https://images.doctakim.com/blogs/stories/out-of-context/img-0677-iiwc08-a6530fe74e.jpg"
                         alt="cornell gym"
                         caption=""
                         orientation="v"
@@ -106,7 +106,7 @@ const OutofContext = () => {
                     <Text pb={"15vh"}>His brother is about twice his size now.</Text>
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1771474973/IMG_0110_mimzy5.jpg"
+                        src="https://images.doctakim.com/blogs/stories/out-of-context/img-0110-mimzy5-8a3898df44.jpg"
                         alt="Grandpa, dad, his older brother"
                         caption="The three little pigs"
                         orientation="h"
@@ -142,7 +142,7 @@ const OutofContext = () => {
                     <Text pb={"15vh"}>I was able to get a glimpse of the Eric that existed before I ever met him.</Text>
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1771474979/IMG_4186_ocacax.jpg"
+                        src="https://images.doctakim.com/blogs/stories/out-of-context/img-4186-ocacax-0c10085113.jpg"
                         alt="Eric eats a banana split"
                         caption="banana split"
                         orientation="v"
@@ -175,7 +175,7 @@ const OutofContext = () => {
                     <Text pb={"15vh"}>Turns out it’s just him.</Text>
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1771474969/IMG_9879_u4xe40.jpg"
+                        src="https://images.doctakim.com/blogs/stories/out-of-context/img-9879-u4xe40-201d99025d.jpg"
                         alt="Jonah's dad finding a snack"
                         caption="Jonah’s dad reaches for another peanut butter cup"
                         orientation="v"
@@ -206,7 +206,7 @@ const OutofContext = () => {
                     <Text pb={"15vh"}>travels around the world now leading and directing music for her a capella group.</Text>
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1771474978/IMG_1064_ktx4c3.jpg"
+                        src="https://images.doctakim.com/blogs/stories/out-of-context/img-1064-ktx4c3-e791483bc5.jpg"
                         alt="Eunice"
                         caption="whiffenpoofs"
                         orientation="v"
@@ -255,7 +255,7 @@ const OutofContext = () => {
                     <Text pb={"15vh"}>stumped by a brain teaser given to him by his parents (how to be nice to his girlfriend).</Text>
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1771474969/IMG_7491_slkycl.jpg"
+                        src="https://images.doctakim.com/blogs/stories/out-of-context/img-7491-slkycl-d0de13cca1.jpg"
                         alt="Lunch with Caleb and Jonah"
                         caption='“So if you have 3 red balls and 2 blue in a bag...”'
                         orientation="v"
@@ -270,7 +270,7 @@ const OutofContext = () => {
                     <Text pb={"15vh"}>their presence itself becomes a context in which our interactions are mutually enriched.</Text>
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1771474971/IMG_2451_iul9xw.jpg"
+                        src="https://images.doctakim.com/blogs/stories/out-of-context/img-2451-iul9xw-3c2db44da0.jpg"
                         alt="Grace and Melody laughing at Derek"
                         caption="Derek cracks another joke"
                         orientation="v"

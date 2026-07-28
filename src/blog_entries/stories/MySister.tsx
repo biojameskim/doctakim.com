@@ -45,7 +45,7 @@ const MySister = () => {
           <Text>I have a younger sister.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Sister/Pictures/1sis.jpeg"
+            src="https://images.doctakim.com/blogs/stories/my-sister/1sis-0f804b9f89.jpg"
             alt="A picture of me, bro, and sis"
             caption="Left to right: me, bro, and sis"
             orientation="h"
@@ -88,7 +88,7 @@ const MySister = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Sister/Pictures/2the notebook.png"
+            src="https://images.doctakim.com/blogs/stories/my-sister/2the-notebook-97429937b9.png"
             alt="A picture of me and bro in a movie"
             caption='"The Notebook" (2012)'
             orientation="h"
@@ -112,7 +112,7 @@ const MySister = () => {
           <Text>Our poses were ahead of their time…</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Sister/Pictures/3cool brothers.png"
+            src="https://images.doctakim.com/blogs/stories/my-sister/3cool-brothers-3870daf2bb.png"
             alt="A picture of me and bro trying to be cool"
             caption="These posts are long deleted"
             orientation="h"
@@ -132,7 +132,7 @@ const MySister = () => {
           <Text> We just didn’t have a sister telling us what to wear.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Sister/Pictures/4jamestown.png"
+            src="https://images.doctakim.com/blogs/stories/my-sister/4jamestown-ed325af071.png"
             alt="Me in a very cringy outfit"
             caption="Even the 17th century pilgrims of Jamestown would cringe at this outfit"
             orientation="h"
@@ -151,7 +151,7 @@ const MySister = () => {
           <Text>One more person to cry over kdramas with.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Sister/Pictures/5sad crash landing.png"
+            src="https://images.doctakim.com/blogs/stories/my-sister/5sad-crash-landing-d447bd511a.png"
             alt='Me crying after watching "Crash Landing on You"'
             caption='"Crash Landing on You" was sad'
             orientation="v"
@@ -168,7 +168,7 @@ const MySister = () => {
           <Text>my dad asked if they could check one more time.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Sister/Pictures/6dadlovesme.jpg"
+            src="https://images.doctakim.com/blogs/stories/my-sister/6dadlovesme-188df9b444.jpg"
             alt="A picture of me and Dad"
             caption="Dad promises me he loves me for who I am"
             orientation="h"
@@ -196,7 +196,7 @@ const MySister = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Sister/Pictures/7story time.png"
+            src="https://images.doctakim.com/blogs/stories/my-sister/7story-time-9da4ff915b.png"
             alt="Me and Bro in early years"
             caption="Story time or potty time?"
             orientation="h"
@@ -216,7 +216,7 @@ const MySister = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Sister/Pictures/8my safe space.PNG"
+            src="https://images.doctakim.com/blogs/stories/my-sister/8my-safe-space-f281bdff48.png"
             alt="Bro protecting me"
             caption="My safe space"
             orientation="h"
@@ -265,7 +265,7 @@ const MySister = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Sister/Pictures/9 i know love.jpeg"
+            src="https://images.doctakim.com/blogs/stories/my-sister/9-i-know-love-339251abc6.jpg"
             alt="A picture of me with sunglasses. Swag."
             caption="Love... Dating... Heartbreak..."
             caption2="What's that?"
@@ -292,7 +292,7 @@ const MySister = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Sister/Pictures/9charlles.JPG"
+            src="https://images.doctakim.com/blogs/stories/my-sister/9charlles-35b8cea61a.jpg"
             alt="Charles on a swing."
             caption="This brings Charles joy in the present"
             orientation="h"
@@ -320,7 +320,7 @@ const MySister = () => {
           <Text>They’re no longer confident in themselves.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Sister/Pictures/10 no boys allowed.jpeg"
+            src="https://images.doctakim.com/blogs/stories/my-sister/10-no-boys-allowed-eb007154e7.jpg"
             alt="church girls playing together."
             caption="They said boys aren't allowed to join"
             orientation="h"
@@ -361,7 +361,7 @@ const MySister = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Sister/Pictures/leah screw off.jpg"
+            src="https://images.doctakim.com/blogs/stories/my-sister/leah-screw-off-dfc9e423c5.jpg"
             alt=""
             caption={`Leah: "I'm gonna cut your finger off and stab you"`}
             orientation="v"
@@ -382,7 +382,7 @@ const MySister = () => {
           <Text>my mom stopped following us out to the park.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Sister/Pictures/mom bench.png"
+            src="https://images.doctakim.com/blogs/stories/my-sister/mom-bench-bfbbf03f87.png"
             alt="Mom sitting and watching us play tennis"
             orientation="h"
           />
@@ -408,7 +408,7 @@ const MySister = () => {
           <Text>Back in her youth again.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Sister/Pictures/mom pic.png"
+            src="https://images.doctakim.com/blogs/stories/my-sister/mom-pic-ca8394e59a.png"
             alt="Mom and dad walking together"
             orientation="h"
           />
@@ -441,7 +441,7 @@ const MySister = () => {
           <Text>But instead pleas for a hug and someone that can listen.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Sister/Pictures/familial love.png"
+            src="https://images.doctakim.com/blogs/stories/my-sister/familial-love-895fe0a0b1.png"
             alt="Me and bro have a kiss"
             caption="The Kim brothers know the responsibilities/consequences of familial love"
             orientation="h"
@@ -456,7 +456,7 @@ const MySister = () => {
           <Text>Come give the Kim brothers a chance.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/My-Sister/Pictures/cool and cooler.jpeg"
+            src="https://images.doctakim.com/blogs/stories/my-sister/cool-and-cooler-1282d93cf9.jpg"
             alt="Me and bro being very cool"
             caption="Cool and cooler"
             orientation="v"

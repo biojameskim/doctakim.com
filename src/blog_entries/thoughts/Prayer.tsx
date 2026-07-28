@@ -56,7 +56,7 @@ const Prayer = () => {
           <Text>And that He really does answer my prayers.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Prayer/Pictures/pray_1.jpeg"
+            src="https://images.doctakim.com/blogs/thoughts/prayer/pray-1-9a73d62cec.jpg"
             alt="Bro and Me in Washington DC."
             caption="Hands together in prayer."
             orientation="v"
@@ -96,7 +96,7 @@ const Prayer = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/Prayer/Pictures/pray_2.jpeg"
+            src="https://images.doctakim.com/blogs/thoughts/prayer/pray-2-0a8d163129.jpg"
             alt="Bro and Me at my Chinese School."
             caption="“I don’t have to be tall. But God… Please."
             caption2="Just taller than my brother.”"
@@ -115,7 +115,7 @@ const Prayer = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/Prayer/Pictures/pray_3.jpeg"
+            src="https://images.doctakim.com/blogs/thoughts/prayer/pray-3-d60a1ba01e.jpg"
             alt="Bro and Me at a Karaoke place."
             caption="Probably not a singer"
             orientation="h"
@@ -140,7 +140,7 @@ const Prayer = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/Prayer/Pictures/pray_4.jpeg"
+            src="https://images.doctakim.com/blogs/thoughts/prayer/pray-4-dcbc173a66.jpg"
             alt="Mom and Bro hugging while Dad watches from the side."
             caption="Mom and Bro make Dad feel a little left out."
             orientation="v"
@@ -172,7 +172,7 @@ const Prayer = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/Prayer/Pictures/pray_5.jpeg"
+            src="https://images.doctakim.com/blogs/thoughts/prayer/pray-5-902156152d.jpg"
             alt="Brother and Me in middle school."
             caption="Same initials means PE clothes can be handed down."
             orientation="v"
@@ -196,7 +196,7 @@ const Prayer = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/Prayer/Pictures/pray_6.jpeg"
+            src="https://images.doctakim.com/blogs/thoughts/prayer/pray-6-bd74d73ed6.jpg"
             alt="Bro and me on a couch."
             caption="He came back."
             orientation="v"
@@ -215,7 +215,7 @@ const Prayer = () => {
           <Text>I was pretty happy.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Prayer/Pictures/pray_7.jpeg"
+            src="https://images.doctakim.com/blogs/thoughts/prayer/pray-7-cb0272dab5.jpg"
             alt="Me and Bro in front of Sather Gate."
             caption="He came back. Again."
             orientation="h"
@@ -243,7 +243,7 @@ const Prayer = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/Prayer/Pictures/pray_8.jpeg"
+            src="https://images.doctakim.com/blogs/thoughts/prayer/pray-8-5b7e8ca150.jpg"
             alt="Homemade pb&j sandwich."
             caption="No Mom means pb&j sandwich for dinner. Again."
             orientation="h"
@@ -262,7 +262,7 @@ const Prayer = () => {
           <Text>but no one's there to tickle me.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Prayer/Pictures/pray_9.jpeg"
+            src="https://images.doctakim.com/blogs/thoughts/prayer/pray-9-930ee790d0.jpg"
             alt="Brother and Me on a subway."
             caption="Me and the Tickle Monster"
             orientation="v"
@@ -309,7 +309,7 @@ const Prayer = () => {
             overflow="hidden"
           >
             <video controls>
-              <source src="../images/blog_pictures/Prayer/Pictures/pray_10.mov" />
+              <source src="https://images.doctakim.com/blogs/thoughts/prayer/pray-10-c1c6e58f6e.mp4" />
             </video>
             <Box height="0.5rem"></Box>
             <Text as="i" paddingLeft="1.2rem">

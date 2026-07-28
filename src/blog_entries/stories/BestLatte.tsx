@@ -63,7 +63,7 @@ const BestLatte = () => {
 
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/latte.jpeg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/latte-094d988142.jpg"
             alt="Eric's mom's latte"
             orientation="v"
           />
@@ -81,7 +81,7 @@ const BestLatte = () => {
           <Text>These friends are familiar.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/familiar.jpeg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/familiar-c890670983.jpg"
             alt="Angie and James"
             caption="Angie makes it clear that familiarity ≠ friendly"
             orientation="v"
@@ -94,7 +94,7 @@ const BestLatte = () => {
           <Text>These friends are comfortable.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/comfortable.jpeg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/comfortable-0f25f87b59.jpg"
             alt="Eric hugging Derek"
             caption="Derek is comfortable. So is his bosom it seems."
             orientation="h"
@@ -108,7 +108,7 @@ const BestLatte = () => {
           <Text>These friends are energizing.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/hs_friends.jpeg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/hs-friends-11acc0aa9b.jpg"
             alt="High school friends"
             caption="The guys who got me through high school"
             orientation="v"
@@ -125,7 +125,7 @@ const BestLatte = () => {
           <Text>Together.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/together.jpeg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/together-5b9894c3bf.jpg"
             alt="Melody, Derek, James, Elisabeth"
             orientation="v"
           />
@@ -140,7 +140,7 @@ const BestLatte = () => {
           <Text>The guy I mentioned at the start of the story.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/eric1.jpeg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/eric1-e6df65a907.jpg"
             alt="Eric and James"
             orientation="h"
           />
@@ -155,7 +155,7 @@ const BestLatte = () => {
           <Text>I like doing my homework on time, he doesn’t like doing his homework on time.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/eric2.jpeg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/eric2-864e77cf80.jpg"
             alt="Eric sleeping"
             caption="Instagram reels is a nice bedtime lullaby"
             orientation="v"
@@ -168,7 +168,7 @@ const BestLatte = () => {
           <Text>And it's not everyday you meet someone you can have rap battles insulting each other and the very next moment you’re sharing about the girl that just rejected you and why you choose to believe in God.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/eric3.jpeg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/eric3-32134194f2.jpg"
             alt="Eric in our dorm room"
             caption="Our freshman year dorm room"
             orientation="h"
@@ -183,7 +183,7 @@ const BestLatte = () => {
           <Text>I don’t think I ever got around to telling him how much I appreciated that.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/eric4.jpeg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/eric4-e0f4049a3b.jpg"
             alt="Eric eating breakfast"
             caption="Breakfast before a long day of travel"
             orientation="v"
@@ -196,7 +196,7 @@ const BestLatte = () => {
           <Text>He’s someone who makes me wish I was able to impact him as much as he’s impacted me.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/eric5.jpeg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/eric5-667e57147b.jpg"
             alt="Eric and James"
             orientation="v"
           />
@@ -212,7 +212,7 @@ const BestLatte = () => {
           <Text>We met in 4th grade. </Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/gary1.jpeg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/gary1-23321d1d89.jpg"
             alt="Gary and James"
             orientation="h"
           />
@@ -229,7 +229,7 @@ const BestLatte = () => {
           <Text>They would frequently be cut short by my mom texting me to come home because it’s getting late.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/gary2.jpeg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/gary2-ed274d2d43.jpg"
             alt="Gary and Jeff"
             caption="Parking lot of Baker's Burgers"
             orientation="h"
@@ -246,7 +246,7 @@ const BestLatte = () => {
           <Text>We’ve shared so many experiences in our comfortable bubble and community.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/gary3.jpg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/gary3-ba41c40fbd.jpg"
             alt="Gary shoving papers in his backpack"
             caption="Gary was always a neat and organized guy"
             orientation="h"
@@ -257,7 +257,7 @@ const BestLatte = () => {
           <Text>We talked about all our friends and what they’re up to now, and how we’re looking forward to what’s next after graduation.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/gary4.jpeg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/gary4-dfaa5a960c.jpg"
             alt="Gary in air mattress"
             caption="Gary claims the air mattress was comfortable"
             orientation="v"
@@ -273,7 +273,7 @@ const BestLatte = () => {
           <Text>He’s someone that I’ll always think of fondly when I think of home.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/gary5.jpeg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/gary5-86623382e4.jpg"
             alt="Gary and James"
             orientation="v"
           />
@@ -289,7 +289,7 @@ const BestLatte = () => {
           <Text>One of my favorite people.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/jonah1.jpeg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/jonah1-41abd3ea87.jpg"
             alt="James and Jonah"
             orientation="v"
           />
@@ -302,7 +302,7 @@ const BestLatte = () => {
           <Text>Every time I see him, Jonah will always share something new he’s learned by talking to people, listening to a podcast, or reading a new book.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/jonah2.JPG"
+            src="https://images.doctakim.com/blogs/stories/best-latte/jonah2-5d816798a3.jpg"
             alt="Jonah reading a book"
             caption="New perspectives"
             orientation="v"
@@ -320,7 +320,7 @@ const BestLatte = () => {
           <Text>And at this moment of time, he has a girlfriend and I don't, so I think he’s making more progress in that area.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/jonah3.jpeg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/jonah3-bd7dcf6bee.jpg"
             alt="Jonah holding up a sweater and a bib"
             caption='"Should I start with the sweater or the bib?"'
             orientation="v"
@@ -334,7 +334,7 @@ const BestLatte = () => {
           <Text>He grabbed a pint of nonfat greek yogurt and a pack of organic pitted prunes.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/jonah4.jpeg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/jonah4-eb9c433374.jpg"
             alt="James and Jonah enjoy a snack"
             caption="He didn’t even want a taste"
             orientation="v"
@@ -347,7 +347,7 @@ const BestLatte = () => {
           <Text>He’s someone I want my kids to know as “Uncle Jonah.”</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/jonah5.jpeg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/jonah5-2641aa139e.jpg"
             alt="James and Jonah"
             orientation="v"
           />
@@ -377,7 +377,7 @@ const BestLatte = () => {
           <Text>Friendships just seem so difficult at times.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/college_friends.JPG"
+            src="https://images.doctakim.com/blogs/stories/best-latte/college-friends-0f110183ca.jpg"
             alt="James, Derek, Eric, Melody, Grace, Angie, Elisabeth"
             caption="The guys who got me through college"
             orientation="h"
@@ -400,7 +400,7 @@ const BestLatte = () => {
           <Text>They’ve given me more perspective of who I am and who I want to be.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/worlds_collide.jpeg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/worlds-collide-6f4ca66e30.jpg"
             alt="Jonah and Gary"
             caption="My worlds collide"
             orientation="h"
@@ -423,7 +423,7 @@ const BestLatte = () => {
           <Text>is a product of who they were to me.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Best-Latte/Pictures/friends_hall.jpeg"
+            src="https://images.doctakim.com/blogs/stories/best-latte/friends-hall-fc3131aeb3.jpg"
             alt="Eric, James, and Jonah"
             caption="Friends Hall"
             orientation="v"

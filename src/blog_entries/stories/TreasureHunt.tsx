@@ -52,7 +52,7 @@ const TreasureHunt = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/Treasure-Hunt/Pictures/1-harvard.jpeg"
+            src="https://images.doctakim.com/blogs/stories/treasure-hunt/1-harvard-77eeea3c83.jpg"
             alt="John Harvard's foot"
             caption="Touching John Harvard's foot is good luck."
             orientation="h"
@@ -70,7 +70,7 @@ const TreasureHunt = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/Treasure-Hunt/Pictures/2-mitlawn.jpeg"
+            src="https://images.doctakim.com/blogs/stories/treasure-hunt/2-mitlawn-ab5fb5903f.jpg"
             alt='"The Lawn" at MIT'
             caption='"The Lawn" at MIT'
             orientation="h"
@@ -90,7 +90,7 @@ const TreasureHunt = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/Treasure-Hunt/Pictures/3-mitlawn-mom.jpeg"
+            src="https://images.doctakim.com/blogs/stories/treasure-hunt/3-mitlawn-mom-57635fa589.jpg"
             alt="Fun on the lawn"
             caption="Fun on the lawn"
             orientation="h"
@@ -139,7 +139,7 @@ const TreasureHunt = () => {
           <Text>“go to MIT for college.”</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Treasure-Hunt/Pictures/4 plymouth.JPG"
+            src="https://images.doctakim.com/blogs/stories/treasure-hunt/4-plymouth-38405992b2.jpg"
             alt="Dad and sons in front of Plymouth"
             caption="Sorry Dad, none of us made it to MIT"
             orientation="h"
@@ -200,7 +200,7 @@ const TreasureHunt = () => {
           <Text>And he doesn’t let go.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Treasure-Hunt/Pictures/5 holding_on.jpg"
+            src="https://images.doctakim.com/blogs/stories/treasure-hunt/5-holding-on-c0e7bcc636.jpg"
             alt="Dad holding on tight to his sons"
             caption="Holding on tight"
             orientation="h"
@@ -266,7 +266,7 @@ const TreasureHunt = () => {
           <Text>“Are we playing tennis today?”</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Treasure-Hunt/Pictures/6 bro_time.jpg"
+            src="https://images.doctakim.com/blogs/stories/treasure-hunt/6-bro-time-3b6de1888f.jpg"
             alt="Bro time"
             caption="Bro time."
             orientation="h"
@@ -289,7 +289,7 @@ const TreasureHunt = () => {
           <Text>“Are we playing tennis today?”</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Treasure-Hunt/Pictures/7 daddys_boy.jpg"
+            src="https://images.doctakim.com/blogs/stories/treasure-hunt/7-daddys-boy-681996e289.jpg"
             alt="Dad lifting me up in his arms"
             caption="Daddy's boy"
             orientation="v"
@@ -339,7 +339,7 @@ const TreasureHunt = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/Treasure-Hunt/Pictures/8 dad,mom,me.jpg"
+            src="https://images.doctakim.com/blogs/stories/treasure-hunt/8-dad-mom-me-541e45e3d2.jpg"
             alt="Fall in Boston"
             caption="Fall in Boston"
             orientation="v"
@@ -370,7 +370,7 @@ const TreasureHunt = () => {
           <Text>The memories that make time stop for just a moment.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Treasure-Hunt/Pictures/9 chubby_past.jpg"
+            src="https://images.doctakim.com/blogs/stories/treasure-hunt/9-chubby-past-a6a74abba7.jpg"
             alt="Dad and his two chubby sons"
             caption="My chubby past"
             orientation="h"
@@ -403,7 +403,7 @@ const TreasureHunt = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/Treasure-Hunt/Pictures/10 vibrant_color.JPG"
+            src="https://images.doctakim.com/blogs/stories/treasure-hunt/10-vibrant-color-0ac7d7c489.jpg"
             alt="Me and bro"
             caption="Vibrant color"
             orientation="h"
@@ -446,7 +446,7 @@ const TreasureHunt = () => {
           <Text>Somewhere that only I know of.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Treasure-Hunt/Pictures/11 fall_in_ith.jpeg"
+            src="https://images.doctakim.com/blogs/stories/treasure-hunt/11-fall-in-ith-3530cd7a27.jpg"
             alt="Fall in Ithaca"
             caption="Fall in Ithaca"
             orientation="h"
@@ -468,7 +468,7 @@ const TreasureHunt = () => {
           <Text>A treasure hunt.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Treasure-Hunt/Pictures/12 me+dad on lawn.JPG"
+            src="https://images.doctakim.com/blogs/stories/treasure-hunt/12-me-dad-on-lawn-26bbeb9910.jpg"
             alt="Me and Dad on the lawn"
             caption="Me and Dad. On the lawn."
             orientation="h"

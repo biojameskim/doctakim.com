@@ -56,7 +56,7 @@ const WhyCornell = () => {
                     <Text>I opened my status portal and…</Text>
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1767205633/yale_elq99x.jpg"
+                        src="https://images.doctakim.com/blogs/thoughts/why-cornell/yale-elq99x-c86b0adfea.jpg"
                         alt="Eunice and me at Yale"
                         orientation="h"
                         caption="When my cousin got into Yale"
@@ -81,7 +81,7 @@ const WhyCornell = () => {
                     <Text>And I don’t mean to brag, but I even almost got recruited.</Text>
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1767205630/navy_orf2m7.jpg"
+                        src="https://images.doctakim.com/blogs/thoughts/why-cornell/navy-orf2m7-5880c2008f.jpg"
                         alt="Navy SEALs"
                         orientation="override"
                         maxW={{ base: "80%", md: "40%" }}
@@ -107,7 +107,7 @@ const WhyCornell = () => {
                     <Text>Now it wasn’t really my “style”, but it was a nice gesture.</Text>
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1767206276/mosaic_mblxv1.jpg"
+                        src="https://images.doctakim.com/blogs/thoughts/why-cornell/mosaic-mblxv1-cde43df531.jpg"
                         alt="Me with Vandy merch"
                         orientation="v"
                         pt={"10vh"}
@@ -123,8 +123,8 @@ const WhyCornell = () => {
 
                     <BlogImage
                         src={{
-                            base: "https://res.cloudinary.com/doypjterz/image/upload/v1767228305/reddit1_mobile_wl6usp.png",
-                            md: "https://res.cloudinary.com/doypjterz/image/upload/v1767205630/reddit1_ox2ys1.png"
+                            base: "https://images.doctakim.com/blogs/thoughts/why-cornell/reddit1-mobile-wl6usp-342c95b8b1.png",
+                            md: "https://images.doctakim.com/blogs/thoughts/why-cornell/reddit1-ox2ys1-fb1327f1f5.png"
                         }}
                         alt="Reddit post about Cornell"
                         orientation="override"
@@ -141,7 +141,7 @@ const WhyCornell = () => {
                     <Text>but some people just added unnecessary chills.</Text>
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1767228305/IMG_0211_km4d3h.png"
+                        src="https://images.doctakim.com/blogs/thoughts/why-cornell/img-0211-km4d3h-2e633b52d7.png"
                         alt="Reddit post about Cornell"
                         orientation="override"
                         maxW={{ base: "100%", md: "60%" }}
@@ -153,7 +153,7 @@ const WhyCornell = () => {
                     <Text>But they weren’t exactly what I was looking for when trying to choose a place to study at for the next four years.</Text>
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1767205631/reddit3_dyndfx.jpg"
+                        src="https://images.doctakim.com/blogs/thoughts/why-cornell/reddit3-dyndfx-70a69981e1.jpg"
                         alt="Reddit post about Cornell"
                         orientation="override"
                         maxW={{ base: "100%", md: "60%" }}
@@ -168,7 +168,7 @@ const WhyCornell = () => {
                     <Text>So I appreciated how some Redditors didn’t beat around the bush and got straight to the point.</Text>
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1767228305/IMG_0210_llyphh.png"
+                        src="https://images.doctakim.com/blogs/thoughts/why-cornell/img-0210-llyphh-d1407ef8e3.png"
                         alt="Reddit post about Cornell"
                         orientation="override"
                         maxW={{ base: "100%", md: "60%" }}
@@ -181,7 +181,7 @@ const WhyCornell = () => {
                     <Text pb={'10vh'}>Because I followed up with another question.</Text>
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1767228304/IMG_0210_1_nyk966.png"
+                        src="https://images.doctakim.com/blogs/thoughts/why-cornell/img-0210-1-nyk966-f5ae3b3379.png"
                         alt="Reddit post about Cornell"
                         orientation="override"
                         maxW={{ base: "100%", md: "60%" }}
@@ -194,7 +194,7 @@ const WhyCornell = () => {
                     <Text pb={'15vh'}>Very straight to the point.</Text>
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1767228305/IMG_0210_2_ptnfwq.png"
+                        src="https://images.doctakim.com/blogs/thoughts/why-cornell/img-0210-2-ptnfwq-e00e8702f5.png"
                         alt="Reddit post about Cornell"
                         orientation="override"
                         maxW={{ base: "100%", md: "60%" }}
@@ -264,7 +264,7 @@ const WhyCornell = () => {
                     <Text>I was standing in the room I would call “home” for my very first year at an unfamiliar place called Cornell.<FootnoteRef index={1} id="freshman-blog" /></Text>
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1767205631/8411_rmybe1.jpg"
+                        src="https://images.doctakim.com/blogs/thoughts/why-cornell/8411-rmybe1-18c9418620.jpg"
                         alt="Freshman year dorm room door"
                         orientation="v"
                         pt={"10vh"}
@@ -286,7 +286,7 @@ const WhyCornell = () => {
 
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1767228304/IMG_0209_luf5zq.png"
+                        src="https://images.doctakim.com/blogs/thoughts/why-cornell/img-0209-luf5zq-f90f9e9f7d.png"
                         alt="Reddit post about Cornell"
                         orientation="override"
                         maxW={{ base: "100%", md: "60%" }}

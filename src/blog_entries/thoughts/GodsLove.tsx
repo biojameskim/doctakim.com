@@ -44,7 +44,7 @@ const GodsLove = () => {
                     <Text>That second case is the harder one for sure.</Text>
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1774995413/IMG_9113_1_a0gl1w.jpg"
+                        src="https://images.doctakim.com/blogs/thoughts/gods-love/img-9113-1-a0gl1w-d4b25e9d78.jpg"
                         alt="Derek and Melody hugging"
                         caption="love?"
                         orientation="h"
@@ -71,7 +71,7 @@ const GodsLove = () => {
                     <Text>To understand how much my parents have selflessly loved me moves me to have a deeper love and appreciation for them.</Text>
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1774995601/triple_emcqkj.png"
+                        src="https://images.doctakim.com/blogs/thoughts/gods-love/triple-emcqkj-fceef29f47.png"
                         alt=""
                         caption=""
                         orientation="v"
@@ -95,7 +95,7 @@ const GodsLove = () => {
                     <Text>they committed to it with their actions.</Text>
 
                     <BlogImage
-                        src="https://res.cloudinary.com/doypjterz/image/upload/v1774995956/DSC00409_wtrpsd.jpg"
+                        src="https://images.doctakim.com/blogs/thoughts/gods-love/dsc00409-wtrpsd-3f121e61f6.jpg"
                         alt="Mom and Bro kiss me"
                         caption="Double kisses"
                         orientation="h"

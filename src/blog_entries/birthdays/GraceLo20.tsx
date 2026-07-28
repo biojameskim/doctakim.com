@@ -52,7 +52,7 @@ const GraceLo20 = () => {
             fun that can be too.</Text>
 
           <BlogImage
-            src="../images/birthdays/grace-lo-20/gl_1.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/grace-lo-20/gl-1-adb2caecff.jpg"
             alt="Grace and Angy hem my pants"
             caption="My pants are in good hands."
             orientation='v'
@@ -72,7 +72,7 @@ const GraceLo20 = () => {
           <Text>That gets me going more than anything.</Text>
 
           <BlogImage
-            src="../images/birthdays/grace-lo-20/gl_2.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/grace-lo-20/gl-2-1286b78114.jpg"
             alt="Thursday Small Group"
             caption="(Not so small) small group."
             orientation='v'
@@ -86,7 +86,7 @@ const GraceLo20 = () => {
           <Text>You also have quite a bit of aegyo…</Text>
 
           <BlogImage
-            src="../images/birthdays/grace-lo-20/gl_3.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/grace-lo-20/gl-3-e9704caca5.jpg"
             alt="Grace and a dog"
             caption={`“Dogs make me ‘tickly’”`}
             orientation='v'
@@ -106,7 +106,7 @@ const GraceLo20 = () => {
             valuable to me.</Text>
 
           <BlogImage
-            src="../images/birthdays/grace-lo-20/gl_4.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/grace-lo-20/gl-4-d265de6a60.jpg"
             alt="Grace in hoodie"
             caption='“So… about small group merch…”'
             orientation='v'
@@ -133,7 +133,7 @@ const GraceLo20 = () => {
           <Text>Cheers to 20, and to the rest of our sophomore year.</Text>
 
           <BlogImage
-            src="../images/birthdays/grace-lo-20/gl_5.jpeg"
+            src="https://images.doctakim.com/blogs/birthdays/grace-lo-20/gl-5-34cd40f90c.jpg"
             alt="Grace and Me"
             caption="Goofy Grace"
             orientation='v'

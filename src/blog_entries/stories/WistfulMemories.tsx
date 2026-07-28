@@ -55,7 +55,7 @@ const WistfulMemories = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/Wistful-Memories/Pictures/0_pasta.jpeg"
+            src="https://images.doctakim.com/blogs/stories/wistful-memories/0-pasta-d402570bcc.jpg"
             alt="Alfredo Pasta in dining hall"
             caption="Didn't cry this time"
             orientation="v"
@@ -88,7 +88,7 @@ const WistfulMemories = () => {
           <Text>And a little more alive.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Wistful-Memories/Pictures/1_mybday.jpeg"
+            src="https://images.doctakim.com/blogs/stories/wistful-memories/1-mybday-e77880b86a.jpg"
             alt="Family photo in 2010"
             caption="My birthday (2010)"
             orientation="h"
@@ -113,7 +113,7 @@ const WistfulMemories = () => {
           <Text>And maybe she’s never really thought about it.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Wistful-Memories/Pictures/2_momyouth.jpeg"
+            src="https://images.doctakim.com/blogs/stories/wistful-memories/2-momyouth-e4cc3f15b9.jpg"
             alt="Mom and brother in her youth"
             caption="Mom's youth"
             orientation="h"
@@ -142,7 +142,7 @@ const WistfulMemories = () => {
           <Text>Thankful for her.</Text>
 
           <BlogImage
-            src="../images/blog_pictures/Wistful-Memories/Pictures/3_momdad.jpeg"
+            src="https://images.doctakim.com/blogs/stories/wistful-memories/3-momdad-73eac9728a.jpg"
             alt="Family photo in 2004"
             caption="My mom still shops for my dad"
             orientation="h"
@@ -204,7 +204,7 @@ const WistfulMemories = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/Wistful-Memories/Pictures/4_furelise.jpeg"
+            src="https://images.doctakim.com/blogs/stories/wistful-memories/4-furelise-2c43f5e3bc.jpg"
             alt="Music box playing Fur Elise"
             caption="Fur Elise"
             orientation="v"
@@ -240,7 +240,7 @@ const WistfulMemories = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/Wistful-Memories/Pictures/5_dadboys.jpeg"
+            src="https://images.doctakim.com/blogs/stories/wistful-memories/5-dadboys-f713a37343.jpg"
             alt="Dad and his boys"
             caption="Dad's boys"
             orientation="h"
@@ -274,7 +274,7 @@ const WistfulMemories = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/Wistful-Memories/Pictures/6_ds.jpeg"
+            src="https://images.doctakim.com/blogs/stories/wistful-memories/6-ds-5b1936026a.jpg"
             alt="Selfie with dad and me"
             caption="Taken on my Nintendo 3DS"
             orientation="h"
@@ -301,7 +301,7 @@ const WistfulMemories = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/Wistful-Memories/Pictures/7_notes.jpeg"
+            src="https://images.doctakim.com/blogs/stories/wistful-memories/7-notes-dc19c303d5.jpg"
             alt="Notes we wrote to dad"
             caption={`Left [My brother's note]: " Money to buy something delicious... to Dad" `}
             caption2='Right [My note]: "Dad, use this money to buy coffee. I love you. Fighting!"'
@@ -358,7 +358,7 @@ const WistfulMemories = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/Wistful-Memories/Pictures/8_dadyouth.jpeg"
+            src="https://images.doctakim.com/blogs/stories/wistful-memories/8-dadyouth-f33bcb49a0.jpg"
             alt="Dad and songs"
             caption="Dad's youth"
             orientation="h"
@@ -406,7 +406,7 @@ const WistfulMemories = () => {
           </Text>
 
           <BlogImage
-            src="../images/blog_pictures/Wistful-Memories/Pictures/9_mosaic.jpeg"
+            src="https://images.doctakim.com/blogs/stories/wistful-memories/9-mosaic-4b2f1a320c.jpg"
             alt="Mosaic of a flower"
             orientation="v"
           />

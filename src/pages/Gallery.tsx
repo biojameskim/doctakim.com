@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { useLayoutEffect } from "react";
+import { useLayoutEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import {
     Box,
@@ -12,11 +12,33 @@ import {
     useColorModeValue,
     Flex,
     Image,
+    ImageProps,
 } from "@chakra-ui/react";
 import { FaArrowLeft } from "react-icons/fa";
 import { photoFolders } from "../data/gallery";
 import BlogImage from "../components/blog/BlogImage";
 import SEO from "../components/SEO";
+
+type GalleryIconProps = {
+    src: string;
+    boxSize: ImageProps["boxSize"];
+};
+
+const GalleryIcon = ({ src, boxSize }: GalleryIconProps) => {
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    return (
+        <Image
+            src={src}
+            boxSize={boxSize}
+            loading="eager"
+            decoding="sync"
+            opacity={isLoaded ? 1 : 0}
+            transition="opacity 100ms ease-out"
+            onLoad={() => setIsLoaded(true)}
+        />
+    );
+};
 
 const Gallery = () => {
     const { year, month, subfolder } = useParams();
@@ -145,7 +167,7 @@ const Gallery = () => {
                                                     w="fit-content"
                                                     css={{ WebkitTapHighlightColor: "transparent", touchAction: "manipulation" }}
                                                 >
-                                                    <Image src="/images/icons/binder-sm.png" boxSize={8} loading='eager' />
+                                                    <GalleryIcon src="/images/icons/binder-sm.png" boxSize={8} />
                                                     <Text fontWeight="normal" fontSize={{ base: "0.9rem", md: "1rem" }}>
                                                         {sub.name}
                                                     </Text>
@@ -194,7 +216,7 @@ const Gallery = () => {
                                                     w="fit-content"
                                                     css={{ WebkitTapHighlightColor: "transparent", touchAction: "manipulation" }}
                                                 >
-                                                    <Image src="/images/icons/file-folder.png" boxSize={{ base: 8, md: 16 }} loading='eager' />
+                                                    <GalleryIcon src="/images/icons/file-folder.png" boxSize={{ base: 8, md: 16 }} />
                                                     <Text fontSize={{ base: "0.9rem", md: "0.9rem" }} fontWeight="normal">
                                                         {folder.month}-{folder.year.toString().slice(-2)}
                                                     </Text>
@@ -223,7 +245,7 @@ const Gallery = () => {
                                                 w="fit-content"
                                                 css={{ WebkitTapHighlightColor: "transparent", touchAction: "manipulation" }}
                                             >
-                                                <Image src="/images/icons/file-folder.png" boxSize={16} loading='eager' />
+                                                <GalleryIcon src="/images/icons/file-folder.png" boxSize={16} />
                                                 <Text fontSize={{ base: "0.9rem", md: "0.9rem" }} fontWeight="normal">
                                                     {year}
                                                 </Text>
