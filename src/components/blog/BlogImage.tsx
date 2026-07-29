@@ -22,6 +22,8 @@ const BlogImage = ({
   italic = false,
   pt,
   pb,
+  loading,
+  decoding,
 }: BlogImageType) => {
   const captionColor = useColorModeValue("gray.500", "gray.400");
 
@@ -40,6 +42,8 @@ const BlogImage = ({
         minH={orientation === "override" ? "auto" : (orientation === "h" ? "250px" : "350px")}
         w="100%"
         objectFit={orientation === "override" ? "contain" : "cover"}
+        loading={loading}
+        decoding={decoding}
       />
       <Box height="0.5rem"></Box>
       <Text as={italic ? "i" : "p"} fontSize={{ base: "0.8rem", md: "0.8rem" }} fontFamily={captionFontFamily} color={captionColor}>

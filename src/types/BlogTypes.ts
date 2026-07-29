@@ -23,7 +23,9 @@ export type BlogImageType = {
   captionFontFamily?: string,
   italic?: boolean
   pt?: string,
-  pb?: string
+  pb?: string,
+  loading?: "eager" | "lazy",
+  decoding?: "async" | "auto" | "sync"
 }
 
 export type BirthdayCardType = {

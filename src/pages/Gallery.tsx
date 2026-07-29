@@ -137,6 +137,8 @@ const Gallery = () => {
                                                     maxW={photo.maxW}
                                                     borderRadius="none"
                                                     captionFontFamily="monospace"
+                                                    loading={index === 0 ? "eager" : "lazy"}
+                                                    decoding="async"
                                                 />
                                             </VStack>))}
                                     </SimpleGrid>
@@ -190,6 +192,8 @@ const Gallery = () => {
                                                     maxW={photo.maxW}
                                                     borderRadius="none"
                                                     captionFontFamily="monospace"
+                                                    loading={index === 0 ? "eager" : "lazy"}
+                                                    decoding="async"
                                                 />
                                             </VStack>))}
                                     </SimpleGrid>
