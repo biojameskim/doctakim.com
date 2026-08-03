@@ -161,3 +161,34 @@ Use more `--subfolder` flags for more subfolders. Omit `--input` when the month
 has no main photos. During migration, existing subfolder names and metadata are
 preserved; the photo counts and order must match. For a new month, the local
 subfolder directory name becomes its display name.
+
+# Backfilling existing months
+
+`backfill-gallery.mjs` adds WebP variants to photos already in R2. It pulls each
+photo's archival original from its public URL, so the local import folders are
+never needed.
+
+```bash
+# Inspect the whole library without touching anything
+node scripts/media/backfill-gallery.mjs --all --dry-run \
+  --mapping /tmp/mapping.json --emit-data /tmp/emitted
+
+# Migrate the smallest month first
+node scripts/media/backfill-gallery.mjs --smallest
+
+# Then the rest
+node scripts/media/backfill-gallery.mjs --all
+```
+
+Each photo produces three new objects; the original is left exactly as it is and
+becomes `responsive.originalSrc`.
+
+A month's data file is rewritten only after every one of its objects has
+uploaded and verified by SHA-256. A failure leaves earlier months finished and
+the failing month's data untouched. Re-running skips objects already in the
+bucket at the expected size, so an interrupted run resumes cheaply, and running
+it twice over an already-migrated month is a no-op.
+
+`--dry-run` downloads and generates but uploads nothing. Pair it with
+`--emit-data DIR` to write the rewritten month files somewhere harmless, and
+`--mapping PATH` for a JSON record of every object, its size and its hash.
