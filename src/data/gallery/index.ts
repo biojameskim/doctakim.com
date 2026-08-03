@@ -1,6 +1,6 @@
 import type { PhotoFolder } from "./types";
 
-export type { Photo, PhotoFolder, Subfolder } from "./types";
+export type { Photo, PhotoFolder, Subfolder, ResponsivePhotoSources } from "./types";
 
 // Auto-load every month file (photos/<year>/<month>.ts) — no manual wiring.
 // To add a month, drop in a new "photos/<year>/<month>.ts" that exports `folder`.

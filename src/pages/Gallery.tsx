@@ -16,8 +16,29 @@ import {
 } from "@chakra-ui/react";
 import { FaArrowLeft } from "react-icons/fa";
 import { photoFolders } from "../data/gallery";
+import type { Photo, PhotoFolder } from "../data/gallery";
 import BlogImage from "../components/blog/BlogImage";
 import SEO from "../components/SEO";
+
+// Builds the image props for one photo. Photos whose month has not been migrated yet
+// have no `responsive` block, so they return a bare `src` and render exactly as before.
+const photoSources = (photo: Photo, folder: PhotoFolder | null) => {
+    const src = photo.filename.startsWith("http")
+        ? photo.filename
+        : `/gallery/${folder?.year}/${folder?.month}/${photo.filename}`;
+    const responsive = photo.responsive;
+
+    if (!responsive) return { src };
+
+    return {
+        src,
+        // `filename` is the 1x WebP once migrated, so it leads the density set.
+        webpSrcSet: `${src} 1x, ${responsive.src2x} 2x, ${responsive.src3x} 3x`,
+        fallbackSrc: responsive.originalSrc,
+        intrinsicWidth: responsive.intrinsicWidth,
+        intrinsicHeight: responsive.intrinsicHeight,
+    };
+};
 
 type GalleryIconProps = {
     src: string;
@@ -129,7 +150,7 @@ const Gallery = () => {
                                         {selectedSubfolder.photos.map((photo, index) => (
                                             <VStack key={index} w="100%">
                                                 <BlogImage
-                                                    src={photo.filename.startsWith('http') ? photo.filename : `/gallery/${selectedFolder?.year}/${selectedFolder?.month}/${photo.filename}`}
+                                                    {...photoSources(photo, selectedFolder)}
                                                     alt={photo.caption || `Photo ${index + 1}`}
                                                     caption={photo.caption}
                                                     captionLink={photo.captionLink}
@@ -184,7 +205,7 @@ const Gallery = () => {
                                         {selectedFolder.photos.map((photo, index) => (
                                             <VStack key={index} w="100%">
                                                 <BlogImage
-                                                    src={photo.filename.startsWith('http') ? photo.filename : `/gallery/${selectedFolder?.year}/${selectedFolder?.month}/${photo.filename}`}
+                                                    {...photoSources(photo, selectedFolder)}
                                                     alt={photo.caption || `Photo ${index + 1}`}
                                                     caption={photo.caption}
                                                     captionLink={photo.captionLink}

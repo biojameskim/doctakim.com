@@ -24,6 +24,10 @@ const BlogImage = ({
   pb,
   loading,
   decoding,
+  webpSrcSet,
+  fallbackSrc,
+  intrinsicWidth,
+  intrinsicHeight,
 }: BlogImageType) => {
   const captionColor = useColorModeValue("gray.500", "gray.400");
 
@@ -44,6 +48,10 @@ const BlogImage = ({
         objectFit={orientation === "override" ? "contain" : "cover"}
         loading={loading}
         decoding={decoding}
+        webpSrcSet={webpSrcSet}
+        fallbackSrc={fallbackSrc}
+        intrinsicWidth={intrinsicWidth}
+        intrinsicHeight={intrinsicHeight}
       />
       <Box height="0.5rem"></Box>
       <Text as={italic ? "i" : "p"} fontSize={{ base: "0.8rem", md: "0.8rem" }} fontFamily={captionFontFamily} color={captionColor}>
