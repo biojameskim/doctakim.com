@@ -27,22 +27,23 @@ import dotenv from "dotenv";
 import sharp from "sharp";
 import ts from "typescript";
 
+import {
+  countFilenameEntries,
+  formatBytes,
+  orientationOf,
+  planVariants,
+  renderGalleryData,
+  replaceExistingFilenames,
+  slugify,
+  variantQuality,
+} from "./gallery-data.mjs";
+
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const repositoryRoot = path.resolve(scriptDirectory, "../..");
 const environmentPath = path.join(repositoryRoot, ".env.media.local");
 const supportedExtensions = new Set([".jpg", ".jpeg", ".png"]);
 const maxImageDimension = 4096;
-const webReadyFileSize = 5 * 1024 * 1024;
-// Display widths for the WebP variants the gallery actually renders, indexed by
-// density. The gallery lays photos out at a fixed 350px (vertical) / 450px
-// (horizontal), so these are just that width times 1x/2x/3x — there is no fluid
-// range to cover, only screen density.
-const variantWidthsByOrientation = {
-  v: [350, 700, 1050],
-  h: [450, 900, 1350],
-};
-const variantQuality = 85;
-const naturalSort = new Intl.Collator(undefined, {
+const webReadyFileSize = 5 * 1024 * 1024;const naturalSort = new Intl.Collator(undefined, {
   numeric: true,
   sensitivity: "base",
 });
@@ -221,32 +222,6 @@ async function findInputImages(inputDirectory) {
   return images;
 }
 
-function slugify(filename) {
-  const stem = path.basename(filename, path.extname(filename));
-  const slug = stem
-    .normalize("NFKD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "")
-    .slice(0, 80);
-
-  return slug || "photo";
-}
-
-function formatBytes(bytes) {
-  const units = ["B", "KB", "MB", "GB"];
-  let value = bytes;
-  let unitIndex = 0;
-
-  while (value >= 1024 && unitIndex < units.length - 1) {
-    value /= 1024;
-    unitIndex += 1;
-  }
-
-  return `${value.toFixed(unitIndex === 0 ? 0 : 1)} ${units[unitIndex]}`;
-}
-
 async function processImage({
   filename,
   index,
@@ -364,7 +339,7 @@ async function processImage({
   const objectFilename = `${position}-${slug}-${hash}.${outputExtension}`;
   const key = `${keyPrefix}/${objectFilename}`;
 
-  const orientation = info.width >= info.height ? "h" : "v";
+  const orientation = orientationOf(info.width, info.height);
 
   // The archival object: the full-resolution image, kept as the recoverable source
   // and as the <picture> fallback for browsers without WebP support.
@@ -380,17 +355,10 @@ async function processImage({
 
   // The display variants. Widths clamp to the source so a small original is never
   // upscaled — a 768px-wide photo yields 350/700/768 rather than a fake 1050.
+  const plan = planVariants(orientation, info.width);
+  const clamped = plan.some((entry) => entry.clamped);
   const variants = [];
-  let clamped = false;
-  for (const [densityIndex, target] of variantWidthsByOrientation[
-    orientation
-  ].entries()) {
-    const density = densityIndex + 1;
-    const width = Math.min(target, info.width);
-    if (width < target) {
-      clamped = true;
-    }
-
+  for (const { density, width } of plan) {
     const variantPath = path.join(
       temporaryDirectory,
       `${String(temporaryIndex + 1).padStart(5, "0")}-${density}x.webp`,
@@ -628,73 +596,6 @@ async function verifyPublicObject(object) {
   }
 }
 
-// The `responsive` block for one photo. `filename` carries the 1x variant, so only
-// 2x and 3x appear here alongside the archival original and intrinsic dimensions.
-function renderResponsiveBlock(image, indentation) {
-  const [, twoX, threeX] = image.variants;
-  return `${indentation}responsive: {
-${indentation}    src2x: ${JSON.stringify(twoX.publicUrl)},
-${indentation}    src3x: ${JSON.stringify(threeX.publicUrl)},
-${indentation}    originalSrc: ${JSON.stringify(image.original.publicUrl)},
-${indentation}    intrinsicWidth: ${image.width},
-${indentation}    intrinsicHeight: ${image.height}
-${indentation}}`;
-}
-
-function renderPhotoEntries(images, indentation) {
-  return images
-    .map(
-      (image) => `${indentation}{
-${indentation}    filename: ${JSON.stringify(image.variants[0].publicUrl)},
-${renderResponsiveBlock(image, `${indentation}    `)},
-${indentation}    caption: "",
-${indentation}    orientation: "${image.orientation}"
-${indentation}}`,
-    )
-    .join(",\n");
-}
-
-function renderGalleryData(groups, year, month) {
-  const rootImages =
-    groups.find((group) => group.kind === "root")?.images || [];
-  const subfolderGroups = groups.filter(
-    (group) => group.kind === "subfolder",
-  );
-  const subfolders =
-    subfolderGroups.length > 0
-      ? `,
-    subfolders: [
-${subfolderGroups
-  .map(
-    (group) => `        {
-            name: ${JSON.stringify(group.name)},
-            photos: [
-${renderPhotoEntries(group.images, "                ")}
-            ]
-        }`,
-  )
-  .join(",\n")}
-    ]`
-      : "";
-
-  return `import type { PhotoFolder } from "../../types";
-
-export const folder: PhotoFolder = {
-    year: ${year},
-    month: "${month}",
-    photos: [
-${renderPhotoEntries(rootImages, "        ")}
-    ]${subfolders}
-};
-`;
-}
-
-function countFilenameEntries(source) {
-  return Array.from(
-    source.matchAll(/\bfilename:\s*"(?:\\.|[^"\\])*"/g),
-  ).length;
-}
-
 function parseExistingGalleryStructure(source) {
   const sourceFile = ts.createSourceFile(
     "gallery.ts",
@@ -777,38 +678,6 @@ function parseExistingGalleryStructure(source) {
     rootPhotoCount: getPhotosCount(folderObject),
     subfolders,
   };
-}
-
-function replaceExistingFilenames(source, images) {
-  // Drop any responsive block from an earlier run so re-running is idempotent. The
-  // blocks we generate contain no nested braces, so [^{}] cannot escape one.
-  const withoutResponsive = source.replace(
-    /,?\n[ \t]*responsive:\s*\{[^{}]*\}/g,
-    "",
-  );
-
-  let imageIndex = 0;
-  const updated = withoutResponsive.replace(
-    /([ \t]*)(\bfilename:\s*)"(?:\\.|[^"\\])*"/g,
-    (_match, indentation, prefix) => {
-      const image = images[imageIndex];
-      imageIndex += 1;
-      // The comma that followed the old filename value stays in the source and ends
-      // up after the responsive block, which is where it belongs.
-      return (
-        `${indentation}${prefix}${JSON.stringify(image.variants[0].publicUrl)},\n` +
-        renderResponsiveBlock(image, indentation)
-      );
-    },
-  );
-
-  if (imageIndex !== images.length) {
-    throw new Error(
-      `Expected to replace ${images.length} filenames, replaced ${imageIndex}.`,
-    );
-  }
-
-  return updated;
 }
 
 async function main() {

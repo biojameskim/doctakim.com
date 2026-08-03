@@ -3,6 +3,24 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { ChakraProvider } from "@chakra-ui/react";
 import GracefulImage from "./GracefulImage";
 
+// Chakra's toast portal calls useLayoutEffect, which React warns about under
+// renderToStaticMarkup. It is inherent to server-rendering Chakra, not a defect here,
+// so filter exactly that message and let every other console error through.
+let consoleError;
+beforeAll(() => {
+  const original = console.error;
+  consoleError = jest.spyOn(console, "error").mockImplementation((...args) => {
+    if (typeof args[0] === "string" && args[0].includes("useLayoutEffect does nothing on the server")) {
+      return;
+    }
+    original(...args);
+  });
+});
+
+afterAll(() => {
+  consoleError.mockRestore();
+});
+
 // Chakra's useBreakpointValue reaches for matchMedia, which jsdom does not provide.
 beforeAll(() => {
   if (!window.matchMedia) {
