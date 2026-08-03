@@ -6,12 +6,6 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/0mJ95hBlmJ7FOdPDTBs7RD"
     },
     {
-        "title": "Say It",
-        "artist": "AtHeart",
-        "cover": "https://i.scdn.co/image/ab67616d0000b273a2399c7f4150f8f4fccfb50c",
-        "link": "https://open.spotify.com/track/2oDizoGsTI166tSrBsotGT"
-    },
-    {
         "title": "Thursday (Feat. Leellamarz, Crush)",
         "artist": "Coogie, Leellamarz, Crush",
         "cover": "https://i.scdn.co/image/ab67616d0000b273d1b3dd9f4859be9f8ead42e9",
@@ -24,14 +18,25 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/0oKTBfZFsEkzCxa7BC3pjx"
     },
     {
-        "title": "Crushed",
-        "artist": "10CM",
-        "cover": "https://i.scdn.co/image/ab67616d0000b2731a31d127670fb60bb11e5b67",
-        "link": "https://open.spotify.com/track/7qWMlEMiKxnrl1bFTOcVPT"
+        "title": "Love Letter (Feat. Loco)",
+        "artist": "BIG Naughty, Loco",
+        "cover": "https://i.scdn.co/image/ab67616d0000b273b7cf0ba073ff3ab392bf5d9b",
+        "link": "https://open.spotify.com/track/7k853TCIb052hpHzy0apki"
+    },
+    {
+        "title": "HAEMOO",
+        "artist": "TOIL, Hash Swan, Choi Seong",
+        "cover": "https://i.scdn.co/image/ab67616d0000b273ec7ef7abe2677729b7820037",
+        "link": "https://open.spotify.com/track/0fQHM5VUKgf1TT1vEYR2kX"
     }
 ];
 
 export const topArtists = [
+    {
+        "name": "BIG Naughty",
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc165956d3d04700c1e890a31",
+        "link": "https://open.spotify.com/artist/7cEaNXXTHx3LokbjUUyHal"
+    },
     {
         "name": "TRADE L",
         "image": "https://i.scdn.co/image/ab6761610000e5eb55e3cd80fc567369cdf65f4c",
@@ -41,11 +46,6 @@ export const topArtists = [
         "name": "Coogie",
         "image": "https://i.scdn.co/image/ab6761610000e5eb5c8fe4d8c72bbd833ceaf202",
         "link": "https://open.spotify.com/artist/0IznZPMUyaPGdqfP4oqBja"
-    },
-    {
-        "name": "VINXEN",
-        "image": "https://i.scdn.co/image/ab6761610000e5eb1249e0e4671a04aa0d786386",
-        "link": "https://open.spotify.com/artist/4T6xiCykTP9rCNaEPU7D4q"
     },
     {
         "name": "Mad Clown",
