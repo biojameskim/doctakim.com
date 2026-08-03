@@ -43,7 +43,8 @@ const repositoryRoot = path.resolve(scriptDirectory, "../..");
 const environmentPath = path.join(repositoryRoot, ".env.media.local");
 const supportedExtensions = new Set([".jpg", ".jpeg", ".png"]);
 const maxImageDimension = 4096;
-const webReadyFileSize = 5 * 1024 * 1024;const naturalSort = new Intl.Collator(undefined, {
+const webReadyFileSize = 5 * 1024 * 1024;
+const naturalSort = new Intl.Collator(undefined, {
   numeric: true,
   sensitivity: "base",
 });
