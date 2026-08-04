@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import {
     Box,
@@ -67,7 +67,7 @@ const Gallery = () => {
     const navigate = useNavigate();
     const hoverBg = useColorModeValue("gray.50", "gray.700");
 
-    const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+    const [lightboxPhoto, setLightboxPhoto] = useState<LightboxPhoto | null>(null);
     // Closing the lightbox must put focus back on the photo that opened it, so a
     // keyboard user does not get dropped at the top of the page.
     const lightboxTrigger = useRef<HTMLElement | null>(null);
@@ -75,7 +75,7 @@ const Gallery = () => {
     // Navigating between folders resets scroll and dismisses any open photo.
     useLayoutEffect(() => {
         window.scrollTo(0, 0);
-        setLightboxIndex(null);
+        setLightboxPhoto(null);
     }, [year, month, subfolder]);
 
     const selectedYear = year ? parseInt(year) : null;
@@ -116,26 +116,6 @@ const Gallery = () => {
     const filteredFolders = selectedYear
         ? photoFolders.filter(folder => folder.year === selectedYear)
         : [];
-
-    // Whichever set of photos is on screen; the lightbox pages through exactly these.
-    const visiblePhotos: Photo[] = useMemo(() => {
-        if (selectedSubfolder) return selectedSubfolder.photos || [];
-        if (selectedFolder) return selectedFolder.photos;
-        return [];
-    }, [selectedSubfolder, selectedFolder]);
-
-    const lightboxPhotos: LightboxPhoto[] = useMemo(
-        () =>
-            visiblePhotos.map((photo, index) => ({
-                photo,
-                // The 2x variant is already cached by the grid on most screens and is
-                // a far better stand-in than the 350px 1x file.
-                previewSrc:
-                    photo.responsive?.src2x ?? photoSources(photo, selectedFolder).src,
-                alt: photo.caption || `Photo ${index + 1}`,
-            })),
-        [visiblePhotos, selectedFolder],
-    );
 
     const showBackButton = selectedFolder || selectedYear || selectedSubfolder;
     const backButtonText = "Back";
@@ -190,7 +170,16 @@ const Gallery = () => {
                                                     decoding="async"
                                                     onImageClick={(trigger) => {
                                                         lightboxTrigger.current = trigger;
-                                                        setLightboxIndex(index);
+                                                        setLightboxPhoto({
+                                                            photo,
+                                                            // The 2x variant is already
+                                                            // cached by the grid, so it
+                                                            // stands in instantly.
+                                                            previewSrc:
+                                                                photo.responsive?.src2x ??
+                                                                photoSources(photo, selectedFolder).src,
+                                                            alt: photo.caption || `Photo ${index + 1}`,
+                                                        });
                                                     }}
                                                     imageClickLabel={`Open photo ${index + 1} full size`}
                                                 />
@@ -250,7 +239,16 @@ const Gallery = () => {
                                                     decoding="async"
                                                     onImageClick={(trigger) => {
                                                         lightboxTrigger.current = trigger;
-                                                        setLightboxIndex(index);
+                                                        setLightboxPhoto({
+                                                            photo,
+                                                            // The 2x variant is already
+                                                            // cached by the grid, so it
+                                                            // stands in instantly.
+                                                            previewSrc:
+                                                                photo.responsive?.src2x ??
+                                                                photoSources(photo, selectedFolder).src,
+                                                            alt: photo.caption || `Photo ${index + 1}`,
+                                                        });
                                                     }}
                                                     imageClickLabel={`Open photo ${index + 1} full size`}
                                                 />
@@ -325,11 +323,9 @@ const Gallery = () => {
             </Box>
 
             <PhotoLightbox
-                photos={lightboxPhotos}
-                index={lightboxIndex}
-                onClose={() => setLightboxIndex(null)}
+                selected={lightboxPhoto}
+                onClose={() => setLightboxPhoto(null)}
                 triggerRef={lightboxTrigger}
-                onNavigate={setLightboxIndex}
             />
         </div>
     );

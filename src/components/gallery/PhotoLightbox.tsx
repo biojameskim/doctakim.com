@@ -1,4 +1,4 @@
-import { MutableRefObject, useCallback, useEffect, useState } from "react";
+import { MutableRefObject, useEffect, useState } from "react";
 import {
     Box,
     Flex,
@@ -11,7 +11,7 @@ import {
     Spinner,
     Text,
 } from "@chakra-ui/react";
-import { FaChevronLeft, FaChevronRight, FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 import type { Photo } from "../../data/gallery";
 
 export type LightboxPhoto = {
@@ -23,10 +23,10 @@ export type LightboxPhoto = {
 };
 
 type PhotoLightboxProps = {
-    photos: LightboxPhoto[];
-    index: number | null;
+    // Null when closed. Deliberately one photo rather than a list: the gallery is a
+    // scrolling column, so paging inside the lightbox would only duplicate scrolling.
+    selected: LightboxPhoto | null;
     onClose: () => void;
-    onNavigate: (nextIndex: number) => void;
     // The element that opened the lightbox; focus returns here on close.
     triggerRef?: MutableRefObject<HTMLElement | null>;
 };
@@ -37,53 +37,21 @@ type PhotoLightboxProps = {
 const fullResolutionSrc = (photo: Photo) =>
     photo.responsive?.originalSrc ?? photo.filename;
 
-const PhotoLightbox = ({ photos, index, onClose, onNavigate, triggerRef }: PhotoLightboxProps) => {
-    const isOpen = index !== null;
-    const current = isOpen ? photos[index] : null;
+const PhotoLightbox = ({ selected, onClose, triggerRef }: PhotoLightboxProps) => {
     const [fullLoaded, setFullLoaded] = useState(false);
 
-    // Each photo downloads its own original, so the swap state resets per photo.
+    // A different photo means a different original to download.
     useEffect(() => {
         setFullLoaded(false);
-    }, [index]);
+    }, [selected?.previewSrc]);
 
-    const goPrevious = useCallback(() => {
-        if (index === null) return;
-        onNavigate((index - 1 + photos.length) % photos.length);
-    }, [index, photos.length, onNavigate]);
-
-    const goNext = useCallback(() => {
-        if (index === null) return;
-        onNavigate((index + 1) % photos.length);
-    }, [index, photos.length, onNavigate]);
-
-    useEffect(() => {
-        if (!isOpen) return;
-
-        const onKeyDown = (event: KeyboardEvent) => {
-            if (event.key === "ArrowLeft") {
-                event.preventDefault();
-                goPrevious();
-            } else if (event.key === "ArrowRight") {
-                event.preventDefault();
-                goNext();
-            }
-        };
-
-        window.addEventListener("keydown", onKeyDown);
-        return () => window.removeEventListener("keydown", onKeyDown);
-    }, [isOpen, goPrevious, goNext]);
-
-    if (!current) return null;
-
-    const hasSiblings = photos.length > 1;
-    const fullSrc = fullResolutionSrc(current.photo);
+    if (!selected) return null;
 
     return (
         // Chakra's Modal supplies the focus trap, Escape handling, aria-modal and
         // scroll lock, so none of that is hand-rolled here.
         <Modal
-            isOpen={isOpen}
+            isOpen
             onClose={onClose}
             size="full"
             motionPreset="none"
@@ -114,43 +82,6 @@ const PhotoLightbox = ({ photos, index, onClose, onNavigate, triggerRef }: Photo
                         _hover={{ bg: "whiteAlpha.200" }}
                     />
 
-                    {hasSiblings && (
-                        <>
-                            <IconButton
-                                aria-label="Previous photo"
-                                icon={<FaChevronLeft />}
-                                onClick={(event) => {
-                                    event.stopPropagation();
-                                    goPrevious();
-                                }}
-                                position="fixed"
-                                left={{ base: 1, md: 4 }}
-                                top="50%"
-                                transform="translateY(-50%)"
-                                zIndex={2}
-                                variant="ghost"
-                                color="whiteAlpha.900"
-                                _hover={{ bg: "whiteAlpha.200" }}
-                            />
-                            <IconButton
-                                aria-label="Next photo"
-                                icon={<FaChevronRight />}
-                                onClick={(event) => {
-                                    event.stopPropagation();
-                                    goNext();
-                                }}
-                                position="fixed"
-                                right={{ base: 1, md: 4 }}
-                                top="50%"
-                                transform="translateY(-50%)"
-                                zIndex={2}
-                                variant="ghost"
-                                color="whiteAlpha.900"
-                                _hover={{ bg: "whiteAlpha.200" }}
-                            />
-                        </>
-                    )}
-
                     <Flex
                         direction="column"
                         align="center"
@@ -164,15 +95,15 @@ const PhotoLightbox = ({ photos, index, onClose, onNavigate, triggerRef }: Photo
                             position="relative"
                             lineHeight={0}
                             w={{ base: "96vw", md: "88vw" }}
-                            h={{ base: "70vh", md: "84vh" }}
+                            h={{ base: "72vh", md: "86vh" }}
                         >
                             {/* Already cached, so the photo appears immediately rather
                                 than leaving a black frame during the download. Both
                                 images fill the same box with the same object-fit, so
                                 the swap is registered to the pixel. */}
                             <Image
-                                src={current.previewSrc}
-                                alt={current.alt}
+                                src={selected.previewSrc}
+                                alt={selected.alt}
                                 position="absolute"
                                 inset={0}
                                 width="100%"
@@ -180,8 +111,8 @@ const PhotoLightbox = ({ photos, index, onClose, onNavigate, triggerRef }: Photo
                                 objectFit="contain"
                             />
                             <Image
-                                src={fullSrc}
-                                alt={current.alt}
+                                src={fullResolutionSrc(selected.photo)}
+                                alt={selected.alt}
                                 onLoad={() => setFullLoaded(true)}
                                 position="absolute"
                                 inset={0}
@@ -205,22 +136,16 @@ const PhotoLightbox = ({ photos, index, onClose, onNavigate, triggerRef }: Photo
                             )}
                         </Box>
 
-                        {current.photo.caption ? (
+                        {selected.photo.caption ? (
                             <Text
                                 fontSize="0.8rem"
                                 fontFamily="monospace"
                                 color="whiteAlpha.800"
                                 textAlign="center"
                             >
-                                {current.photo.caption}
+                                {selected.photo.caption}
                             </Text>
                         ) : null}
-
-                        {hasSiblings && (
-                            <Text fontSize="0.75rem" fontFamily="monospace" color="whiteAlpha.600">
-                                {(index ?? 0) + 1} / {photos.length}
-                            </Text>
-                        )}
                     </Flex>
                 </ModalBody>
             </ModalContent>
