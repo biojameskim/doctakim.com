@@ -33,7 +33,7 @@ import {
   orientationOf,
   planVariants,
   replaceExistingFilenames,
-  variantQuality,
+  encodeVariant,
 } from "./gallery-data.mjs";
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
@@ -244,11 +244,11 @@ async function buildPhoto(entry, configuration, temporaryDirectory, index) {
   const variants = [];
 
   for (const { density, width: targetWidth } of plan) {
-    const buffer = await sharp(originalBytes, { failOn: "warning" })
-      .rotate()
-      .resize({ width: targetWidth, withoutEnlargement: true })
-      .webp({ quality: variantQuality })
-      .toBuffer();
+    const buffer = await encodeVariant(
+      sharp(originalBytes, { failOn: "warning" })
+        .rotate()
+        .resize({ width: targetWidth, withoutEnlargement: true }),
+    ).toBuffer();
 
     const sha256 = createHash("sha256").update(buffer).digest("hex");
     const key = variantKeyFor(

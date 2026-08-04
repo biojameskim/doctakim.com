@@ -35,6 +35,7 @@ import {
   renderGalleryData,
   replaceExistingFilenames,
   slugify,
+  encodeVariant,
   variantQuality,
 } from "./gallery-data.mjs";
 
@@ -366,11 +367,11 @@ async function processImage({
     );
     // Re-derived from the source rather than the archival copy so a variant never
     // inherits the archival JPEG's generation loss.
-    const variantInfo = await sharp(inputPath, { failOn: "warning" })
-      .rotate()
-      .resize({ width, withoutEnlargement: true })
-      .webp({ quality: variantQuality })
-      .toFile(variantPath);
+    const variantInfo = await encodeVariant(
+      sharp(inputPath, { failOn: "warning" })
+        .rotate()
+        .resize({ width, withoutEnlargement: true }),
+    ).toFile(variantPath);
 
     const variantDigest = createHash("sha256")
       .update(await readFile(variantPath))
