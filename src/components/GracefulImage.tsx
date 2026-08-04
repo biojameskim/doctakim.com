@@ -59,7 +59,7 @@ const GracefulImage = (props: GracefulImageProps) => {
             role: "button",
             tabIndex: 0,
             "aria-label": imageClickLabel || "Open photo full size",
-            cursor: "zoom-in",
+            cursor: "pointer",
             css: { WebkitTapHighlightColor: "transparent" },
         }
         : {};

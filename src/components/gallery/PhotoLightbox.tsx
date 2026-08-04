@@ -7,9 +7,9 @@ import {
     ModalBody,
     ModalContent,
     ModalOverlay,
-    Spinner,
     Text,
 } from "@chakra-ui/react";
+import { keyframes } from "@emotion/react";
 import type { Photo } from "../../data/gallery";
 
 export type LightboxPhoto = {
@@ -35,6 +35,11 @@ type PhotoLightboxProps = {
 const fullResolutionSrc = (photo: Photo) =>
     photo.responsive?.originalSrc ?? photo.filename;
 
+const loadingPulse = keyframes`
+    0%, 100% { outline-color: rgba(255, 255, 255, 0.12); }
+    50%      { outline-color: rgba(255, 255, 255, 0.55); }
+`;
+
 const aspectFrom = (photo: Photo) => {
     const responsive = photo.responsive;
     return responsive
@@ -48,16 +53,8 @@ const PhotoLightbox = ({ selected, onClose, triggerRef }: PhotoLightboxProps) =>
     // with the image's left edge instead of a container edge somewhere off to the
     // side. Migrated photos carry their dimensions; older ones report them on load.
     const [aspect, setAspect] = useState<string | null>(null);
-    // Explicit zoom rather than relying on the browser's. Trackpad pinch on macOS
-    // scales the visual viewport, which position:fixed modal chrome is anchored
-    // outside of, so pinching does nothing useful in here.
-    const [zoomed, setZoomed] = useState(false);
-    const [naturalWidth, setNaturalWidth] = useState<number | null>(null);
-
     useEffect(() => {
         setFullLoaded(false);
-        setZoomed(false);
-        setNaturalWidth(selected?.photo.responsive?.intrinsicWidth ?? null);
         setAspect(selected ? aspectFrom(selected.photo) : null);
     }, [selected]);
 
@@ -112,14 +109,23 @@ const PhotoLightbox = ({ selected, onClose, triggerRef }: PhotoLightboxProps) =>
                             // it up and the modal container scrolls to let you pan.
                             // Roughly 1.4x the column (350px / 450px) — bigger, but
                             // still recognisably the same photo.
-                            w={
-                                zoomed && naturalWidth
-                                    ? `${naturalWidth}px`
-                                    : `min(92vw, ${isLandscape ? 460 : 400}px)`
-                            }
-                            cursor={naturalWidth ? (zoomed ? "zoom-out" : "zoom-in") : undefined}
-                            onClick={() => naturalWidth && setZoomed((value) => !value)}
-                            sx={aspect ? { aspectRatio: aspect } : undefined}
+                            w={`min(92vw, ${isLandscape ? 460 : 400}px)`}
+                            sx={{
+                                ...(aspect ? { aspectRatio: aspect } : {}),
+                                // Mirrors the column's skeleton: a soft pulse tells you
+                                // the sharper original is still on its way, without
+                                // hiding the preview that is already on screen.
+                                ...(fullLoaded
+                                    ? {}
+                                    : {
+                                        outline: "1px solid rgba(255,255,255,0.35)",
+                                        outlineOffset: "0px",
+                                        animation: `${loadingPulse} 1.4s ease-in-out infinite`,
+                                        "@media (prefers-reduced-motion: reduce)": {
+                                            animation: "none",
+                                        },
+                                    }),
+                            }}
                         >
                             {/* Already cached, so the photo appears immediately rather
                                 than leaving a black frame during the download. Both
@@ -142,12 +148,7 @@ const PhotoLightbox = ({ selected, onClose, triggerRef }: PhotoLightboxProps) =>
                             <Image
                                 src={fullResolutionSrc(selected.photo)}
                                 alt={selected.alt}
-                                onLoad={(event) => {
-                                    setFullLoaded(true);
-                                    if (!naturalWidth) {
-                                        setNaturalWidth(event.currentTarget.naturalWidth);
-                                    }
-                                }}
+                                onLoad={() => setFullLoaded(true)}
                                 position="absolute"
                                 inset={0}
                                 width="100%"
@@ -156,18 +157,6 @@ const PhotoLightbox = ({ selected, onClose, triggerRef }: PhotoLightboxProps) =>
                                 opacity={fullLoaded ? 1 : 0}
                                 transition="opacity 200ms ease-out"
                             />
-                            {!fullLoaded && (
-                                <Spinner
-                                    position="absolute"
-                                    bottom={3}
-                                    right={3}
-                                    size="sm"
-                                    color="whiteAlpha.800"
-                                    thickness="2px"
-                                    speed="0.8s"
-                                    aria-label="Loading full resolution"
-                                />
-                            )}
                         </Box>
 
                         {selected.photo.caption ? (
