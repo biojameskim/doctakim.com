@@ -9,6 +9,7 @@ import {
     SimpleGrid,
     VStack,
     Button,
+    useBreakpointValue,
     useColorModeValue,
     Flex,
     Image,
@@ -68,9 +69,18 @@ const Gallery = () => {
     const hoverBg = useColorModeValue("gray.50", "gray.700");
 
     const [lightboxPhoto, setLightboxPhoto] = useState<LightboxPhoto | null>(null);
+    // Desktop only. On a phone the lightbox frame clamps to ~92vw, barely wider than
+    // the column photo itself, so opening one would spend a couple of megabytes of
+    // cellular data to show the same picture on a black background. The 3x variant
+    // already on screen is 1050px against a ~350px slot, and pinch-zoom draws on it.
+    const canOpenLightbox = useBreakpointValue({ base: false, md: true }, { ssr: false }) ?? false;
     // Closing the lightbox must put focus back on the photo that opened it, so a
     // keyboard user does not get dropped at the top of the page.
     const lightboxTrigger = useRef<HTMLElement | null>(null);
+
+    useLayoutEffect(() => {
+        if (!canOpenLightbox) setLightboxPhoto(null);
+    }, [canOpenLightbox]);
 
     // Navigating between folders resets scroll and dismisses any open photo.
     useLayoutEffect(() => {
@@ -168,7 +178,7 @@ const Gallery = () => {
                                                     captionFontFamily="monospace"
                                                     loading={index === 0 ? "eager" : "lazy"}
                                                     decoding="async"
-                                                    onImageClick={(trigger) => {
+                                                    onImageClick={!canOpenLightbox ? undefined : (trigger) => {
                                                         lightboxTrigger.current = trigger;
                                                         setLightboxPhoto({
                                                             photo,
@@ -182,7 +192,11 @@ const Gallery = () => {
                                                             alt: photo.caption || `Photo ${index + 1}`,
                                                         });
                                                     }}
-                                                    imageClickLabel={`Open photo ${index + 1} full size`}
+                                                    imageClickLabel={
+                                                        canOpenLightbox
+                                                            ? `Open photo ${index + 1} full size`
+                                                            : undefined
+                                                    }
                                                 />
                                             </VStack>))}
                                     </SimpleGrid>
@@ -238,7 +252,7 @@ const Gallery = () => {
                                                     captionFontFamily="monospace"
                                                     loading={index === 0 ? "eager" : "lazy"}
                                                     decoding="async"
-                                                    onImageClick={(trigger) => {
+                                                    onImageClick={!canOpenLightbox ? undefined : (trigger) => {
                                                         lightboxTrigger.current = trigger;
                                                         setLightboxPhoto({
                                                             photo,
@@ -252,7 +266,11 @@ const Gallery = () => {
                                                             alt: photo.caption || `Photo ${index + 1}`,
                                                         });
                                                     }}
-                                                    imageClickLabel={`Open photo ${index + 1} full size`}
+                                                    imageClickLabel={
+                                                        canOpenLightbox
+                                                            ? `Open photo ${index + 1} full size`
+                                                            : undefined
+                                                    }
                                                 />
                                             </VStack>))}
                                     </SimpleGrid>
