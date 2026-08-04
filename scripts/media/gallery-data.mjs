@@ -1,6 +1,6 @@
-// Pure helpers shared by the gallery uploader and its tests. Deliberately free of
-// sharp, the S3 client and any filesystem access so the variant-planning and data
-// rendering logic can be tested without native modules or network calls.
+// Pure helpers shared by the gallery uploader and the backfill. Deliberately free
+// of sharp, the S3 client and any filesystem access, so both scripts plan variants
+// and render data through exactly one implementation and cannot drift apart.
 
 import path from "node:path";
 
@@ -8,7 +8,7 @@ import path from "node:path";
 // density. The gallery lays photos out at a fixed 350px (vertical) / 450px
 // (horizontal), so these are just that width times 1x/2x/3x — there is no fluid
 // range to cover, only screen density.
-export const variantWidthsByOrientation = {
+const variantWidthsByOrientation = {
   v: [350, 700, 1050],
   h: [450, 900, 1350],
 };
@@ -26,8 +26,8 @@ export const variantWidthsByOrientation = {
 // costs a few percent in size and is the single biggest lever on colour accuracy —
 // with it, these settings are truer to the original than the old q85 output was.
 export const variantQuality = 92;
-export const variantSharpenSigma = 0.4;
-export const variantSmartSubsample = true;
+const variantSharpenSigma = 0.4;
+const variantSmartSubsample = true;
 
 // Applies the shared encode settings to a sharp pipeline that has already been
 // resized. Kept here so both scripts encode identically.
@@ -79,7 +79,7 @@ export function formatBytes(bytes) {
 
 // The `responsive` block for one photo. `filename` carries the 1x variant, so only
 // 2x and 3x appear here alongside the archival original and intrinsic dimensions.
-export function renderResponsiveBlock(image, indentation) {
+function renderResponsiveBlock(image, indentation) {
   const [, twoX, threeX] = image.variants;
   return `${indentation}responsive: {
 ${indentation}    src2x: ${JSON.stringify(twoX.publicUrl)},
@@ -90,7 +90,7 @@ ${indentation}    intrinsicHeight: ${image.height}
 ${indentation}}`;
 }
 
-export function renderPhotoEntries(images, indentation) {
+function renderPhotoEntries(images, indentation) {
   return images
     .map(
       (image) => `${indentation}{
