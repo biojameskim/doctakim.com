@@ -56,6 +56,8 @@ const PhotoLightbox = ({ selected, onClose, triggerRef }: PhotoLightboxProps) =>
 
     if (!selected) return null;
 
+    const isLandscape = selected.photo.orientation === "h";
+
     return (
         // Chakra's Modal supplies the focus trap, Escape handling, aria-modal and
         // scroll lock, so none of that is hand-rolled here. There is no close button:
@@ -68,9 +70,10 @@ const PhotoLightbox = ({ selected, onClose, triggerRef }: PhotoLightboxProps) =>
             isCentered
             finalFocusRef={triggerRef as MutableRefObject<HTMLElement> | undefined}
         >
-            {/* Fully opaque: any transparency lets the white gallery page glow through
-                and washes out the photo it is meant to showcase. */}
-            <ModalOverlay bg="black" />
+            {/* Opaque rather than translucent: at any transparency the white gallery
+                page glows through and washes out the photo. A near-black grey rather
+                than pure black so the surround recedes without going harsh. */}
+            <ModalOverlay bg="#1c1c1c" />
             <ModalContent
                 bg="transparent"
                 boxShadow="none"
@@ -90,14 +93,19 @@ const PhotoLightbox = ({ selected, onClose, triggerRef }: PhotoLightboxProps) =>
                         align="flex-start"
                         gap={3}
                         px={{ base: 3, md: 8 }}
-                        py={{ base: 10, md: 8 }}
+                        py={{ base: 8, md: 10 }}
                         onClick={(event) => event.stopPropagation()}
                     >
                         <Box
                             position="relative"
                             lineHeight={0}
-                            h={{ base: "72vh", md: "86vh" }}
-                            maxW={{ base: "94vw", md: "88vw" }}
+                            // Pixel widths, deliberately. Sizing in vh/vw pinned the
+                            // photo to a fixed share of the screen, which cancelled
+                            // browser zoom out entirely. In px the browser can scale
+                            // it up and the modal container scrolls to let you pan.
+                            // Roughly 1.4x the column (350px / 450px) — bigger, but
+                            // still recognisably the same photo.
+                            w={`min(92vw, ${isLandscape ? 640 : 500}px)`}
                             sx={aspect ? { aspectRatio: aspect } : undefined}
                         >
                             {/* Already cached, so the photo appears immediately rather
