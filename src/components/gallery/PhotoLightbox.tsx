@@ -2,7 +2,6 @@ import { MutableRefObject, useEffect, useState } from "react";
 import {
     Box,
     Flex,
-    IconButton,
     Image,
     Modal,
     ModalBody,
@@ -11,7 +10,6 @@ import {
     Spinner,
     Text,
 } from "@chakra-ui/react";
-import { FaTimes } from "react-icons/fa";
 import type { Photo } from "../../data/gallery";
 
 export type LightboxPhoto = {
@@ -37,19 +35,31 @@ type PhotoLightboxProps = {
 const fullResolutionSrc = (photo: Photo) =>
     photo.responsive?.originalSrc ?? photo.filename;
 
+const aspectFrom = (photo: Photo) => {
+    const responsive = photo.responsive;
+    return responsive
+        ? `${responsive.intrinsicWidth} / ${responsive.intrinsicHeight}`
+        : null;
+};
+
 const PhotoLightbox = ({ selected, onClose, triggerRef }: PhotoLightboxProps) => {
     const [fullLoaded, setFullLoaded] = useState(false);
+    // Sizing the frame to the photo's own shape is what lets the caption sit flush
+    // with the image's left edge instead of a container edge somewhere off to the
+    // side. Migrated photos carry their dimensions; older ones report them on load.
+    const [aspect, setAspect] = useState<string | null>(null);
 
-    // A different photo means a different original to download.
     useEffect(() => {
         setFullLoaded(false);
-    }, [selected?.previewSrc]);
+        setAspect(selected ? aspectFrom(selected.photo) : null);
+    }, [selected]);
 
     if (!selected) return null;
 
     return (
         // Chakra's Modal supplies the focus trap, Escape handling, aria-modal and
-        // scroll lock, so none of that is hand-rolled here.
+        // scroll lock, so none of that is hand-rolled here. There is no close button:
+        // Escape or a click outside the photo dismisses it.
         <Modal
             isOpen
             onClose={onClose}
@@ -61,7 +71,13 @@ const PhotoLightbox = ({ selected, onClose, triggerRef }: PhotoLightboxProps) =>
             {/* Fully opaque: any transparency lets the white gallery page glow through
                 and washes out the photo it is meant to showcase. */}
             <ModalOverlay bg="black" />
-            <ModalContent bg="transparent" boxShadow="none" m={0} onClick={onClose}>
+            <ModalContent
+                bg="transparent"
+                boxShadow="none"
+                m={0}
+                onClick={onClose}
+                aria-label={selected.photo.caption || "Photo, full size"}
+            >
                 <ModalBody
                     p={0}
                     display="flex"
@@ -69,33 +85,20 @@ const PhotoLightbox = ({ selected, onClose, triggerRef }: PhotoLightboxProps) =>
                     justifyContent="center"
                     minH="100vh"
                 >
-                    <IconButton
-                        aria-label="Close"
-                        icon={<FaTimes />}
-                        onClick={onClose}
-                        position="fixed"
-                        top={4}
-                        right={4}
-                        zIndex={2}
-                        variant="ghost"
-                        color="whiteAlpha.900"
-                        _hover={{ bg: "whiteAlpha.200" }}
-                    />
-
                     <Flex
                         direction="column"
-                        align="center"
+                        align="flex-start"
                         gap={3}
-                        maxW="100vw"
-                        px={{ base: 2, md: 12 }}
-                        py={{ base: 12, md: 8 }}
+                        px={{ base: 3, md: 8 }}
+                        py={{ base: 10, md: 8 }}
                         onClick={(event) => event.stopPropagation()}
                     >
                         <Box
                             position="relative"
                             lineHeight={0}
-                            w={{ base: "96vw", md: "88vw" }}
                             h={{ base: "72vh", md: "86vh" }}
+                            maxW={{ base: "94vw", md: "88vw" }}
+                            sx={aspect ? { aspectRatio: aspect } : undefined}
                         >
                             {/* Already cached, so the photo appears immediately rather
                                 than leaving a black frame during the download. Both
@@ -104,6 +107,11 @@ const PhotoLightbox = ({ selected, onClose, triggerRef }: PhotoLightboxProps) =>
                             <Image
                                 src={selected.previewSrc}
                                 alt={selected.alt}
+                                onLoad={(event) => {
+                                    if (aspect) return;
+                                    const img = event.currentTarget;
+                                    setAspect(`${img.naturalWidth} / ${img.naturalHeight}`);
+                                }}
                                 position="absolute"
                                 inset={0}
                                 width="100%"
@@ -141,7 +149,7 @@ const PhotoLightbox = ({ selected, onClose, triggerRef }: PhotoLightboxProps) =>
                                 fontSize="0.8rem"
                                 fontFamily="monospace"
                                 color="whiteAlpha.800"
-                                textAlign="center"
+                                textAlign="left"
                             >
                                 {selected.photo.caption}
                             </Text>
