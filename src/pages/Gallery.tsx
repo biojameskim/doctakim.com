@@ -172,12 +172,13 @@ const Gallery = () => {
                                                         lightboxTrigger.current = trigger;
                                                         setLightboxPhoto({
                                                             photo,
-                                                            // The 2x variant is already
-                                                            // cached by the grid, so it
-                                                            // stands in instantly.
+                                                            // Same sources the column
+                                                            // used, so the browser reuses
+                                                            // the rung it already cached.
                                                             previewSrc:
-                                                                photo.responsive?.src2x ??
                                                                 photoSources(photo, selectedFolder).src,
+                                                            previewSrcSet:
+                                                                photoSources(photo, selectedFolder).webpSrcSet,
                                                             alt: photo.caption || `Photo ${index + 1}`,
                                                         });
                                                     }}
@@ -241,12 +242,13 @@ const Gallery = () => {
                                                         lightboxTrigger.current = trigger;
                                                         setLightboxPhoto({
                                                             photo,
-                                                            // The 2x variant is already
-                                                            // cached by the grid, so it
-                                                            // stands in instantly.
+                                                            // Same sources the column
+                                                            // used, so the browser reuses
+                                                            // the rung it already cached.
                                                             previewSrc:
-                                                                photo.responsive?.src2x ??
                                                                 photoSources(photo, selectedFolder).src,
+                                                            previewSrcSet:
+                                                                photoSources(photo, selectedFolder).webpSrcSet,
                                                             alt: photo.caption || `Photo ${index + 1}`,
                                                         });
                                                     }}
