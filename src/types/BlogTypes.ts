@@ -25,7 +25,17 @@ export type BlogImageType = {
   pt?: string,
   pb?: string,
   loading?: "eager" | "lazy",
-  decoding?: "async" | "auto" | "sync"
+  decoding?: "async" | "auto" | "sync",
+  // Responsive WebP delivery. All optional: blog entries and unmigrated gallery
+  // photos pass none of these and render exactly as before.
+  webpSrcSet?: string,
+  fallbackSrc?: string,
+  intrinsicWidth?: number,
+  intrinsicHeight?: number,
+  // Opens the gallery lightbox. Attached to the image only, never the caption, so a
+  // captionLink stays clickable. Blog entries pass nothing and get no affordance.
+  onImageClick?: (trigger: HTMLElement) => void,
+  imageClickLabel?: string
 }
 
 export type BirthdayCardType = {

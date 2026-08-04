@@ -12,13 +12,40 @@ npm run media:gallery -- \
   --input "/absolute/path/to/photos"
 ```
 
-Review the displayed order, then enter `y`. The script optimizes copies, uploads
+Review the displayed order, then enter `y`. The script processes copies, uploads
 them to `gallery/YYYY/MM/`, verifies them, and creates the matching gallery data
 file. Your original photos are unchanged.
 
-Images are capped at 4096 pixels. JPEGs are tried at quality 90, then 85; when
-the result is still larger, the original is kept if it has no EXIF metadata.
-Web-ready JPEGs already under 5 MB skip re-encoding.
+## What gets uploaded
+
+Each photo produces **four objects**: one archival original plus three WebP
+variants, which are what the gallery actually renders.
+
+| Object | Vertical | Horizontal | Purpose |
+| --- | --- | --- | --- |
+| archive | up to 4096px | up to 4096px | recoverable source; `<picture>` fallback |
+| 1x | 350px | 450px | `filename` in the data file |
+| 2x | 700px | 900px | `responsive.src2x` |
+| 3x | 1050px | 1350px | `responsive.src3x` |
+
+The variant widths are the gallery's fixed layout width (350px vertical, 450px
+horizontal) times screen density. Because the layout never goes full-bleed, only
+density varies — which is why these are density descriptors (`1x/2x/3x`) rather
+than a `sizes`-based srcset.
+
+Variants are WebP at quality 85, derived from your input file rather than from
+the archival copy so they never inherit its generation loss. Widths clamp to the
+source: a photo narrower than its 3x target yields the source width instead of
+an upscale, and the run reports how many were clamped.
+
+The archive itself is capped at 4096 pixels. JPEGs are tried at quality 90, then
+85; when the result is still larger, the original is kept if it has no EXIF
+metadata. Web-ready JPEGs already under 5 MB skip re-encoding.
+
+Every uploaded object is re-downloaded and compared against the SHA-256 of the
+bytes that were generated, and a month's data file is written only after all of
+its objects verify. A failed run can leave unreferenced objects in the bucket;
+re-running reuses them rather than duplicating them.
 
 After it finishes, open the generated `src/data/gallery/photos/YYYY/MM.ts` file:
 
@@ -28,7 +55,8 @@ After it finishes, open the generated `src/data/gallery/photos/YYYY/MM.ts` file:
 Useful options:
 
 ```bash
-# Preview only
+# Preview only. Prints the variant sizes and the data file it would write,
+# without uploading or writing anything.
 npm run media:gallery -- --year 2026 --month 7 --input "/path" --dry-run
 
 # Migrate an existing month while preserving its captions and other metadata.

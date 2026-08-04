@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { useLayoutEffect, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import {
     Box,
@@ -9,6 +9,7 @@ import {
     SimpleGrid,
     VStack,
     Button,
+    useBreakpointValue,
     useColorModeValue,
     Flex,
     Image,
@@ -16,8 +17,30 @@ import {
 } from "@chakra-ui/react";
 import { FaArrowLeft } from "react-icons/fa";
 import { photoFolders } from "../data/gallery";
+import type { Photo, PhotoFolder } from "../data/gallery";
 import BlogImage from "../components/blog/BlogImage";
 import SEO from "../components/SEO";
+import PhotoLightbox, { LightboxPhoto } from "../components/gallery/PhotoLightbox";
+
+// Builds the image props for one photo. Photos whose month has not been migrated yet
+// have no `responsive` block, so they return a bare `src` and render exactly as before.
+const photoSources = (photo: Photo, folder: PhotoFolder | null) => {
+    const src = photo.filename.startsWith("http")
+        ? photo.filename
+        : `/gallery/${folder?.year}/${folder?.month}/${photo.filename}`;
+    const responsive = photo.responsive;
+
+    if (!responsive) return { src };
+
+    return {
+        src,
+        // `filename` is the 1x WebP once migrated, so it leads the density set.
+        webpSrcSet: `${src} 1x, ${responsive.src2x} 2x, ${responsive.src3x} 3x`,
+        fallbackSrc: responsive.originalSrc,
+        intrinsicWidth: responsive.intrinsicWidth,
+        intrinsicHeight: responsive.intrinsicHeight,
+    };
+};
 
 type GalleryIconProps = {
     src: string;
@@ -45,8 +68,24 @@ const Gallery = () => {
     const navigate = useNavigate();
     const hoverBg = useColorModeValue("gray.50", "gray.700");
 
+    const [lightboxPhoto, setLightboxPhoto] = useState<LightboxPhoto | null>(null);
+    // Desktop only. On a phone the lightbox frame clamps to ~92vw, barely wider than
+    // the column photo itself, so opening one would spend a couple of megabytes of
+    // cellular data to show the same picture on a black background. The 3x variant
+    // already on screen is 1050px against a ~350px slot, and pinch-zoom draws on it.
+    const canOpenLightbox = useBreakpointValue({ base: false, md: true }, { ssr: false }) ?? false;
+    // Closing the lightbox must put focus back on the photo that opened it, so a
+    // keyboard user does not get dropped at the top of the page.
+    const lightboxTrigger = useRef<HTMLElement | null>(null);
+
+    useLayoutEffect(() => {
+        if (!canOpenLightbox) setLightboxPhoto(null);
+    }, [canOpenLightbox]);
+
+    // Navigating between folders resets scroll and dismisses any open photo.
     useLayoutEffect(() => {
         window.scrollTo(0, 0);
+        setLightboxPhoto(null);
     }, [year, month, subfolder]);
 
     const selectedYear = year ? parseInt(year) : null;
@@ -129,7 +168,7 @@ const Gallery = () => {
                                         {selectedSubfolder.photos.map((photo, index) => (
                                             <VStack key={index} w="100%">
                                                 <BlogImage
-                                                    src={photo.filename.startsWith('http') ? photo.filename : `/gallery/${selectedFolder?.year}/${selectedFolder?.month}/${photo.filename}`}
+                                                    {...photoSources(photo, selectedFolder)}
                                                     alt={photo.caption || `Photo ${index + 1}`}
                                                     caption={photo.caption}
                                                     captionLink={photo.captionLink}
@@ -139,6 +178,25 @@ const Gallery = () => {
                                                     captionFontFamily="monospace"
                                                     loading={index === 0 ? "eager" : "lazy"}
                                                     decoding="async"
+                                                    onImageClick={!canOpenLightbox ? undefined : (trigger) => {
+                                                        lightboxTrigger.current = trigger;
+                                                        setLightboxPhoto({
+                                                            photo,
+                                                            // Same sources the column
+                                                            // used, so the browser reuses
+                                                            // the rung it already cached.
+                                                            previewSrc:
+                                                                photoSources(photo, selectedFolder).src,
+                                                            previewSrcSet:
+                                                                photoSources(photo, selectedFolder).webpSrcSet,
+                                                            alt: photo.caption || `Photo ${index + 1}`,
+                                                        });
+                                                    }}
+                                                    imageClickLabel={
+                                                        canOpenLightbox
+                                                            ? `Open photo ${index + 1} full size`
+                                                            : undefined
+                                                    }
                                                 />
                                             </VStack>))}
                                     </SimpleGrid>
@@ -184,7 +242,7 @@ const Gallery = () => {
                                         {selectedFolder.photos.map((photo, index) => (
                                             <VStack key={index} w="100%">
                                                 <BlogImage
-                                                    src={photo.filename.startsWith('http') ? photo.filename : `/gallery/${selectedFolder?.year}/${selectedFolder?.month}/${photo.filename}`}
+                                                    {...photoSources(photo, selectedFolder)}
                                                     alt={photo.caption || `Photo ${index + 1}`}
                                                     caption={photo.caption}
                                                     captionLink={photo.captionLink}
@@ -194,6 +252,25 @@ const Gallery = () => {
                                                     captionFontFamily="monospace"
                                                     loading={index === 0 ? "eager" : "lazy"}
                                                     decoding="async"
+                                                    onImageClick={!canOpenLightbox ? undefined : (trigger) => {
+                                                        lightboxTrigger.current = trigger;
+                                                        setLightboxPhoto({
+                                                            photo,
+                                                            // Same sources the column
+                                                            // used, so the browser reuses
+                                                            // the rung it already cached.
+                                                            previewSrc:
+                                                                photoSources(photo, selectedFolder).src,
+                                                            previewSrcSet:
+                                                                photoSources(photo, selectedFolder).webpSrcSet,
+                                                            alt: photo.caption || `Photo ${index + 1}`,
+                                                        });
+                                                    }}
+                                                    imageClickLabel={
+                                                        canOpenLightbox
+                                                            ? `Open photo ${index + 1} full size`
+                                                            : undefined
+                                                    }
                                                 />
                                             </VStack>))}
                                     </SimpleGrid>
@@ -264,6 +341,12 @@ const Gallery = () => {
                     </VStack>
                 </Container>
             </Box>
+
+            <PhotoLightbox
+                selected={lightboxPhoto}
+                onClose={() => setLightboxPhoto(null)}
+                triggerRef={lightboxTrigger}
+            />
         </div>
     );
 };

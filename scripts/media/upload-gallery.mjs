@@ -27,6 +27,18 @@ import dotenv from "dotenv";
 import sharp from "sharp";
 import ts from "typescript";
 
+import {
+  countFilenameEntries,
+  formatBytes,
+  orientationOf,
+  planVariants,
+  renderGalleryData,
+  replaceExistingFilenames,
+  slugify,
+  encodeVariant,
+  variantQuality,
+} from "./gallery-data.mjs";
+
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const repositoryRoot = path.resolve(scriptDirectory, "../..");
 const environmentPath = path.join(repositoryRoot, ".env.media.local");
@@ -212,32 +224,6 @@ async function findInputImages(inputDirectory) {
   return images;
 }
 
-function slugify(filename) {
-  const stem = path.basename(filename, path.extname(filename));
-  const slug = stem
-    .normalize("NFKD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "")
-    .slice(0, 80);
-
-  return slug || "photo";
-}
-
-function formatBytes(bytes) {
-  const units = ["B", "KB", "MB", "GB"];
-  let value = bytes;
-  let unitIndex = 0;
-
-  while (value >= 1024 && unitIndex < units.length - 1) {
-    value /= 1024;
-    unitIndex += 1;
-  }
-
-  return `${value.toFixed(unitIndex === 0 ? 0 : 1)} ${units[unitIndex]}`;
-}
-
 async function processImage({
   filename,
   index,
@@ -348,13 +334,64 @@ async function processImage({
     };
   }
   const processedBytes = await readFile(temporaryPath);
-  const hash = createHash("sha256")
-    .update(processedBytes)
-    .digest("hex")
-    .slice(0, 10);
+  const digest = createHash("sha256").update(processedBytes).digest("hex");
+  const hash = digest.slice(0, 10);
   const position = String(index + 1).padStart(prefixWidth, "0");
-  const objectFilename = `${position}-${slugify(filename)}-${hash}.${outputExtension}`;
+  const slug = slugify(filename);
+  const objectFilename = `${position}-${slug}-${hash}.${outputExtension}`;
   const key = `${keyPrefix}/${objectFilename}`;
+
+  const orientation = orientationOf(info.width, info.height);
+
+  // The archival object: the full-resolution image, kept as the recoverable source
+  // and as the <picture> fallback for browsers without WebP support.
+  const original = {
+    role: "original",
+    processedSize: info.size,
+    contentType: outputExtension === "png" ? "image/png" : "image/jpeg",
+    sha256: digest,
+    temporaryPath,
+    key,
+    publicUrl: `${publicBaseUrl}/${key}`,
+  };
+
+  // The display variants. Widths clamp to the source so a small original is never
+  // upscaled — a 768px-wide photo yields 350/700/768 rather than a fake 1050.
+  const plan = planVariants(orientation, info.width);
+  const clamped = plan.some((entry) => entry.clamped);
+  const variants = [];
+  for (const { density, width } of plan) {
+    const variantPath = path.join(
+      temporaryDirectory,
+      `${String(temporaryIndex + 1).padStart(5, "0")}-${density}x.webp`,
+    );
+    // Re-derived from the source rather than the archival copy so a variant never
+    // inherits the archival JPEG's generation loss.
+    const variantInfo = await encodeVariant(
+      sharp(inputPath, { failOn: "warning" })
+        .rotate()
+        .resize({ width, withoutEnlargement: true }),
+    ).toFile(variantPath);
+
+    const variantDigest = createHash("sha256")
+      .update(await readFile(variantPath))
+      .digest("hex");
+    const variantKey =
+      `${keyPrefix}/${position}-${slug}-${variantDigest.slice(0, 10)}-${variantInfo.width}w.webp`;
+
+    variants.push({
+      role: `${density}x`,
+      density,
+      width: variantInfo.width,
+      height: variantInfo.height,
+      processedSize: variantInfo.size,
+      contentType: "image/webp",
+      sha256: variantDigest,
+      temporaryPath: variantPath,
+      key: variantKey,
+      publicUrl: `${publicBaseUrl}/${variantKey}`,
+    });
+  }
 
   return {
     filename,
@@ -362,11 +399,17 @@ async function processImage({
     processedSize: info.size,
     width: info.width,
     height: info.height,
-    orientation: info.width >= info.height ? "h" : "v",
-    contentType: outputExtension === "png" ? "image/png" : "image/jpeg",
+    orientation,
+    original,
+    variants,
+    clamped,
+    // Every object this photo contributes to R2, in upload order.
+    objects: [original, ...variants],
+    // Kept for the migration path, which rewrites `filename` values in place.
+    contentType: original.contentType,
     temporaryPath,
     key,
-    publicUrl: `${publicBaseUrl}/${key}`,
+    publicUrl: original.publicUrl,
   };
 }
 
@@ -381,10 +424,17 @@ function printPreview(groups, options, outputPath) {
     );
     console.log(`Input: ${group.inputDirectory}`);
     group.images.forEach((image, index) => {
+      const variants = image.variants
+        .map(
+          (variant) =>
+            `${variant.density}x ${variant.width}w ${formatBytes(variant.processedSize)}`,
+        )
+        .join(", ");
       console.log(
         `${String(index + 1).padStart(3, " ")}. ${image.filename} -> ` +
           `${image.width}x${image.height}, ${image.orientation}, ` +
-          `${formatBytes(image.originalSize)} -> ${formatBytes(image.processedSize)}`,
+          `archive ${formatBytes(image.processedSize)}` +
+          `${image.clamped ? " [clamped]" : ""}\n     ${variants}`,
       );
     });
   });
@@ -394,14 +444,30 @@ function printPreview(groups, options, outputPath) {
     (total, image) => total + image.originalSize,
     0,
   );
-  const processedTotal = images.reduce(
+  const archiveTotal = images.reduce(
     (total, image) => total + image.processedSize,
     0,
   );
+  const variantTotal = images.reduce(
+    (total, image) =>
+      total +
+      image.variants.reduce((sum, variant) => sum + variant.processedSize, 0),
+    0,
+  );
+  const clampedCount = images.filter((image) => image.clamped).length;
 
   console.log(
-    `\n${images.length} photos: ${formatBytes(originalTotal)} -> ${formatBytes(processedTotal)}`,
+    `\n${images.length} photos, ${images.length * 4} objects` +
+      `\n  originals: ${formatBytes(originalTotal)} -> ${formatBytes(archiveTotal)} (archived)` +
+      `\n  variants:  ${formatBytes(variantTotal)} at q${variantQuality}`,
   );
+
+  if (clampedCount > 0) {
+    console.log(
+      `\nNote: ${clampedCount} photo(s) are narrower than their 3x target, so their ` +
+        "top variant is the source width. Nothing was upscaled.",
+    );
+  }
 }
 
 async function confirmUpload(options) {
@@ -436,18 +502,18 @@ function createS3Client(configuration) {
   });
 }
 
-async function uploadImage(client, configuration, image) {
+async function uploadObject(client, configuration, object) {
   try {
     const existing = await client.send(
       new HeadObjectCommand({
         Bucket: configuration.bucket,
-        Key: image.key,
+        Key: object.key,
       }),
     );
 
-    if (existing.ContentLength !== image.processedSize) {
+    if (existing.ContentLength !== object.processedSize) {
       throw new Error(
-        `Existing object has an unexpected size: ${image.key}`,
+        `Existing object has an unexpected size: ${object.key}`,
       );
     }
 
@@ -467,10 +533,10 @@ async function uploadImage(client, configuration, image) {
   await client.send(
     new PutObjectCommand({
       Bucket: configuration.bucket,
-      Key: image.key,
-      Body: createReadStream(image.temporaryPath),
-      ContentLength: image.processedSize,
-      ContentType: image.contentType,
+      Key: object.key,
+      Body: createReadStream(object.temporaryPath),
+      ContentLength: object.processedSize,
+      ContentType: object.contentType,
       CacheControl: "public, max-age=31536000, immutable",
     }),
   );
@@ -496,77 +562,40 @@ async function mapWithConcurrency(items, concurrency, operation) {
   return results;
 }
 
-async function verifyPublicImage(image) {
-  const response = await fetch(image.publicUrl, {
-    method: "HEAD",
-    redirect: "follow",
-  });
+// Downloads the object and compares its SHA-256 against the bytes we generated. A
+// HEAD with the right length proves an object exists at the right size; only hashing
+// the body proves the right bytes are actually being served.
+async function verifyPublicObject(object) {
+  const response = await fetch(object.publicUrl, { redirect: "follow" });
 
   if (!response.ok) {
     throw new Error(
-      `Public verification failed (${response.status}): ${image.publicUrl}`,
+      `Public verification failed (${response.status}): ${object.publicUrl}`,
     );
   }
 
   const contentType = response.headers.get("content-type") || "";
-  if (!contentType.startsWith("image/")) {
+  if (contentType !== object.contentType) {
     throw new Error(
-      `Public URL returned ${contentType || "no content type"}: ${image.publicUrl}`,
+      `Public URL returned ${contentType || "no content type"}, expected ` +
+        `${object.contentType}: ${object.publicUrl}`,
     );
   }
-}
 
-function renderPhotoEntries(images, indentation) {
-  return images
-    .map(
-      (image) => `${indentation}{
-${indentation}    filename: ${JSON.stringify(image.publicUrl)},
-${indentation}    caption: "",
-${indentation}    orientation: "${image.orientation}"
-${indentation}}`,
-    )
-    .join(",\n");
-}
+  const body = Buffer.from(await response.arrayBuffer());
+  if (body.length !== object.processedSize) {
+    throw new Error(
+      `Public URL served ${body.length} bytes, expected ${object.processedSize}: ` +
+        object.publicUrl,
+    );
+  }
 
-function renderGalleryData(groups, year, month) {
-  const rootImages =
-    groups.find((group) => group.kind === "root")?.images || [];
-  const subfolderGroups = groups.filter(
-    (group) => group.kind === "subfolder",
-  );
-  const subfolders =
-    subfolderGroups.length > 0
-      ? `,
-    subfolders: [
-${subfolderGroups
-  .map(
-    (group) => `        {
-            name: ${JSON.stringify(group.name)},
-            photos: [
-${renderPhotoEntries(group.images, "                ")}
-            ]
-        }`,
-  )
-  .join(",\n")}
-    ]`
-      : "";
-
-  return `import type { PhotoFolder } from "../../types";
-
-export const folder: PhotoFolder = {
-    year: ${year},
-    month: "${month}",
-    photos: [
-${renderPhotoEntries(rootImages, "        ")}
-    ]${subfolders}
-};
-`;
-}
-
-function countFilenameEntries(source) {
-  return Array.from(
-    source.matchAll(/\bfilename:\s*"(?:\\.|[^"\\])*"/g),
-  ).length;
+  const served = createHash("sha256").update(body).digest("hex");
+  if (served !== object.sha256) {
+    throw new Error(
+      `Public URL served unexpected bytes (sha256 mismatch): ${object.publicUrl}`,
+    );
+  }
 }
 
 function parseExistingGalleryStructure(source) {
@@ -651,26 +680,6 @@ function parseExistingGalleryStructure(source) {
     rootPhotoCount: getPhotosCount(folderObject),
     subfolders,
   };
-}
-
-function replaceExistingFilenames(source, images) {
-  let imageIndex = 0;
-  const updated = source.replace(
-    /(\bfilename:\s*)"(?:\\.|[^"\\])*"/g,
-    (_match, prefix) => {
-      const publicUrl = images[imageIndex].publicUrl;
-      imageIndex += 1;
-      return `${prefix}${JSON.stringify(publicUrl)}`;
-    },
-  );
-
-  if (imageIndex !== images.length) {
-    throw new Error(
-      `Expected to replace ${images.length} filenames, replaced ${imageIndex}.`,
-    );
-  }
-
-  return updated;
 }
 
 async function main() {
@@ -814,6 +823,13 @@ async function main() {
       : renderGalleryData(processedGroups, options.year, options.month);
 
     if (options.dryRun) {
+      const previewLineCount = 24;
+      const lines = renderedData.split("\n");
+      console.log(`\n${outputPath} would contain:\n`);
+      console.log(lines.slice(0, previewLineCount).join("\n"));
+      if (lines.length > previewLineCount) {
+        console.log(`... ${lines.length - previewLineCount} more lines`);
+      }
       console.log("\nDry run complete. Nothing was uploaded or written.");
       return;
     }
@@ -827,22 +843,27 @@ async function main() {
     await confirmUpload(options);
 
     const client = createS3Client(configuration);
-    console.log("\nUploading to R2...");
+    // Originals and all three variants, uploaded and verified as one unit before the
+    // month's data file is touched.
+    const uploadTargets = processedImages.flatMap((image) => image.objects);
+    console.log(`\nUploading ${uploadTargets.length} objects to R2...`);
     const uploadResults = await mapWithConcurrency(
-      processedImages,
+      uploadTargets,
       4,
-      async (image, index) => {
-        const result = await uploadImage(client, configuration, image);
+      async (object, index) => {
+        const result = await uploadObject(client, configuration, object);
         console.log(
-          `[${index + 1}/${processedImages.length}] ${result}: ${image.key}`,
+          `[${index + 1}/${uploadTargets.length}] ${result}: ${object.key}`,
         );
         return result;
       },
     );
 
-    console.log("\nVerifying public URLs...");
-    await mapWithConcurrency(processedImages, 4, verifyPublicImage);
+    console.log("\nVerifying public URLs (sha256)...");
+    await mapWithConcurrency(uploadTargets, 4, verifyPublicObject);
 
+    // Only now, with every object confirmed present and byte-correct, is the month's
+    // data rewritten.
     await mkdir(path.dirname(outputPath), { recursive: true });
     await writeFile(outputPath, renderedData, "utf8");
 
