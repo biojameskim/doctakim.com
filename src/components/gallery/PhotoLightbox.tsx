@@ -48,9 +48,16 @@ const PhotoLightbox = ({ selected, onClose, triggerRef }: PhotoLightboxProps) =>
     // with the image's left edge instead of a container edge somewhere off to the
     // side. Migrated photos carry their dimensions; older ones report them on load.
     const [aspect, setAspect] = useState<string | null>(null);
+    // Explicit zoom rather than relying on the browser's. Trackpad pinch on macOS
+    // scales the visual viewport, which position:fixed modal chrome is anchored
+    // outside of, so pinching does nothing useful in here.
+    const [zoomed, setZoomed] = useState(false);
+    const [naturalWidth, setNaturalWidth] = useState<number | null>(null);
 
     useEffect(() => {
         setFullLoaded(false);
+        setZoomed(false);
+        setNaturalWidth(selected?.photo.responsive?.intrinsicWidth ?? null);
         setAspect(selected ? aspectFrom(selected.photo) : null);
     }, [selected]);
 
@@ -71,9 +78,9 @@ const PhotoLightbox = ({ selected, onClose, triggerRef }: PhotoLightboxProps) =>
             finalFocusRef={triggerRef as MutableRefObject<HTMLElement> | undefined}
         >
             {/* Opaque rather than translucent: at any transparency the white gallery
-                page glows through and washes out the photo. A near-black grey rather
-                than pure black so the surround recedes without going harsh. */}
-            <ModalOverlay bg="#1c1c1c" />
+                page glows through and washes out the photo. A mid grey rather than
+                black so the surround stays quiet without feeling like a void. */}
+            <ModalOverlay bg="#333333" />
             <ModalContent
                 bg="transparent"
                 boxShadow="none"
@@ -105,7 +112,13 @@ const PhotoLightbox = ({ selected, onClose, triggerRef }: PhotoLightboxProps) =>
                             // it up and the modal container scrolls to let you pan.
                             // Roughly 1.4x the column (350px / 450px) — bigger, but
                             // still recognisably the same photo.
-                            w={`min(92vw, ${isLandscape ? 640 : 500}px)`}
+                            w={
+                                zoomed && naturalWidth
+                                    ? `${naturalWidth}px`
+                                    : `min(92vw, ${isLandscape ? 460 : 400}px)`
+                            }
+                            cursor={naturalWidth ? (zoomed ? "zoom-out" : "zoom-in") : undefined}
+                            onClick={() => naturalWidth && setZoomed((value) => !value)}
                             sx={aspect ? { aspectRatio: aspect } : undefined}
                         >
                             {/* Already cached, so the photo appears immediately rather
@@ -129,7 +142,12 @@ const PhotoLightbox = ({ selected, onClose, triggerRef }: PhotoLightboxProps) =>
                             <Image
                                 src={fullResolutionSrc(selected.photo)}
                                 alt={selected.alt}
-                                onLoad={() => setFullLoaded(true)}
+                                onLoad={(event) => {
+                                    setFullLoaded(true);
+                                    if (!naturalWidth) {
+                                        setNaturalWidth(event.currentTarget.naturalWidth);
+                                    }
+                                }}
                                 position="absolute"
                                 inset={0}
                                 width="100%"
