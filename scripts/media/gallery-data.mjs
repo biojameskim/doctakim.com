@@ -1,6 +1,5 @@
-// Pure helpers shared by the gallery uploader and the backfill. Deliberately free
-// of sharp, the S3 client and any filesystem access, so both scripts plan variants
-// and render data through exactly one implementation and cannot drift apart.
+// Pure helpers for the gallery uploader: variant planning and data-file rendering,
+// kept free of sharp, the S3 client and any filesystem access.
 
 import path from "node:path";
 
@@ -13,8 +12,7 @@ const variantWidthsByOrientation = {
   h: [450, 900, 1350],
 };
 
-// Encoding settings for the display variants, shared by the uploader and the
-// backfill so the two can never drift apart.
+// Encoding settings for the display variants.
 //
 // A photo shown at 350 CSS px used to be a 3024px JPEG that the browser downscaled,
 // which supersampled it for free — averaging ~4x4 pixel blocks. A purpose-encoded
