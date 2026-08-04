@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { useLayoutEffect, useState } from "react";
+import { useLayoutEffect, useMemo, useRef, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import {
     Box,
@@ -19,6 +19,7 @@ import { photoFolders } from "../data/gallery";
 import type { Photo, PhotoFolder } from "../data/gallery";
 import BlogImage from "../components/blog/BlogImage";
 import SEO from "../components/SEO";
+import PhotoLightbox, { LightboxPhoto } from "../components/gallery/PhotoLightbox";
 
 // Builds the image props for one photo. Photos whose month has not been migrated yet
 // have no `responsive` block, so they return a bare `src` and render exactly as before.
@@ -66,8 +67,15 @@ const Gallery = () => {
     const navigate = useNavigate();
     const hoverBg = useColorModeValue("gray.50", "gray.700");
 
+    const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+    // Closing the lightbox must put focus back on the photo that opened it, so a
+    // keyboard user does not get dropped at the top of the page.
+    const lightboxTrigger = useRef<HTMLElement | null>(null);
+
+    // Navigating between folders resets scroll and dismisses any open photo.
     useLayoutEffect(() => {
         window.scrollTo(0, 0);
+        setLightboxIndex(null);
     }, [year, month, subfolder]);
 
     const selectedYear = year ? parseInt(year) : null;
@@ -108,6 +116,26 @@ const Gallery = () => {
     const filteredFolders = selectedYear
         ? photoFolders.filter(folder => folder.year === selectedYear)
         : [];
+
+    // Whichever set of photos is on screen; the lightbox pages through exactly these.
+    const visiblePhotos: Photo[] = useMemo(() => {
+        if (selectedSubfolder) return selectedSubfolder.photos || [];
+        if (selectedFolder) return selectedFolder.photos;
+        return [];
+    }, [selectedSubfolder, selectedFolder]);
+
+    const lightboxPhotos: LightboxPhoto[] = useMemo(
+        () =>
+            visiblePhotos.map((photo, index) => ({
+                photo,
+                // The 2x variant is already cached by the grid on most screens and is
+                // a far better stand-in than the 350px 1x file.
+                previewSrc:
+                    photo.responsive?.src2x ?? photoSources(photo, selectedFolder).src,
+                alt: photo.caption || `Photo ${index + 1}`,
+            })),
+        [visiblePhotos, selectedFolder],
+    );
 
     const showBackButton = selectedFolder || selectedYear || selectedSubfolder;
     const backButtonText = "Back";
@@ -160,6 +188,11 @@ const Gallery = () => {
                                                     captionFontFamily="monospace"
                                                     loading={index === 0 ? "eager" : "lazy"}
                                                     decoding="async"
+                                                    onImageClick={(trigger) => {
+                                                        lightboxTrigger.current = trigger;
+                                                        setLightboxIndex(index);
+                                                    }}
+                                                    imageClickLabel={`Open photo ${index + 1} full size`}
                                                 />
                                             </VStack>))}
                                     </SimpleGrid>
@@ -215,6 +248,11 @@ const Gallery = () => {
                                                     captionFontFamily="monospace"
                                                     loading={index === 0 ? "eager" : "lazy"}
                                                     decoding="async"
+                                                    onImageClick={(trigger) => {
+                                                        lightboxTrigger.current = trigger;
+                                                        setLightboxIndex(index);
+                                                    }}
+                                                    imageClickLabel={`Open photo ${index + 1} full size`}
                                                 />
                                             </VStack>))}
                                     </SimpleGrid>
@@ -285,6 +323,14 @@ const Gallery = () => {
                     </VStack>
                 </Container>
             </Box>
+
+            <PhotoLightbox
+                photos={lightboxPhotos}
+                index={lightboxIndex}
+                onClose={() => setLightboxIndex(null)}
+                triggerRef={lightboxTrigger}
+                onNavigate={setLightboxIndex}
+            />
         </div>
     );
 };

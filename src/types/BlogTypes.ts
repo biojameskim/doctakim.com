@@ -31,7 +31,11 @@ export type BlogImageType = {
   webpSrcSet?: string,
   fallbackSrc?: string,
   intrinsicWidth?: number,
-  intrinsicHeight?: number
+  intrinsicHeight?: number,
+  // Opens the gallery lightbox. Attached to the image only, never the caption, so a
+  // captionLink stays clickable. Blog entries pass nothing and get no affordance.
+  onImageClick?: (trigger: HTMLElement) => void,
+  imageClickLabel?: string
 }
 
 export type BirthdayCardType = {

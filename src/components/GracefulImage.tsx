@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Image, ImageProps, Skeleton, Box, useColorModeValue, useBreakpointValue } from "@chakra-ui/react";
 
 interface GracefulImageProps extends Omit<ImageProps, 'src'> {
@@ -18,6 +18,10 @@ interface GracefulImageProps extends Omit<ImageProps, 'src'> {
     // 4032px-tall wrapper.
     intrinsicWidth?: number;
     intrinsicHeight?: number;
+    // When set, the image becomes an activatable control that opens the lightbox.
+    // Keyboard users get the same affordance as pointer users.
+    onImageClick?: (trigger: HTMLElement) => void;
+    imageClickLabel?: string;
 }
 
 const GracefulImage = (props: GracefulImageProps) => {
@@ -25,6 +29,7 @@ const GracefulImage = (props: GracefulImageProps) => {
     const {
         src, alt, width, height, w, h, boxSize, borderRadius, objectFit,
         webpSrcSet, fallbackSrc, intrinsicWidth, intrinsicHeight,
+        onImageClick, imageClickLabel,
         ...rest
     } = props;
     const resolvedSrc = useBreakpointValue(typeof src === 'object' ? src : { base: src });
@@ -38,6 +43,26 @@ const GracefulImage = (props: GracefulImageProps) => {
     const boxHeight = boxSize || height || h;
 
     const hasIntrinsicSize = Boolean(intrinsicWidth && intrinsicHeight);
+
+    // Applied to the wrapper rather than the <img> so the whole framed area is the
+    // target, and so <picture> stays a plain layout element.
+    const clickableProps = onImageClick
+        ? {
+            onClick: (event: React.MouseEvent<HTMLElement>) =>
+                onImageClick(event.currentTarget),
+            onKeyDown: (event: React.KeyboardEvent<HTMLElement>) => {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    onImageClick(event.currentTarget);
+                }
+            },
+            role: "button",
+            tabIndex: 0,
+            "aria-label": imageClickLabel || "Open photo full size",
+            cursor: "zoom-in",
+            css: { WebkitTapHighlightColor: "transparent" },
+        }
+        : {};
 
     // When a WebP srcset exists the <img> src becomes the original, which only
     // browsers that skipped the <source> will actually fetch.
@@ -106,6 +131,7 @@ const GracefulImage = (props: GracefulImageProps) => {
             overflow="hidden"
             className="graceful-image-wrapper-intrinsic"
             sx={hasIntrinsicSize ? { aspectRatio: `${intrinsicWidth} / ${intrinsicHeight}` } : undefined}
+            {...clickableProps}
         >
             <Skeleton
                 position="absolute"
