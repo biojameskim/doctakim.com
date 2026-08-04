@@ -38,8 +38,14 @@ const fullResolutionSrc = (photo: Photo) =>
     photo.responsive?.originalSrc ?? photo.filename;
 
 const loadingPulse = keyframes`
-    0%, 100% { outline-color: rgba(255, 255, 255, 0.12); }
-    50%      { outline-color: rgba(255, 255, 255, 0.55); }
+    0%, 100% {
+        outline-color: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.04);
+    }
+    50% {
+        outline-color: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 0 16px 3px rgba(255, 255, 255, 0.22);
+    }
 `;
 
 const MIN_ZOOM = 1;
@@ -227,8 +233,8 @@ const PhotoLightbox = ({ selected, onClose, triggerRef }: PhotoLightboxProps) =>
         >
             {/* Opaque rather than translucent: at any transparency the white gallery
                 page glows through and washes out the photo. A mid grey rather than
-                black so the surround stays quiet without feeling like a void. */}
-            <ModalOverlay bg="#333333" />
+                black keeps the surround quiet without swallowing the frame. */}
+            <ModalOverlay bg="#4a4a4a" />
             <ModalContent
                 bg="transparent"
                 boxShadow="none"
@@ -265,9 +271,10 @@ const PhotoLightbox = ({ selected, onClose, triggerRef }: PhotoLightboxProps) =>
                             // photo to a fixed share of the screen, which cancelled
                             // browser zoom out entirely. In px the browser can scale
                             // it up and the modal container scrolls to let you pan.
-                            // Roughly 1.4x the column (350px / 450px) — bigger, but
-                            // still recognisably the same photo.
-                            w={`min(92vw, ${isLandscape ? 460 : 400}px)`}
+                            // Landscape gets proportionally more than portrait: it is
+                            // short-edged, so matching portrait's width would read as
+                            // the smaller of the two.
+                            w={`min(92vw, ${isLandscape ? 620 : 400}px)`}
                             transform={`translate3d(${pan.x}px, ${pan.y}px, 0) scale(${zoom})`}
                             transformOrigin="center"
                             transition={zoom === MIN_ZOOM ? "transform 120ms ease-out" : undefined}
@@ -280,9 +287,9 @@ const PhotoLightbox = ({ selected, onClose, triggerRef }: PhotoLightboxProps) =>
                                 ...(fullLoaded
                                     ? {}
                                     : {
-                                        outline: "1px solid rgba(255,255,255,0.35)",
+                                        outline: "2px solid rgba(255,255,255,0.5)",
                                         outlineOffset: "0px",
-                                        animation: `${loadingPulse} 1.4s ease-in-out infinite`,
+                                        animation: `${loadingPulse} 1.1s ease-in-out infinite`,
                                         "@media (prefers-reduced-motion: reduce)": {
                                             animation: "none",
                                         },
