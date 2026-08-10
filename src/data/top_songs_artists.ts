@@ -12,10 +12,10 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/5JesN4KTmkq87xWJKUZdka"
     },
     {
-        "title": "Down the Line (Feat. Swervy)",
-        "artist": "untell, Swervy",
-        "cover": "https://i.scdn.co/image/ab67616d0000b2730e847d6463e417528e60f7d7",
-        "link": "https://open.spotify.com/track/0oKTBfZFsEkzCxa7BC3pjx"
+        "title": "먼지가 되어",
+        "artist": "Kim Kwang Seok",
+        "cover": "https://i.scdn.co/image/ab67616d0000b273269efe99a72ec4f2b541c588",
+        "link": "https://open.spotify.com/track/0TjV6Zi66f2ARFRsfd76Jr"
     },
     {
         "title": "Love Letter (Feat. Loco)",
@@ -24,10 +24,10 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/7k853TCIb052hpHzy0apki"
     },
     {
-        "title": "HAEMOO",
-        "artist": "TOIL, Hash Swan, Choi Seong",
-        "cover": "https://i.scdn.co/image/ab67616d0000b273ec7ef7abe2677729b7820037",
-        "link": "https://open.spotify.com/track/0fQHM5VUKgf1TT1vEYR2kX"
+        "title": "She Said I Don’t",
+        "artist": "BIG Naughty",
+        "cover": "https://i.scdn.co/image/ab67616d0000b273b7cf0ba073ff3ab392bf5d9b",
+        "link": "https://open.spotify.com/track/13GOHR3tuvhTNQRA8ITzIl"
     }
 ];
 
@@ -48,13 +48,13 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/0IznZPMUyaPGdqfP4oqBja"
     },
     {
+        "name": "Leellamarz",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4eaf216b35e7c5ac20f91c4d",
+        "link": "https://open.spotify.com/artist/79g2STpP2iV1xfgHuhrhX0"
+    },
+    {
         "name": "Mad Clown",
         "image": "https://i.scdn.co/image/ab6761610000e5eb0f1da60e0b153fd9940aa175",
         "link": "https://open.spotify.com/artist/0dX6tgZKWpamoFHFuXFhwd"
-    },
-    {
-        "name": "Beast",
-        "image": "https://i.scdn.co/image/ab6761610000e5eb080109ba641204f8c80d2b5e",
-        "link": "https://open.spotify.com/artist/1Pr9gT0veB2tgcisQeIGoC"
     }
 ];
