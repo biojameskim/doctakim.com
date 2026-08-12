@@ -4,20 +4,24 @@ import {
   Button,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { Link as LinkRouter } from "react-router-dom";
+import { Link as LinkRouter, useLocation } from "react-router-dom";
 import { AiOutlineHome, AiOutlineCamera } from "react-icons/ai";
 
 import SocialButton from "../SocialButton";
 
 export default function NavBar() {
-  const bgColor = useColorModeValue("rgba(255, 255, 255, 0.8)", "rgba(26, 32, 44, 0.8)");
+  /* The start page is a single full-bleed image, so the bar drops its fill there and
+     sits directly on the sky. Everywhere else it keeps the frosted panel. */
+  const onStartPage = useLocation().pathname === "/";
+  const panel = useColorModeValue("rgba(255, 255, 255, 0.8)", "rgba(26, 32, 44, 0.8)");
+  const bgColor = onStartPage ? "transparent" : panel;
   const textColor = useColorModeValue("gray.600", "white");
 
   return (
     <Box className="navbar">
       <Flex
         bg={bgColor}
-        backdropFilter="blur(10px)"
+        backdropFilter={onStartPage ? "none" : "blur(10px)"}
         color={textColor}
         minH={"60px"}
         py={{ base: 3 }}
