@@ -1,11 +1,5 @@
 export const topSongs = [
     {
-        "title": "Rain Drops (Feat. Chodan of QWER)",
-        "artist": "Mad Clown, Chodan",
-        "cover": "https://i.scdn.co/image/ab67616d0000b2732ebb1a2b7764c328c33dd54e",
-        "link": "https://open.spotify.com/track/0mJ95hBlmJ7FOdPDTBs7RD"
-    },
-    {
         "title": "Thursday (Feat. Leellamarz, Crush)",
         "artist": "Coogie, Leellamarz, Crush",
         "cover": "https://i.scdn.co/image/ab67616d0000b273d1b3dd9f4859be9f8ead42e9",
@@ -22,6 +16,12 @@ export const topSongs = [
         "artist": "BIG Naughty, Loco",
         "cover": "https://i.scdn.co/image/ab67616d0000b273b7cf0ba073ff3ab392bf5d9b",
         "link": "https://open.spotify.com/track/7k853TCIb052hpHzy0apki"
+    },
+    {
+        "title": "MIU MIU (Feat. TRADE L, SUNNA (서나))",
+        "artist": "SEIN, TRADE L, SUNNA",
+        "cover": "https://i.scdn.co/image/ab67616d0000b273fecccceb809ae729b8013613",
+        "link": "https://open.spotify.com/track/5SNdw7vVjwP9NbPYMFKEg7"
     },
     {
         "title": "She Said I Don’t",
@@ -43,18 +43,18 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/6b29EYSqnLhUyxC3yyNbyr"
     },
     {
-        "name": "Coogie",
-        "image": "https://i.scdn.co/image/ab6761610000e5eb5c8fe4d8c72bbd833ceaf202",
-        "link": "https://open.spotify.com/artist/0IznZPMUyaPGdqfP4oqBja"
-    },
-    {
         "name": "Leellamarz",
         "image": "https://i.scdn.co/image/ab6761610000e5eb4eaf216b35e7c5ac20f91c4d",
         "link": "https://open.spotify.com/artist/79g2STpP2iV1xfgHuhrhX0"
     },
     {
-        "name": "Mad Clown",
-        "image": "https://i.scdn.co/image/ab6761610000e5eb0f1da60e0b153fd9940aa175",
-        "link": "https://open.spotify.com/artist/0dX6tgZKWpamoFHFuXFhwd"
+        "name": "Coogie",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb5c8fe4d8c72bbd833ceaf202",
+        "link": "https://open.spotify.com/artist/0IznZPMUyaPGdqfP4oqBja"
+    },
+    {
+        "name": "JAEHA",
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc41eeecf1daa3a8072f2a7ea",
+        "link": "https://open.spotify.com/artist/4CF0QZtzsHDYdTHqipMGdh"
     }
 ];
