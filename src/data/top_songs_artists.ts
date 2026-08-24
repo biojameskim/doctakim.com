@@ -1,9 +1,9 @@
 export const topSongs = [
     {
-        "title": "Thursday (Feat. Leellamarz, Crush)",
-        "artist": "Coogie, Leellamarz, Crush",
-        "cover": "https://i.scdn.co/image/ab67616d0000b273d1b3dd9f4859be9f8ead42e9",
-        "link": "https://open.spotify.com/track/5JesN4KTmkq87xWJKUZdka"
+        "title": "Say I'm Crazy",
+        "artist": "Kim Seungmin",
+        "cover": "https://i.scdn.co/image/ab67616d0000b27342475fcf36efd27563261704",
+        "link": "https://open.spotify.com/track/04YIRrXlxi1Fo2axK2pFT5"
     },
     {
         "title": "먼지가 되어",
@@ -12,16 +12,16 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/0TjV6Zi66f2ARFRsfd76Jr"
     },
     {
-        "title": "Love Letter (Feat. Loco)",
-        "artist": "BIG Naughty, Loco",
-        "cover": "https://i.scdn.co/image/ab67616d0000b273b7cf0ba073ff3ab392bf5d9b",
-        "link": "https://open.spotify.com/track/7k853TCIb052hpHzy0apki"
-    },
-    {
         "title": "MIU MIU (Feat. TRADE L, SUNNA (서나))",
         "artist": "SEIN, TRADE L, SUNNA",
         "cover": "https://i.scdn.co/image/ab67616d0000b273fecccceb809ae729b8013613",
         "link": "https://open.spotify.com/track/5SNdw7vVjwP9NbPYMFKEg7"
+    },
+    {
+        "title": "Love Letter (Feat. Loco)",
+        "artist": "BIG Naughty, Loco",
+        "cover": "https://i.scdn.co/image/ab67616d0000b273b7cf0ba073ff3ab392bf5d9b",
+        "link": "https://open.spotify.com/track/7k853TCIb052hpHzy0apki"
     },
     {
         "title": "She Said I Don’t",
@@ -38,23 +38,23 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/7cEaNXXTHx3LokbjUUyHal"
     },
     {
-        "name": "TRADE L",
-        "image": "https://i.scdn.co/image/ab6761610000e5eb55e3cd80fc567369cdf65f4c",
-        "link": "https://open.spotify.com/artist/6b29EYSqnLhUyxC3yyNbyr"
-    },
-    {
         "name": "Leellamarz",
         "image": "https://i.scdn.co/image/ab6761610000e5eb4eaf216b35e7c5ac20f91c4d",
         "link": "https://open.spotify.com/artist/79g2STpP2iV1xfgHuhrhX0"
     },
     {
-        "name": "Coogie",
-        "image": "https://i.scdn.co/image/ab6761610000e5eb5c8fe4d8c72bbd833ceaf202",
-        "link": "https://open.spotify.com/artist/0IznZPMUyaPGdqfP4oqBja"
-    },
-    {
         "name": "JAEHA",
         "image": "https://i.scdn.co/image/ab6761610000e5ebc41eeecf1daa3a8072f2a7ea",
         "link": "https://open.spotify.com/artist/4CF0QZtzsHDYdTHqipMGdh"
+    },
+    {
+        "name": "Gist",
+        "image": "https://i.scdn.co/image/ab6761610000e5ebb5c35dbc24274551f58e6681",
+        "link": "https://open.spotify.com/artist/7MWT3sTDz6GemZla4Y5oCk"
+    },
+    {
+        "name": "Kim Seungmin",
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd0ac399ad60bc9ed40f22fec",
+        "link": "https://open.spotify.com/artist/31VffPWiL2AAwNIMODB9qZ"
     }
 ];
