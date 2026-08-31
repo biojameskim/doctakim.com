@@ -18,25 +18,20 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/5SNdw7vVjwP9NbPYMFKEg7"
     },
     {
-        "title": "Love Letter (Feat. Loco)",
-        "artist": "BIG Naughty, Loco",
-        "cover": "https://i.scdn.co/image/ab67616d0000b273b7cf0ba073ff3ab392bf5d9b",
-        "link": "https://open.spotify.com/track/7k853TCIb052hpHzy0apki"
+        "title": "Button",
+        "artist": "Leellamarz",
+        "cover": "https://i.scdn.co/image/ab67616d0000b2731a6b5f18179f721b61bdd827",
+        "link": "https://open.spotify.com/track/6sfWkp3iGGTSdsfE4EIgHp"
     },
     {
-        "title": "She Said I Don’t",
-        "artist": "BIG Naughty",
-        "cover": "https://i.scdn.co/image/ab67616d0000b273b7cf0ba073ff3ab392bf5d9b",
-        "link": "https://open.spotify.com/track/13GOHR3tuvhTNQRA8ITzIl"
+        "title": "有限世上 (Feat. Leellamarz)",
+        "artist": "TOIL, Choi Seong, Jayci yucca, Leellamarz",
+        "cover": "https://i.scdn.co/image/ab67616d0000b27398d2453e5253d568815f9668",
+        "link": "https://open.spotify.com/track/0MTiwWoWdGWv4nuCorKDAw"
     }
 ];
 
 export const topArtists = [
-    {
-        "name": "BIG Naughty",
-        "image": "https://i.scdn.co/image/ab6761610000e5ebc165956d3d04700c1e890a31",
-        "link": "https://open.spotify.com/artist/7cEaNXXTHx3LokbjUUyHal"
-    },
     {
         "name": "Leellamarz",
         "image": "https://i.scdn.co/image/ab6761610000e5eb4eaf216b35e7c5ac20f91c4d",
@@ -48,13 +43,18 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/4CF0QZtzsHDYdTHqipMGdh"
     },
     {
+        "name": "Kim Seungmin",
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd0ac399ad60bc9ed40f22fec",
+        "link": "https://open.spotify.com/artist/31VffPWiL2AAwNIMODB9qZ"
+    },
+    {
         "name": "Gist",
         "image": "https://i.scdn.co/image/ab6761610000e5ebb5c35dbc24274551f58e6681",
         "link": "https://open.spotify.com/artist/7MWT3sTDz6GemZla4Y5oCk"
     },
     {
-        "name": "Kim Seungmin",
-        "image": "https://i.scdn.co/image/ab6761610000e5ebd0ac399ad60bc9ed40f22fec",
-        "link": "https://open.spotify.com/artist/31VffPWiL2AAwNIMODB9qZ"
+        "name": "Bruno Mars",
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc7688aad1bf03986934d7e26",
+        "link": "https://open.spotify.com/artist/0du5cEVh5yTK9QJze8zA0C"
     }
 ];
