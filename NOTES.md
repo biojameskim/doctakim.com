@@ -34,7 +34,7 @@ When uploading any photos, use lossy compression to reduce file size.
 - Deployed with Netlify
 
 ### Images
-- Hosted on Cloudinary
+- Hosted on Cloudflare R2
 
 ### Spotify Refresh Token (re-auth runbook)
 As of July 20, 2026 Spotify refresh tokens expire after six months. When the stored
