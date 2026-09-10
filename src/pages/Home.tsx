@@ -80,7 +80,7 @@ const Home = () => {
             I enjoy logging moments of my life through journaling and share some in my <Link as={RouterLink} to="/blog" color="green.500">Blog</Link>.
             I also enjoy writing rap music (though I'm not as confident in sharing those).
           </Text>
-          <Text fontSize="0.9rem" fontWeight="normal">If you'd like to connect, feel free to shoot me an <Link as="a" href="mailto:biojamesjkim@gmail.com" color="green.500">email</Link>.</Text>
+          <Text fontSize="0.9rem" fontWeight="normal">If you'd like to connect, feel free to shoot me an email at <Link as="a" href="mailto:hello@doctakim.com" color="green.500">hello[at]doctakim.com</Link>.</Text>
         </VStack>
 
         {/* Separator */}

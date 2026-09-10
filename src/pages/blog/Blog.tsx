@@ -92,13 +92,15 @@ const Blog = () => {
         </Tabs>
       </Box>
 
-      {/* Compact toggle — mobile only. Fixed rather than inline so it stays reachable
-          once you've scrolled into the list, which is the point of the compact view. */}
+      {/* Fixed rather than inline so the compact toggle stays reachable once you've
+          scrolled into the list, which is the point of the compact view. */}
       <Box
-        display={{ base: 'block', md: 'none' }}
         position='fixed'
-        right='4'
-        bottom='calc(1rem + env(safe-area-inset-bottom))'
+        right={{ base: '4', md: 'calc(5% + 1rem)', lg: 'calc(7.5% + 1rem)' }}
+        bottom={{
+          base: 'calc(1rem + env(safe-area-inset-bottom))',
+          md: 'calc(2.5rem + env(safe-area-inset-bottom))'
+        }}
         zIndex='docked'
         opacity={toggleVisible ? 1 : 0}
         transform={toggleVisible ? 'translateY(0)' : 'translateY(0.5rem)'}
@@ -107,11 +109,11 @@ const Blog = () => {
       >
         <Button
           size='xs'
-          h='8'
-          px='4'
+          h={{ base: '8', md: '10' }}
+          px={{ base: '4', md: '5' }}
           rounded='full'
           fontWeight='normal'
-          fontSize='0.8rem'
+          fontSize={{ base: '0.8rem', md: '0.9rem' }}
           letterSpacing='0.05em'
           color={useColorModeValue('teal.600', 'teal.300')}
           bg={useColorModeValue('rgba(255, 255, 255, 0.92)', 'rgba(26, 32, 44, 0.92)')}

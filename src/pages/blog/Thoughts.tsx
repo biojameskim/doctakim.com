@@ -13,15 +13,16 @@ const Thoughts = ({ compact = false }: { compact?: boolean }) => {
   return (
     <div>
       <Grid
-        templateColumns={{ md: 'repeat(3, 1fr)' }}
+        templateColumns={compact ? '1fr' : { md: 'repeat(3, 1fr)' }}
         w='100%'
-        gap={{ base: compact ? '3' : '4', md: '12' }}
+        maxW={compact ? { base: '100%', md: '700px' } : '100%'}
+        mx='auto'
+        gap={compact ? '3' : { base: '4', md: '12' }}
         textAlign={'left'}
         alignItems={'stretch'}
       >
         {thoughts_data.map((item, index) => {
-          // A rule closes off the pinned entry from the rest. Compact mobile view only —
-          // the desktop grid puts the cards in columns, where a full-width rule makes no sense.
+          // A rule closes off the pinned entry from the rest in the compact list.
           const next = thoughts_data[index + 1];
           const endsPinnedRun = item.pin && next && !next.pin;
 
@@ -38,7 +39,7 @@ const Thoughts = ({ compact = false }: { compact?: boolean }) => {
                 compact={compact}
               />
               {compact && endsPinnedRun && (
-                <Divider display={{ base: 'block', md: 'none' }} my='1' />
+                <Divider my='1' />
               )}
             </Fragment>
           );

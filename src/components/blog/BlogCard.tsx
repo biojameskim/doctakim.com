@@ -26,17 +26,17 @@ const BlogCard = ({ route, title, description, release, image, alt, pin, compact
                 className='blog-card'
                 // Stack spaces every child after the first, and the hidden image Box still
                 // counts as a child — that stray gap is what pushed the compact text down.
-                spacing={{ base: compact ? 1 : 2, md: 2 }}
-                p={{ base: compact ? 3 : 4, md: 4 }}
-                mb={{ base: compact ? 0 : '3rem', md: '3rem' }}
+                spacing={compact ? 1 : 2}
+                p={compact ? 3 : 4}
+                mb={compact ? 0 : '3rem'}
                 shadow='lg'
-                borderWidth={{ base: compact ? '1px' : pin ? '10px' : '1px', md: pin ? '10px' : '1px' }}
+                borderWidth={compact ? '1px' : pin ? '10px' : '1px'}
                 borderColor={useColorModeValue('gray.200', 'gray.600')}
                 rounded='lg'
                 bg={useColorModeValue('gray.100', 'gray.700')}
                 href={route}
                 alignItems={'left'}
-                maxW={{ base: compact ? '100%' : '98%', md: '100%' }}
+                maxW={compact ? '100%' : { base: '98%', md: '100%' }}
                 position={'relative'}
                 transition="all 200ms ease-in-out"
                 h="full"
@@ -48,7 +48,7 @@ const BlogCard = ({ route, title, description, release, image, alt, pin, compact
             >
                 {pin && (
                     <Image
-                        display={{ base: compact ? 'none' : 'block', md: 'block' }}
+                        display={compact ? 'none' : 'block'}
                         position='absolute'
                         objectFit="contain"
                         width='35px'
@@ -59,7 +59,7 @@ const BlogCard = ({ route, title, description, release, image, alt, pin, compact
                     />
                 )}
 
-                <Box display={{ base: compact ? 'none' : 'block', md: 'block' }}>
+                <Box display={compact ? 'none' : 'block'}>
                     <AspectRatio ratio={4 / 3} borderRadius='xl' overflow="hidden">
                         <GracefulImage
                             boxSize='full'
@@ -72,15 +72,14 @@ const BlogCard = ({ route, title, description, release, image, alt, pin, compact
                 </Box>
 
                 <Stack
-                    mt={{ base: compact ? 0 : 4, md: 0 }}
-                    ml={{ md: 6 }}
+                    mt={compact ? 0 : { base: 4, md: 0 }}
+                    ml={compact ? 0 : { md: 6 }}
                     maxW={'400'}
-                    spacing={{ base: compact ? 1 : 2, md: 2 }}
+                    spacing={compact ? 1 : 2}
                 >
-                    {/* Compact line: pin, MM/YY and the title all on one row. Mobile only —
-                        the stacked release/title below take over from md up. */}
+                    {/* Compact line: pin, MM/YY and the title all on one row. */}
                     <Text
-                        display={{ base: compact ? 'block' : 'none', md: 'none' }}
+                        display={compact ? 'block' : 'none'}
                         fontSize='0.9rem'
                         lineHeight='1.35'
                         fontWeight='medium'
@@ -111,7 +110,7 @@ const BlogCard = ({ route, title, description, release, image, alt, pin, compact
                     </Text>
 
                     <Text
-                        display={{ base: compact ? 'none' : 'block', md: 'block' }}
+                        display={compact ? 'none' : 'block'}
                         fontWeight='semibold'
                         textTransform='uppercase'
                         fontSize='0.9rem'
@@ -122,7 +121,7 @@ const BlogCard = ({ route, title, description, release, image, alt, pin, compact
                         {release}
                     </Text>
                     <Text
-                        display={{ base: compact ? 'none' : 'block', md: 'block' }}
+                        display={compact ? 'none' : 'block'}
                         mt={1}
                         fontSize='1.3rem'
                         lineHeight='normal'
@@ -136,7 +135,7 @@ const BlogCard = ({ route, title, description, release, image, alt, pin, compact
                         maxW='full'
                         mt={2}
                         color={useColorModeValue('gray.600', 'gray.400')}
-                        fontSize={{ base: compact ? '0.72rem' : '0.8rem', md: '0.8rem' }}
+                        fontSize={compact ? '0.72rem' : '0.8rem'}
                         fontWeight='normal'
                     >
                         {description}
