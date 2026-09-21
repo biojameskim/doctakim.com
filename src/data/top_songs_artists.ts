@@ -1,11 +1,5 @@
 export const topSongs = [
     {
-        "title": "Say I'm Crazy",
-        "artist": "Kim Seungmin",
-        "cover": "https://i.scdn.co/image/ab67616d0000b27342475fcf36efd27563261704",
-        "link": "https://open.spotify.com/track/04YIRrXlxi1Fo2axK2pFT5"
-    },
-    {
         "title": "SECRET (feat. Raf Sandou)",
         "artist": "DIMO REX, Raf Sandou",
         "cover": "https://i.scdn.co/image/ab67616d0000b273d5fd6e65b833b365c75d3822",
@@ -28,6 +22,12 @@ export const topSongs = [
         "artist": "DIMO REX",
         "cover": "https://i.scdn.co/image/ab67616d0000b273d5fd6e65b833b365c75d3822",
         "link": "https://open.spotify.com/track/3vAnJJGXUggo4ukB3yGX1Z"
+    },
+    {
+        "title": "Button",
+        "artist": "Leellamarz",
+        "cover": "https://i.scdn.co/image/ab67616d0000b2731a6b5f18179f721b61bdd827",
+        "link": "https://open.spotify.com/track/6sfWkp3iGGTSdsfE4EIgHp"
     }
 ];
 
@@ -39,7 +39,7 @@ export const topArtists = [
     },
     {
         "name": "Kim Seungmin",
-        "image": "https://i.scdn.co/image/ab6761610000e5ebd0ac399ad60bc9ed40f22fec",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb71b7b93ce25e819ac33a8ec4",
         "link": "https://open.spotify.com/artist/31VffPWiL2AAwNIMODB9qZ"
     },
     {
