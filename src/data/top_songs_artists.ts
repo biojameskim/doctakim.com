@@ -24,10 +24,10 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/3vAnJJGXUggo4ukB3yGX1Z"
     },
     {
-        "title": "Button",
-        "artist": "Leellamarz",
-        "cover": "https://i.scdn.co/image/ab67616d0000b2731a6b5f18179f721b61bdd827",
-        "link": "https://open.spotify.com/track/6sfWkp3iGGTSdsfE4EIgHp"
+        "title": "U",
+        "artist": "Sik-K, Lil Moshpit",
+        "cover": "https://i.scdn.co/image/ab67616d0000b27327cb9419b49e364a6e373355",
+        "link": "https://open.spotify.com/track/3JpcAj2SxrmZdzjnGVkjhM"
     }
 ];
 
@@ -53,8 +53,8 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/75OcDAFGCzj0qehe1mADeM"
     },
     {
-        "name": "Choi Seong",
-        "image": "https://i.scdn.co/image/ab6761610000e5eb5cd2052a2ac858c4b7f229ce",
-        "link": "https://open.spotify.com/artist/762fgqQ2gz5w7q1VkDOmja"
+        "name": "Ourealgoat",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4c2d2b8da9020eb463b3e27f",
+        "link": "https://open.spotify.com/artist/3YRGcoHMIvWleQfa0qa1D1"
     }
 ];
