@@ -6,6 +6,12 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/4pWSabNmqwUrsLbIgBdGJO"
     },
     {
+        "title": "Abandoned Dog",
+        "artist": "Kim Seungmin",
+        "cover": "https://i.scdn.co/image/ab67616d0000b2736387bb543d1393f52d7249a0",
+        "link": "https://open.spotify.com/track/4n73ls1qXd8SPVFua9GZdo"
+    },
+    {
         "title": "Just a Little",
         "artist": "PATEKO, Min Jiwoon",
         "cover": "https://i.scdn.co/image/ab67616d0000b2734596801ca0b8250b9d61b55c",
@@ -22,20 +28,14 @@ export const topSongs = [
         "artist": "PYMEL",
         "cover": "https://i.scdn.co/image/ab67616d0000b273d71157c5a7b587f40a312b90",
         "link": "https://open.spotify.com/track/78z0U6GReTrGYoG0YYGAXh"
-    },
-    {
-        "title": "Gratata",
-        "artist": "BlackNut, Han Yo Han, Swings",
-        "cover": "https://i.scdn.co/image/ab67616d0000b2730bc106428fb2e96ff8a31980",
-        "link": "https://open.spotify.com/track/3lLI1tkEXEKfwCRMdGnjuw"
     }
 ];
 
 export const topArtists = [
     {
-        "name": "Kim Seungmin",
-        "image": "https://i.scdn.co/image/ab6761610000e5eb71b7b93ce25e819ac33a8ec4",
-        "link": "https://open.spotify.com/artist/31VffPWiL2AAwNIMODB9qZ"
+        "name": "Ourealgoat",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4c2d2b8da9020eb463b3e27f",
+        "link": "https://open.spotify.com/artist/3YRGcoHMIvWleQfa0qa1D1"
     },
     {
         "name": "CHANGMO",
@@ -43,9 +43,9 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/3hvinNZRzTLoREmqFiKr1b"
     },
     {
-        "name": "Ourealgoat",
-        "image": "https://i.scdn.co/image/ab6761610000e5eb4c2d2b8da9020eb463b3e27f",
-        "link": "https://open.spotify.com/artist/3YRGcoHMIvWleQfa0qa1D1"
+        "name": "Epik High",
+        "image": "https://i.scdn.co/image/ab6761610000e5eba1875d1827aa452e009137d8",
+        "link": "https://open.spotify.com/artist/5snNHNlYT2UrtZo5HCJkiw"
     },
     {
         "name": "PYMEL",
