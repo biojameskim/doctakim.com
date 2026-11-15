@@ -7,6 +7,7 @@ Run:
 
 ```bash
 npm run media:gallery -- --year 2026 --month 8 --input "/absolute/path/to/photos"
+npm run media:gallery -- --year 2026 --month 11 --input /Users/jjk297/Downloads/11-26
 ```
 
 Review the displayed order, then enter `y`. The script processes copies, uploads
