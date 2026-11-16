@@ -1,15 +1,15 @@
 export const topSongs = [
     {
-        "title": "Abandoned Dog",
-        "artist": "Kim Seungmin",
-        "cover": "https://i.scdn.co/image/ab67616d0000b2736387bb543d1393f52d7249a0",
-        "link": "https://open.spotify.com/track/4n73ls1qXd8SPVFua9GZdo"
-    },
-    {
         "title": "29 (Twenty-nine)",
         "artist": "Dvwn",
         "cover": "https://i.scdn.co/image/ab67616d0000b273c0ba71c20edd9cfc71bb67d4",
         "link": "https://open.spotify.com/track/1c3nESu4XhQEHUBSVbBPwZ"
+    },
+    {
+        "title": "Abandoned Dog",
+        "artist": "Kim Seungmin",
+        "cover": "https://i.scdn.co/image/ab67616d0000b2736387bb543d1393f52d7249a0",
+        "link": "https://open.spotify.com/track/4n73ls1qXd8SPVFua9GZdo"
     },
     {
         "title": "대화가 필요해",
@@ -33,19 +33,9 @@ export const topSongs = [
 
 export const topArtists = [
     {
-        "name": "Isabel van Gelder",
-        "image": "https://i.scdn.co/image/ab6761610000e5ebdd0f056efa53c82e14f188f5",
-        "link": "https://open.spotify.com/artist/4FAFRhpZUK7DnI1VWX2STP"
-    },
-    {
         "name": "Skinny Brown",
         "image": "https://i.scdn.co/image/ab6761610000e5eb7d1535bb6422cb339bf274de",
         "link": "https://open.spotify.com/artist/0E0fq98DMHhkAgiXWpCViX"
-    },
-    {
-        "name": "Coogie",
-        "image": "https://i.scdn.co/image/ab6761610000e5eb5c8fe4d8c72bbd833ceaf202",
-        "link": "https://open.spotify.com/artist/0IznZPMUyaPGdqfP4oqBja"
     },
     {
         "name": "GIRIBOY",
@@ -53,8 +43,18 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/2MtHuR0W2idZdF7x4wddqq"
     },
     {
-        "name": "GRIO",
-        "image": "https://i.scdn.co/image/ab6761610000e5eba6acd9254b68531a13885197",
-        "link": "https://open.spotify.com/artist/0MjC05t54hhvrqLBsIeTbu"
+        "name": "The Worship Initiative",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb2b5b3b8abc4e4ebb5351d02e",
+        "link": "https://open.spotify.com/artist/1bMkQIx4MpNHLxoylvipdQ"
+    },
+    {
+        "name": "Isabel van Gelder",
+        "image": "https://i.scdn.co/image/ab6761610000e5ebdd0f056efa53c82e14f188f5",
+        "link": "https://open.spotify.com/artist/4FAFRhpZUK7DnI1VWX2STP"
+    },
+    {
+        "name": "Kim Seungmin",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb71b7b93ce25e819ac33a8ec4",
+        "link": "https://open.spotify.com/artist/31VffPWiL2AAwNIMODB9qZ"
     }
 ];
