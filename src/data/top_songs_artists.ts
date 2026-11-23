@@ -1,11 +1,5 @@
 export const topSongs = [
     {
-        "title": "29 (Twenty-nine)",
-        "artist": "Dvwn",
-        "cover": "https://i.scdn.co/image/ab67616d0000b273c0ba71c20edd9cfc71bb67d4",
-        "link": "https://open.spotify.com/track/1c3nESu4XhQEHUBSVbBPwZ"
-    },
-    {
         "title": "Abandoned Dog",
         "artist": "Kim Seungmin",
         "cover": "https://i.scdn.co/image/ab67616d0000b2736387bb543d1393f52d7249a0",
@@ -24,6 +18,12 @@ export const topSongs = [
         "link": "https://open.spotify.com/track/6mFLWNuVchALC2Rvu8qaO5"
     },
     {
+        "title": "Unaddressed Letter",
+        "artist": "YongYong",
+        "cover": "https://i.scdn.co/image/ab67616d0000b2731fd5c02659dbbdeb1c4c5175",
+        "link": "https://open.spotify.com/track/2sz6aFZEPEdwlYLZNq0Gkp"
+    },
+    {
         "title": "With",
         "artist": "RESCENE",
         "cover": "https://i.scdn.co/image/ab67616d0000b273c49aa7c420cc427c17714ec2",
@@ -32,6 +32,11 @@ export const topSongs = [
 ];
 
 export const topArtists = [
+    {
+        "name": "Way Ched",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb3d89b25f121fe0b4e3d9c404",
+        "link": "https://open.spotify.com/artist/75OcDAFGCzj0qehe1mADeM"
+    },
     {
         "name": "Skinny Brown",
         "image": "https://i.scdn.co/image/ab6761610000e5eb7d1535bb6422cb339bf274de",
@@ -43,18 +48,13 @@ export const topArtists = [
         "link": "https://open.spotify.com/artist/2MtHuR0W2idZdF7x4wddqq"
     },
     {
-        "name": "The Worship Initiative",
-        "image": "https://i.scdn.co/image/ab6761610000e5eb2b5b3b8abc4e4ebb5351d02e",
-        "link": "https://open.spotify.com/artist/1bMkQIx4MpNHLxoylvipdQ"
-    },
-    {
         "name": "Isabel van Gelder",
         "image": "https://i.scdn.co/image/ab6761610000e5ebdd0f056efa53c82e14f188f5",
         "link": "https://open.spotify.com/artist/4FAFRhpZUK7DnI1VWX2STP"
     },
     {
-        "name": "Kim Seungmin",
-        "image": "https://i.scdn.co/image/ab6761610000e5eb71b7b93ce25e819ac33a8ec4",
-        "link": "https://open.spotify.com/artist/31VffPWiL2AAwNIMODB9qZ"
+        "name": "MELOH",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb99c9452932db9705efe8f2af",
+        "link": "https://open.spotify.com/artist/5Qb6QmI6WUeGFaJeGB5fdg"
     }
 ];
